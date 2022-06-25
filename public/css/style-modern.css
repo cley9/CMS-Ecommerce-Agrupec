@@ -1,0 +1,54 @@
+  .slick-next {
+  /*background: red;*/
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  margin-left: 100%;
+  margin-top: -6%;
+  align-items: center;
+  position: absolute;
+  
+  border: 2px solid #EFEFEF;
+  border-radius: 10px;
+}
+.slick-next:hover {
+  /*background: blue;*/
+  /*box-shadow: 1px, 1px, 1px;    */
+  
+     box-shadow: 5px 10px #212F3C;
+}
+
+
+  .slick-prev{
+  /*background: orange;*/
+  width: 80px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+     margin-left: -9%;
+
+  margin-top: -6%;
+  align-items: center;
+  position: absolute;
+       /*position: fixed;*/
+
+  border: 2px solid #EFEFEF;
+  border-radius: 10px;
+}
+.slick-prev:hover {
+  /*background: #ECECEC;*/
+  box-shadow: 1px, 1px, 1px;
+    /*box-shadow: 20px;*/
+     box-shadow: 5px 10px #212F3C;
+
+}
+
+
+.slyder--modern--component{
+    height:90%;
+       width: 80%;
+     /*background:blue;*/
+  display: flex;
+     align-items: center;
+}

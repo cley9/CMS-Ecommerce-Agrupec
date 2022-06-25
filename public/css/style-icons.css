@@ -1,0 +1,238 @@
+      .logoSesion{
+                width: 26px;
+              }
+              .googleBody:hover{
+                background: #CEEAD6;
+                color: #186A3B;
+              }
+              .facebookBody:hover{
+                background: #D2E3FC;
+
+              }
+
+.icons-font-colo{
+ height:600px;
+ width: 700px;
+}
+
+.icons-font-colo:hover{
+  color:#FDFDFD;
+
+}
+
+.icons-view-color{
+  /* color:#828C8A; */
+  /* color:#000001; */
+color: #FDFDFD;
+/* border-radius: 0%; */
+/* border-radius: 40px ,40px; */
+/* border-color: #37ecba; */
+  /* font-size:25px; */
+  /* width: 200px; */
+  height: 130px;
+  /* border-radius: 106px; */
+  background: #186A3B;
+  /* box-shadow: 5px 10px 12px #aab7b8; */
+}
+
+
+/* ---------------------sytle login */
+.icons--font--color--login{
+
+	font-size: 120px;
+	}
+	.form--backgroud-login{
+	  /* height: 515px; */
+		background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+
+	/* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);   */
+}
+
+.icons-font-login{
+  font-size: 120px;
+}
+/*.icons--font--color--login{*/
+  /* background-color: ;:orange; */
+/*}*/
+
+.input-icono {
+  background-image: url('../img/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+  }
+
+
+/* ------------------------------------------------ */
+a {
+text-decoration: none;
+background-image: linear-gradient(currentColor, currentColor);
+background-position: 0% 100%;
+background-repeat: no-repeat;
+background-size: 0% 2px;
+transition: background-size .3s;
+}
+
+a:hover, a:focus {
+background-size: 100% 2px;
+}
+/* .genesis-nav-menu a {
+background-image: none;
+} */
+
+
+.icons--style--raya {
+text-decoration: none;
+background-image: linear-gradient(currentColor, currentColor);
+background-position: 0% 100%;
+background-repeat: no-repeat;
+background-size: 0% 2px;
+transition: background-size .3s;
+}
+
+.icons--style--raya:hover, .icons--style--raya:focus {
+background-size: 100% 2px;
+}
+
+
+
+/*
+.box-love {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: red;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+.input-icono {
+  background-image: url('../img/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+  }
+  /* ----------------this are the view pss ----- */
+.input-wrapper {
+  position: relative;
+  /*width: 271px;*/
+}
+
+.input {
+  color: #191919;
+  padding: 8px 38px 5px 15px;
+}
+/* ----------------es el svg ----- */
+.input-icon {
+  color: #191919;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  /*left: 88%;*/
+  left: 88%;
+  top: 50%;
+  font-size: 20px;
+
+}
+
+/*--------------delete cart */
+.icons--delete--cart{
+font-size: 22px;
+/*background: black;*/
+}
+
+
+/* icon's contact */
+.icons--Contact{
+  font-size: 18px;
+  background:#3D3D3D;
+  color: #fff;  
+}
+.icons--Contact:hover{
+  color: #fff;
+  /* opacity: 2%; */
+background: #535353;
+}
+
+/* nav link */
+.icons--Contact--he{
+  font-size: 18px;
+  /* background:#3D3D3D; */
+  color: #3D3D3D; 
+  text-decoration: none;
+  margin-right: 1rem ;  
+
+}
+/* nav link */
+.nav--link a{
+  /* background-color: #00f2fe; */
+  font-family: none;
+  /* text-decoration:none; */
+  text-decoration: none;
+}
+a{
+  text-decoration: none;
+
+}
+
+  /* user login  */
+.icons--login--user{
+  /* font-size: 18px; */
+  /* background:#3D3D3D; */
+  /* color: #3D3D3D;  */
+  text-decoration: none;
+  /* margin-right: 1rem ; */
+  /* background: #186A3B;   */
+  
+  width: 30px;
+border-radius: 30px;
+
+}
+.icons--perfil--user{
+  text-decoration: none;
+  /* margin-right: 1rem ; */
+  /* background: #186A3B;   */
+  /* font-size: 120px; */
+  /* width: 12rem;
+border-radius: 30rem; */
+  width: 10rem;
+border-radius: 30rem;
+
+}
+
+/* icons-star */
+.icons--star{
+  color: #f5c518;
+}

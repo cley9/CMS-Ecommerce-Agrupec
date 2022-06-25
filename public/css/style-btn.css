@@ -1,0 +1,118 @@
+.btn--view-page{
+  background: #7EA0EB;
+  /* background: #09ED69; */
+}
+.btn--view-page:hover{
+  background: #96B3F1;
+}
+.btn--view-add{
+background:#7EEBCA;
+ /*background:#7ED6EB; */
+
+
+}
+.btn--view-add:hover{
+
+  background: #7ADDBF;
+}
+
+.btn--addCard--count{
+ width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #20c997;
+    font-size: 22px;
+
+}
+.btn--addCard--count:hover{
+ box-shadow: 0px 1px  12px #D0D3D4;
+}
+.btn--addCard--countMaster{
+    /*background:#7ED6EB;*/
+    background:#7EEBCA;
+
+}
+.btn--addCard--countMaster:hover{
+     /*background:#A3E4D7;*/
+       background: #7ADDBF;
+
+}
+
+/* subcribete */
+.input--frm--sub{
+  width: 230px;
+  height: 40px;
+}
+.btn--frm--sub{
+  width: 200px;
+  height: 40px;
+background-color: #3E6B90;
+border-radius: 4px;
+border-color: none;
+}
+
+.footer--final{
+  height: 100px;
+  background: #000000;
+}
+/* reseña */
+.btn--footer--rese{
+  width: 200px;
+  height: 40px;
+  border: 1px solid #FFFFFF ;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  /* margin-right */
+}
+/* -----------------------btn pagination */
+.btn--pagination{
+  border: 8px solid #FFFFFF ;
+  border-radius: 4px;
+  margin-left: 8px;
+  /* box-shadow: none; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  color: #000000;
+  /* background: #7ADDBF; */
+  background: #FAFAFA;
+
+  border-color:#FAFAFA;
+  /* margin-right */
+  /* background-color: #20c997; */
+}
+.btn--pagination:hover{
+/* background:#7EA0EB;
+border-color:#7EA0EB; */
+background: #1BE0FA;
+color: #FFFFFF;
+border-color:#1BE0FA;
+
+}
+
+.btn-slay-producto{
+  /* display: flex; */
+/* justify-content: center; */
+  margin-top: 120px;
+  margin-left: 17px;
+  /* align-items: flex-end; */
+  background-color: #1BE0FA;
+}
+
+/* style -- listCart */
+.btn--listCart--viewCart{
+    background: #7ADDBF;
+
+}
+.btn--listCart--close{
+    /* background-color: #3E6B90; */
+    /* background-color:#2C3E50; */
+    background-color:#5555D5;
+
+}

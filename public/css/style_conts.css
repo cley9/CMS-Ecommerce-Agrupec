@@ -1,0 +1,32 @@
+.form--color-icons{
+color:#8693F7;
+font-size: 20px;
+}
+.form--icons{
+  font-size: 22px;
+  background:#8693F7;
+  /* color: #fff;   */
+}
+.form--icons:hover{
+  color: #34495E;
+
+}
+  /* .form--icons-what:hover{
+    background: #01e675;
+  } */
+.form--text-color{
+  color:#8693F7;
+}
+.form--sumit-color{
+  width:140px;
+  background:#8693F7;  /* fallback for old browsers */
+  height:46px;
+}
+.form--backgroud{
+  height: 515px;
+/* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);   */
+background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+.form--img-backgroud{
+    width:190px;
+}
