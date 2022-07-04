@@ -121,10 +121,11 @@
 
 
 
-                     <div class="  list-group-item  align-items-center  d-flex bd-highlight ">
+                     <div class="  list-group-item  align-items-
+                     center  d-flex bd-highlight ">
                      <input type="checkbox" class="form-check-input p-2 bd-highlight" id="itemSearch1"  name="db_nombre[]" value="Perfil de Aluminio">
                      <label class="form-check-label p-1 bd-highlight"  for="itemSearch1">Perfil de Aluminio</label>
-                     <label class="badge ms-auto p-2 bd-highlight btn-numbers" for="exampleCheck1" >1</label>
+                     <label class="badge ms-auto p-2 bd-highlight btn-numbers" for="itemSearch1" >1</label>
                      </div>
                      <div class="  list-group-item  align-items-center  d-flex bd-highlight ">
                      <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck2" name="db_nombre[]" value="Fragua">

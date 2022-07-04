@@ -133,16 +133,130 @@ height: 21rem;
 }
 .input--frm--adminLog{
 background: #E7F9EB;
-border-color:#FFFFFF; 
+border-color:#FFFFFF;
 }
 /* log user */
 .modal--frm--userLog{
   max-width: 340px;
 }
 .form--frm--userLog{
-height: 31rem;
+    height: 24rem;
 }
 .input--frm--userLog{
-background: #E7F9EB;
-border-color:#FFFFFF; 
+    background: #E7F9EB;
+    border-color:#FFFFFF;
 }
+.form--frm--userRegistro{
+
+    height: 31rem;
+}
+.form--frm--userRecuperar{
+    height: 19rem;
+
+}
+
+/* form recuperacion de clave */
+.form__input__vacio{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.form__input__email__correcto{
+ /* background:#D1F4FF; */
+ background:#E2FAEC;
+ border-radius: 6px;
+ font-size: 14px;
+ /* padding-top:12px; */
+ padding: 12px 12px 12px 12px;
+
+}
+
+/* form envio de clave */
+/* .form--frm--userRecuperar--correcto{ */
+    .form--correcto{
+    height: 25rem;
+
+}
+.form__text__vacio{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+
+}
+.form__btn__vacio{
+    margin-bottom: 0;
+    display: none;
+
+}
+
+/* box register validar correo */
+.input--frm--errorValidacion{
+    background: #FFC5C5;
+    border-color:#e50030;
+    border-width:2px;
+}
+.input--frm--errorValidacion:hover{
+    /* border-color:#9e1a1a; */
+    border-color:#e50030;
+    border-width: 4px;
+}
+.text--frm--msgError{
+    color:#e50030;
+    font-size:12px;
+}
+.text--frm--msgVacio{
+    /* outline: none; */
+    /* font-size: none; */
+    /* display: block; */
+    /* margin-bottom: 0; */
+    display: none;
+}
+/*  correcto validacion*/
+.input--frm--bienValidacion{
+    /* background: #209F82; */
+    /* opacity:0.6; */
+    border-color:#1ed12d;
+    border-width:2px;
+}
+.input--frm--bienValidacion:hover{
+    border-color:#1ed12d;
+    border-width: 4px;
+}
+.text--frm--msgBien{
+    color:#209F82;
+    font-size:12px;
+
+}
+
+/* icons */
+
+/* ----------------es el svg ------------ */
+.icon--frm--vacio {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+  }
+  .icon--frm--bienValidacion {
+    position: absolute;
+    /* width: 20px;
+    height: 20px; */
+    left: 84%;
+    top: 30%;
+    /* margin-top: ; */
+    font-size: 18px;
+    /* font-weight: 800; */
+    color: #1ed12d;
+  }
+  /* .icon--frm--errorValidacion {
+    color: #191919;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 88%;
+    top: 52%;
+    font-size: 18px;
+    color: #e50030;
+  } */

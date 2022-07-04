@@ -29,7 +29,7 @@
 </head>
 <body>
 
-{{--
+
 <div class="rounded-2 ir-arriba ">
 <!--<i class="bi bi-arrow-up"></i>-->
 <i class="bi bi-chevron-up"></i>
@@ -45,11 +45,12 @@
     </form>
   </div>
 </div>
-<div class="pt-4" id="response"> </div>  --}}
+<div class="pt-4" id="response"> </div>
 
 @include('Admin.login')
 @include('Admin.loginAdmin')
 <br><br><br>
+{{--  response -- web barra  --}}
 <nav class=" navbar-light ">
   <div class="container  nav--link  ">
     <div class="row  ">
@@ -92,7 +93,6 @@
 </nav>
 <br><br><br>
 
-
 {{--  main  --}}
 <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
   <div class="container-fluid">
@@ -105,37 +105,16 @@
        <div class="col ">
 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
   <div class="navbar-nav ">
-
-    <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('vista.index') }}">Home</a>
+ <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('vista.index') }}">Home</a>
  <a href="{{ route('viewProducto.home.list') }}" class="nav-link active icons--style--raya" aria-current="page">Ver producto</a>
- {{--  <a href="informacion" class="nav-link active icons--style--raya" aria-current="page">Nuevos</a>  --}}
- {{--  <a href="informacion" class="nav-link active icons--style--raya" aria-current="page">Producto</a>  --}}
  <a href="{{route('nosotros.home.index')}}" class="nav-link active icons--style--raya" aria-current="page">Nosotros</a>
  <a href="{{url('Ayuda')}}" class="nav-link active icons--style--raya me-3" aria-current="page">Atencion</a>
- {{--  <a href="{{route('logout.user.index')}}" >Cerrar Sesion</a>  --}}
 
  @if (session()->exists('name') && session()->get('rol') === '0')
- {{--  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop_">
-  Launch static backdrop modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="staticBackdrop_" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        ...
-      </div>
-    </div>
-  </div>
-</div>  --}}
-
-  {{--  <a href="{{route('cart.user.main')}}" class="nav-link active icons--login--user  rounded-circle "  height="22px" aria-current="page"> <img src="{{asset('storage/img/icons/cardp.svg')}}" alt=""height="22px"></a>  --}}
 <div class="cart-menu align-items-center d-flex">
   <div class="sidebar-social">
     <ul>
-        {{--  data-bs-toggle="modal" data-bs-target="#mViewListProCartd"  --}}
         <a href="{{route('cart.user.main')}}" class="cart" id="cartHover" title="Facebook"  rel="nofollow" ><i class="fas fa-shopping-cart"></i>
         <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">{{session()->get('contProducto');}}</span>
       </a>
@@ -143,76 +122,10 @@
     </ul>
   </div>
 </div>
-<style>
-    .sidebar-social li {
-        text-align: center;
-        width: 31.9%;
-        margin-bottom: 3px !important;
-        display: inline-block;
-        font-size: 10px;
-        padding: 0;
-      }
-
-      .sidebar-social i {
-        display: block;
-        margin: 0 auto 10px auto;
-        width: 32px;
-        height: 32px;
-        margin: 10px auto 0;
-        line-height: 32px;
-        text-align: center;
-        font-size: 20px;
-        color: #444444;
-        margin-top: 0;
-        padding-top: 5px;
-      }
-
-      .sidebar-social a {
-        text-decoration: none;
-        width: 100%;
-        height: 100%;
-        display: block;
-        margin: 0;
-        padding: 0;
-      }
-
-      .sidebar-social a span {
-        color: black;
-        font-size: 15px;
-        padding: 5px 0 10px 0;
-        display: block;
-        text-transform: uppercase;
-        font-family: 'Montserrat';
-        letter-spacing: 1px;
-      }
-      /* CSS para posicionar el bade cerca del carrito*/
-      .cart {
-        position: relative;
-      }
-
-      #cart_menu_num {
-        position: absolute;
-        top: 0;
-        left: 55%;
-        background: rgb(244, 63, 63);
-        width: 15px;
-        height: 15px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        padding: 2px;
-      }
-</style>
-
-  {{--  <a href="{{route('cart.user.main')}}" class="nav-link active icons--login--user  rounded-circle "  height="22px" aria-current="page"> <img src="{{asset('storage/img/icons/cardp.svg')}}" alt=""height="22px"> <a href="" class="btn btn-info rouded-3">1</a></a>  --}}
-{{--  </li>  --}}
- <div class="dropdown  ">
-  <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
-  <ul class="dropdown-menu" aria-labelledby="userView">
-    <h6> Usuario</h6>
-
+<div class="dropdown  ">
+ <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
+ <ul class="dropdown-menu" aria-labelledby="userView">
+   <h6> Usuario</h6>
   <h6>{{session()->get('email')}}</h6>
   <li>
       <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>
@@ -233,106 +146,105 @@
     <h6> Administrador</h6>
   <h6>{{session()->get('email')}}</h6>
   <li>
-      {{--  <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>  --}}
-  </li>
-  <li>
-
     <a class=""  href="#exampleModalToggle">Ajuste</a>
-  </li>
-  <li>
-    {{--  <a href="{{route('logout.admin.index')}}" >Cerrar Sesion</a>  --}}
   </li>
   </ul>
     </div>
  @else
+ {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
  <div class="dropdown  ">
   <a href="" class="btn bg-warning " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-lg-2"></i>Iniciar sesión</a>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
       <li>
-        <a class="" data-bs-toggle="modal" href="#exampleModalToggle">Usuario</a>
+        <a class="" data-bs-toggle="modal" href="#loginUserInicio">Usuario</a>
         <a class="" data-bs-toggle="modal" href="#loginAdmin">Administrador</a>
-
-  </li>
-    </ul>
-  </div>
-
-@endif
-
-  </div>
-</div>
-       </div>
-
-       {{--  @elseif ()  --}}
-
-
-
-
-</div>
+    </li>
+      </ul>
     </div>
-    <a class="navbar-brand d-md-none d-sm-block d-block" href="#">AgrupecVentas   </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    @endif
+  </div>
+  </div>
+  </div>
+  </div>
+      </div>
+
+
+
+
+
+
+
+{{--  ----------------------------- response app --}}
+<button class="navbar-toggler  bg-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+<a class="navbar-brand d-md-none d-sm-block d-block" href="#">AgrupecVentas </a>
+@if (session()->exists('name') && session()->get('rol') === '0')
+<div class="cart-menu align-items-center d-flex d-none- d-md-none- d-block-">
+    <div class="sidebar-social">
+      <ul>
+          <a href="{{route('cart.user.main')}}" class="cart" id="cartHover" title="Facebook"  rel="nofollow" ><i class="fas fa-shopping-cart"></i>
+          <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">{{session()->get('contProducto');}}</span>
+        </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="nav-item d-none- d-md-none- d-sm-block-">
+      <div class="dropdown ">
+          <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
+          <ul class="dropdown-menu" aria-labelledby="userView">
+              <h6> Usuario</h6>
+              <h6>{{session()->get('email')}}</h6>
+              <li>
+                  <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>
+                </li>
+                <li>
+                    <a class=""  href="#exampleModalToggle">Ajuste</a>
+                </li>
+                <li>
+                    <a href="{{route('logout.user.index')}}" >Cerrar Sesion </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+{{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
+@elseif (session()->exists('name') && session()->get('rol') === '4')
+@else
+<a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>
+
+   @endif
+    <div class="offcanvas offcanvas-start gb-info" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">AgrupecVentas
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu
         </h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav row justify-content-end flex-grow-1 pe-3">
-        {{--  <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">Ver producto</a></li>
-        <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">lista producto</a></li>
-        <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">Home</a></li>
-<li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">Nuevos</a></li>
-<li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">Producto</a></li>
-<li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{ route('view.local.list') }}">Nosotros</a></li>
-<li class="nav-item"> <a class="nav-link active icons--style--raya mb-3 " aria-current="page" href="{{ route('view.local.list') }}">Informes</a></li>  --}}
-
-
-     <div class="dropdown  ">
-        <a href="" class="btn bg-warning " href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person-fill me-lg-2"></i>Iniciar sesión</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li>
-         <a class=" dropdown-item btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Usuario</a>
-        </li>
-          </ul>
-        </div>
-
-        {{--  @endauth     --}}
-
-
+            <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{route('vista.index')}}">Home</a></li>
+            <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{route('viewProducto.home.list')}}">Ver Producto</a></li>
+            <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{route('nosotros.home.index')}}">Nosotros</a></li>
+            <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{url('Ayuda')}}">Atencion</a></li>
+            <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="">lista producto</a></li>
       </ul>
       </div>
+
     </div>
+{{--  -----------------------------  --}}
   </div>
 </nav>
-
-
-@php
-//echo session()->get('rol');
-//echo session()->get('avatar');
-@endphp
-
-  @yield('header')
-
-  <!-- hi world -->
-  {{--  $numContact=917204889;  --}}
-
+ @yield('header')
 <footer class="pt-4   footer--one"><br><br>
-  {{--  <div class="footer-wave"  style="height: 150px; margin-top:-30px; overflow: hidden;" >
-  <svg   viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.84,33.05 C276.24,-60.69 263.26,199.83 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff;"></path></svg>
-</div>  --}}
-
-     <div class="container text-muted mb-4">
-       <div class="row ">
+<div class="container text-muted mb-4">
+<div class="row ">
          <div class="container  d-flex align-items-center justify-content-center pt-4">
-
-        <div class="col-12 mb-4 row  ">
-          <div class="col-lg-6 d-flex mb-4 align-items-center justify-content-between">
-           <h5 class="btn--footer--rese text-center me-lg-4">  <img src="{{asset('storage/img/icons/peru.png')}}" class="me-2" width="26px" alt="">  Perú</h5>
-
+             <div class="col-12 mb-4 row  ">
+               <div class="col-lg-6 d-flex mb-4 align-items-center justify-content-between">
+                <h5 class="btn--footer--rese text-center me-lg-4">  <img src="{{asset('storage/img/icons/peru.png')}}" class="me-2" width="26px" alt="">  Perú</h5>
            <h5 class="btn--footer--rese text-center  me-lg-4">Nuevo Productos</h5>
            {{--  <h5 class="btn--footer--rese text-center  me-lg-4 ">Regiones</h5>  --}}
           </div>
@@ -354,7 +266,6 @@
 
             </div>
           </div>
-          {{--  <input type="text">  --}}
          </div>
         </div>
         <div class="col-12 mb-3 ">
@@ -366,11 +277,6 @@
 <input type="submit" class="btn--frm--sub" value="Suscrìbete">
          </form>
           </div>
-         {{--  <div class="col-4 col-md  ">
-           <a class="navbar-brand" href="/"><img src="../img/icons/tienda.svg" class="img-fluid "alt=""></a>
-
-   <small class="d-block mb-3 text-muted text-center">Agrupec S.A.C</small>
-         </div>  --}}
          <div class="col-3 col-md  ">
            <h5 class="text-light">Contáctanos</h5>
           <ul class="list-unstyled text-small">
@@ -404,45 +310,8 @@
               <li><a href="help" class="text-muted" href="#">Ayuda</a></li>
           </ul>
         </div>
-         {{--  <div class="col-12 text-center col-md mb-2  pt-4">
-           <h5 class="text-light">Tools </h5>
-
-
-
- <div class="row  d-flex justify-content-center">
-
-            <div class="col-2 col-md-3 ">
-
-              <a class="icons-view-color rounded-pill"  href="#"><i class="bi bi-screwdriver icons-font-colo"></i></a>
-            </div>
-            <div class="col-2 col-md-3">
-
-              <a class="icons-view-color" href="#" ><i class="bi bi-wrench  icons-font-colo"></i></a>
-            </div>
-            <div class="col-2 col-md-3">
-
-              <a class="icons-view-color" href="#"  ><i class="bi bi-tools  icons-font-colo"></i></a>
-            </div>
-
-            <div class="col-2 col-md-3 ">
-              <a class="icons-view-color" href="#" ><i class="bi bi-hammer  icons-font-colo"></i></a>
-
-            </div>
-         </div>
-
-
-
-
-         </div>  --}}
          <hr class=" d-block d-sm-block d-md-none ">
-         {{--  <div class=" footer--final ">
-           <div class="text-center ">
-             <small class="d-block mb-3 text-muted h6"> ©2021 copyright Agrupec </small>
-           </div>
-         </div>  --}}
-
        </div>
-
     </div>
     <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
       <div class="text-center ">
@@ -465,6 +334,7 @@
  {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
   <script src="{{ asset('js/dataPictur.js') }}"></script>
   <script src="{{ asset('js/addCart.js') }}"></script>
+  <script src="{{ asset('js/btn-msg.js') }}"></script>
 
 
   {{--  <script>

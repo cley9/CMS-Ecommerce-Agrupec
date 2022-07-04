@@ -17,12 +17,13 @@ class VerificationUser
     public function handle(Request $request, Closure $next)
     {
         if (session()->exists('name') && session()->get('rol') === '0') {
+        // if (session()->exists('name') && session()->get('rol') === '0') {
             return $next($request);
-        
+
         } else {
             // return redirect('no-autorizado');
             return redirect('/');
-        
+
             # code...
         }
     }

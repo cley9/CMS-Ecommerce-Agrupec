@@ -35,6 +35,9 @@ Route::get('/Admin-login', [LoginController::class ,'loginUser'] )->name('loginU
 Route::get('/Login-admin', [LoginController::class ,'loginAdmin'] )->name('loginAdmin.admin.main');
 Route::get('logout',[LoginController::class, 'logout'] )->name('logout.user.index');
 // Route::post('/Admin-logout',[LoginController::class, 'logout'] )->name('logout.user.index');
+Route::get('/createUser',[LoginController::class, 'createUser'] )->name('create.user.index');
+Route::get('/validarUser/{email}',[LoginController::class, 'validarUser'] )->name('validar.user.index');
+Route::get('loginLocalUser',[LoginController::class, 'loginLocalUser'] )->name('loginLocalUser.user.index');
 
 Route::get('user',[LoginController::class, 'indexHome'] )->name('loginUser.proceso.index');
 Route::get('/Nosotros', [ViewController::class ,'viewNosotros'] )->name('nosotros.home.index');
