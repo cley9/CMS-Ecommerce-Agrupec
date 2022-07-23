@@ -18,20 +18,20 @@ class LoginController extends Controller
 {
 function loginAdmin(Request $request){
   $credencials=[
-      'name'=>$request->input('nombre'),
       'email'=>$request->input('email'),
       'password'=>$request->input('password'),
-    //   'rol'=>$request->input('userR')
     ];
     if (Auth::attempt($credencials)) {
-        // return "corecto";
-        session(['name'=>$request->input('nombre')]);
-        // session(['avatar'=>'']);
         session(['email'=>$request->input('email')]);
         session(['rol'=>'4']);
-// return redirect()->route('vista.index');
-return view('admin.home');
-// return "exit";
+        return view('admin.home');
+        //   'name'=>$request->input('nombre'),
+        //   'rol'=>$request->input('userR')
+        // return "corecto";
+        // session(['name'=>$request->input('nombre')]);
+        // session(['avatar'=>'']);
+        // return "exit";
+        // return redirect()->route('vista.index');
 }
 else{
     // return "not exit";
@@ -153,17 +153,24 @@ function loginLocalUser(Request $request){
       ];
       if (Auth::attempt($credencials)) {
 
-          return "corecto";
+
           session(['name'=>$request->input('nombre')]);
           session(['email'=>$request->input('email')]);
           session(['rol'=>'0']);
+          session(['avatar'=>'http://127.0.0.1:8000/storage/img/icons/userLogin.png']);
+
+        //   return "corecto";
+        //   session(['name'=>$google_user->name]);
+// session(['email'=>$google_user->email]);
+// session(['rol'=>'0']);
         //   session(['avatar'=>$google_user->avatar]);
 
   return redirect()->route('vista.index');
 //   return view('admin.home');
 //   return "exit";
       }else{
-  return "fallido user";
+          return redirect()->route('vista.index');
+        //   return "fallido user";
 
       }
 

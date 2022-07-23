@@ -5,10 +5,10 @@
                 @method('GET')
                 @csrf
                 <h2 class="fw-normal text-center mb-4">Iniciar Sesion</h2>
-                    <div class="mb-3">
+                    {{--  <div class="mb-3">
                       <input type="hidden" name="userR" value="1">
                       <input type="text" class="form-control input--frm--adminLog" name="nombre" placeholder="Ingrese su nombre" required/>
-                  </div>
+                  </div>  --}}
                   <div class="mb-3">
                       <input type="email" class="form-control input--frm--adminLog" id="exampleInputEmail1"  name="email" placeholder="Tu correo electronico " required/>
                   </div>
@@ -22,3 +22,6 @@
       </div>
         </div>
       </div>
+
+
+

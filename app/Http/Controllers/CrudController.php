@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 // --
 use Illuminate\Support\Facades\DB;
 use App\Models\Producto;
-// -----fecha 
+// -----fecha
 use Carbon\Carbon;
 
 // --------------- storage y img
@@ -16,19 +16,19 @@ use Illuminate\Support\Facades\Hash;
 
 class CrudController extends Controller
 {
- 
+
 public function list(){
 $cliente=Producto::all();
      return view('Admin.lista',compact('cliente'));
     //  return view('Admin.lista');
 // return $cliente;
     }
-    
+
     public function viewEdit($id){
         $adminProducto= Producto::where('id',$id)->get();
         return json_encode($adminProducto);
     }
-    
+
     public function save(Request $request){
         // $cliente=Producto::all();
    $fecha = Carbon::now();
@@ -36,7 +36,7 @@ $cliente=Producto::all();
    $aletImg=rand(1,100000);
    $img=$aletImg.'.'.$extImg;
    $path = $request->file('imagen')->storeAs('public/img/Productos/',$img );
-    $cliente=new Producto;
+    $cliente=new Producto();
     $cliente->nombre=$request->input('Pnombre');
     $cliente->precio=$request->input('Pprecio');
     $cliente->newPrecio=$request->input('PnewPre');
@@ -59,7 +59,7 @@ $cliente=Producto::all();
     Storage::disk('local')->delete('public/img/Productos/'.$img.''); //Cuando se usa el controlador public o local Puede eliminar la foto del perfil anterior como este., elimina el archivo
      return redirect()->route('list.admin.list'); //--esto funciona para el delte
     }
-    
+
     public function update(Request $request){
         $cliente=Producto::find($request->input('Pid'));
         $fecha = Carbon::now();

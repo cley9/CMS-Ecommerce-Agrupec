@@ -22,6 +22,9 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::get('/slay', [ViewController::class ,'viewSlayderMain'] )->name('slayderMain.index');
+Route::get('/inserSlayderMain', [ViewController::class ,'inserSlayderMain'] )->name('slayderMain.index');
 Route::get('/', [ViewController::class ,'view'] )->name('vista.index');
 // Route::get('/Producto-view', [ViewController::class ,'Producto'] )->name('view.local.list');
 Route::get('/Producto-view', [ViewController::class ,'Producto'] )->name('viewProducto.home.list');
@@ -43,8 +46,8 @@ Route::get('user',[LoginController::class, 'indexHome'] )->name('loginUser.proce
 Route::get('/Nosotros', [ViewController::class ,'viewNosotros'] )->name('nosotros.home.index');
 Route::get('/Contactenos', [ViewController::class ,'viewContacto'] )->name('contactenos.home.index');
 Route::get('/View-page/{id}', [ViewController::class ,'viewProductoId'] )->name('View.home.index');
-Route::middleware('VerificationUser')->group(function(){
 
+Route::middleware('VerificationUser')->group(function(){
 
 Route::get('/GetCart', [UserController::class ,'viewCartUser'] )->name('viewCartUser.user.main');
 Route::get('/Cart', [UserController::class ,'cartUser'] )->name('cart.user.main');

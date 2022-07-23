@@ -13,15 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        // la creacion de los id
-        Schema::create('tbl_cart', function (Blueprint $table) {
-            $table->id('id');  //bigInteger se pone para todo los id para considan
-            $table->foreignId('userId');
-            $table->foreignId('productoId');
-            $table->integer('cantidad')->nullable();  //bigInteger se pone para todo los id para considan
+        Schema::create('tbl_slayder_main', function (Blueprint $table) {
+            $table->id();
+            $table->string('nombre',90);
+            $table->string('descripcion',191);
+            $table->string('imagen',200);
             $table->timestamps();
-
-
         });
     }
 
@@ -32,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tbl_slayder_main');
     }
 };

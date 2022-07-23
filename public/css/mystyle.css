@@ -6,9 +6,19 @@
 @import url("style_conts.css");
 @import url("style-box.css");
 @import url("style-modalCard.css");
+@import url("style-pdf.css");
 /* @import url("whats-1.css"); */
 
 @import url("style-btn.css");
+/*  */
+
+
+.fa{
+    background: red;
+        }
+
+
+        /*  */
 .foda--view{
   color:#828C8A; font-size:60px;
 }

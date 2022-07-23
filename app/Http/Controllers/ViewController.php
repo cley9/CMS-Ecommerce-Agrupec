@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Producto;
 use App\Models\Cart;
-
+use App\Models\SlayderMain;
 // ----
 // use Illuminate\Support\Facades\DB;
 class ViewController extends Controller
@@ -38,8 +38,12 @@ class ViewController extends Controller
       $contProducto +=$protCanUser[$reArray]->cantidad;
         }
         session(['contProducto'=>$contProducto]);
+        $data=12;
+        $viewSlayderMain=SlayderMain::all();
+
+
         // return view('home', compact('producto','slayderProducto','contProducto'));
-        return view('home', compact('producto','slayderProducto'));
+        return view('home', compact('producto','slayderProducto','viewSlayderMain'));
     }
 
     function viewNosotros(){
@@ -53,6 +57,5 @@ class ViewController extends Controller
     function viewHelp(){
         return view('help');
     }
-
 
 }

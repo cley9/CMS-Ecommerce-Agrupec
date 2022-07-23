@@ -187,7 +187,8 @@ return [
     */
 
     'use_route_url' => false,
-    'dashboard_url' => 'Admin-list', // la ruda de nuestra web de admin
+    'dashboard_url' => '/Admin', // la ruda de nuestra web de admin
+    // 'dashboard_url' => 'Admin-list', // la ruda de nuestra web de admin
     'logout_url' => 'Admin-logout',
     'login_url' => 'login',
     'register_url' => 'register',
@@ -246,19 +247,30 @@ return [
             // 'url'  => '/Admin-list',
             'can'  => 'manage-blog',
         ],
-        // ---- my producto cley
+        // ---- my producto y mas  del menu vertical cley
         ['header' => 'Productos y mas'],
         [
             'text' => 'Productos',
             'url'  => 'Admin-list',
             'icon' => 'fas fa-fw fa-user',
         ],
+        // [
+        //     'text' => 'Agregar productos',
+        //     'url'  => '/Admin-factura',
+        //     'icon' => 'fas fa-fw fa-lock',
+        // ],
+        // --- nav items de generar factura
         [
-            'text' => 'Agregar productos',
-            'url'  => 'admin/settings',
+            'text' => 'Generar factura',
+            'url'  => '/Admin-factura',
             'icon' => 'fas fa-fw fa-lock',
         ],
-        // --
+        [
+            'text' => 'Infocorp',
+            'url'  => '/Admin-infocorp',
+            'icon' => 'fas fa-fw fa-lock',
+        ],
+         // --
         [
             'text'        => 'Informe',
             // 'url'         => 'admin/pages',

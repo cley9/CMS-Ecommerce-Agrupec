@@ -16,7 +16,8 @@ class VerificationAdmin
      */
     public function handle(Request $request, Closure $next)
     {
-        if (session()->exists('name') && session()->get('rol') === '4') {
+        if (session()->exists('email') && session()->get('rol') === '4') {
+            // if (session()->exists('name') && session()->get('rol') === '4') {
             return $next($request);
         }
         else{

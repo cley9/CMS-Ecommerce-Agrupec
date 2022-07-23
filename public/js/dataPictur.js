@@ -143,3 +143,16 @@ function update_(){
 // )
 // alert('dfadf');
 // console.log("dfadf");
+
+function idCatalogo(id){
+// console.log(id);
+fetch('/Admin-idCatalogo/'+id+'').then(data=>data.json()).then(function(data){
+console.log(data);
+updateCatalogoIdDat.value=data.id;
+updateCatalogoImgDat.value=data.imagen;
+updateCatalogoNombre.value=data.nombre;
+updateCatalogoDescripcion.value=data.descripcion;
+updateCatalogoImg.src='storage/img/SlayderMain/'+data.imagen+'';
+// updateCatalogoFile.file='12';
+});
+}

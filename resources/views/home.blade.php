@@ -7,65 +7,43 @@
       </style>
 
 
-{{--  <!-- --------------------------------------------------------------------------------------slayder_img--->  --}}
-<section class="">
-<div id="carouselExampleIndicators" class="carousel slide bg-primary" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
 
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
-
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+      {{--  <!-- --------------------------------------------------------------------------------------slayder_img--->  --}}
+      <section class="">
+          <div id="carouselExampleIndicators" class="carousel slide bg-primary" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                  @php
+                  $slayActivi=0; $slayBtn=0;
+                  @endphp
+                  @foreach ($viewSlayderMain as $itemBtn)
+                  @php
+                      $slayBtn++;
+                  @endphp
+                  @if ($slayBtn===1)
+                  <button type="button" data-bs-target="#items" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  @else
+                  <button type="button" data-bs-target="#items" data-bs-slide-to="{{$slayBtn-1}}" aria-label="Slide {{$slayBtn}}"></button>
+                  {{--  <button type="button" data-bs-target="#items" data-bs-slide-to="1" aria-label="Slide {{$slayBtn}}"></button>  --}}
+                      @endif
+                  @endforeach
 
   </div>
   <div class="carousel-inner ">
-    <div class="carousel-item active ">
+     @foreach ($viewSlayderMain as $itemSlay)
+        @php
+        $slayActivi+=1;
+        @endphp
+        @if ($slayActivi===1)
+        <div class="carousel-item active">
+            <img src="{{asset('storage/img/SlayderMain/'.$itemSlay->imagen.'')}}" class="d-block w-100" alt="..." height="410px">
+        </div>
+        @else
+        <div class="carousel-item ">
+            <img src="{{asset('storage/img/SlayderMain/'.$itemSlay->imagen.'')}}" class="d-block w-100" alt="..." height="410px">
+        </div>
+                @endif
+      @endforeach
 
-      <img src="{{asset('storage/img/prin_slyder/slTubos3.png')}}" class="d-block w-100" alt="..." height="410px">
-
-    </div>
-
-    <div class="carousel-item">
-   <img src="{{asset('storage/img/prin_slyder/slPavco.png')}}" class="d-block w-100 card-img" alt="..."height="410px">
-    </div>
-    <div class="carousel-item">
-           <img src="{{asset('storage/img/prin_slyder/slPavco2.png')}}" class="d-block w-100" alt="..." height="410px">
-
-
-
-    </div>
-     <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos2.png')}}" class="d-block w-100" alt="..." height="410px">
-
-    </div>
-    <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos4.png')}}" class="d-block w-100" alt="..." height="410px">
-
-    </div>
-      <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos5.png')}}" class="d-block w-100" alt="..." height="410px">
-
-    </div>
-      <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos6.png')}}" class="d-block w-100" alt="..." height="410px">
-    </div>
-
-      <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos7.png')}}" class="d-block w-100" alt="..." height="410px">
-    </div>
-      <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slTubos8.png')}}" class="d-block w-100" alt="..." height="410px">
-    </div>
-     <div class="carousel-item">
-      <img src="{{asset('storage/img/prin_slyder/slCajas.png')}}" class="d-block w-100" alt="..." height="410px">
-    </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"  data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -116,7 +94,7 @@
 </button>
 </div>
 </div>
- <h1>hi</h1>
+ {{--  <h1>hi</h1>  --}}
  {{--  <div class="alert {{ Session::get('flash_type') }}">
     <h3>{{ Session::get('flash_message') }}</h3>
 

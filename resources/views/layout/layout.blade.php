@@ -19,14 +19,17 @@
               {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">   --}}
 {{--  icons  --}}
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
-              <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
-
-
+        <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
+{{--  <link rel="stylesheet" href="{{asset('resources/css/app.css')}}">  --}}
+{{--  <link rel="stylesheet" href="{{asset('/storage/css/app.css')}}">  --}}
+{{--  <link rel="stylesheet" href="{{asset('app.css')}}">  --}}
 
     {{--  css/style.css  --}}
     {{--  <link href="{{ asset('js/dataPictur.js') }}" rel="stylesheet">  --}}
     <title>Document</title>
 </head>
+
+
 <body>
 
 
@@ -92,13 +95,12 @@
 
 </nav>
 <br><br><br>
-
 {{--  main  --}}
 <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
   <div class="container-fluid">
     <div class="container d-none d-sm-none d-md-block">
 <div class="row link--heder--m  d-flex align-items-center">
-<div class="col-lg-1 bg-info">
+<div class="col-lg-1 ">
   <b><a class="navbar-brand text-success  h-3 text--nav--home" href="{{route('vista.index')}}">AgrupecVentas</a></b>
   {{--  <a href="{{route('vista.index')}}" class="navbar-brand text-success  h-3 text--nav--home" >AgrupecVentas</a>  --}}
 </div>
@@ -122,6 +124,7 @@
     </ul>
   </div>
 </div>
+
 <div class="dropdown  ">
  <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
  <ul class="dropdown-menu" aria-labelledby="userView">
@@ -143,7 +146,8 @@
  <div class="dropdown  ">
   <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{asset('storage/img/icons/person-circle.svg')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
   <ul class="dropdown-menu" aria-labelledby="userView">
-    <h6> Administrador</h6>
+    {{--  <h6> Administrador</h6>  --}}
+    <a href="{{url('/Admin')}}">Administrador</a>
   <h6>{{session()->get('email')}}</h6>
   <li>
     <a class=""  href="#exampleModalToggle">Ajuste</a>
@@ -170,7 +174,7 @@
       </div>
 
 
-
+      {{--  <h3 class="fa">gaaaaaaaa</h3>  --}}
 
 
 
@@ -180,6 +184,8 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 <a class="navbar-brand d-md-none d-sm-block d-block" href="#">AgrupecVentas </a>
+<div class="d-md-none d-sm-block d-block ">
+
 @if (session()->exists('name') && session()->get('rol') === '0')
 <div class="cart-menu align-items-center d-flex d-none- d-md-none- d-block-">
     <div class="sidebar-social">
@@ -211,10 +217,14 @@
         </div>
     </div>
 
-{{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
+    {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 @elseif (session()->exists('name') && session()->get('rol') === '4')
+
 @else
 <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>
+{{--  <div class="d-md-none d-sm-block d-block ">
+
+</div>  --}}
 
    @endif
     <div class="offcanvas offcanvas-start gb-info" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -222,7 +232,7 @@
         <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu
         </h5>
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
+    </div>
       <div class="offcanvas-body">
         <ul class="navbar-nav row justify-content-end flex-grow-1 pe-3">
             <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{route('vista.index')}}">Home</a></li>
@@ -231,12 +241,15 @@
             <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="{{url('Ayuda')}}">Atencion</a></li>
             <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page" href="">lista producto</a></li>
       </ul>
-      </div>
-
     </div>
+
+</div>
+</div>
 {{--  -----------------------------  --}}
   </div>
 </nav>
+
+
  @yield('header')
 <footer class="pt-4   footer--one"><br><br>
 <div class="container text-muted mb-4">

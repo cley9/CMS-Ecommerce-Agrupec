@@ -8,15 +8,15 @@
 
 @section('content')
     <p>Welcome to this beautiful admin panel.</p>
-    <h4>dfadfafd</h4>
 
-    
-    <div class="col-md-3 col-sm-6 col-12">
-    <a href="{{route('list.admin.list')}}">
-      <div class="info-box bg-teal">
-            <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
-            <div class="info-box-content">
-                  <span class="info-box-text-">Agregar nuevos productos</span>
+<div class="row">
+
+    <div class="col-md-3 col-sm-6 col-12 ">
+        <a href="{{route('list.admin.list')}}">
+            <div class="info-box bg-teal">
+                <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+                <div class="info-box-content">
+                    <span class="info-box-text-">Agregar nuevos productos</span>
                   <span class="info-box-number">41,410</span>
                   <div class="progress">
                         <div class="progress-bar" style="width: 70%"></div>
@@ -29,28 +29,47 @@
 </a>
 </div>
 
+<div class="col-md-3 col-sm-6 col-12">
+    <a href="{{route('list.admin.catalogo')}}">
+        {{--  <a href="{{route('form.admin.catalogo')}}">  --}}
+      <div class="info-box bg-info">
+            <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+            <div class="info-box-content">
+                  <span class="info-box-text-">Agregar nuevos catalogos</span>
+                  <span class="info-box-number">41,410</span>
+                  <div class="progress">
+                      <div class="progress-bar" style="width: 70%"></div>
+                    </div>
+                    <span class="progress-description">
+                        70% Increase in 30 Days
+                    </span>
+                </div>
+            </div>
+        </a>
+    </div>
 
 
-      <div class="col-md-3 col-sm-6 col-12">
-      <div class="info-box bg-warning">
-      <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
+    <div class="col-md-3 col-sm-6 col-12">
+        <div class="info-box bg-warning">
+            <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
       <div class="info-box-content">
       <span class="info-box-text">Events</span>
       <span class="info-box-number">41,410</span>
       <div class="progress">
       <div class="progress-bar" style="width: 70%"></div>
-      </div>
+    </div>
       <span class="progress-description">
       70% Increase in 30 Days
       </span>
+    </div>
+
       </div>
-      
-      </div>
-      
+
       </div>
 
 
 
+    </div>
 
       {{--    --}}
 
