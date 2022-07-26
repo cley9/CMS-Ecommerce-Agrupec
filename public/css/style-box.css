@@ -129,7 +129,7 @@ a.ver-mas-a .ver-mas-a:hover {
   max-width: 340px;
 }
 .form--frm--adminLog{
-height: 21rem;
+height: 18rem;
 }
 .input--frm--adminLog{
 background: #E7F9EB;
@@ -260,3 +260,20 @@ border-color:#FFFFFF;
     font-size: 18px;
     color: #e50030;
   } */
+
+  /* -------slayder de search */
+.slay--carusel{
+    background: white;
+}
+.box-slay-search{
+    /* border-color: red; */
+}
+
+
+/* ------search validar */
+
+.box-search-validar{
+    /* background-color: #E3FAED; */
+    background-color: #57CAA7;
+    width: 50rem;
+}

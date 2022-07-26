@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Producto;
 use Illuminate\Http\Request;
 // -----
 use App\Models\SlayderMain;
@@ -80,5 +81,11 @@ class AdminController extends Controller
         // return view('Admin.home');
         return redirect()->route('list.admin.catalogo');
 
+    }
+
+    function searchProductoLista($searchProducto){
+        $searchProducto=Producto::where('nombre','like','%'.$searchProducto.'%')->get();
+        // return response()->json($searchProducto);
+        return $searchProducto;
     }
 }

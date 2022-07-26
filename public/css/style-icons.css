@@ -54,9 +54,9 @@ color: #FDFDFD;
 /*.icons--font--color--login{*/
   /* background-color: ;:orange; */
 /*}*/
-
+/* --------- form  */
 .input-icono {
-  background-image: url('../img/icons/search.svg');
+  background-image: url('http://127.0.0.1:8000/storage/img/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 26px center;
   background-size: 20px;
@@ -64,7 +64,33 @@ color: #FDFDFD;
   align-items: center;
   padding-left: 58px;
   }
+.frm--search--home{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+/* .frm--search--home:hover{
+    color: #186A3B;
+} */
+.input--search--home{
+    height: 50px;
+    border-color:none;
+    /* box-shadow: 0px 1px  12px #6ABEA5; */
 
+}
+.input--search--home:hover{
+    border-color: #6ABEA5;
+    box-shadow: 0px 1px  12px #6ABEA5;
+
+}
+/* .input-icono {
+  background-image: url('../img/icons/search.svg');
+  background-repeat: no-repeat;
+  background-position: 26px center;
+  background-size: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 58px;
+  } */
 
 /* ------------------------------------------------ */
 a {
@@ -135,7 +161,7 @@ background-size: 100% 2px;
   text-align: center;
 } */
 
-.input-icono {
+/* .input-icono {
   background-image: url('../img/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 26px center;
@@ -143,7 +169,7 @@ background-size: 100% 2px;
   display: flex;
   align-items: center;
   padding-left: 58px;
-  }
+  } */
   /* ----------------this are the view pss ----- */
 .input-wrapper {
   position: relative;

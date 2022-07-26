@@ -75,3 +75,45 @@ console.log('esta vacio los demas campos');
 }
 });
 // }
+
+
+
+// login user
+const fromLoginUser=document.getElementById('formLoginUser');
+fromLoginUser.addEventListener('submit',function(e){
+    e.preventDefault();
+    const email=e.target.emailLoginUser.value;
+    const password=e.target.passwordLoginUser.value;
+    fetch('/loginLocalUser/'+email+'/'+password+'').then(data =>data.json()).
+    then(function(data){
+        // console.log(data);
+        if (data.code==200) {
+            msjOk();
+            location.href='/';
+        } else {
+    msjError();
+}
+});
+});
+
+
+// login admin
+const formLoginAdmin=document.getElementById('formLoginAdmin');
+formLoginAdmin.addEventListener('submit',function(e){
+    e.preventDefault();
+    const email=e.target.emailLoginAdmin.value;
+    const password=e.target.passwordLoginAdmin.value;
+    fetch('/Login-admin/'+email+'/'+password+'').then(data =>data.json()).
+    then(function(data){
+        // console.log(data);
+        if (data.code==200) {
+            msjOk();
+            location.href='/Admin';
+        } else {
+    msjError();
+    console.log('error');
+}
+});
+});
+
+

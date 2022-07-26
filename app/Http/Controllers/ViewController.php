@@ -58,4 +58,13 @@ class ViewController extends Controller
         return view('help');
     }
 
+    function search(Request $request){
+        $search=Producto::where('nombre','like','%'.$request->search.'%')->get();
+        $slaySearch=Producto::where('nombre','like','%'.$request->search.'%')->limit(8)->get();
+        $searchExists=Producto::where('nombre','like','%'.$request->search.'%')->exists();
+
+        return view('search',compact('search','slaySearch','searchExists'));
+        // return $request->search;
+        // return $search;
+    }
 }

@@ -23,12 +23,15 @@ use App\Http\Controllers\admin\InfocorpController;
 // });
 
 Route::middleware('VerificationAdmin')->group(function(){
-      Route::get('/Admin', function(){
-            return view('admin.home');
-      });
-//       Route::get('/Admin-delete/{id}', function(){
-//         return view('Admin.catalogoSlayder');
-//   });
+    Route::get('/Admin', function(){
+        return view('admin.home');
+    });
+    //       Route::get('/Admin-delete/{id}', function(){
+        //         return view('Admin.catalogoSlayder');
+        //   });
+        // buscador de productos
+Route::get('/Admin-search/{search}', [AdminController::class , 'searchProductoLista'])->name('search.admin.producto');
+
 // this is infocorp
 Route::get('/Admin-infocorp', [InfocorpController::class ,'main'])->name('main.admin.infocorp');
 Route::get('/Admin-infocorpSearch/{num}', [InfocorpController::class ,'searchDni'])->name('search.admin.infocorp');

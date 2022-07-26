@@ -28,6 +28,7 @@
                 <x-adminlte-button class="{{ $makeCloseButtonClass }}"
                     data-dismiss="modal" label="Close"/>
             @endisset
+            <h1>dfa</h1>
         </div>
 
     </div>

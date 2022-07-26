@@ -9,9 +9,10 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" /> <!--nw verson--->
     <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
+    <link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}"/>
 
 
-    {{--  <link type="text/css" rel="shortcut icon" href="{{ asset('img/logo.jpg') }}"/>
+    {{--
               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  --}}
               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -26,33 +27,27 @@
 
     {{--  css/style.css  --}}
     {{--  <link href="{{ asset('js/dataPictur.js') }}" rel="stylesheet">  --}}
-    <title>Document</title>
+    <title>Agrupec</title>
 </head>
 
 
 <body>
 
-
 <div class="rounded-2 ir-arriba ">
-<!--<i class="bi bi-arrow-up"></i>-->
 <i class="bi bi-chevron-up"></i>
 </div>
-<!--<a href="./ApiGoogle/f.php?logout=tru">bas</a>-->
 
-
-<div class="container text-center mb-4 h-100  d-flex justify-content-center align-items-center">
-  <div class="col-10 col-md-5 ">
-    <form action="" id="form" class="">
-      <input type="search" name="busqueda" id="id_search" class=" input-icono form-control me-2 rounded-pill " placeholder="Producto a buscar..." >
-
-    </form>
-  </div>
-</div>
-<div class="pt-4" id="response"> </div>
-
-@include('Admin.login')
-@include('Admin.loginAdmin')
+@include('Admin.modalLoginUser')
+@include('Admin.modalLoginAdmin')
 <br><br><br>
+<div class="container text-center mb-4 h-100  d-flex justify-content-center align-items-center">
+    <div class="col-10 col-md-5 ">
+      <form action="{{route('search.home.search')}}" id="form" class="frm--search--home">
+        <input type="search" name="search" id="id_search" class=" input-icono input--search--home form-control me-2 rounded-pill- " placeholder="Menu a buscar..." >
+
+      </form>
+    </div>
+  </div>
 {{--  response -- web barra  --}}
 <nav class=" navbar-light ">
   <div class="container  nav--link  ">
@@ -86,9 +81,9 @@
            <a  class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6002 ǀ</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000  ǀ</a>
            {{--  <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>  --}}
-           <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra  ǀ</a>
-           <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
-           <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
+           <a  class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra  ǀ</a>
+           <a  class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
+           <a  class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
             </div>
           </div>
   </div>
@@ -141,7 +136,7 @@
   </li>
   </ul>
     </div>
- @elseif (session()->exists('name') && session()->get('rol') === '4')
+ @elseif (session()->exists('email') && session()->get('rol') === '4')
  <a class="nav-link active icons--style--raya" href="{{ route('list.admin.list')  }}">lista producto</a>
  <div class="dropdown  ">
   <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{asset('storage/img/icons/person-circle.svg')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
@@ -218,7 +213,7 @@
     </div>
 
     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
-@elseif (session()->exists('name') && session()->get('rol') === '4')
+@elseif (session()->exists('email') && session()->get('rol') === '4')
 
 @else
 <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>
@@ -248,6 +243,7 @@
 {{--  -----------------------------  --}}
   </div>
 </nav>
+
 
 
  @yield('header')
@@ -345,9 +341,13 @@
 
 
  {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
+  <script src="{{ asset('js/msj.js') }}"></script>
   <script src="{{ asset('js/dataPictur.js') }}"></script>
   <script src="{{ asset('js/addCart.js') }}"></script>
   <script src="{{ asset('js/btn-msg.js') }}"></script>
+  <script src="{{ asset('js/btn-up.js') }}"></script>
+
+
 
 
   {{--  <script>

@@ -18,7 +18,9 @@ class CrudController extends Controller
 {
 
 public function list(){
-$cliente=Producto::all();
+// $cliente=Producto::all();
+$cliente=Producto::paginate(8);
+
      return view('Admin.lista',compact('cliente'));
     //  return view('Admin.lista');
 // return $cliente;

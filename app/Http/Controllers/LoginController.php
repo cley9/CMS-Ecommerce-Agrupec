@@ -16,41 +16,37 @@ use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
 {
-function loginAdmin(Request $request){
+function loginAdmin($email,$password){
   $credencials=[
-      'email'=>$request->input('email'),
-      'password'=>$request->input('password'),
+      'email'=>$email,
+      'password'=>$password
     ];
     if (Auth::attempt($credencials)) {
-        session(['email'=>$request->input('email')]);
+        session(['email'=>$email]);
         session(['rol'=>'4']);
-        return view('admin.home');
-        //   'name'=>$request->input('nombre'),
-        //   'rol'=>$request->input('userR')
-        // return "corecto";
-        // session(['name'=>$request->input('nombre')]);
-        // session(['avatar'=>'']);
-        // return "exit";
-        // return redirect()->route('vista.index');
-}
-else{
-    // return "not exit";
-return redirect()->route('vista.index');
-    }
+        // return view('admin.home');
+        return response()->json(['status'=>'ok', 'code'=>'200']);
+    }else{
+        return response()->json(['status'=>'error', 'code'=>'404']);
+      }
 }
 
-function loginUser(Request $request){
-    $Credential=$request->only('email','nombre');
-    // Auth::attempt(['email' => $email, 'password' => $password]);
-    if(Auth::attempt($Credential)){
-    return "exist tose";
-        // return $request->all();
-        // return $Credential;
-    }
-    else{
-        return "fallo";
-    }
-    }
+function loginLocalUser($email,$password){
+    $credencials=[
+        'email'=>$email,
+        'password'=>$password
+    ];
+    if (Auth::attempt($credencials)) {
+        session(['name'=>'Usuario']);
+        session(['email'=>$email]);
+        session(['rol'=>'0']);
+        session(['avatar'=>'http://127.0.0.1:8000/storage/img/icons/userLogin.png']);
+        return response()->json(['status'=>'ok', 'code'=>'200']);
+    }else{
+        return response()->json(['status'=>'error', 'code'=>'404']);
+      }
+      }
+
 
     function loginGoogle(){
 return Socialite::driver('google')->redirect();
@@ -144,37 +140,9 @@ function validarUser($emailExists){
 
 // }
 // }
-function loginLocalUser(Request $request){
-    $credencials=[
-        // 'name'=>$request->input('nombre'),
-        'email'=>$request->input('email'),
-        'password'=>$request->input('pass')
-      //   'rol'=>$request->input('userR')
-      ];
-      if (Auth::attempt($credencials)) {
+//   'rol'=>$request->input('userR')
+// 'name'=>$request->input('nombre'),
 
 
-          session(['name'=>$request->input('nombre')]);
-          session(['email'=>$request->input('email')]);
-          session(['rol'=>'0']);
-          session(['avatar'=>'http://127.0.0.1:8000/storage/img/icons/userLogin.png']);
-
-        //   return "corecto";
-        //   session(['name'=>$google_user->name]);
-// session(['email'=>$google_user->email]);
-// session(['rol'=>'0']);
-        //   session(['avatar'=>$google_user->avatar]);
-
-  return redirect()->route('vista.index');
-//   return view('admin.home');
-//   return "exit";
-      }else{
-          return redirect()->route('vista.index');
-        //   return "fallido user";
-
-      }
-
-    // return $request->all();
-}
 }
 
