@@ -27,31 +27,31 @@ class UserController extends Controller
            return  $cartArray->productos;
             }
 function userAddCart($idProducto,$cantidad){
-
+    // return 23;
+    $user =User::with(['productos'])->find(session()->get('userId')); // id user
+    $exitProducto=cart::where('userId',session()->get('userId'))->where('productoId','=',$idProducto)->exists();
+                if ($exitProducto) {
+                $getCantPro=cart::where('userId',session()->get('userId'))->where('productoId','=',$idProducto)->get();
+                $newCantPro=$getCantPro[0]->cantidad+$cantidad;
+                $user->productos()->updateExistingPivot($idProducto, [
+                    'cantidad' => $newCantPro,
+                ]);
+                return redirect()->route('cart.user.main');
+                // return 'esta lleno mi king'.$getCantPro[0]->cantidad.' -- '.$newCantPro;
+            } else {
+                $fecha = Carbon::now();
+                $addCart=new Cart;
+                $addCart->userId= session()->get('userId');
+                $addCart->productoId=$idProducto;
+                $addCart->cantidad=$cantidad;
+                $addCart->created_at=$fecha;
+                $addCart->save();
+                // return 'esta vacio';
+            }
 
     // foreach($cantidad as $keyPro =>$idProducto ){
             // $data=new ();
             // $data->cantidad=
-        $user =User::with(['productos'])->find(session()->get('userId')); // id user
-        $exitProducto=cart::where('userId',session()->get('userId'))->where('productoId','=',$idProducto)->exists();
-                    if ($exitProducto) {
-                    $getCantPro=cart::where('userId',session()->get('userId'))->where('productoId','=',$idProducto)->get();
-                    $newCantPro=$getCantPro[0]->cantidad+$cantidad;
-                    $user->productos()->updateExistingPivot($idProducto, [
-                        'cantidad' => $newCantPro,
-                    ]);
-                    return redirect()->route('cart.user.main');
-                    // return 'esta lleno mi king'.$getCantPro[0]->cantidad.' -- '.$newCantPro;
-                } else {
-                    $fecha = Carbon::now();
-                    $addCart=new Cart;
-                    $addCart->userId= session()->get('userId');
-                    $addCart->productoId=$idProducto;
-                    $addCart->cantidad=$cantidad;
-                    $addCart->created_at=$fecha;
-                    $addCart->save();
-                    // return 'esta vacio';
-                }
                 // return redirect()->route('cart.user.main');
                 // $cantProducto=$getCantPro[0]->cantidad;
                 // $cantProducto='12';

@@ -114,7 +114,7 @@
   <div class="sidebar-social">
     <ul>
         <a href="{{route('cart.user.main')}}" class="cart" id="cartHover" title="Facebook"  rel="nofollow" ><i class="fas fa-shopping-cart"></i>
-        <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">{{session()->get('contProducto');}}</span>
+        <span id="cart_menu_num" data-action="cart-can" class="badge rounded-circle">{{session()->get('countCart');}}</span>
       </a>
       </li>
     </ul>

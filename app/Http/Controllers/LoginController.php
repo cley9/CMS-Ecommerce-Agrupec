@@ -41,7 +41,9 @@ function loginLocalUser($email,$password){
         session(['email'=>$email]);
         session(['rol'=>'0']);
         session(['avatar'=>'http://127.0.0.1:8000/storage/img/icons/userLogin.png']);
-        return response()->json(['status'=>'ok', 'code'=>'200']);
+        $userId=User::where('email',session()->get('email'))->where('email',session()->get('email'))->get();
+        session(['userId'=>$userId[0]->id]);
+        return response()->json(['status'=>'ok', 'code'=>'200', 'data'=>$userId]);
     }else{
         return response()->json(['status'=>'error', 'code'=>'404']);
       }
@@ -78,7 +80,8 @@ session(['rol'=>'0']);
          'external_auth'=> 'google',
         ]);
           Auth::login($new_user);
-          $userId=User::where('name',session()->get('name'))->where('email',session()->get('email'))->get();
+          $userId=User::where('external_id',$google_user->id)->where('email',session()->get('email'))->get();
+        //   $userId=User::where('name',session()->get('name'))->where('email',session()->get('email'))->get();
           session(['userId'=>$userId[0]->id]);// [0] this para quitar el [ {json }] y solo vea { json} para poder acceder
        return redirect()->route('vista.index');
                 }
