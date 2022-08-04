@@ -61,6 +61,7 @@ session(['name'=>$google_user->name]);
 session(['avatar'=>$google_user->avatar]);
 session(['email'=>$google_user->email]);
 session(['rol'=>'0']);
+// session(['rol'=>'0']);
    if ($user) {
    Auth::login($user);
    $userId=User::where('name',session()->get('name'))->where('email',session()->get('email'))->get();

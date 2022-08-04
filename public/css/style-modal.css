@@ -1,0 +1,67 @@
+.modal-dialog-left{
+    /* //background: red;
+    //position: -102px; */
+  margin-right: 120px;
+  margin-top: 3rem;
+
+
+}
+.modal-Preview-Cart-Body{
+background: #F3F3F3;
+}
+.modal-preview-cart-box{
+background: #fff;
+}
+.fade{
+background:none;
+}
+.modal-content{
+border-color:  #fff;
+/* //  background: red; */
+
+}
+.modal--header--listCart--color{
+/* //        background-color: rebeccapurple;
+//       background: orange; */
+
+}
+
+
+/* ------------------  avatar home  ---------------- */
+
+.perfil--header--link{
+    /* background: red; */
+    /* width: 30rem; */
+    width: 225px;
+    height: 314px;
+     border: none;
+    /* border-radius: #fff; */
+}
+.perfil--body--img{
+ border-radius: 50%;
+ /* font-size: 1rem; */
+ width: 96px;
+}
+.perfil--header--text{
+ /* font-size: 90px; */
+ font-weight: 600;
+ /* text-anchor: 10px; */
+}
+.perfil--header--title{
+background: orange;
+opacity: 80%;
+display: flex;
+position: relative;
+height: 94px;
+margin-top: -8px;
+border-radius: 2% 2% 0rem 0rem;
+/* margin-bottom: 5rem; */
+}
+.perfil--header--body{
+    /* background: orange; */
+    /* display: flex; */
+    position: relative;
+    /* height: 84px; */
+    margin-top: -4rem;
+    /* margin-bottom: 5rem; */
+    }

@@ -111,8 +111,9 @@ border-color:#1BE0FA;
 
 }
 .btn--listCart--close{
+    background: #7FCADC;
     /* background-color: #3E6B90; */
     /* background-color:#2C3E50; */
-    background-color:#5555D5;
+    /* background-color:#5555D5; */
 
 }

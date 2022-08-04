@@ -40,6 +40,7 @@
 @include('Admin.modalLoginUser')
 @include('Admin.modalLoginAdmin')
 <br><br><br>
+
 <div class="container text-center mb-4 h-100  d-flex justify-content-center align-items-center">
     <div class="col-10 col-md-5 ">
       <form action="{{route('search.home.search')}}" id="form" class="frm--search--home">
@@ -122,9 +123,20 @@
 
 <div class="dropdown  ">
  <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
- <ul class="dropdown-menu" aria-labelledby="userView">
-   <h6> Usuario</h6>
-  <h6>{{session()->get('email')}}</h6>
+ <ul class="dropdown-menu perfil--header--link shadow p-2-" aria-labelledby="userView">
+     <div class=" perfil--header--title">
+
+     </div>
+    <div class="perfil--header--body">
+    <h6 class="text-center perfil--header--text"> Usuario</h6>
+    <div class="d-flex justify-content-center">
+        <img src="{{session()->get('avatar')}}" alt="" class="mb-2 perfil--body--img">
+    </div>
+
+    <h6 class="mb-2 text-center">{{session()->get('name')}}</h6>
+    <h6 class="mb-3 text-center">{{session()->get('email')}}</h6>
+</div>
+    {{--  <h3>dfa</h3>  --}}
   <li>
       <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>
   </li>
@@ -197,7 +209,8 @@
       <div class="dropdown ">
           <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{session()->get('avatar')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
           <ul class="dropdown-menu" aria-labelledby="userView">
-              <h6> Usuario</h6>
+
+            <h6> Usuario a</h6>
               <h6>{{session()->get('email')}}</h6>
               <li>
                   <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>
@@ -324,7 +337,7 @@
     </div>
     <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
       <div class="text-center ">
-        <small class=" mb-3 text-muted h6"> ©2021 copyright Agrupec </small>
+        <small class=" mb-3 text-muted h6"> ©2022 copyright Agrupec </small>
       </div>
     </div>
    </footer>

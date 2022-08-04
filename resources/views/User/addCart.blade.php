@@ -14,8 +14,8 @@ echo file_get_contents("http://agrupec.com/includes/desing.php");
  <h3>hola</h3>
  <a href="#" class="hero__cta">agregar producto</a>
 
- <section class="modal">
-   <div class="modal__container">
+ <section class="modal ">
+   <div class="modal__container ">
      <div class="btn--close icons--close">
        <i class="bi bi-x-lg text-bolder"></i>
      </div>
@@ -42,4 +42,4 @@ echo file_get_contents("http://agrupec.com/includes/desing.php");
    </div>
  </section>
 
- <script src="js/addCart.js"></script>  
+ <script src="js/addCart.js"></script>

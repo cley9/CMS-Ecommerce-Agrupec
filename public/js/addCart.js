@@ -1,4 +1,5 @@
 function addProCart(id,cantidad,newPrecio,nombre,img){
+    console.log(id+'---'+cantidad+'---'+newPrecio+'---'+nombre+'---'+img);
     // location.href ="AddCart_a/"+id+"/"+cantidad;
     // let array={};
     fetch('AddCart/'+id+'/'+cantidad+'' ,{

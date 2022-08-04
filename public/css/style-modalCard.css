@@ -38,7 +38,7 @@ body {
   max-height: 34%;
   background-color: #fff;
   /* background-color: #7a7a7a; */
-
+/* position: relative; */
   border-radius: 6px;
   padding: 3em 2.5em;
   display: grid;
