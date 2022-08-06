@@ -108,7 +108,9 @@
  <a href="{{route('nosotros.home.index')}}" class="nav-link active icons--style--raya" aria-current="page">Nosotros</a>
  <a href="{{url('Ayuda')}}" class="nav-link active icons--style--raya me-3" aria-current="page">Atencion</a>
 
- @if (session()->exists('name') && session()->get('rol') === '0')
+ {{--  @if (session()->exists('name') && session()->get('rol') === '0')  --}}
+ @if (session()->get('rol') === '0')
+
 
 <div class="cart-menu align-items-center d-flex">
   <div class="sidebar-social">
@@ -133,10 +135,10 @@
         <img src="{{session()->get('avatar')}}" alt="" class="mb-2 perfil--body--img">
     </div>
 
-    <h6 class="mb-2 text-center">{{session()->get('name')}}</h6>
+    {{--  <h6 class="mb-2 text-center">{{session()->get('name')}}</h6>
+    <h6 class="mb-2 text-center">{{session()->get('rol')}}</h6>  --}}
     <h6 class="mb-3 text-center">{{session()->get('email')}}</h6>
 </div>
-    {{--  <h3>dfa</h3>  --}}
   <li>
       <a  href="{{route('perfil.user.main')}}" class="" >Mi Perfil</a>
   </li>
@@ -149,18 +151,20 @@
   </ul>
     </div>
  @elseif (session()->exists('email') && session()->get('rol') === '4')
- <a class="nav-link active icons--style--raya" href="{{ route('list.admin.list')  }}">lista producto</a>
+
+ {{--  <h4>fajdlfjaldkf</h4>  --}}
+ {{--  <a class="nav-link active icons--style--raya" href="{{ route('list.admin.list')  }}">lista producto</a>
  <div class="dropdown  ">
   <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{asset('storage/img/icons/person-circle.svg')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
   <ul class="dropdown-menu" aria-labelledby="userView">
-    {{--  <h6> Administrador</h6>  --}}
-    <a href="{{url('/Admin')}}">Administrador</a>
-  <h6>{{session()->get('email')}}</h6>
-  <li>
-    <a class=""  href="#exampleModalToggle">Ajuste</a>
-  </li>
-  </ul>
-    </div>
+      <a href="{{url('/Admin')}}">Administrador</a>
+      <h6>{{session()->get('email')}}</h6>
+      <li>
+          <a class=""  href="#exampleModalToggle">Ajuste</a>
+        </li>
+    </ul>
+</div>  --}}
+{{--  <h6> Administrador</h6>  --}}
  @else
  {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
@@ -224,6 +228,7 @@
             </ul>
         </div>
     </div>
+
 
     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 @elseif (session()->exists('email') && session()->get('rol') === '4')

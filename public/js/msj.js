@@ -55,7 +55,6 @@ function productDelete(id,nomProducto,img){
 
     });
 }
-
 function msjInicieSesion() {
     Swal.fire({
       title: ' Debes de iniciar sesi&oacute;n para agregar ',

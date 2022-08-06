@@ -57,7 +57,10 @@ Route::get('/Delete/{id}', [UserController::class ,'deleteCart'] )->name('delete
 Route::get('/DeleteCart', [UserController::class ,'deleteTotalCart'] )->name('deleteTotalCart.user.main');
 Route::get('/User-Perfil', [UserController::class ,'userPerfil'] )->name('perfil.user.main');
 Route::get('/AddCart/{id}/{cantidad}', [UserController::class ,'userAddCart'] )->name('addCart.user.main');
+// perfil edit
+Route::get('/editPerfil', [UserController::class ,'editPeerfil'] )->name('editPerfil.user.main');
 Route::get('/addCart_', function() {
+
 
     //
   return  view('User.addCart');

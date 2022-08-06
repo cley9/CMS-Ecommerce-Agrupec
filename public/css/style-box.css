@@ -296,3 +296,9 @@ align-items: flex-end; */
     /* position: none; */
 /* margin-top: 100px; */
 /* } */
+
+/* box ---perfil edit */
+
+.content--perfil--user{
+    margin-bottom: 10rem;
+}

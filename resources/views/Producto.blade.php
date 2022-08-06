@@ -294,8 +294,15 @@
     <div class="text-center">
 
         {{--  <a onclick="confirmar('<?php echo $item['db_id']; ?>','<?php echo $_SESSION['sesionUser']; ?>','1','1','<?php echo $item['db_nombre'];?>','<?php echo $item['db_imagen'];?>','<?php echo $item['db_newPrecio'];?>');" class="btn btn--view-add " >Agregar </a>  --}}
-        <a onclick="" class="btn btn--view-add " >Agregar </a>
-        <a href="" class="btn btn--view-page">Ver </a>
+        @if (session()->exists('name') && session()->get('rol') === '0')
+        <a class="btn--addCard--countMaster btn-sm text-dark viewCP"
+        id="addProCard{{ $itemPro['id'] }}" onclick=" addProCart({{ $itemPro['id'] }}, 1, {{ $itemPro['newPrecio'] }},
+        '{{ $itemPro['nombre'] }}', '{{ $itemPro['imagen'] }}')">Agregar</a>
+        @else
+
+        <a onclick="msjInicieSesion()" class="btn btn--view-add btn-sm " >Agregar </a>
+        @endif
+        <a href="" class="btn btn--view-page btn-sm">Ver </a>
         {{--  <a href="view-page?view=<?php echo $item['db_id']; ?>" class="btn btn--view-page">Ver </a>  --}}
     </div>
 </div>
@@ -305,4 +312,5 @@
 </div>
 </div>
 {{--    --}}
+@include('User.modelAddProCart')
 @endsection

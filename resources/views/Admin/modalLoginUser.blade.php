@@ -1,5 +1,5 @@
-@include('User.registro')
-@include('User.recuperarCuenta')
+@include('User.modalRegistro')
+@include('User.moldalRecuperarCuenta')
 {{--    --}}
 <div class="modal fade" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal--frm--userLog" >

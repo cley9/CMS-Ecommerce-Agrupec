@@ -8,7 +8,11 @@ use App\Models\Cart;
 use App\Models\Producto;
 // -----fecha
 use Carbon\Carbon;
+use Illuminate\Support\Facades\Storage;
 
+// use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
@@ -151,5 +155,23 @@ function deleteTotalCart(){
 // $comment = new Comment(['message' => 'A new comment.']);
 // $post = Post::find(1);
 // $post->comments()->save($comment);
+function editPeerfil(Request $request){
+    $editUser=User::find(session()->get('userId'));
+    // return $request->file('imagen')->isValid();
+    // return $request->file('imagen')->exists();
+    if ($request->file('imagenUser') !=null) {
+        $imgGet=session()->get('avatar');
+        $extImg=$request->file('imagenUser')->extension(); // solo saldra la extencion
+        $aletImg=rand(1,100000);
+        $img=$aletImg.'.'.$extImg;
+        // $path = $request->file('imagenUser')->storeAs('public/img/iconsUser/',$img );
+        // Storage::disk('local')->delete('public/img/iconsUser/'.$imgGet.''); //Cuando se usa el controlador public o local Puede eliminar la foto del perfil anterior como este., elimina el archivo
+        // $editUser->avatar=$img;
+    }
+        $editUser->name=$request->input('nameUser');
+    $editUser->save();
+    return view('User.perfil');
+    // return response()->json(['hola'=>12 ,$request->all(),session()->get('userId'),$editUser]);
+}
 
 }

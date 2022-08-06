@@ -37,12 +37,14 @@ function loginLocalUser($email,$password){
         'password'=>$password
     ];
     if (Auth::attempt($credencials)) {
-        session(['name'=>'Usuario']);
+        // session(['name'=>'Usuario']);
         session(['email'=>$email]);
         session(['rol'=>'0']);
-        session(['avatar'=>'http://127.0.0.1:8000/storage/img/icons/userLogin.png']);
         $userId=User::where('email',session()->get('email'))->where('email',session()->get('email'))->get();
+        session(['avatar'=>$userId[0]->avatar]);
         session(['userId'=>$userId[0]->id]);
+        session(['name'=>$userId[0]->name]);
+
         return response()->json(['status'=>'ok', 'code'=>'200', 'data'=>$userId]);
     }else{
         return response()->json(['status'=>'error', 'code'=>'404']);
@@ -125,6 +127,7 @@ function validarUser($emailExists){
         $user->email = $request->input('email');
         $user->password = bcrypt($request->input('pass1'));
         $user->rol = '0';
+        $user->avatar ='http://127.0.0.1:8000/storage/img/icons/userLogin.png';
         $user->external_auth= 'local';
         $user->save();
         // return $user;
