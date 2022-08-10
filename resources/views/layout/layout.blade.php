@@ -111,7 +111,6 @@
  {{--  @if (session()->exists('name') && session()->get('rol') === '0')  --}}
  @if (session()->get('rol') === '0')
 
-
 <div class="cart-menu align-items-center d-flex">
   <div class="sidebar-social">
     <ul>
