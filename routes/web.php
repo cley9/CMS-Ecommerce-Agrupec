@@ -9,6 +9,8 @@ use App\Http\Controllers\UserController;
 use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LoginController;
+use App\Http\Controllers\mailController;
+// use App\Http\Controllers\datos\mailController;
 // use App\Http\Controllers\UserController;
 
 use Laravel\Socialite\Facades\Socialite;
@@ -22,6 +24,8 @@ use Laravel\Socialite\Facades\Socialite;
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('/envioGmail', [mailController::class ,'a'] )->name('envio.index');
+
 
 Route::get('/slay', [ViewController::class ,'viewSlayderMain'] )->name('slayderMain.index');
 Route::get('/inserSlayderMain', [ViewController::class ,'inserSlayderMain'] )->name('slayderMain.index');
@@ -31,7 +35,10 @@ Route::get('/Producto-view', [ViewController::class ,'Producto'] )->name('viewPr
 Route::get('/Ayuda', [ViewController::class ,'viewHelp'] )->name('help.home.index');
 // Route::get('/Admin-login', [CrudController::class ,'loginUser'] )->name('loginUser.admin.main');
 // ----no vale pero observar
-Route::get('/Admin-login', [LoginController::class ,'loginUser'] )->name('loginUser.admin.main');
+Route::get('/envioGmail', [mailController::class ,'recuperarPassword'] )->name('restablecer.user.password');
+Route::get('/restablecerGmailView', [mailController::class ,'restablecerPasswordView'] )->name('restablecerPasswordView.user.Gmail');
+// Route::get('/restablecerGmail', [mailController::class ,'restablecerPasswordUser'] )->name('restablecerPassword.user.gmail');
+// Route::get('/Admin-login', [LoginController::class ,'loginUser'] )->name('loginUser.admin.main');
 // google
 Route::get('login/google',[LoginController::class, 'loginGoogle'] )->name('login.user.index');
 Route::get('login/google/callback',[LoginController::class, 'callback'] );

@@ -298,8 +298,8 @@
             <h4 class="fw-normal "> Suscríbete </h4>
             <h5 class="fw-normal mb-4"> Te enviaremos las mejores ofertas de todo los productos y mas.</h5>
          <form action=""  class="text-center mb-4 ">
-          <input type="text" class="input--frm--sub mb-3 me-lg-4" placeholder="Correo electronico">
-          <input type="text" class="input--frm--sub mb-4 me-lg-3" placeholder="Nombre">
+          <input type="email" class="input--frm--sub mb-3 me-lg-4" placeholder="Correo electronico" required/>
+          <input type="text" class="input--frm--sub mb-4 me-lg-3" placeholder="Nombre" required/>
 <input type="submit" class="btn--frm--sub" value="Suscrìbete">
          </form>
           </div>

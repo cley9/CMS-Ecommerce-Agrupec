@@ -1,7 +1,7 @@
 <div class="modal fade" id="recuperarCuenta" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
   <div class="modal-dialog modal-dialog-centered modal--frm--userLog" >
     <div class="modal-content ">
-          <form class="shadow form--frm--userRecuperar col-md-12 col-12 p-4 rounded-3" id="formBody" action="{{route('loginUser.admin.main')}}" method="POST" >
+          <form class="shadow form--frm--userRecuperar col-md-12 col-12 p-4 rounded-3" id="formBody" action="{{route('restablecer.user.password')}}" method="POST" >
             @method('GET')
             @csrf
             <div id="formTitleRecupera">
@@ -12,9 +12,10 @@
             </dir>
             {{--  <div >  --}}
                 <div class="mb-3" id="formEmail">
-                    <input type="email" class="form-control input--frm--userLog" id="exampleInputEmail1"  name="email" placeholder="Correo electronico " required/>
+                    <input type="email" class="form-control input--frm--userLog" id="emailRecupe"  name="email" placeholder="Correo electronico " required/>
                     <p class="form__input__vacio">
-                        ✅ Acabamos de enviar un enlace de restablecimiento de contraseña a <b>cley@gmail.com</b> .<br> Por favor revise su bandeja de entrada y carpetas de correo no deseado.
+                        ✅ Acabamos de enviar un enlace de restablecimiento de contraseña a <b id="emailData"></b> .<br> Por favor revise su bandeja de entrada y carpetas de correo no deseado.
+                        {{--  ✅ Acabamos de enviar un enlace de restablecimiento de contraseña a <b>cley@gmail.com</b> .<br> Por favor revise su bandeja de entrada y carpetas de correo no deseado.  --}}
                     </p>
                 </div>
             {{--  </div>  --}}

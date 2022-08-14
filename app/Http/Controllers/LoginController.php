@@ -11,6 +11,7 @@ use App\Models\User;
 use Str;
 use Laravel\Socialite\Facades\Socialite;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 // use Illuminate\Support\Facades\Crypt;
 
@@ -150,6 +151,10 @@ function validarUser($emailExists){
 //   'rol'=>$request->input('userR')
 // 'name'=>$request->input('nombre'),
 
-
+// function envio(){
+//     foreach (['cleyutp@gmail.com'] as $key) {
+//         Mail::to($key)->send(new )
+//     }
+// }
 }
 

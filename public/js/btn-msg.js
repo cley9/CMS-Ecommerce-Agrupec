@@ -1,23 +1,40 @@
 const formBody=document.getElementById('#formBody');
 const formulario=document.querySelectorAll('#formBody');
 btnEnvioRecu.addEventListener('click',()=>{
-// console.log(12);
-// console.log(formulario);
-document.querySelector(`#formEmail p`).classList.add("form__input__email__correcto");
-document.querySelector(`#formEmail p`).classList.remove("form__input__vacio");
-document.querySelector(`#formEmail input`).classList.add("form__input__vacio");
-document.querySelector(`#formEmail input`).classList.remove("form-control");
-document.querySelector(`#formEmail input`).classList.remove("input--frm--userLog");
+
+
+    // console.log(12);
+console.log(formulario);
+// console.log(formulario.formEmail.email);
+console.log(emailRecupe.value);
+// document.querySelector(`#form__text__vacio h2`).classList.add("form__text__vacio");
 // document.querySelector(`#formBody form`).classList.add("form--correcto");
 // document.querySelector(`#formBody form`).classList.remove("form--frm--userRecuperar");
-document.querySelector(`#formTitleRecupera h2`).classList.add("form__text__vacio");
-document.querySelector(`#formTitleVeri h2`).classList.remove("form__text__vacio");
-document.querySelector(`#formBtnEnvio a`).classList.add("form__btn__vacio");
-document.querySelector(`#formBtnClose a`).classList.remove("form__btn__vacio");
-document.querySelector(`#formOpcion h6`).classList.add("form__text__vacio");
-document.querySelector(`#formDiv`).classList.add("form__text__vacio");
-// document.querySelector(`#form__text__vacio h2`).classList.add("form__text__vacio");
 // form__input__vacio
+const gmailValidate=emailRecupe.value;
+if (gmailValidate === "") {
+    console.log(23);
+} else {
+
+    fetch("http://127.0.0.1:8000/envioGmail?email="+emailRecupe.value+"").then(data => data.text()
+    ).then( (data)=> {
+        console.log("se envio");
+        emailData.innerHTML=`${gmailValidate}`;
+        document.querySelector(`#formEmail p`).classList.add("form__input__email__correcto");
+        document.querySelector(`#formEmail p`).classList.remove("form__input__vacio");
+        document.querySelector(`#formEmail input`).classList.add("form__input__vacio");
+        document.querySelector(`#formEmail input`).classList.remove("form-control");
+        document.querySelector(`#formEmail input`).classList.remove("input--frm--userLog");
+        document.querySelector(`#formTitleRecupera h2`).classList.add("form__text__vacio");
+        document.querySelector(`#formTitleVeri h2`).classList.remove("form__text__vacio");
+        document.querySelector(`#formBtnEnvio a`).classList.add("form__btn__vacio");
+        document.querySelector(`#formBtnClose a`).classList.remove("form__btn__vacio");
+        document.querySelector(`#formOpcion h6`).classList.add("form__text__vacio");
+        document.querySelector(`#formDiv`).classList.add("form__text__vacio");
+
+    });
+}
+
 });
 
 // user Verification correo
