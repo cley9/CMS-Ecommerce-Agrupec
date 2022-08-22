@@ -2,15 +2,30 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\suscripcionRequest;
 use Illuminate\Http\Request;
 use App\Models\Producto;
 use App\Models\Cart;
 use App\Models\SlayderMain;
+use App\Models\Suscripcion;
+
 // ----
 // use Illuminate\Support\Facades\DB;
 class ViewController extends Controller
 {
-
+    // public function suscripcion(suscripcionRequest $request){
+        public function suscripcion(Request $request){
+            // $request->validate([
+            //     'nameSub' =>'require'
+            // ]);
+        // public function suscripcion(Request $request){
+            $sub=new Suscripcion();
+            $sub->nombre=$request->input('nameSub');
+            $sub->email=$request->input('emailSub');
+            $sub->save();
+        // return $request->all();
+        return view('contactenos');
+    }
     public function Producto(){
         // ---------- slyder
         $viewProducto=Producto::paginate(24);

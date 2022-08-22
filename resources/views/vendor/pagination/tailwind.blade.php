@@ -1,5 +1,5 @@
 @if ($paginator->hasPages())
-        <nav role="navigation" aria-label="{{ __('Pagination Navigation') }}" class="d-flex aling-items-center justify-content-center mb-4 ">
+        <nav role="navigation" aria-label="{{ __('Pagination Navigation') }}" class="d-flex aling-items-center justify-content-center footer--home--main">
         <div class="hidden sm:flex-1 sm:flex sm:items-center sm:justify-between">
             <div>
                     <span class="relative z-0 inline-flex  rounded-md  text-center">

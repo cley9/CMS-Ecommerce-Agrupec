@@ -26,6 +26,7 @@ use Laravel\Socialite\Facades\Socialite;
 */
 // Route::get('/envioGmail', [mailController::class ,'a'] )->name('envio.index');
 
+// Route::get('/suscripcion', [ViewController::class ,'suscripcion'] )->name('suscripcion.index');
 
 Route::get('/slay', [ViewController::class ,'viewSlayderMain'] )->name('slayderMain.index');
 Route::get('/inserSlayderMain', [ViewController::class ,'inserSlayderMain'] )->name('slayderMain.index');

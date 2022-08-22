@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\mailController;
+use App\Http\Controllers\ViewController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -23,3 +24,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 // recuperacion de cuenta
 Route::get('/restablecerGmail', [mailController::class ,'restablecerPasswordUser'] )->name('restablecerPassword.user.gmail');
 
+
+
+//
+Route::post('/suscripcion', [ViewController::class ,'suscripcion'] )->name('suscripcion.index');
