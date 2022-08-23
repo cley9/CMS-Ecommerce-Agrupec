@@ -13,17 +13,11 @@ use App\Models\Suscripcion;
 // use Illuminate\Support\Facades\DB;
 class ViewController extends Controller
 {
-    // public function suscripcion(suscripcionRequest $request){
-        public function suscripcion(Request $request){
-            // $request->validate([
-            //     'nameSub' =>'require'
-            // ]);
-        // public function suscripcion(Request $request){
+    public function suscripcion(suscripcionRequest $request){
             $sub=new Suscripcion();
             $sub->nombre=$request->input('nameSub');
             $sub->email=$request->input('emailSub');
             $sub->save();
-        // return $request->all();
         return view('contactenos');
     }
     public function Producto(){

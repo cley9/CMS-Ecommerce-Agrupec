@@ -2,7 +2,10 @@
 
 namespace App\Http\Requests;
 
+use Dotenv\Validator;
+use Illuminate\Contracts\Validation\Validator as ValidationValidator;
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
 
 class suscripcionRequest extends FormRequest
 {
@@ -13,7 +16,8 @@ class suscripcionRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return true;
+        // return false;
     }
 
     /**
@@ -24,15 +28,20 @@ class suscripcionRequest extends FormRequest
     public function rules()
     {
         return [
-
-            // 'emailSub' => 'required|min:1|max:150',
-            // 'description' => 'required|min:1|max:150',
-            // 'state' => 'required|int|boolean',
-            // 'Categories_id' => 'required|integer|max:200',
-            // 'name' => 'required|min:1|max:150',
-            // 'description' => 'required|min:1|max:150',
-            // 'state' => 'required|int|boolean',
-            // 'Categories_id' => 'required|integer|max:200',
+            'emailSub' => 'required|min:1|max:150',
+            'nameSub' => 'required|min:3|max:150',
         ];
     }
+
+    protected function failedValidation(ValidationValidator $validator)
+    {
+        $response = [
+            'state' => 'failure',
+            'message' => 'Bad Request',
+            'errors' => $validator->errors(),
+        ];
+
+        throw new HttpResponseException(response()->json($response, 400));
+    }
+
 }

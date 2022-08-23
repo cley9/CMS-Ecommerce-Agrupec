@@ -57,6 +57,14 @@ border-color: none;
   height: 100px;
   background: #000000;
 }
+.sub--frm--margin{
+margin-bottom:90px;
+/* background: rebeccapurple; */
+}
+.sub--frm--btn{
+margin-bottom:90px;
+
+}
 /* reseña */
 .btn--footer--rese{
   width: 200px;

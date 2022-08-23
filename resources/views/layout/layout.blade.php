@@ -11,22 +11,11 @@
     <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
     <link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}"/>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
+            <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
 
-    {{--
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  --}}
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-              {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">   --}}
-{{--  icons  --}}
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet"/>
-        <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
-{{--  <link rel="stylesheet" href="{{asset('resources/css/app.css')}}">  --}}
-{{--  <link rel="stylesheet" href="{{asset('/storage/css/app.css')}}">  --}}
-{{--  <link rel="stylesheet" href="{{asset('app.css')}}">  --}}
-
-    {{--  css/style.css  --}}
-    {{--  <link href="{{ asset('js/dataPictur.js') }}" rel="stylesheet">  --}}
     <title>Agrupec</title>
 </head>
 
@@ -50,7 +39,7 @@
     </div>
   </div>
 {{--  response -- web barra  --}}
-<nav class=" navbar-light ">
+<nav class=" navbar-light navbar--home--main ">
   <div class="container  nav--link  ">
     <div class="row  ">
     <div class="navbar-nav col  ">
@@ -70,7 +59,7 @@
         </a>
     <a href="https://www.messenger.com/login.php" class=" icons--Contact--he" target="_blank"><i class="bi bi-messenger"></i> </a>
         <a href="https://www.pinterest.es/login/" class="  icons--Contact--he" target="_blank"><i class="bi bi-pinterest"></i> </a>
-        <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin" class="  icons--Contact--he" target="_blank"><i class="bi bi-linkedin"></i> </a>
+        <a href="https://www.linkedin.com/in/cley-tornero-89b387189/" class="  icons--Contact--he" target="_blank"><i class="bi bi-linkedin"></i> </a>
       </div>
         </div>
       </div>
@@ -81,7 +70,7 @@
               <a class="nav-link" href="{{ route( 'list.admin.list')  }}">lista producto</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6002 ǀ</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000  ǀ</a>
-           {{--  <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>  --}}
+           <a  class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra  ǀ</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
            <a  class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
@@ -90,15 +79,12 @@
   </div>
 
 </nav>
-<br><br><br>
-{{--  main  --}}
 <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
   <div class="container-fluid">
     <div class="container d-none d-sm-none d-md-block">
 <div class="row link--heder--m  d-flex align-items-center">
 <div class="col-lg-1 ">
   <b><a class="navbar-brand text-success  h-3 text--nav--home" href="{{route('vista.index')}}">AgrupecVentas</a></b>
-  {{--  <a href="{{route('vista.index')}}" class="navbar-brand text-success  h-3 text--nav--home" >AgrupecVentas</a>  --}}
 </div>
        <div class="col ">
 <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
@@ -257,14 +243,10 @@
 
 </div>
 </div>
-{{--  -----------------------------  --}}
   </div>
 </nav>
-
-
-
  @yield('header')
-<footer class="pt-4   footer--one"><br><br>
+<footer class="pt-4   footer--one ">
 <div class="container text-muted mb-4">
 <div class="row ">
          <div class="container  d-flex align-items-center justify-content-center pt-4">
@@ -280,24 +262,24 @@
 
               <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn   icons--Contact"  target="_blank"><i class="bi bi-instagram"></i></a>
               <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://github.com/kevinPumaille/DeliveryRestaurante" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-github"></i></a>
+              <a href="https://github.com/cley9" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-github"></i></a>
               <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitter"></i> </a>
-              {{--  <a href="https://api.whatsapp.com/send?phone= + 51 {{config('constants.numContact')}}" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-whatsapp"></i></a>  --}}
+              <a href="https://api.whatsapp.com/send?phone= + 51 {{config('constants.numContact')}}" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-whatsapp"></i></a>
               <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-youtube"></i> </a>
               <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitch"></i> </a>
               <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-messenger"></i> </a>
               <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-pinterest"></i> </a>
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-linkedin"></i> </a>
+              <a href="https://www.linkedin.com/in/cley-tornero-89b387189/" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-linkedin"></i> </a>
 
 
             </div>
           </div>
          </div>
         </div>
-        <div class="col-12 mb-3 ">
+        <div class="col-12 sub--frm--margin">
             <h4 class="fw-normal "> Suscríbete </h4>
             <h5 class="fw-normal mb-4"> Te enviaremos las mejores ofertas de todo los productos y mas.</h5>
-         <form action="{{route('suscripcion.index')}}" method="post" class="text-center mb-4 ">
+         <form action="{{route('suscripcion.index')}}" method="post" class="text-center sub--frm--btn ">
 @method('POST')
 @csrf
             <input type="email" class="input--frm--sub mb-3 me-lg-4" name="emailSub" placeholder="Correo electronico" required/>
@@ -357,27 +339,11 @@
 <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
-
-
- {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
   <script src="{{ asset('js/msj.js') }}"></script>
   <script src="{{ asset('js/dataPictur.js') }}"></script>
   <script src="{{ asset('js/addCart.js') }}"></script>
   <script src="{{ asset('js/btn-msg.js') }}"></script>
   <script src="{{ asset('js/btn-up.js') }}"></script>
-
-
-
-
-  {{--  <script>
-    Swal.fire(
-      'The Internet?',
-      'That thing is still around?',
-      'question'
-    )
-  </script>  --}}
-  {{--  </script>  --}}
-
 
 {{--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
@@ -411,10 +377,6 @@ $(".left").click(function(){
 });
         </script>
         @include('User.modalListProCart')
-
-
-
-
 
 </body>
 </html>

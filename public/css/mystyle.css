@@ -95,6 +95,7 @@ height: 150px; margin-top:-30px; overflow: hidden;
   /* background-color:#223D59; */
   background-color: #050E14;
   height:780px;
+  /* margin-bottom: -190px; */
 }
 
 /* -{} */
@@ -184,4 +185,8 @@ margin-left: 10px;
 /* home footer */
 .footer--home--main{
 margin-bottom: 5rem;
+}
+
+.navbar--home--main{
+margin-bottom: 90px;
 }
