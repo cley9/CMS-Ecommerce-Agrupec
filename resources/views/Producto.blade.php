@@ -248,8 +248,9 @@
         <div class="post-slide">
           <div class="post-img">
             <a href="{{route('View.home.index',$id=$producto['id'])}}">
-      <img src="{{asset('storage/img/Productos/'.$producto['imagen'].'')}}" class="img-fluid-a" alt="">
-    </a> <a href="" class="over-layer"><i class="fa fa-link"></i></a>
+              <img src="{{asset('storage/img/Productos/'.$producto['imagen'].'')}}" class="img-fluid-a" alt="">
+            </a>
+             {{--  <a href="" class="over-layer"><i class="fa fa-link"></i></a>  --}}
           </div>
           <div class="post-content">
             <span>
@@ -283,8 +284,8 @@
                   <h5 class="card-title h6">{{$itemPro['nombre']}}</h5>
                 </div>
                 <div class="mb-0 d-flex justify-content-between  ">
-                    <span><del>s/.{{$itemPro['precio']}}</del></span>
-                    <span>s/.{{$itemPro['newPrecio']}}</span>
+                    <span><del>S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</del></span>
+                    <span>S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</span>
                 </div>
                 <div class=" align-items-center d-flex ">
            <span class="h6 mb-0 text-muted fw-normal">
