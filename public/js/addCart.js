@@ -17,7 +17,7 @@ function viewModalProAddCart(nombre,newPrecio,cantidad,img) {
     let outImg=document.getElementById("outImg");
     outName.textContent=nombre;
     outImg.innerHTML = "<img src='storage/img/Productos/"+img+"'  class='img-fluid' alt=''  >";
-    outPayment.textContent='S/ '+newPrecio;
+    outPayment.textContent='S/ '+newPrecio+'.00';
     outCount.textContent=cantidad;
     outCod.textContent='kst-12-3d';
       modal.classList.add("modal--show");
