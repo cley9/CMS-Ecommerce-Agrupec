@@ -264,98 +264,92 @@
 
 
  @yield('header')
-<footer class="pt-4   footer--one"><br><br>
-<div class="container text-muted mb-4">
-<div class="row ">
-         <div class="container  d-flex align-items-center justify-content-center pt-4">
-             <div class="col-12 mb-4 row  ">
-               <div class="col-lg-6 d-flex mb-4 align-items-center justify-content-between">
-                <h5 class="btn--footer--rese text-center me-lg-4">  <img src="{{asset('storage/img/icons/peru.png')}}" class="me-2" width="26px" alt="">  Perú</h5>
-           <h5 class="btn--footer--rese text-center  me-lg-4">Nuevo Productos</h5>
-           {{--  <h5 class="btn--footer--rese text-center  me-lg-4 ">Regiones</h5>  --}}
-          </div>
-
-           <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
-            <div class=" text-center">
-
-              <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn   icons--Contact"  target="_blank"><i class="bi bi-instagram"></i></a>
-              <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-facebook"></i></a>
-              <a href="https://github.com/kevinPumaille/DeliveryRestaurante" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-github"></i></a>
-              <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitter"></i> </a>
-              {{--  <a href="https://api.whatsapp.com/send?phone= + 51 {{config('constants.numContact')}}" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-whatsapp"></i></a>  --}}
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-youtube"></i> </a>
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitch"></i> </a>
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-messenger"></i> </a>
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-pinterest"></i> </a>
-              <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-linkedin"></i> </a>
-
-
+<footer class="pt-4   footer--one">
+  <div class="container text-muted mb-4">
+    <div class="row ">
+             <div class="container  d-flex align-items-center justify-content-center pt-4">
+                 <div class="col-12 mb-4 row  ">
+                   <div class="col-lg-6 d-flex mb-4 align-items-center justify-content-between">
+                    <h5 class="btn--footer--rese text-center me-lg-4">  <img src="{{asset('storage/img/icons/peru.png')}}" class="me-2" width="26px" alt="">  Perú</h5>
+               <h5 class="btn--footer--rese text-center  me-lg-4">Nuevo Productos</h5>
+               {{--  <h5 class="btn--footer--rese text-center  me-lg-4 ">Regiones</h5>  --}}
+              </div>
+    
+               <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
+                <div class=" text-center">
+    
+                  <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn   icons--Contact"  target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://github.com/kevinPumaille/DeliveryRestaurante" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-github"></i></a>
+                  <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitter"></i> </a>
+                  {{--  <a href="https://api.whatsapp.com/send?phone= + 51 {{config('constants.numContact')}}" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-whatsapp"></i></a>  --}}
+                  <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-youtube"></i> </a>
+                  <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-twitch"></i> </a>
+                  <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-messenger"></i> </a>
+                  <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-pinterest"></i> </a>
+                  <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-linkedin"></i> </a>
+    
+    
+                </div>
+              </div>
+             </div>
             </div>
+            <div class="col-12 mb-3 box--layout-footer" >
+                <h4 class="fw-normal "> Suscríbete </h4>
+                <h5 class="fw-normal mb-4"> Te enviaremos las mejores ofertas de todo los productos y más.</h5>
+             
+             <form action=""  class="text-center mb-4- mb-md-4 frm--correo">
+              <input type="email" class="input--frm--sub mb-3 me-lg-4" placeholder="Correo electronico" required/>
+              <input type="text" class="input--frm--sub mb-4 me-lg-3" placeholder="Nombre" required/>
+    <input type="submit" class="btn--frm--sub" value="Suscrìbete">
+             </form>
+    
+              </div>
+             <div class="col-4 col-md-3  ">
+               <h5 class="text-light">Nosotros</h5>
+              <ul class="list-unstyled text-small">
+                <li><a href="Nosotros"  class="text-muted" href="#">Nosotros</a></li>
+                  <li><a href="contactenos"  class="text-muted  " href="#">Contáctanos</a></li>
+                  <li><a href="Nosotros"  class="text-muted" href="#">Ubícanos</a></li>
+              </ul>
+    
+             </div>
+             
+             <div class="col-4 col-md ">
+              <h5 class="text-light">Marcas</h5>
+              <ul class="list-unstyled text-small">
+                <h5 class="text-muted h6">Pavco</h5>
+                <h5 class="text-muted h6">Matusita</h5>
+                <h5 class="text-muted h6">Nicolle</h5>
+                <h5 class="text-muted h6">Nipon Plas</h5>
+    
+              </ul>
+            </div>
+    
+            <div class="col-3 col-md  ">
+              <h5 class="text-light">Marcas</h5>
+              <ul class="list-unstyled text-small">
+                  <li><a href="Nosotros"  class="text-muted" href="#">Nosotros</a></li>
+                  <li><a href="help" class="text-muted" href="#">Ayuda</a></li>
+              </ul>
+            </div>
+             <hr class=" d-block d-sm-block d-md-none ">
+           </div>
+        </div>
+        <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
+          <div class="text-center ">
+            <small class=" mb-3 text-muted h6"> ©2022 copyright Agrupec </small>
           </div>
-         </div>
         </div>
-        <div class="col-12 mb-3 ">
-            <h4 class="fw-normal "> Suscríbete </h4>
-            <h5 class="fw-normal mb-4"> Te enviaremos las mejores ofertas de todo los productos y mas.</h5>
-         <form action=""  class="text-center mb-4 ">
-          <input type="email" class="input--frm--sub mb-3 me-lg-4" placeholder="Correo electronico" required/>
-          <input type="text" class="input--frm--sub mb-4 me-lg-3" placeholder="Nombre" required/>
-<input type="submit" class="btn--frm--sub" value="Suscrìbete">
-         </form>
-          </div>
-         <div class="col-3 col-md  ">
-           <h5 class="text-light">Contáctanos</h5>
-          <ul class="list-unstyled text-small">
-              <li><a href="contactenos"  class="text-muted  " href="#">Contáctanos</a></li>
-              <li><a href="Nosotros"  class="text-muted" href="#">Ubícanos</a></li>
-          </ul>
-
-         </div>
-         <div class="col-3 col-md ">
-           <h5 class="text-light">Nosotros</h5>
-           <ul class="list-unstyled text-small">
-               <li><a href="Nosotros"  class="text-muted" href="#">Nosotros</a></li>
-               {{--  <li><a href="{{route('help.home.index')}}" class="text-muted" href="#">Ayuda</a></li>  --}}
-           </ul>
-         </div>
-         <div class="col-3 col-md ">
-          <h5 class="text-light">Marcas</h5>
-          <ul class="list-unstyled text-small">
-            <h5 class="text-muted h6">Pavco</h5>
-            <h5 class="text-muted h6">Matusita</h5>
-            <h5 class="text-muted h6">Nicolle</h5>
-            <h5 class="text-muted h6">Nipon Plas</h5>
-
-          </ul>
-        </div>
-
-        <div class="col-3 col-md  ">
-          <h5 class="text-light">Marcas</h5>
-          <ul class="list-unstyled text-small">
-              <li><a href="Nosotros"  class="text-muted" href="#">Nosotros</a></li>
-              <li><a href="help" class="text-muted" href="#">Ayuda</a></li>
-          </ul>
-        </div>
-         <hr class=" d-block d-sm-block d-md-none ">
-       </div>
-    </div>
-    <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
-      <div class="text-center ">
-        <small class=" mb-3 text-muted h6"> ©2022 copyright Agrupec </small>
-      </div>
-    </div>
    </footer>
-{{--  <script src="js/btn-filters.js" charset="utf-8"></script>
+  {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
+<script src="js/btn-cardProduct.js"></script>
+<script src="js/loader-main.js"></script>  --}}
 <script src="js/viewPassword.js" charset="utf-8"></script>
-<script src="js/funcion-msg.js" charset="utf-8"></script>
-<script src="js/btn-up.js" charset="utf-8"></script>  --}}
- {{--  <script src="js/btn-cardProduct.js"></script>  --}}
- {{--  <script src="js/loader-main.js"></script>  --}}
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
 <script src='https://code.jquery.com/jquery-3.5.1.js' ></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
-
 
  {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
   <script src="{{ asset('js/msj.js') }}"></script>
