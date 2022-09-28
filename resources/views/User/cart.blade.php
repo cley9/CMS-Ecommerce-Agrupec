@@ -92,7 +92,13 @@
   @endforeach
   {{--  @php echo $total_neto; @endphp  --}}
 @php }else{ @endphp
-    <h4 class="btn btn-warning ">El carrito esta vacio ,agregue producto a su carro</h4>
+  <div class="d-flex justify-content-center">
+
+    <div class="box-cart-validar p-3 text-center ">
+        <h4>El carrito esta vacio ,agregue producto a su carro</h4>
+    </div>
+</div>
+
 
 @php } @endphp
 </div>

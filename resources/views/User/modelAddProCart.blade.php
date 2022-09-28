@@ -8,7 +8,7 @@
       <div class="row item--viewPro">
           <div class="col-4 col-md-2 col-sm-2  img--min">
             <h6 class="icons--countProd " id="outCount">1</h6>
-            <div id="outImg"></div>
+            <div id="outImg" class="img--cart-modal"></div>
             <!--<h3 id="outImg"></h3>-->
           </div>
           <div class="col-8 col-md-10" >

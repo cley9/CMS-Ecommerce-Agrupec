@@ -110,35 +110,27 @@ body {
   .modal__title {
   color: #12a44f;
     font-size: 16px;
-  margin-top: -8%;
+  margin-top: -14%;
 
   }
   .btn--optionCard {
     font-size: 14px;
     margin-top: 2%;
   }
+  .img--cart-modal{
+    height: 90px;
+  }
   .icons--close {
-    /* background: red; */
     position: fixed;
-    margin-top: -58%;
-    margin-left: 92%;
+    margin-top: -56%;
+    margin-left: 90%;
+    /* background-color: #12a44f; */
   }
 }
 
 
 
-.icons--close {
-  position: fixed;
-  margin-left: 92%;
-  margin-top: -160px;
-  /* margin-top: -24%;   */
-  /* margin: -24%; */
-  font-size: 24px;
-  -moz-transition: all 0.15s ease-out;
-  -ms-transition: all 0.15s ease-out;
-  -o-transition: all 0.15s ease-out;
-  -webkit-transition: all 0.15s ease-out;
-}
+
 .icons--close:hover {
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
