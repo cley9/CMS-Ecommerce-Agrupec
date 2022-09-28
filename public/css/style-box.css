@@ -302,3 +302,33 @@ align-items: flex-end; */
 .content--perfil--user{
     margin-bottom: 10rem;
 }
+
+/* ---------- box imagen  */
+@media (max-width: 700px) {
+  .box--text--pre{
+    font-size: 14px;
+  }
+  .box--search--yes{
+    height: 358px;
+  }
+  .title--box--pro{
+    height: 50px;
+    font-size: 12px;
+
+    /* margin-bottom: 4rem; */
+  }
+}
+
+@media (min-width: 700px) {
+  
+  .box--search--yes{
+    height: 25rem;
+  }
+  .title--box--pro{
+    height: 50px;
+    font-size: 17px;
+}
+  .box--text--pre{
+    font-size: 16px;
+  }
+}
