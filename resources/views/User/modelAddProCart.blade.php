@@ -1,9 +1,9 @@
-<section class="modal--form--data modalViewCP ">
-    <div class="modal__container">
+<section class="modal--form--data modalViewCP " >
+    <div class="modal__container" >
       <div class="btn--close icons--close">
         <i class="bi bi-x-lg text-bolder"></i>
       </div>
-      <h2 class="modal__title fw-normal h4"><i class="bi bi-check-circle-fill me-3"></i>Producto agregado a tu carrito</h2>
+      <h2 class="modal__title fw-normal "><i class="bi bi-check-circle-fill me-3"></i>Producto agregado a tu carrito</h2>
 
       <div class="row item--viewPro">
           <div class="col-4 col-md-2 col-sm-2  img--min">
@@ -22,8 +22,11 @@
           </div>
       </div>
       <div class="btn--optionCard ">
-          <a  class="modal__close  me-4">Seguir comprando</a>
+          {{--  <a  class="modal__close  me-none me-lg-4-">Seguir comprando</a>  --}}
+          <a  class="modal__close ">Seguir comprando</a>
+        {{--  <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>  --}}
         <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>
+        {{--  <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>  --}}
       </div>
     </div>
   </section>
