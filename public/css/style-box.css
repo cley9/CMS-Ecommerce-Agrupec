@@ -317,6 +317,7 @@ align-items: flex-end; */
 
     /* margin-bottom: 4rem; */
   }
+
 }
 
 @media (min-width: 700px) {
@@ -330,5 +331,14 @@ align-items: flex-end; */
 }
   .box--text--pre{
     font-size: 16px;
+  }
+  .title--box--pro-view{
+    height: 58px;
+    font-size: 17px;
+  }
+
+  .box--produ--view{
+    height: 338px;
+  
   }
 }

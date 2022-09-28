@@ -275,21 +275,21 @@
     <div class="row  row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
       @foreach ( $viewProducto as $itemPro  )
       <div class="pt-4 mb-4 ">
-          <div class="card shadow"  >
+          <div class="card shadow box--produ--view"  >
                 <a href="{{route('View.home.index',$id=$itemPro['id'])}}">
                     <img src="{{asset('storage/img/Productos/'.$itemPro['imagen'].'')}}" class="img-fluid-a- card-img-top" height="120px" width="100px" alt="">
         </a>
           <div class="card-body justify-content-between align-items-center">
               <div class="d-flex  align-items-center ">
-                  <h5 class="card-title h6">{{$itemPro['nombre']}}</h5>
+                  <h5 class="card-title title--box--pro-view">{{$itemPro['nombre']}}</h5>
                 </div>
                 <div class="mb-0 d-flex justify-content-between  ">
-                    <span><del>S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</del></span>
-                    <span>S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</span>
+                    <span class="box--text--pre"><del>S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</del></span>
+                    <span class="box--text--pre">S/ {{number_format($itemPro['precio'], 2, ".", ",")}}</span>
                 </div>
                 <div class=" align-items-center d-flex ">
            <span class="h6 mb-0 text-muted fw-normal">
-           <small>{{$itemPro['cantidad']}}: disponibles </small>  </span>
+           <small class="box--text--pre">{{$itemPro['cantidad']}}: disponibles </small>  </span>
            </div>
              <hr>
     <div class="text-center">
