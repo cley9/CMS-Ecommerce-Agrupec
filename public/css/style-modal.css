@@ -65,3 +65,27 @@ border-radius: 2% 2% 0rem 0rem;
     margin-top: -4rem;
     /* margin-bottom: 5rem; */
     }
+
+    /* ---------modal medio de pagos  */
+    .modal-medioPago{
+        background-color: #46464bbd;
+        opacity: 3;
+        /* #959596bd */
+        /* position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+         background-color: #7a7a7a;
+        /* display: flex;
+        pointer-events: none; */
+      }
+      .modal-destino{
+        background-color: #46464bbd;
+        opacity: 3;
+      }
+      .modal-general{
+        background-color: #46464bbd;
+        opacity: 3;
+      }
+
