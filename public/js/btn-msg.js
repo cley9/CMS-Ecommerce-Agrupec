@@ -92,32 +92,7 @@ console.log('esta vacio los demas campos');
 }
 });
 // }
-// const precioEnvio=document.getElementById('precioDestino');
-// const precioEnvioA=document.querySelectorAll('#precioDestino');
-precioDestino.addEventListener('click',(e)=>{
-    // if (precioDestino.value==1) {
-    //     console.log("lima S/ 8.00");
 
-    // }
-    switch (precioDestino.value) {
-        case "1":
-            precio="6.00";
-            break;
-            case "2":
-            precio="16.00";
-                break;
-                case "3":
-                    precio="18.00";
-                    break;
-                    case "4":
-                        precio="15.00";
-                        break;
-                        default:
-                            break;
-                        }
-                        precioDes.innerHTML=`${precio}`;
-    // console.log(precioDestino.value);
-});
 
 // login user
 const fromLoginUser=document.getElementById('formLoginUser');
@@ -158,3 +133,26 @@ formLoginAdmin.addEventListener('submit',function(e){
 });
 
 
+const precioEnvioDestino=document.getElementById('precioDestino');
+// const precioEnvioA=document.querySelectorAll('#precioDestino');
+precioEnvioDestino.addEventListener('click',(e)=>{
+
+    switch (precioEnvioDestino.value) {
+        case "1":
+            precio="6.00";
+            break;
+            case "2":
+            precio="16.00";
+                break;
+                case "3":
+                    precio="18.00";
+                    break;
+                    case "4":
+                        precio="15.00";
+                        break;
+                        // default:
+                        //     break;
+                        }
+                        precioDes.innerHTML=`${precio}`;
+    // console.log(precioDestino.value);
+});
