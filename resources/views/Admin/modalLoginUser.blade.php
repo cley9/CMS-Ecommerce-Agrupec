@@ -24,10 +24,10 @@
                     <button type="submit" class="btn col-12 btn-primary">Iniciar sesion</button>
                 </div>
                 <div class="mb-3 text-center">
-                    <a href="{{ route('login.user.index') }}" class="form-control- mb-3 googleBody "><img
+                    <a href="{{ route('login.user.index') }}" class="form-control- mb-3 googleBody- "><img
                             src="{{ asset('storage/img/icons/logoGoogle.png') }}" alt=""
                             class="logoSesion me-2"> </a>
-                    <a href="#" class="form-control- mb-3 facebookBody "><img
+                    <a href="#" class="form-control- mb-3 facebookBody- "><img
                             src="{{ asset('storage/img/icons/logoFb.svg') }}" width="30px"
                             class="logoSesion img-fluid me-2" alt=""></a>
                 </div>
