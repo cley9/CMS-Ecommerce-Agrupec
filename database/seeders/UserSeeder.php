@@ -15,25 +15,53 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        //
-//         12=
-// $2y$10$/zwFfNZlbD.nwq4hhsL5Le1B1msGebTTUxY7hOjHmw/wioWZNMW7q
 
-        $userAdmin=new User();
-        $userAdmin->name='cley';
-        $userAdmin->email='cley@gmail.com';
-        $userAdmin->rol='4';
-        $userAdmin->avatar='http://127.0.0.1:8000/storage/img/icons/person-circle.svg';
-        $userAdmin->password='$2y$10$/zwFfNZlbD.nwq4hhsL5Le1B1msGebTTUxY7hOjHmw/wioWZNMW7q';
+        $userAdmin = new User();
+        $userAdmin->name = 'cley';
+        $userAdmin->email = 'cley@gmail.com';
+        $userAdmin->rol = '4';
+        $userAdmin->avatar = 'storage/img/icons/person-circle.svg';
+        $userAdmin->password = bcrypt('2303');
         $userAdmin->save();
         // user log rol 0
-        $userLocal=new User();
-        $userLocal->name='jose';
-        $userLocal->email='jose@gmail.com';
-        $userLocal->rol='0';
-        $userAdmin->avatar='http://127.0.0.1:8000/storage/img/icons/userLogin.png';
-        $userLocal->password='$2y$10$/zwFfNZlbD.nwq4hhsL5Le1B1msGebTTUxY7hOjHmw/wioWZNMW7q';
+        $userLocal = new User();
+        $userLocal->name = 'jose';
+        $userLocal->email = 'jose@gmail.com';
+        $userLocal->rol = '0';
+        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        $userLocal->password = bcrypt('123456');
         $userLocal->save();
-
+        //
+        $userLocal = new User();
+        $userLocal->name = 'carlos';
+        $userLocal->email = 'carlos@gmail.com';
+        $userLocal->rol = '0';
+        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        $userLocal->password = bcrypt('123456');
+        $userLocal->save();
+        //
+        $userLocal = new User();
+        $userLocal->name = 'miguel';
+        $userLocal->email = 'miguel@gmail.com';
+        $userLocal->rol = '0';
+        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        $userLocal->password = bcrypt('123456');
+        $userLocal->save();
+        //
+        $userLocal = new User();
+        $userLocal->name = 'junior';
+        $userLocal->email = 'junior@gmail.com';
+        $userLocal->rol = '0';
+        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        $userLocal->password = bcrypt('123456');
+        $userLocal->save();
+        //
+        $userLocal = new User();
+        $userLocal->name = 'juan';
+        $userLocal->email = 'juan@gmail.com';
+        $userLocal->rol = '0';
+        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        $userLocal->password = bcrypt('123456');
+        $userLocal->save();
     }
 }

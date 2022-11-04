@@ -24,7 +24,7 @@ use App\Http\Controllers\admin\InfocorpController;
 
 Route::middleware('VerificationAdmin')->group(function(){
     Route::get('/Admin', function(){
-        return view('admin.home');
+        return view('Admin.home');
     });
     //       Route::get('/Admin-delete/{id}', function(){
         //         return view('Admin.catalogoSlayder');

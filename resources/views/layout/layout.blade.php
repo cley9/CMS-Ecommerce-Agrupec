@@ -144,7 +144,7 @@
 
                                     <div class="dropdown  ">
                                         <a role="button" id="userView" data-bs-toggle="dropdown"
-                                            aria-expanded="false"><img src="{{ session()->get('avatar') }}"
+                                            aria-expanded="false"><img src="{{ asset(session()->get('avatar')) }}"
                                                 class=" icons--login--user  rounded-circle_ " alt=""></a>
                                         <ul class="dropdown-menu perfil--header--link shadow p-2-"
                                             aria-labelledby="userView">
@@ -154,7 +154,7 @@
                                             <div class="perfil--header--body">
                                                 <h6 class="text-center perfil--header--text"> Usuario</h6>
                                                 <div class="d-flex justify-content-center">
-                                                    <img src="{{ session()->get('avatar') }}" alt=""
+                                                    <img src="{{ asset(session()->get('avatar')) }}" alt=""
                                                         class="mb-2 perfil--body--img">
                                                 </div>
 
@@ -226,6 +226,7 @@
             <div class="d-md-none d-sm-block d-block ">
 
                 @if (session()->exists('name') && session()->get('rol') === '0')
+                    {{-- <img src="{{ asset('/storage/img/icons/userLogin.png') }}" alt=""> --}}
                     <div class="cart-menu align-items-center d-flex d-none- d-md-none- d-block-">
                         <div class="sidebar-social">
                             <ul>
@@ -242,7 +243,7 @@
                     <div class="nav-item d-none- d-md-none- d-sm-block-">
                         <div class="dropdown ">
                             <a role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img
-                                    src="{{ session()->get('avatar') }}"
+                                    src="{{ asset(session()->get('avatar')) }}"
                                     class=" icons--login--user  rounded-circle_ " alt=""></a>
                             <ul class="dropdown-menu" aria-labelledby="userView">
 
