@@ -16,6 +16,23 @@ background:#7EEBCA;
   background: #7ADDBF;
 }
 
+.btn--paymet--vaciar{
+    background-color: #FF795D;
+  /* color: #20c997; */
+}
+.btn--paymet--ir{
+    background-color: #74C0FC;
+}
+.btn--paymet--ver{
+    background-color: #63E6BE;
+}
+.btn--paymet-generar{
+    background-color: #FFCA5D;
+}
+.btn--paymet--pago{
+    background-color: #638BE6;
+  /* color: #20c997; */
+}
 .btn--addCard--count{
  width: 26px;
   height: 26px;
@@ -48,7 +65,8 @@ background:#7EEBCA;
 .btn--frm--sub{
   width: 200px;
   height: 40px;
-background-color: #3E6B90;
+background-color: #4AD295;
+/* background-color: #3E6B90; */
 border-radius: 4px;
 border-color: none;
 }

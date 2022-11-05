@@ -32,7 +32,7 @@
 
     {{--  css/style.css  --}}
     {{--  <link href="{{ asset('js/dataPictur.js') }}" rel="stylesheet">  --}}
-    <title>Agrupec</title>
+    <title>{{ config('constants.nameProyect') }}</title>
 </head>
 
 
@@ -111,7 +111,7 @@
                 <div class="row link--heder--m  d-flex align-items-center">
                     <div class="col-lg-1 ">
                         <b><a class="navbar-brand text-success  h-3 text--nav--home"
-                                href="{{ route('vista.index') }}">AgrupecVentas</a></b>
+                                href="{{ route('vista.index') }}">{{ config('constants.nameProyect') }}</a></b>
                         {{--  <a href="{{route('vista.index')}}" class="navbar-brand text-success  h-3 text--nav--home" >AgrupecVentas</a>  --}}
                     </div>
                     <div class="col ">
@@ -211,18 +211,13 @@
                 </div>
             </div>
 
-
-            {{--  <h3 class="fa">gaaaaaaaa</h3>  --}}
-
-
-
-
             {{--  ----------------------------- response app --}}
-            <button class="navbar-toggler  bg-danger" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand d-md-none d-sm-block d-block" href="#">AgrupecVentas </a>
+            <a class="navbar-brand d-md-none d-sm-block d-block" href="#">{{ config('constants.nameProyect') }}
+            </a>
             <div class="d-md-none d-sm-block d-block ">
 
                 @if (session()->exists('name') && session()->get('rol') === '0')
@@ -332,7 +327,9 @@
                                 <a href="https://twitter.com/iniciarsesion?lang=es"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-twitter"></i> </a>
-                                {{--  <a href="https://api.whatsapp.com/send?phone= + 51 {{config('constants.numContact')}}" class="rounded-circle btn  icons--Contact" target="_blank"><i class="bi bi-whatsapp"></i></a>  --}}
+                                <a href="https://api.whatsapp.com/send?phone= + 51 {{ config('constants.numContact') }}"
+                                    class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                        class="bi bi-whatsapp"></i></a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-youtube"></i> </a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
@@ -395,7 +392,8 @@
         </div>
         <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
             <div class="text-center ">
-                <small class=" mb-3 text-muted h6"> ©2022 copyright Agrupec </small>
+                <small class=" mb-3 text-muted h6"> ©2022 copyright
+                    {{ config('constants.nameProyect') }}</small>
             </div>
         </div>
     </footer>
