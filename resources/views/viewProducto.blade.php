@@ -171,7 +171,7 @@
                                             src="{{ asset('storage/img/icons/tienda-de-reparacion.svg') }}"
                                             class="img-fluid " width="50px" height="50px" alt=""></a>
 
-                                    <span>AgrupecVentas</span>
+                                    <span> {{ config('constants.nameProyect') }}</span>
 
                                 </div>
                                 <hr>
