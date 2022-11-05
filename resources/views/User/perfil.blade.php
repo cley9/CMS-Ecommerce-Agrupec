@@ -24,7 +24,7 @@
                             <span class="text-danger"><i class="bi bi-heart text-danger" style="font-size:18px;"></i>
                                 <?php echo rand(8, 234); ?> </span>
                         </a><br><br>
-                        <a href="" class="btn btn-info col-12 ">Edit Perfil</a>
+                        <a href="" class="btn btn--paymet--ir col-12 ">Edit Perfil</a>
                     </div>
                 </div>
             </div>
@@ -39,12 +39,14 @@
 
                             <div class="mb-3 ">
                                 <label for="exampleInputEmail1" class="form-label">Cambiar nombre de usuario </label>
-                                <input type="text" class="form-control" name="nameUser" required>
+                                <input type="text" class="form-control" name="nameUser"
+                                    placeholder="Nombre nuevo del usuario" required />
                                 {{--  <div id="emailHelp" class="form-text">Well never share your email with anyone else.</div>  --}}
                             </div>
                             <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Contraseña </label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                <label for="contrase" class="form-label">Contraseña </label>
+                                <input type="password" class="form-control" id="contrase" placeholder="Contraseña "
+                                    required />
                             </div>
                             <div class="mb-3 form-check">
                                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -64,7 +66,7 @@
                     </div>
                     <div class="d-flex justify-content-center">
 
-                        <button type="submit" class="btn btn-primary col-md-4 col-10">Guardar cambios</button>
+                        <button type="submit" class="btn btn--paymet--ver col-md-4 col-10">Guardar cambios</button>
                     </div>
                 </form>
             </div>
