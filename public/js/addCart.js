@@ -36,8 +36,8 @@ function viewModalProAddCart(nombre,newPrecio,cantidad,img) {
     //     console.log('co');
     // });
 
-const cartHover=document.getElementById('cartHover');
-cartHover.addEventListener('mouseenter',()=>{
+const cartHoverM=document.getElementById('cartHover');
+cartHoverM.addEventListener('mouseenter',()=>{
     // console.log('hola mark');
     const url = '/GetCart';
     fetch(url)

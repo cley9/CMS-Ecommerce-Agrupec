@@ -264,9 +264,6 @@
                     <a data-bs-toggle="modal" href="#loginUserInicio"><img
                             src="{{ asset('storage/img/icons/userLogin.png') }}" class="icon--loginMin"
                             alt=""></a>
-                    {{--  <div class="d-md-none d-sm-block d-block ">
-
-</div>  --}}
                 @endif
                 <div class="offcanvas offcanvas-start gb-info" tabindex="-1" id="offcanvasNavbar"
                     aria-labelledby="offcanvasNavbarLabel">
@@ -298,8 +295,8 @@
     </nav>
 
 
-
     @yield('header')
+
     <footer class="pt-4   footer--one">
         <div class="container text-muted mb-4">
             <div class="row ">
@@ -400,7 +397,7 @@
     {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
 <script src="js/btn-cardProduct.js"></script>
 <script src="js/loader-main.js"></script>  --}}
-    <script src="js/viewPassword.js" charset="utf-8"></script>
+    {{-- <script src="js/viewPassword.js" charset="utf-8"></script> --}}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

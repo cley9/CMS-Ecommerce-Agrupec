@@ -193,9 +193,27 @@ margin-left: 10px;
     width: 60rem;
     margin-bottom: 1rem;
   }
-
+   /* modal login user */
+   .modal--frm--userLog{
+    margin-left: 30px;
+    max-width: 340px;
+  }
+  /* modal login admin */
+  .modal--frm--adminLog{
+    margin-left: 30px;
+    max-width: 340px;
+  }
 }
+
 @media (min-width: 700px) {
+    /* modal login user */
+    .modal--frm--userLog{
+        max-width: 340px;
+      }
+      /* modal login admin */
+  .modal--frm--adminLog{
+    max-width: 340px;
+  }
   .box--layout-footer{
   height: 10rem;
 }
@@ -216,7 +234,7 @@ margin-left: 10px;
   color: #12a44f;
   font-size: 26px;
   margin-top: -6%;
-  
+
   /* margin-top: 1px -10px 0px 0px; */
 }
 .box-cart-validar{

@@ -1,13 +1,13 @@
 @include('User.modalRegistro')
 @include('User.moldalRecuperarCuenta')
 {{--    --}}
+{{-- <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" action="{{route('loginLocalUser.user.index')}}" method="POST" >  --}}
 <div class="modal fade modal-destino" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--userLog">
         <div class="modal-content ">
             <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" id="formLoginUser" action=""
                 method="POST">
-                {{--  <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" action="{{route('loginLocalUser.user.index')}}" method="POST" >  --}}
                 @method('GET')
                 @csrf
                 <h2 class="fw-normal text-center mb-4">Iniciar sesion</h2>
@@ -20,7 +20,6 @@
                         name="pass" placeholder="Clave" required />
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
-                    {{--  <a class="btn col-12 btn-primary">Iniciar sesion</a>  --}}
                     <button type="submit" class="btn col-12 btn-primary">Iniciar sesion</button>
                 </div>
                 <div class="mb-3 text-center">

@@ -105,9 +105,7 @@ width: 34px;
 
 
 /* log admin */
-.modal--frm--adminLog{
-  max-width: 340px;
-}
+
 .form--frm--adminLog{
 height: 18rem;
 }
@@ -116,9 +114,7 @@ background: #E7F9EB;
 border-color:#FFFFFF;
 }
 /* log user */
-.modal--frm--userLog{
-  max-width: 340px;
-}
+
 .form--frm--userLog{
     height: 24rem;
 }
@@ -321,7 +317,7 @@ align-items: flex-end; */
 }
 
 @media (min-width: 700px) {
-  
+
   .box--search--yes{
     height: 25rem;
   }
@@ -339,6 +335,6 @@ align-items: flex-end; */
 
   .box--produ--view{
     height: 338px;
-  
+
   }
 }
