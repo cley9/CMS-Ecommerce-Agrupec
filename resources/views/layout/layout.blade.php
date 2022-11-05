@@ -149,7 +149,6 @@
                                         <ul class="dropdown-menu perfil--header--link shadow p-2-"
                                             aria-labelledby="userView">
                                             <div class=" perfil--header--title">
-
                                             </div>
                                             <div class="perfil--header--body">
                                                 <h6 class="text-center perfil--header--text"> Usuario</h6>
@@ -157,9 +156,8 @@
                                                     <img src="{{ asset(session()->get('avatar')) }}" alt=""
                                                         class="mb-2 perfil--body--img">
                                                 </div>
-
-                                                {{--  <h6 class="mb-2 text-center">{{session()->get('name')}}</h6>
-    <h6 class="mb-2 text-center">{{session()->get('rol')}}</h6>  --}}
+                                                {{-- <h6 class="mb-2 text-center">{{ session()->get('name') }}</h6>
+                                                <h6 class="mb-2 text-center">{{ session()->get('rol') }}</h6> --}}
                                                 <h6 class="mb-3 text-center">{{ session()->get('email') }}</h6>
                                             </div>
                                             <li>
@@ -221,8 +219,9 @@
             <div class="d-md-none d-sm-block d-block ">
 
                 @if (session()->exists('name') && session()->get('rol') === '0')
-                    {{-- <img src="{{ asset('/storage/img/icons/userLogin.png') }}" alt=""> --}}
                     <div class="cart-menu align-items-center d-flex d-none- d-md-none- d-block-">
+                        <a href="{{ route('perfil.user.main') }}"><img src="{{ asset(session()->get('avatar')) }}"
+                                class=" icons--login--user " alt=""></a>
                         <div class="sidebar-social">
                             <ul>
                                 <a href="{{ route('cart.user.main') }}" class="cart" id="cartHover"
@@ -234,31 +233,6 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="nav-item d-none- d-md-none- d-sm-block-">
-                        <div class="dropdown ">
-                            <a role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img
-                                    src="{{ asset(session()->get('avatar')) }}"
-                                    class=" icons--login--user  rounded-circle_ " alt=""></a>
-                            <ul class="dropdown-menu" aria-labelledby="userView">
-
-                                <h6> Usuario a</h6>
-                                <h6>{{ session()->get('email') }}</h6>
-                                <li>
-                                    <a href="{{ route('perfil.user.main') }}" class="">Mi Perfil</a>
-                                </li>
-                                <li>
-                                    <a class="" href="#exampleModalToggle">Ajuste</a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('logout.user.index') }}">Cerrar Sesion </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-
-                    {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
                 @elseif (session()->exists('email') && session()->get('rol') === '4')
                 @else
                     <a data-bs-toggle="modal" href="#loginUserInicio"><img

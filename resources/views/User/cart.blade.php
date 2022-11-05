@@ -118,9 +118,12 @@
       <span class="text-dark h5 fw-normal">Total</span>
       <small class="text-dark h5 fw-normal">S/ {{number_format( $total_neto, 2, ".", ",")}}</small>
        </div>
-       <a href="{{route('viewProducto.home.list')}}" class="col-md-12 mb-md-3 btn btn--paymet--ver"><i class="bi bi-arrow-90deg-left me-2"></i>Ver más productos</a>
-<a href="{{route('viewProducto.home.list')}}" class="col-md-12 btn btn--paymet--ir" data-bs-toggle="modal" data-bs-target="#Mpayment"><i class="bi bi-paypal me-2"></i>Pagar</a>
-       {{-- <button type="button" class="col-md-12 btn btn--paymet--ir mb-3" name="button" >Ir a comprar</button> --}}
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <a href="{{route('viewProducto.home.list')}}" class="col-md-12 col-10 mb-md-3 btn btn--paymet--ver mb-3"><i class="bi bi-arrow-90deg-left me-2"></i>Ver más productos</a>
+                <a href="{{route('viewProducto.home.list')}}" class="col-md-12 col-10 btn btn--paymet--ir mb-3" data-bs-toggle="modal" data-bs-target="#Mpayment"><i class="bi bi-paypal me-2"></i>Pagar</a>
+            </div>
+            </div>
      </div>
    </div>
             <div class="mb-3 col  p-4 rounded-3 shadow box--view--favorite">
@@ -132,8 +135,12 @@
    @include('User.modalPaymentCart')
    <hr class=" ">
      <div class="col">
-         <a href="Ticket/TicketView.php" class="col-md-12 btn btn--paymet-generar mb-3 " target="_blank"><i class="bi bi-ticket-detailed-fill me-2"></i>Generar tikect de compra </a>
-          <a href="{{route('deleteTotalCart.user.main')}}" class="col-md-12 btn btn--paymet--vaciar  mb-3" ><i class="bi bi-trash-fill me-2"></i> vaciar carrito  </a>
+<div class="container">
+<div class="row d-flex justify-content-center">
+    <a href="Ticket/TicketView.php" class="col-md-12 col-10 btn btn--paymet-generar mb-3 " target="_blank"><i class="bi bi-ticket-detailed-fill me-2"></i>Generar tikect de compra </a>
+    <a href="{{route('deleteTotalCart.user.main')}}" class="col-md-12 col-10 btn btn--paymet--vaciar  mb-3" ><i class="bi bi-trash-fill me-2"></i> vaciar carrito  </a>
+</div>
+</div>
            {{-- <button type="button" class="col-md-12 btn btn--paymet--pago mb-3" data-bs-toggle="modal" data-bs-target="#Mpayment">
 Pagar</button> --}}
      </div>

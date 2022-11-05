@@ -26,7 +26,15 @@ border-color:  #fff;
 
 }
 
-
+/*  */
+.perfil--header--link--nav{
+background-color: bisque;
+margin-left: 20%;
+height: 300px;
+width: 900px;
+display: contents;
+justify-content: center;
+}
 /* ------------------  avatar home  ---------------- */
 
 .perfil--header--link{
