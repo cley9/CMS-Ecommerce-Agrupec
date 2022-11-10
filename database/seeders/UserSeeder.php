@@ -40,21 +40,21 @@ class UserSeeder extends Seeder
         $userAdmin->password = bcrypt('123456');
         $userAdmin->save();
         //
-        $userAdmin = new User();
-        $userAdmin->name = 'junior';
-        $userAdmin->email = 'junior@gmail.com';
-        $userAdmin->rol = '4';
-        $userAdmin->avatar = 'storage/img/icons/person-circle.svg';
-        $userAdmin->password = bcrypt('123456');
-        $userAdmin->save();
+        // $userAdmin = new User();
+        // $userAdmin->name = 'junior';
+        // $userAdmin->email = 'junior@gmail.com';
+        // $userAdmin->rol = '4';
+        // $userAdmin->avatar = 'storage/img/icons/person-circle.svg';
+        // $userAdmin->password = bcrypt('123456');
+        // $userAdmin->save();
         // user log rol 0
-        $userLocal = new User();
-        $userLocal->name = 'jose';
-        $userLocal->email = 'jose@gmail.com';
-        $userLocal->rol = '0';
-        $userAdmin->avatar = 'storage/img/icons/userLogin.png';
-        $userLocal->password = bcrypt('123456');
-        $userLocal->save();
+        // $userLocal = new User();
+        // $userLocal->name = 'jose';
+        // $userLocal->email = 'jose@gmail.com';
+        // $userLocal->rol = '0';
+        // $userAdmin->avatar = 'storage/img/icons/userLogin.png';
+        // $userLocal->password = bcrypt('123456');
+        // $userLocal->save();
 
         $userLocal = new User();
         $userLocal->name = 'junior';
