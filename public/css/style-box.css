@@ -338,3 +338,12 @@ align-items: flex-end; */
 
   }
 }
+
+/* box perfil  img*/
+.box--perfil--home{
+ border: #84FAB0;
+ border-radius: 14px;
+ border-style:dashed;
+ border-width: 4px;
+ height: 190px;
+  /* background: #84FABdashed}

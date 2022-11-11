@@ -27,17 +27,17 @@
                         <a href="" class="btn btn--paymet--ir col-12 ">Edit Perfil</a>
                     </div>
                 </div>
-            </div>
+            </div> 
 
-            <div class="col bg-warning- p-4">
-                <form class="border p-3 row g-5- shadow" action="{{ route('editPerfil.user.main') }}" method="post"
+            <div class="col p-4">
+                <form class="border p-3 row g-5- shadow rounded-3 d-flex justify-content-center" action="{{ route('editPerfil.user.main') }}" method="post"
                     enctype="multipart/form-data">
-                    <div class="row">
-                        <div class="col-md-6 bg-danger- me-md-5">
-                            @method('GET')
-                            @csrf
+                    @method('GET')
+                    @csrf
+                    <div class="row row-cols-md-1">
+                        <div class="col-md-5 col-lg-6  bg-danger- me-md-5-">
 
-                            <div class="mb-3 ">
+                            <div class="mb-3">
                                 <label for="exampleInputEmail1" class="form-label">Cambiar nombre de usuario </label>
                                 <input type="text" class="form-control" name="nameUser"
                                     placeholder="Nombre nuevo del usuario" required />
@@ -53,14 +53,16 @@
                                 <label class="form-check-label" for="exampleCheck1">Aceptar los terminos </label>
                             </div>
                         </div>
-                        <div class="mb-3 col-md-5 bg-info- ">
-                            <h6 class="text-center">imagen del perfil</h6>
-                            <div class="c mb-3">
-                                <img src="" alt="">
-                            </div>
-                            <div class="mb-3">
-                                <input class="form-control" type="file" id="formFileMultiple" name="imagenUser"
+                        <div class="mb-3 col-md-5 col-lg-6 d-flex justify-content-center">
+                           <div>
+                               <h6 class="text-center">imagen del perfil</h6>
+                               <div class="c- box--perfil--home mb-3">
+                                   <img src="" alt="">
+                                </div>
+                                <div class="mb-3">
+                                    <input class="form-control" type="file" id="formFileMultiple" name="imagenUser"
                                     accept="image/*">
+                                </div>
                             </div>
                         </div>
                     </div>
