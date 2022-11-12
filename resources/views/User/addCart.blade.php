@@ -11,7 +11,7 @@ echo file_get_contents("http://agrupec.com/includes/desing.php");
    <!--  href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"-->
    <!--/>-->  --}}
 
- <h3>hola</h3>
+ {{-- <h3>hola</h3> --}}
  <a href="#" class="hero__cta">agregar producto</a>
 
  <section class="modal ">

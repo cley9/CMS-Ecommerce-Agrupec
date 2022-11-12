@@ -2,7 +2,9 @@ function addProCart(id,cantidad,newPrecio,nombre,img){
     console.log(id+'---'+cantidad+'---'+newPrecio+'---'+nombre+'---'+img);
     // location.href ="AddCart_a/"+id+"/"+cantidad;
     // let array={};
-    fetch('AddCart/'+id+'/'+cantidad+'' ,{
+    // http://127.0.0.1:8000/
+    fetch('/AddCart/'+id+'/'+cantidad+'' ,{
+        // fetch('AddCart/'+id+'/'+cantidad+'' ,{
         method:'GET'
         // body:DataTransfer(id,cantidad)
     });
@@ -16,6 +18,7 @@ function viewModalProAddCart(nombre,newPrecio,cantidad,img) {
     let outCod=document.getElementById("outCodigo");
     let outImg=document.getElementById("outImg");
     outName.textContent=nombre;
+    // outImg.innerHTML = "<img src='storage/img/Productos/8887.jpg'  class='img-fluid' alt=''  >";
     outImg.innerHTML = "<img src='storage/img/Productos/"+img+"'  class='img-fluid' alt=''  >";
     outPayment.textContent='S/ '+newPrecio+'.00';
     outCount.textContent=cantidad;

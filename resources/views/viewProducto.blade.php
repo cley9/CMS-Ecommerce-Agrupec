@@ -143,7 +143,17 @@
                                     <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info "
                                         data-bs-toggle="modal" data-bs-target="#Mpayment">
                                         Comprar ahora</button>
-                                    <a class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary">Agregar al carrito</a>
+                                    <a id="addProductoId" class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary">Agregar
+                                        al carrito</a>
+                                    <script>
+                                        addProductoId.addEventListener("click", (e) => {
+                                            console.log({{ $idProducto['id'] }});
+                                            addProCart({{ $idProducto['id'] }}, 1, {{ $idProducto['newPrecio'] }},
+                                                '{{ $idProducto['nombre'] }}', '{{ $idProducto['imagen'] }}');
+
+                                        });
+                                    </script>
+
                                     {{--  @else  --}}
                                 @else
                                     <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info "
@@ -246,6 +256,7 @@
         @include('User.modalDestino')
 
 
+        @include('User.modelAddProCart')
 
     </body>
 @endsection

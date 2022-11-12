@@ -95,9 +95,9 @@
   <div class="d-flex justify-content-center">
 
     <div class="box-cart-validar p-3 text-center ">
-        <h4>El carrito esta vacio, agregue producto a su carro</h4>
+        <h4>El carrito esta vacio, agregue producto a su carrito</h4>
     </div>
-</div>
+       </div>
 
 
 @php } @endphp
