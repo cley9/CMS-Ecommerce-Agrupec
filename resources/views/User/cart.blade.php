@@ -106,8 +106,8 @@
  <div class="col-12 col-md-3  ">
          <div class="mb-3 col  p-4 rounded-3 shadow box--view--favorite">
      <h5 class="mb-4 ">Resumen de la compra:</h5>
-     {{-- <h4>{{session()->get('userId')}}</h4>
-     <h4>{{session()->get('name')}}</h4> --}}
+     <h4>{{session()->get('userId')}}</h4>
+     <h4>{{session()->get('name')}}</h4>
      <div class=" mb-0 d-flex justify-content-between aling-items-center ">
      <small class="mb-0 text-muted  fw-normal">Total productos </small>
            <small class=" mb-0 text-muted ">{{$totalProducto}}</small>
@@ -137,7 +137,7 @@
      <div class="col">
 <div class="container">
 <div class="row d-flex justify-content-center">
-    <a href="Ticket/TicketView.php" class="col-md-12 col-10 btn btn--paymet-generar mb-3 " target="_blank"><i class="bi bi-ticket-detailed-fill me-2"></i>Generar tikect de compra </a>
+    <a href="{{ route('download.user.pdf') }}" class="col-md-12 col-10 btn btn--paymet-generar mb-3 " target="_blank"><i class="bi bi-ticket-detailed-fill me-2"></i>Generar tikect de compra </a>
     <a href="{{route('deleteTotalCart.user.main')}}" class="col-md-12 col-10 btn btn--paymet--vaciar  mb-3" ><i class="bi bi-trash-fill me-2"></i> vaciar carrito  </a>
 </div>
 </div>
