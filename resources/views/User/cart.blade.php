@@ -106,8 +106,8 @@
  <div class="col-12 col-md-3  ">
          <div class="mb-3 col  p-4 rounded-3 shadow box--view--favorite">
      <h5 class="mb-4 ">Resumen de la compra:</h5>
-     <h4>{{session()->get('userId')}}</h4>
-     <h4>{{session()->get('name')}}</h4>
+     {{-- <h4>{{session()->get('userId')}}</h4>
+     <h4>{{session()->get('name')}}</h4> --}}
      <div class=" mb-0 d-flex justify-content-between aling-items-center ">
      <small class="mb-0 text-muted  fw-normal">Total productos </small>
            <small class=" mb-0 text-muted ">{{$totalProducto}}</small>

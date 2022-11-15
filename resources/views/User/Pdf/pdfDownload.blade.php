@@ -43,6 +43,7 @@
                 </tr>
             </thead>
             <tbody>
+                {{ $precio = 0 }}
                 @forelse ($ticket as $user)
                     <tr>
                         <td>{{ $user->id }}</td>
@@ -50,6 +51,7 @@
                         <td>S/ {{ number_format($user->newPrecio, 2, '.', ',') }}</td>
                         <td>{{ $user->pivot->cantidad }}</td>
                         <td>S/ {{ number_format($user->newPrecio, 2, '.', ',') * $user->pivot->cantidad }}</td>
+                        {{ $precio += $user->newPrecio * $user->pivot->cantidad }}
                         {{-- <td>{{ $user->peso }} g</td> --}}
                         {{--  <td>{{ $user->created_at }}</td>  --}}
                     </tr>
@@ -57,6 +59,7 @@
                 @endforelse
             </tbody>
         </table>
+        <h6>El precio total de la compra es : S/ {{ number_format($precio, 2, '.', ',') }}</h6>
     </div>
 </body>
 
