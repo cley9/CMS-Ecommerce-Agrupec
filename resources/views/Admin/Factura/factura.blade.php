@@ -12,11 +12,11 @@
 @section('title', 'Dashboard')
 
 @section('content_header')
-    <h1>Dashboard</h1>
+    <h1>Crear una nueva factura</h1>
 @stop
 
 @section('content')
-    <p>factura .</p>
+    <p></p>
     <style media="screen">
         .modal-dialog {
             max-width: 700px;
