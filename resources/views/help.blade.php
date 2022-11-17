@@ -65,10 +65,10 @@
                                 </div>
                             </div>
                             <div class="mb-0">
-                                <small class="h7 fw-normal">Consultar tu saldo, aplicaciones gratis…</small>
+                                <small class="h7 fw-normal">Consultar los productos en stock</small>
                             </div>
                             <div class="mb-0">
-                                <small class="h7 fw-normal">Pagar tu recibo</small>
+                                <small class="h7 fw-normal">Ver los nuevos productos</small>
                             </div>
                             <div class="mb-0">
                                 <small>Comprar tus herramientas favoritos</small>
@@ -77,7 +77,7 @@
                                 <small>Acceder a descuentos con Cuponazo de Compra</small>
                             </div>
                             <div class="mb-2 ">
-                                <small> Encontrar nuestras tiendas</small>
+                                <small> Encontrar nuestras tiendas fisicas</small>
                             </div>
 
                         </div>
@@ -129,10 +129,10 @@
             <div class="col ">
                 <div class="col card  text-center  rounded-3 p-3">
                     <small class="h4 ">Contáctenos</small>
-                    <p class="h9  mb-0">Dirección: diresctio<br>
-                        <span>Teléfono: numcontacto</span>
+                    <p class="h9  mb-0">Dirección: {{ config('constants.directionContact') }}<br>
+                        <span>Teléfono: {{ config('constants.numContact') }}</span>
                         <br>
-                        Correo: gmail
+                        Correo: {{ config('constants.gmailContact') }}
                     </p>
                     <div class=" text-center  ">
                         <a class="foda--view"href="{{ url('Contactenos') }}"><i class="bi bi-telephone-plus "></i></a>

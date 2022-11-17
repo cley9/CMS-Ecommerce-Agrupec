@@ -31,44 +31,27 @@
                         required />
                 </div>
                 <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="checkTermino1">
+                    <input type="checkbox" class="form-check-input" id="checkTermino1" required />
                     <label class="form-check-label" for="checkTermino1">Acepto los Terminos y Condiciones</label>
                 </div>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="checkTermino2">
+                {{-- <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="checkTermino2" required />
                     <label class="form-check-label" for="checkTermino2">Acepto la Compra Segura y Políticas de
                         Privacidad</label>
-                </div>
+                </div> --}}
 
                 <div class="mb-3 d-flex justify-content-center">
                     {{--  <button type="submit" class="btn col-12 btn-primary">Registrar</button>  --}}
                     {{--  <button type="submit" onsubmit="return validarEmail();" id="validarEmail" class="btn col-12 btn-primary">Registrar</button>  --}}
-                    <a class="btn col-12 btn-primary" id="validarEmail">save</a>
+                    <a class="btn col-12 btn-primary" id="validarEmail">Registrar</a>
                 </div>
 
+                <hr class="" id="formDiv">
+                <div class="mb-3 text-center" id="formOpcion">
+                    <h6>¿Cambiaste de opinión? <a class="text-primary" data-bs-target="#loginUserInicio"
+                            data-bs-toggle="modal" data-bs-dismiss="modal">Iniciar sesión</a></h6>
+                </div>
             </form>
-        </div>
-    </div>
-</div>
-
-
-
-
-{{--    --}}
-<div class="modal fade" id="has" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalToggleLabel">Modal 1</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                Show a second modal and hide this one with the button below.
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
-                    data-bs-dismiss="modal">Open second modal</button>
-            </div>
         </div>
     </div>
 </div>

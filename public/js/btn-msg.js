@@ -4,21 +4,23 @@ btnEnvioRecu.addEventListener('click',()=>{
 
 
     // console.log(12);
-console.log(formulario);
+// console.log(formulario)  //----todo los datos ;
 // console.log(formulario.formEmail.email);
-console.log(emailRecupe.value);
+// console.log(emailRecupe.value); ///--- recuperar los gmail
 // document.querySelector(`#form__text__vacio h2`).classList.add("form__text__vacio");
 // document.querySelector(`#formBody form`).classList.add("form--correcto");
 // document.querySelector(`#formBody form`).classList.remove("form--frm--userRecuperar");
 // form__input__vacio
 const gmailValidate=emailRecupe.value;
 if (gmailValidate === "") {
-    console.log(23);
+    // console.log(23);
+msjCamposVacio();
 } else {
 
     fetch("http://127.0.0.1:8000/envioGmail?email="+emailRecupe.value+"").then(data => data.text()
     ).then( (data)=> {
-        console.log("se envio");
+        // console.log("se envio");
+        msjRegistroUsuarioCliente();
         emailData.innerHTML=`${gmailValidate}`;
         document.querySelector(`#formEmail p`).classList.add("form__input__email__correcto");
         document.querySelector(`#formEmail p`).classList.remove("form__input__vacio");
@@ -47,20 +49,21 @@ if (gmailValidate === "") {
         const getInputPass2=document.querySelector('.inputPass2').value;
                 // console.log(getFormRegister.e.targert());
                 // console.log(getFormRegister.input);
-        console.log(getInputName);
-        console.log(getInputEmail);
-        console.log(getInputPass1);
-        console.log(getInputPass2);
+        // console.log(getInputName);
+        // console.log(getInputEmail);
+        // console.log(getInputPass1);
+        // console.log(getInputPass2);
 if (getInputEmail === '') {
-console.log('esta vacio');
+// console.log('esta vacio');
+msjCamposVacio();
 } else {
-    console.log('esta lleno');
+    // console.log('esta lleno');
 
         fetch('/validarUser/'+getInputEmail+'' ,{
                 method:'GET'
             // body:DataTransfer(id,cantidad)
         }).then(data => data.text()).then(function(data){
-            console.log(data);
+            // console.log(data);
             if (data=== 'true') {
                 // console.log('si exite el user');
                 document.querySelector(`.groud--email input`).classList.add("input--frm--errorValidacion");
@@ -73,10 +76,13 @@ console.log('esta vacio');
                 // console.log('no  exite el user');
 //                 if (condition) {
 if (getInputName === '' || getInputPass1 ==='' || getInputPass2 ==='' || getInputPass1 !== getInputPass2  ) {
-console.log('esta vacio los demas campos');
+// console.log('esta vacio los demas campos');
+msjCamposVacio();
+
                 }else{
                     location.href='/createUser?nombre='+getInputName+'&&email='+getInputEmail+'&&pass1='+getInputPass1+'&&pass2='+getInputPass2+'';
-                    console.log('envia');
+                    // console.log('envia');
+                    msjRegistroUsuarioCliente();
 
                 }
                 document.querySelector(`.groud--email input`).classList.remove("input--frm--errorValidacion");
@@ -85,7 +91,6 @@ console.log('esta vacio los demas campos');
                 document.querySelector(`.groud--email input`).classList.add("input--frm--bienValidacion");
                 document.querySelector(`.groud--email i`).classList.remove("icon--frm--vacio");
                 document.querySelector(`.groud--email i`).classList.add("icon--frm--bienValidacion");
-
             }
     }
     );
@@ -127,7 +132,7 @@ formLoginAdmin.addEventListener('submit',function(e){
             location.href='/Admin';
         } else {
     msjError();
-    console.log('error');
+    // console.log('error');
 }
 });
 });
@@ -156,3 +161,27 @@ precioEnvioDestino.addEventListener('click',(e)=>{
                         precioDes.innerHTML=`${precio}`;
     // console.log(precioDestino.value);
 });
+
+
+function msjCamposVacio(){
+    Swal.fire({
+        icon: 'warning',
+        title:  ' Llene los campos ',
+        text: 'Gracias por entender !',
+        showConfirmButton: false,
+        timer: 3000
+    
+      });
+}
+
+function msjRegistroUsuarioCliente(){
+    Swal.fire({
+        icon: 'success',
+        title:  'Se registro correctamente',
+        text: 'Gracias por usar nuestro servicios !',
+        showConfirmButton: false,
+        timer: 3000
+    
+      });
+    
+}
