@@ -271,7 +271,7 @@
 
     @yield('header')
 
-    <footer class="pt-4   footer--one">
+    <footer class="pt-4   footer--body">
         <div class="container text-muted mb-4">
             <div class="row ">
                 <div class="container  d-flex align-items-center justify-content-center pt-4">
@@ -383,6 +383,7 @@
     <script src="{{ asset('js/addCart.js') }}"></script>
     <script src="{{ asset('js/btn-msg.js') }}"></script>
     <script src="{{ asset('js/btn-up.js') }}"></script>
+    <script src="{{ asset('js/viewPassword.js') }}"></script>
 
 
 

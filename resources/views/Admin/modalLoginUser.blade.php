@@ -1,11 +1,11 @@
 @include('User.modalRegistro')
 @include('User.moldalRecuperarCuenta')
 {{--    --}}
-{{-- <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" action="{{route('loginLocalUser.user.index')}}" method="POST" >  --}}
 <div class="modal fade modal-destino" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--userLog">
         <div class="modal-content ">
+            {{-- <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" action="{{route('loginLocalUser.user.index')}}" method="POST" >  --}}
             <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" id="formLoginUser" action=""
                 method="POST">
                 @method('GET')
@@ -16,8 +16,10 @@
                         placeholder="Correo electronico " required />
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control input--frm--userLog" id="passwordLoginUser"
+                    <input type="password" class="form-control input--frm--userLog" id="passwordLoginUserA"
                         name="pass" placeholder="Clave" required />
+                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img"
+                        id="imgPassLoginUserA" onclick="mostrarA()" alt="">
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
                     <button type="submit" class="btn col-12 btn-primary">Iniciar sesion</button>

@@ -91,10 +91,9 @@ height: 150px; margin-top:-30px; overflow: hidden;
 
 }
 
-.footer--one{
-  /* background-color:#223D59; */
+.footer--body{
   background-color: #050E14;
-  height:780px;
+  height:40rem;
 }
 
 /* -{} */
@@ -265,4 +264,15 @@ margin-left: 10px;
 
 .frm--correo{
 margin-top: 40px;
+}
+
+/* modal de usuariod cliente inicio sesion */
+.frm--loginUser--img{
+  /* display:block; */
+width: 20px;
+position: absolute;
+margin-top: -29px;
+margin-left: 74%;
+/* margin-top: -200px; */
+/* font-size: 10px; */
 }

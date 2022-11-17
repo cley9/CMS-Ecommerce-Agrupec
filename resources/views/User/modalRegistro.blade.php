@@ -22,14 +22,26 @@
                     {{--  <span class="text--frm--msgVacio" id="bienGroud">Correo electronico correcto</span>  --}}
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control input--frm--userLog inputPass1"
-                        id="exampleInputPassword1" name="pass1" placeholder="Ingresa la contraseña" required />
+                    <input type="password" class="form-control input--frm--userLog inputPass1" id="passwordLoginUser"
+                        name="pass1" placeholder="Ingresa la contraseña" required />
+                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img"
+                        id="imgPassLoginUser" onclick="mostrar()" alt="">
                 </div>
                 <div class="mb-4">
-                    <input type="password" class="form-control input--frm--userLog inputPass2"
-                        id="exampleInputPassword2" name="pass2" placeholder="Vuelva a ingresar su contraseña"
-                        required />
+                    <input type="password" class="form-control input--frm--userLog inputPass2" id="passwordLoginUserB"
+                        name="pass2" placeholder="Vuelva a ingresar su contraseña" required />
+                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img"
+                        id="imgPassLoginUserB" onclick="mostrarB()" alt="">
                 </div>
+                {{-- <div class="mb-3">
+                    <input type="password" class="form-control input--frm--userLog" id="passwordLoginUser"
+                        name="pass" placeholder="Clave" required />
+                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img"
+                        id="imgPassLoginUser" onclick="mostrar()" alt="">
+                </div> --}}
+
+
+
                 <div class="mb-3 form-check">
                     <input type="checkbox" class="form-check-input" id="checkTermino1" required />
                     <label class="form-check-label" for="checkTermino1">Acepto los Terminos y Condiciones</label>
