@@ -46,10 +46,8 @@ class LoginController extends Controller
             $userId = User::where('email', session()->get('email'))->where('email', session()->get('email'))->get();
             // session(['avatar' => $userId[0]->avatar]);
             session(['avatar' => $img = 'storage/img/icons/userLogin.png']);
-
             session(['userId' => $userId[0]->id]);
             session(['name' => $userId[0]->name]);
-
             return response()->json(['status' => 'ok', 'code' => '200', 'data' => $userId]);
         } else {
             return response()->json(['status' => 'error', 'code' => '404']);

@@ -38,3 +38,16 @@ else {
   imgpassLoginA.src="/storage/img/icons/eye-slash-fill.svg";
 }
  }
+
+ function mostrarC(){
+  let passLoginC=document.getElementById("passwordLoginAdmin");
+  let imgpassLoginC=document.getElementById("imgPassLoginAdmin");
+if (passLoginC.type=="password") {
+  passLoginC.type="text";
+  imgpassLoginC.src="/storage/img/icons/eye-fill.svg";
+}
+else {
+  passLoginC.type="password";
+  imgpassLoginC.src="/storage/img/icons/eye-slash-fill.svg";
+}
+ }

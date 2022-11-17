@@ -368,6 +368,8 @@
             </div>
         </div>
     </footer>
+    @include('User.modalListProCart')
+
     {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
 <script src="js/btn-cardProduct.js"></script>
 <script src="js/loader-main.js"></script>  --}}
@@ -379,6 +381,7 @@
 
     {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
     <script src="{{ asset('js/msj.js') }}"></script>
+    {{-- <script src="{{ asset('js/msj.js') }}"></script> --}}
     <script src="{{ asset('js/dataPictur.js') }}"></script>
     <script src="{{ asset('js/addCart.js') }}"></script>
     <script src="{{ asset('js/btn-msg.js') }}"></script>
@@ -429,7 +432,7 @@
             $("#myCarousel").carousel("prev");
         });
     </script>
-    @include('User.modalListProCart')
+    {{-- @include('User.modalListProCart') --}}
 
 
 

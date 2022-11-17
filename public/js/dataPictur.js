@@ -156,3 +156,11 @@ updateCatalogoImg.src='storage/img/SlayderMain/'+data.imagen+'';
 // updateCatalogoFile.file='12';
 });
 }
+
+
+
+// const email=e.target.emailLoginUser.value;
+    // const password=e.target.passwordLoginUser.value;
+    // console.log(email.value);
+    // console.log(password.value);
+    
