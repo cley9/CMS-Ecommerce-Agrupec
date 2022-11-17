@@ -139,30 +139,30 @@ formLoginAdmin.addEventListener('submit',function(e){
 });
 
 
-const precioEnvioDestinoN=document.getElementById('precioDestino');
-// const precioEnvioA=document.querySelectorAll('#precioDestino');
-// precioEnvioDestino.addEventListener('click',(e)=>{
-    precioEnvioDestinoN.addEventListener("click",function(){
+// const precioEnvioDestinoN=document.getElementById('precioDestino');
+// // const precioEnvioA=document.querySelectorAll('#precioDestino');
+// // precioEnvioDestino.addEventListener('click',(e)=>{
+//     precioEnvioDestinoN.addEventListener("click",function(){
 
-    switch (precioEnvioDestinoN.value) {
-        case "1":
-            precio="6.00";
-            break;
-            case "2":
-            precio="16.00";
-                break;
-                case "3":
-                    precio="18.00";
-                    break;
-                    case "4":
-                        precio="15.00";
-                        break;
-                        // default:
-                        //     break;
-                        }
-                        precioDes.innerHTML=`${precio}`;
-    // console.log(precioDestino.value);
-});
+//     switch (precioEnvioDestinoN.value) {
+//         case "1":
+//             precio="6.00";
+//             break;
+//             case "2":
+//             precio="16.00";
+//                 break;
+//                 case "3":
+//                     precio="18.00";
+//                     break;
+//                     case "4":
+//                         precio="15.00";
+//                         break;
+//                         // default:
+//                         //     break;
+//                         }
+//                         precioDes.innerHTML=`${precio}`;
+//     // console.log(precioDestino.value);
+// });
 
 
 function msjCamposVacio(){

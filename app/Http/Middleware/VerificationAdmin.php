@@ -19,11 +19,8 @@ class VerificationAdmin
         if (session()->exists('email') && session()->get('rol') === '4') {
             // if (session()->exists('name') && session()->get('rol') === '4') {
             return $next($request);
+        } else {
+            return redirect('/');
         }
-        else{
-    return redirect('/');
-
-        }
-
     }
 }

@@ -18,10 +18,7 @@ function msjOk(){
         timer: 3000
         })
     }
-// console.log(32);
-
 // admin producto
-
 function productDelete(id,nomProducto,img){
     console.log(id+' ----- '+nomProducto+' ----- '+img);
     swal.fire({
@@ -40,21 +37,16 @@ function productDelete(id,nomProducto,img){
     if (result.value) {
       var url="/Admin-delete/"+id+"/"+img+"";
       window.location.href=url;
-      /*
-      */
     Swal.fire({
         icon: "success",
         title: "Eliminado ",
         text: "Producto eliminado correctamente",
         showConfirmButton: false,
         timer: 1500,
-
       });
         }
-
-
-    });
-}
+      });
+  }
 function msjInicieSesion() {
     Swal.fire({
       title: ' Debes de iniciar sesi&oacute;n para agregar ',
@@ -64,14 +56,8 @@ function msjInicieSesion() {
       timer: 2000
       })
   }
-
-
-
-
 //   -----------------espa
-
 function msgAgregado(){
-
     Swal.fire({
     // position:'center',
     icon: 'success',
@@ -106,16 +92,6 @@ function msgAgregado(){
     })
     }
     }
-    // function love() {
-    //   Swal.fire({
-    //     title: ' Debes de iniciar sesi&oacute;n para agregar ',
-    //     text: 'Gracias por entender',
-    //     icon: 'info',
-    //     showConfirmButton:false,
-    //     timer: 2000
-    //     })
-    // }
-
     function addCard(){
       Swal.fire({
       icon: 'success',
@@ -125,27 +101,7 @@ function msgAgregado(){
       timer: 2000
     })
     }
-    function addViewCardP() {
-          let a = "<h2>hola jas</h2>";
-    //   let a = "";
-    //   a += " <h2>hola jas</h2>";
-      return a;
-    }
-
-        // function confirmar(idView , userName,ationUser,countProd,idImg) {
-
      function viewAddCardP(viewItem,viewName,viewImg,viewPayment,viewCount) {
-    //  function viewAddCardP(idView,viewName,viewImg,viewPayment,viewCount) {
-    //   alert("---> " + viewItem);
-    // const openModal = document.querySelector(".viewCP"+viewItem);
-    // let outProduPreci=document.querySelector(".outPrecio");
-    // outProduPreci.classList.add("<h4>gagas</h4>");
-    // let outProduPreci=document.getElementById("outPrecio");
-
-    // outProduPreci.textContent='S/ '+viewPrecio;
-    // let outImg=document.getElementById("outImg");
-
-
     let outName=document.getElementById("outNombre");
     const modal = document.querySelector(".modalViewCP");
     let outPayment=document.getElementById("outPrecio");
@@ -169,84 +125,13 @@ function msgAgregado(){
     btnClose.addEventListener("click", (e) => {
     modal.classList.remove("modal--show");
     });
-    }
-
-
-    //  function viewAddCardP(viewItem,viewName,viewImg,viewPayment,viewCount) {
-    //     function confirmar(idView , userName,ationUser,countProd,proName,proImg,proPrecio) {
-
-    //     //   console.log(idView+" -- "+userName+" -- "+ationUser+"-- "+countProd+"---"+proName+"---"+proImg+"---"+proPrecio);
-    //       if (idView >0 && userName !=='' && ationUser == '1') {//car
-
-    //       viewAddCardP(idView,proName,proImg,proPrecio,countProd);
-    //     //   console.log("-- "+idView+" -- "+userName+" -- "+ationUser+" -- "+countProd+"--");
-    //     $(document).ready(function(){
-    //     $.ajax({
-    //       type:"POST",
-    //       url:"addPruevad.php",
-    //       // data:datos,
-    //       data: {countProdCard:countProd,addProductoCard:idView},
-    //       success:function(r){console.log("insert --> ");
-
-    //     //   viewAddCardP(viewItem,viewName,viewImg,viewPayment,viewCount);
-    //       }
-    //     });
-    //     return false;
-    // });
-    //     }
-    //      if (idView >0 && userName ==='' && ationUser == '1') {//car
-    //        love();console.log("no user");
-    //     }
-    //     if(idView >0 && userName !=='' && ationUser == '2') {//view love
-    //       window.location.href ="view-page?view="+idView;
-    //       }
-    //       if(idView >0 && userName ==='' && ationUser == '2') {//view love
-    //     love();
-    //       }
-    //       if(idView >0 && userName ==='' && ationUser == '3') {//button xtra
-    //       window.location.href ="view-page?view="+idView;
-
-    //       }
-    //     }
-
-    // function msgAgregado(){
-
-    //   var nameP=document.getElementById("nameP").value;
-    //   if (nameP === "") {
-    //     return false;
-    //   }else {
-    // Swal.fire({
-    // // position:'center',
-    // icon: 'success',
-    // title: 'Producto agregado ',
-    // text: 'Gracias por ingresar datos !',
-    // showConfirmButton: false,
-    // timer: 3000
-    // })
-    // }
-    // }
-
-
-    // popers user logi
-
-    // var popover = new bootstrap.Popover(document.querySelector('.popover'), {
-    //   container: 'body'
-    // })
-
+  }
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
     var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
       return new bootstrap.Popover(popoverTriggerEl);
     });
-
     // $(document).ready(function(){
-
-    //   $('[data-bs-toggle="popover"]').popover();
-
-    //   });
-
-    // $('[data-toggle="popover"]').popover()
-
-    $('[data-bs-toggle="popover"]').popover({
-      trigger: 'focus', // Esto es para definir el evento del mouse, igual a data-trigger = "focus"
-      html: true // La clave está aquí. Después de la modificación, podemos escribir código html en nuestro contenido de datos.
-      })
+    // $('[data-bs-toggle="popover"]').popover({
+    //   trigger: 'focus', // Esto es para definir el evento del mouse, igual a data-trigger = "focus"
+    //   html: true // La clave está aquí. Después de la modificación, podemos escribir código html en nuestro contenido de datos.
+    //   })

@@ -10,34 +10,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
     <!--nw verson--->
     <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
     <link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}" />
-
-
     {{--
               <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">   --}}
     {{--  icons  --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
-    {{--  <link rel="stylesheet" href="{{asset('resources/css/app.css')}}">  --}}
-    {{--  <link rel="stylesheet" href="{{asset('/storage/css/app.css')}}">  --}}
-    {{--  <link rel="stylesheet" href="{{asset('app.css')}}">  --}}
-
-    {{--  css/style.css  --}}
-    {{--  <link href="{{ asset('js/dataPictur.js') }}" rel="stylesheet">  --}}
     <title>{{ config('constants.nameProyect') }}</title>
 </head>
 
-
 <body>
-
     <div class="rounded-2 ir-arriba ">
         <i class="bi bi-chevron-up"></i>
     </div>
@@ -45,7 +33,6 @@
     @include('Admin.modalLoginUser')
     @include('Admin.modalLoginAdmin')
     <br><br><br>
-
     <div class="container text-center mb-4 h-100  d-flex justify-content-center align-items-center">
         <div class="col-10 col-md-5 ">
             <form action="{{ route('search.home.search') }}" id="form" class="frm--search--home">
@@ -112,7 +99,6 @@
                     <div class="col-lg-1 ">
                         <b><a class="navbar-brand text-success  h-3 text--nav--home"
                                 href="{{ route('vista.index') }}">{{ config('constants.nameProyect') }}</a></b>
-                        {{--  <a href="{{route('vista.index')}}" class="navbar-brand text-success  h-3 text--nav--home" >AgrupecVentas</a>  --}}
                     </div>
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
@@ -173,19 +159,8 @@
                                         </ul>
                                     </div>
                                 @elseif (session()->exists('email') && session()->get('rol') === '4')
-                                    {{--  <h4>fajdlfjaldkf</h4>  --}}
-                                    {{--  <a class="nav-link active icons--style--raya" href="{{ route('list.admin.list')  }}">lista producto</a>
- <div class="dropdown  ">
-  <a  role="button" id="userView" data-bs-toggle="dropdown" aria-expanded="false"><img src="{{asset('storage/img/icons/person-circle.svg')}}" class=" icons--login--user  rounded-circle_ " alt=""></a>
-  <ul class="dropdown-menu" aria-labelledby="userView">
-      <a href="{{url('/Admin')}}">Administrador</a>
-      <h6>{{session()->get('email')}}</h6>
-      <li>
-          <a class=""  href="#exampleModalToggle">Ajuste</a>
-        </li>
-    </ul>
-</div>  --}}
-                                    {{--  <h6> Administrador</h6>  --}}
+                                    <a href="{{ route('logout.user.index') }}" class="btn bg-info"><i
+                                            class="bi bi-person-fill me-lg-2"></i>Cerrar Sesion </a>
                                 @else
                                     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
@@ -281,7 +256,6 @@
                                     src="{{ asset('storage/img/icons/peru.png') }}" class="me-2" width="26px"
                                     alt=""> Perú</h5>
                             <h5 class="btn--footer--rese text-center  me-lg-4">Nuevo Productos</h5>
-                            {{--  <h5 class="btn--footer--rese text-center  me-lg-4 ">Regiones</h5>  --}}
                         </div>
 
                         <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
@@ -371,37 +345,19 @@
     @include('User.modalListProCart')
 
     {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
-<script src="js/btn-cardProduct.js"></script>
 <script src="js/loader-main.js"></script>  --}}
-    {{-- <script src="js/viewPassword.js" charset="utf-8"></script> --}}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
 
-    {{--  <script src="{{ asset('js/app.js') }}"></script>  --}}
     <script src="{{ asset('js/msj.js') }}"></script>
-    {{-- <script src="{{ asset('js/msj.js') }}"></script> --}}
     <script src="{{ asset('js/dataPictur.js') }}"></script>
     <script src="{{ asset('js/addCart.js') }}"></script>
     <script src="{{ asset('js/btn-msg.js') }}"></script>
     <script src="{{ asset('js/btn-up.js') }}"></script>
     <script src="{{ asset('js/viewPassword.js') }}"></script>
-
-
-
-
-    {{--  <script>
-    Swal.fire(
-      'The Internet?',
-      'That thing is still around?',
-      'question'
-    )
-  </script>  --}}
-    {{--  </script>  --}}
-
-
-    {{--  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
+    {{-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script>
         $(function() {
@@ -416,28 +372,19 @@
                 autoPlay: true
             });
         });
-
-
-
         // Activate Carousel
         //$("#myCarousel").carousel();
-
         // Enable Carousel Indicators
         $(".item").click(function() {
             $("#myCarousel").carousel(1);
         });
-
         // Enable Carousel Controls
         $(".left").click(function() {
             $("#myCarousel").carousel("prev");
         });
     </script>
     {{-- @include('User.modalListProCart') --}}
-
-
-
-
-
+    <script src="{{ asset('js/dato.js') }}"></script>
 </body>
 
 </html>
