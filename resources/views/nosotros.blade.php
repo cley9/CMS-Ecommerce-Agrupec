@@ -8,7 +8,8 @@
 
                 <small class="h4">¿Quiénes somos?</small><br><br>
 
-                <p class="mb-3 mb-md-4 h9 text-break">Somos una empresa dedicada a la venta de productos de ferretería al por
+                asset <p class="mb-3 mb-md-4 h9 text-break">Somos una empresa dedicada a la venta de productos de ferretería
+                    al por
                     mayor cumpliendo
                     con los más altos estándares de calidad. Ofrecemos variedad de artículos de ferretería, en los mejores
                     precios con
@@ -20,7 +21,7 @@
                 </div>
             </div>
             <div class="col-8 mb-4 mb-md-2 col-md-4  p-0 p-md-4 ">
-                <img src="{{ asset('storage/img/icons/red.svg') }}" class="card-img"alt="" height=" 200px">
+                <img src="{{ 'storage/img/icons/red.svg' }}" class="card-img"alt="" height=" 200px">
             </div>
         </div>
     </div>

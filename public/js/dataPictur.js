@@ -71,7 +71,7 @@ function update_(){
 //  console.log(reader.result);
 // console.log(edPreviewImg.src);
 
-    console.log(edId.value);
+    // console.log(edId.value);
     // console.log(edPicturUpdate.files[0]);
 
 //     const fileSelector = document.getElementById('edPictur1');
