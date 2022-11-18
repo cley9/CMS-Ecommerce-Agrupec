@@ -217,10 +217,7 @@
 
                                 @if (session()->exists('name') && session()->get('rol') === '0')
                                     <div class="overlay d-flex align-items-center-- justify-content-center">
-                                        {{-- addProCart({{$key['id']}},count{{$key['id']}},{{$key['newPrecio']}},'<?php echo $key['nombre']; ?>','<?php echo $key['imagen']; ?>'); --}}
-
-                                        {{-- <a  onclick="addProCart({{$key['id']}},1,{{$key['newPrecio']}},{{$key['nombre']}},{{$key['imagen']}})" class="icon"  ><i class="bi bi-heart"></i></a> --}}
-                                        <a onclick="addProCart({{ $key['id'] }},1,{{ $key['newPrecio'] }},'{{ $key['nombre'] }}','dsf.pds')"
+                                        <a onclick="addProCart({{ $key['id'] }},1,{{ $key['newPrecio'] }},'{{ $key['nombre'] }}','{{ $key['imagen'] }}')"
                                             class="icon"><i class="bi bi-heart"></i></a>
                                     </div>
                                     <div class="box--btn--addHome">

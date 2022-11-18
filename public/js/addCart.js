@@ -1,10 +1,7 @@
 function addProCart(id,cantidad,newPrecio,nombre,img){
     // console.log(id+'---'+cantidad+'---'+newPrecio+'---'+nombre+'---'+img);
     // location.href ="AddCart_a/"+id+"/"+cantidad;
-    // let array={};
-    // http://127.0.0.1:8000/
     fetch('/AddCart/'+id+'/'+cantidad+'' ,{
-        // fetch('AddCart/'+id+'/'+cantidad+'' ,{
         method:'GET'
         // body:DataTransfer(id,cantidad)
     });
@@ -32,11 +29,6 @@ function viewModalProAddCart(nombre,newPrecio,cantidad,img) {
     modal.classList.remove("modal--show");
     });
     }
-
-    // let delePro=document.getElementById('deletePro');
-    // delePro.addEventListener('click',(e)=>{
-    //     console.log('co');
-    // });
 
 const cartHoverM=document.getElementById('cartHover');
 cartHoverM.addEventListener('mouseenter',()=>{
@@ -69,27 +61,10 @@ cartHoverM.addEventListener('mouseenter',()=>{
         '</div>'+'';
         });
     });
-    $(document).ready(function() { // this is model depende de jquery cdn
+    $(document).ready(function() { // modal depende de jquery cdn
         $("#mViewListProCart").modal('show');
         });
 
 
 });
-//   onmouseover
-
-// let test = document.getElementById("test");
-// test.addEventListener("mouseenter", function( event ) {
-// //   event.target.style.color = "purple";
-// console.log('hola mark');
-//   setTimeout(function() {
-//     // event.target.style.color = "";
-//   }, 500);
-// }, false);
-
-// test.addEventListener("mouseover", function( event ) {
-//   event.target.style.color = "orange";
-//   setTimeout(function() {
-//     event.target.style.color = "";
-//   }, 500);
-// }, false);
 
