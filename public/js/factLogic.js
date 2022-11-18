@@ -4,7 +4,7 @@
     const getNumRut=document.querySelector('.fNumRut').value;
   fetch('/Admin-facturaSearch/'+getNumRut+'').then(data =>data.json()).then(
  function(data){
-    console.log(data);
+   //  console.log(data);
     // 10070320814
     fNombreUser.value=data.nombre;
     fCondicionContribuyente.value=data.condicion;

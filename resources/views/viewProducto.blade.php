@@ -147,7 +147,7 @@
                                         al carrito</a>
                                     <script>
                                         addProductoId.addEventListener("click", (e) => {
-                                            console.log({{ $idProducto['id'] }});
+                                            // console.log({{ $idProducto['id'] }});
                                             addProCart({{ $idProducto['id'] }}, 1, {{ $idProducto['newPrecio'] }},
                                                 '{{ $idProducto['nombre'] }}', '{{ $idProducto['imagen'] }}');
 
@@ -252,10 +252,10 @@
             </div>
 
         </div>
+
         @include('User.modalPaymentCart')
+
         @include('User.modalDestino')
-
-
         @include('User.modelAddProCart')
 
     </body>

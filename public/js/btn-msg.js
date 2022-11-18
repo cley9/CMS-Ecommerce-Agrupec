@@ -139,31 +139,32 @@ formLoginAdmin.addEventListener('submit',function(e){
 });
 
 
-// const precioEnvioDestinoN=document.getElementById('precioDestino');
-// // const precioEnvioA=document.querySelectorAll('#precioDestino');
-// // precioEnvioDestino.addEventListener('click',(e)=>{
-//     precioEnvioDestinoN.addEventListener("click",function(){
+const precioEnvioDestinoN=document.getElementById('precioDestino');
+// const precioEnvioA=document.querySelectorAll('#precioDestino');
+// precioEnvioDestino.addEventListener('click',(e)=>{
+if (precioEnvioDestinoN) {
+precioEnvioDestinoN.addEventListener("click",function(){
 
-//     switch (precioEnvioDestinoN.value) {
-//         case "1":
-//             precio="6.00";
-//             break;
-//             case "2":
-//             precio="16.00";
-//                 break;
-//                 case "3":
-//                     precio="18.00";
-//                     break;
-//                     case "4":
-//                         precio="15.00";
-//                         break;
-//                         // default:
-//                         //     break;
-//                         }
-//                         precioDes.innerHTML=`${precio}`;
-//     // console.log(precioDestino.value);
-// });
-
+    switch (precioEnvioDestinoN.value) {
+        case "1":
+            precio="6.00";
+            break;
+            case "2":
+            precio="16.00";
+                break;
+                case "3":
+                    precio="18.00";
+                    break;
+                    case "4":
+                        precio="15.00";
+                        break;
+                        // default:
+                        //     break;
+                        }
+                        precioDes.innerHTML=`${precio}`;
+    // console.log(precioDestino.value);
+});
+}
 
 function msjCamposVacio(){
     Swal.fire({
@@ -187,3 +188,12 @@ function msjRegistroUsuarioCliente(){
       });
     
 }
+
+// let btnOpenPopup = document.querySelector('.whatsapp-button');
+// let popup = document.querySelector('.popup-whatsapp');
+// popup.classList.toggle('is-active-whatsapp-popup')
+// popup.style.animation = "fadeIn .6s 0.0s both";
+
+// var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
+//     trigger: 'focus'
+// })

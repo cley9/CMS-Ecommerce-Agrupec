@@ -272,7 +272,7 @@
                                 <a href="https://twitter.com/iniciarsesion?lang=es"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-twitter"></i> </a>
-                                <a href="https://api.whatsapp.com/send?phone= + 51 {{ config('constants.numContact') }}"
+                                <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-whatsapp"></i></a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i

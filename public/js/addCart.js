@@ -31,6 +31,7 @@ function viewModalProAddCart(nombre,newPrecio,cantidad,img) {
     }
 
 const cartHoverM=document.getElementById('cartHover');
+if (cartHoverM) {
 cartHoverM.addEventListener('mouseenter',()=>{
     // console.log('hola mark');
     const url = '/GetCart';
@@ -67,4 +68,4 @@ cartHoverM.addEventListener('mouseenter',()=>{
 
 
 });
-
+}

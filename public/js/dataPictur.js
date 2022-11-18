@@ -147,7 +147,7 @@ function update_(){
 function idCatalogo(id){
 // console.log(id);
 fetch('/Admin-idCatalogo/'+id+'').then(data=>data.json()).then(function(data){
-console.log(data);
+// console.log(data);
 updateCatalogoIdDat.value=data.id;
 updateCatalogoImgDat.value=data.imagen;
 updateCatalogoNombre.value=data.nombre;

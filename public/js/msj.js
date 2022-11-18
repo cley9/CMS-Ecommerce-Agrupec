@@ -20,7 +20,7 @@ function msjOk(){
     }
 // admin producto
 function productDelete(id,nomProducto,img){
-    console.log(id+' ----- '+nomProducto+' ----- '+img);
+    // console.log(id+' ----- '+nomProducto+' ----- '+img);
     swal.fire({
         title: "&iquest;Estas seguro de eliminar ?",
         text: "El produto " + nomProducto + "",

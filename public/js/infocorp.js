@@ -12,7 +12,7 @@ vBtnSearch.addEventListener('click',()=>{
     // fTipoDocumento.value=data.tipoDocumento;
     // fNombreUser.value=data.nombre;
     // fNombreUser.value=data.nombre;
-    console.log(data);
+    // console.log(data);
  }
 );
 });

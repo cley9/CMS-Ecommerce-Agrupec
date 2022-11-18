@@ -69,7 +69,7 @@
 
 
 
-    <div class="container mb-4 ">
+    {{-- <div class="container mb-4 ">
         <div class="row">
             <div class="col">
                 <div class=" text-center  pt-3  shadow">
@@ -86,5 +86,5 @@
             </div>
 
         </div>
-    </div>
+    </div> --}}
 @endsection

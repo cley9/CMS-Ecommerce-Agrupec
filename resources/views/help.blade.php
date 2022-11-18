@@ -152,11 +152,4 @@
             </div>
         </div>
     </div>
-
-    <script type="text/javascript">
-        let btnOpenPopup = document.querySelector('.whatsapp-button');
-        let popup = document.querySelector('.popup-whatsapp');
-        popup.classList.toggle('is-active-whatsapp-popup')
-        popup.style.animation = "fadeIn .6s 0.0s both";
-    </script>
 @endsection

@@ -7,13 +7,13 @@ const fProductoLista=document.getElementById('fProductoLista').value;
 //     console.log(e.target.fProductoLista.name);
 // fBtnSearchLista.preventDefault();
 
-    console.log(fProductoLista);
+    // console.log(fProductoLista);
     if (fProductoLista.length>=1) {
         // contentProducto.innerHTML +="<h4>hola</h4>";
         // console.log(fProductoLista.length);
         fetch('/Admin-search/'+fProductoLista+'').then(search=>search.json()).
         then(function(search){
-            console.log(search);
+            // console.log(search);
             // demo
             let content =document.getElementById("dataProducto");
             content.innerHTML =``;
