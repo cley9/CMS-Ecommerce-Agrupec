@@ -151,7 +151,7 @@
                                                     Perfil</a>
                                             </li>
                                             <li>
-                                                <a class="" href="#exampleModalToggle">Ajuste</a>
+                                                {{-- <a class="" href="#exampleModalToggle">Ajuste</a> --}}
                                             </li>
                                             <li>
                                                 <a href="{{ route('logout.user.index') }}">Cerrar Sesion </a>
