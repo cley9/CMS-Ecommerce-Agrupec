@@ -11,7 +11,7 @@
                     <h5 class="h6 fw-normal">Seleccione el lugar</h5>
 
                 </div>
-                <div class="mb-5 col-5">
+                <div class="mb-5 col-5 col-md-6">
                     <select class="form-select precioDestinoA" aria-label="Default select example" id="precioDestino">
                         <option selected> Seleccione la direcci&oacute;n</option>
                         <option value="1">Lima</option>
@@ -24,14 +24,9 @@
                 <div class="d-flex justify-content-certer">
                     <h6>El precio de envio es: S/ <h6 id="precioDes"></h6>
                     </h6>
-                    {{--  <span class="text--frm--msgVacio-">El correo que ingresastes ya existe , porfavor ingrese otro
-                        correo
-                        para continuar con el registro, gracias.</span>  --}}
-
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Salir</button>
-                    {{--  <button type="button" class="btn btn-primary">Aceptar</button>  --}}
                 </div>
             </div>
         </div>

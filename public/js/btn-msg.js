@@ -144,7 +144,7 @@ const precioEnvioDestinoN=document.getElementById('precioDestino');
 // precioEnvioDestino.addEventListener('click',(e)=>{
 if (precioEnvioDestinoN) {
 precioEnvioDestinoN.addEventListener("click",function(){
-
+let precio=0.00;
     switch (precioEnvioDestinoN.value) {
         case "1":
             precio="6.00";
