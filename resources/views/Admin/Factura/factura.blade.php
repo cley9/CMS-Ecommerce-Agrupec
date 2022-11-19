@@ -1,5 +1,6 @@
 @extends('adminlte::page')
-<link type="text/css" rel="shortcut icon" href="{{ asset('img/icons/logo.jpg') }}" />
+<link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}" />
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
@@ -22,63 +23,49 @@
             max-width: 700px;
         }
     </style>
-
     <div class="text-center">
-        {{--  <button type="button"  class="btn btn-warning" id="modelFactura">Crear factura</button>  --}}
         <button type="button" id="btnListener__" class="btn btn-warning" data-bs-toggle="modal"
             data-bs-target="#modelFactura" data-bs-whatever="@fat" data-bs-backdrop="static" data-bs-keyboard="false">Crear
             factura</button>
     </div>
 
-
-
     <div class="modal fade  " id="modelFactura" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <!-- <div class="modal-dialog bg-danger justify-content-center  d-flex "> -->
         <div class="modal-dialog  ">
-
             <div class="modal-content ">
                 <div class="modal-header text-center d-flex justify-content-center">
                     <h5 class="modal-title " id="exampleModalLabel">Agregar Producto a la Tienda </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="">
-                        <div class="row row-cols-md-2">
-
-                            <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Tipo de consulta:</label>
-                                {{--  <!--<input type="hidden" name="dataInpDB" value="">-->  --}}
-                                <input type="text" name="cSelect" id="nameP_" class="form-control"
-                                    placeholder="Ingrese el nombre del producto" required />
-                            </div>
-                            <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Consulta sunat:</label>
-                                <input type="number" step="1" name="cRut" class="form-control"
-                                    placeholder="Ingrese el numero de rut" required />
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" class="form-control" placeholder="Recipient's username"
-                                    aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-                            </div>
-                            <div class="input-group mb-3">
-                                <input type="text" maxlength="11" size="11" minlength='11'
-                                    class="form-control fNumRut" id="fNumRut" placeholder="Recipient's username"
-                                    aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-                                <span type='button' class="input-group-text" id="fBtnSearch"><i
-                                        class="bi bi-search"></i>SUNAT</span>
-                            </div>
-
-                        </div>
-                    </form>
                     <form method="post" action="{{ route('save.admin.list') }}" id="formSave"
                         enctype="multipart/form-data">
                         {{--  <form method="post" action="" id="formSave" enctype="multipart/form-data" >  --}}
-                        {{--  <form method="post" action="" id="formSave" enctype="multipart/form-data" >  --}}
-
                         @csrf
                         @method('GET'){{-- // es muy inportante para el envio de date de formularios --}}
                         <div class="row row-cols-md-2">
+                            <div class="mb-3">
+                                <label for="recipient-name" class="col-form-label">Tipo de consulta:</label>
+                                <div class="col-5 col-md-12">
+                                    <select class="form-select precioDestinoA" aria-label="Default select example"
+                                        id="precioDestino">
+                                        <option selected> Seleccione el tipo de consulta</option>
+                                        <option value="1">DNI</option>
+                                        <option value="2">RUC</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message-text" class="col-form-label">Consulta sunat:</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" maxlength="11" size="11" minlength='11'
+                                        class="form-control fNumRut" id="fNumRut" placeholder="Recipient's username"
+                                        aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                                    <span type='button' class="input-group-text  " id="fBtnSearch"><i
+                                            class="bi bi-search"></i>SUNAT</span>
+                                </div>
+                            </div>
+
                             <div class="mb-3">
                                 <label class="col-form-label">Nombre y Apellido:</label>
                                 <input type="text" name="fNombreUser" class="form-control" id="fNombreUser"
