@@ -58,11 +58,11 @@
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Consulta sunat:</label>
                                 <div class="input-group mb-3">
-                                    <input type="text" maxlength="11" size="11" minlength='11'
+                                    <input type="number" maxlength="11" size="11" minlength='11'
                                         class="form-control fNumRut" id="fNumRut" placeholder="Recipient's username"
                                         aria-label="Recipient's username" aria-describedby="basic-addon2" required>
-                                    <span type='button' class="input-group-text  " id="fBtnSearch"><i
-                                            class="bi bi-search"></i>SUNAT</span>
+                                    <span type='button' class="input-group-text  btn btn-outline-secondary"
+                                        id="fBtnSearch"><i class="bi bi-search"></i>SUNAT</span>
                                 </div>
                             </div>
 
@@ -121,7 +121,7 @@
                                     <span class="h5"> g </span>
                                 </div>
                             </div>
-                            <div class="mb-3">
+                            {{-- <div class="mb-3">
                                 <div class="col">
                                     <label for="message-text" class="col-form-label">Foto del Producto Principal</label>
                                 </div>
@@ -132,9 +132,8 @@
                                         name="imagen" aria-describedby="fileHelp" name="imagen" accept="image/*"
                                         required />
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
-                        <!--<input type="hidden" name="oculto" value="">-->
                         <div class="modal-footer">
                             <input type="submit" class="btn btn-primary" name="btnsave" id="btnSavei"
                                 value="Guardar">
@@ -155,7 +154,5 @@
 @stop
 
 @section('js')
-    {{--  <script> console.log('Hi!'); </script>  --}}
     <script src="{{ asset('js/factLogic.js') }}"></script>
-
 @stop
