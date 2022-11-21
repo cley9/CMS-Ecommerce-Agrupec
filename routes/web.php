@@ -45,7 +45,7 @@ Route::get('/restablecerGmailView', [mailController::class, 'restablecerPassword
 Route::get('login/google', [LoginController::class, 'loginGoogle'])->name('login.user.index');
 Route::get('login/google/callback', [LoginController::class, 'callback']);
 //         /login/google/callback
-Route::get('/Login-admin/{email}/{password}', [LoginController::class, 'loginAdmin'])->name('loginAdmin.admin.main');
+// Route::get('/Login-admin/{email}/{password}', [LoginController::class, 'loginAdmin'])->name('loginAdmin.admin.main');
 Route::get('logout', [LoginController::class, 'logout'])->name('logout.user.index');
 // Route::post('/Admin-logout',[LoginController::class, 'logout'] )->name('logout.user.index');
 Route::get('/createUser', [LoginController::class, 'createUser'])->name('create.user.index');

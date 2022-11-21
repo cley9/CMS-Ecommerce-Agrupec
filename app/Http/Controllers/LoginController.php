@@ -23,7 +23,8 @@ class LoginController extends Controller
             'email' => $email,
             'password' => $password
         ];
-        if (Auth::attempt($credencials)) {
+        $validate = User::where('email', $email)->where('rol', '4')->exists();
+        if (Auth::attempt($credencials) && $validate) {
             session(['email' => $email]);
             session(['rol' => '4']);
             // return view('admin.home');
@@ -39,7 +40,9 @@ class LoginController extends Controller
             'email' => $email,
             'password' => $password
         ];
-        if (Auth::attempt($credencials)) {
+
+        $validate = User::where('email', $email)->where('rol', '0')->exists();
+        if (Auth::attempt($credencials) && $validate) {
             // session(['name'=>'Usuario']);
             session(['email' => $email]);
             session(['rol' => '0']);
@@ -53,7 +56,6 @@ class LoginController extends Controller
             return response()->json(['status' => 'error', 'code' => '404']);
         }
     }
-
 
     function loginGoogle()
     {
@@ -87,7 +89,6 @@ class LoginController extends Controller
                 ]);
                 Auth::login($new_user);
                 $userId = User::where('external_id', $google_user->id)->where('email', session()->get('email'))->get();
-                //   $userId=User::where('name',session()->get('name'))->where('email',session()->get('email'))->get();
                 session(['userId' => $userId[0]->id]); // [0] this para quitar el [ {json }] y solo vea { json} para poder acceder
                 return redirect()->route('vista.index');
             }
@@ -111,19 +112,12 @@ class LoginController extends Controller
     // validate user email
     function validarUser($emailExists)
     {
-        // $userConsutal=User::where('email','cleyD@gmail.com')->exists();
         $userConsutal = User::where('email', $emailExists)->exists();
-        // $userConsutal=User::where('email','===',$request->input('email'))->get();
         if ($userConsutal) {
-            # code...
-            // return "user exist";
             return "true";
         } else {
-            // return "user no exit";
             return "false";
-            // http://127.0.0.1:8000/createUser
         }
-        // return $emailExists;
     }
     //    function create--user
     function createUser(Request $request)
@@ -141,11 +135,7 @@ class LoginController extends Controller
             // return view('home');
             return redirect()->route('vista.index');
         }
-        // return
-        //  return $request->all();
         return 'no se pudo ';
-
-        // return $userConsutal;
     }
     // user autentication
     // function listObjt(){
