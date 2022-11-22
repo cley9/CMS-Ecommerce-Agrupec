@@ -17,7 +17,7 @@ if (gmailValidate === "") {
 msjCamposVacio();
 } else {
 
-    fetch("http://127.0.0.1:8000/envioGmail?email="+emailRecupe.value+"").then(data => data.text()
+    fetch("/envioGmail?email="+emailRecupe.value+"").then(data => data.text()
     ).then( (data)=> {
         // console.log("se envio");
         msjRegistroUsuarioCliente();
@@ -109,7 +109,7 @@ fromLoginUser.addEventListener('submit',function(e){
     then(function(data){
         // console.log(data);
         if (data.code==200) {
-            msjOk();
+            msjOkUser();
             location.href='/';
         } else {
     msjError();

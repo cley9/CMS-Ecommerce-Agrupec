@@ -8,6 +8,16 @@ function msjOk(){
     timer: 3000
     })
     }
+    function msjOkUser(){
+      Swal.fire({
+      // position:'center',
+      icon: 'success',
+      title: 'Bien venido ',
+      text: 'Gracias por usar nuestro servicio',
+      showConfirmButton: false,
+      timer: 3000
+      })
+      }
 
     function msjError() {
       Swal.fire({
