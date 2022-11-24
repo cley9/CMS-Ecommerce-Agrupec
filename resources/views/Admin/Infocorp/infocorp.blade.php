@@ -66,9 +66,9 @@
                         <div class="row row-cols-md-2">
 
                             <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Tipo de consulta:</label>
+                                <label for="recipient-name" class="col-form-label">Consulta:</label>
                                 {{--  <!--<input type="hidden" name="dataInpDB" value="">-->  --}}
-                                <input type="text" name="cSelect" id="nameP_" class="form-control"
+                                <input type="hidden" name="cSelect" id="nameP_" class="form-control"
                                     placeholder="Ingrese el nombre del producto" required />
                             </div>
                             {{--  <div class="mb-3">
@@ -79,11 +79,11 @@
                         <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
                         <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
                     </div>  --}}
-                            <label for="message-text" class="col-form-label">Consulta sunat:</label>
+                            {{-- <label for="message-text" class="col-form-label">Consulta sunat:</label> --}}
                             <div class="input-group mb-3">
                                 <input type="text" maxlength="8" size="8" minlength='11'
-                                    class="form-control vNumInfo" id="vNumInfocorp" placeholder="Recipient's username"
-                                    aria-label="Recipient's username" aria-describedby="basic-addon2" required>
+                                    class="form-control vNumInfo" id="vNumInfocorp" placeholder="Ingrese el DNI"
+                                    aria-label="Ingrese el DNI" aria-describedby="basic-addon2" required>
                                 <span type='button' class="input-group-text" id="vBtnSearch"><i
                                         class="bi bi-search"></i>INFOCORP</span>
                             </div>
@@ -113,11 +113,11 @@
                                     placeholder="Ingrese el numero de rut" required />
                             </div>
 
-                            <div class="mb-3">
+                            {{-- <div class="mb-3">
                                 <label class="col-form-label">Tipo de documento :</label>
                                 <input type="text" name="cRut" class="form-control" id="fTipoDocumento"
                                     placeholder="Ingrese el numero de rut" required />
-                            </div>
+                            </div> --}}
                             {{--
                                     <div class="mb-3">
                                         <label class="col-form-label">Estado de Contribuyento:</label>
@@ -191,8 +191,7 @@
                     {{--  <input type="button" class="btn btn-primary"  name="btnsave" id="btnSave" value="Guardar">  --}}
 
                     <button type="reset" class="btn btn-warning" id="d">Borrar</button>
-                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"
-                        aria-label="Close">Salir</button>
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close">Salir</button>
 
                 </div>
 
