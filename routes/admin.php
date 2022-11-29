@@ -46,6 +46,10 @@ Route::middleware('VerificationAdmin')->group(function () {
   Route::get('/Admin-pdfDownload', [PdfProductoController::class, 'downloadPdf'])->name('download.admin.pdf');
   // ---factura
   Route::get('/Admin-factura', [FacturaController::class, 'view'])->name('view.admin.factura');
+
+  Route::get('/Admin-facturaVenta', [FacturaController::class, 'createFactura'])->name('create.admin.factura');
+  Route::get('/Admin-facturaList', [FacturaController::class, 'listFactura'])->name('lista.admin.factura');
+
   Route::get('/Admin-facturaSearch/{rut}', [FacturaController::class, 'search'])->name('search.admin.factura');
 
   //

@@ -66,6 +66,26 @@ function msjInicieSesion() {
       timer: 2000
       })
   }
+  // -----------------factura
+  function msgFacturaok(){
+    Swal.fire({
+    // position:'center',
+    icon: 'success',
+    title: 'Factura Generada ',
+    text: 'Se genero la factura exitosamente',
+    showConfirmButton: false,
+    timer: 3000
+    });
+    }
+    function msgFacturaError(){
+    Swal.fire({
+    icon: 'error',
+    title: 'Vuelva a intentarlo ',
+    text: 'Error al genera la factura',
+    showConfirmButton: false,
+    timer: 3000
+    })
+    }
 //   -----------------espa
 function msgAgregado(){
     Swal.fire({

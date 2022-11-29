@@ -8,6 +8,8 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
 </script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 {{--  <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">  --}}
 
 @section('title', 'Dashboard')
@@ -37,8 +39,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="{{ route('save.admin.list') }}" id="formSave"
-                        enctype="multipart/form-data">
+                    <form method="post" action="" id="formFactCreate" enctype="multipart/form-data">
                         {{--  <form method="post" action="" id="formSave" enctype="multipart/form-data" >  --}}
                         @csrf
                         @method('GET'){{-- // es muy inportante para el envio de date de formularios --}}
@@ -59,7 +60,7 @@
                                 <label for="message-text" class="col-form-label">Consulta sunat:</label>
                                 <div class="input-group mb-3">
                                     <input type="number" maxlength="11" size="11" minlength='11'
-                                        class="form-control fNumRut" id="fNumRut" placeholder="Recipient's username"
+                                        class="form-control fNumRut" id="fNumRut" placeholder="Ingrese el dato"
                                         aria-label="Recipient's username" aria-describedby="basic-addon2" required>
                                     <span type='button' class="input-group-text  btn btn-outline-secondary"
                                         id="fBtnSearch"><i class="bi bi-search"></i>SUNAT</span>
@@ -98,7 +99,7 @@
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Nombre del Producto:</label>
                                 <!--<input type="hidden" name="dataInpDB" value="">-->
-                                <input type="text" name="Pnombre" id="nameP" class="form-control"
+                                <input type="text" name="Pnombre" id="fNombreProducto" class="form-control"
                                     placeholder="Ingrese el nombre del producto" required />
                             </div>
 
@@ -106,18 +107,18 @@
                             <div class="mb-3">
                                 <label for="message-text" class="col-form-label">Precio del Producto:</label>
                                 <input type="number" step="0.01" name="Pprecio" class="form-control"
-                                    placeholder="Ingrese el precio del producto" required />
+                                    placeholder="Ingrese el precio del producto" id="fPrecio" required />
                             </div>
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Cantidad de Producto:</label>
                                 <input type="number" name="Pcant" class="form-control"
-                                    placeholder="Ingrese la cantidad del producto" required />
+                                    placeholder="Ingrese la cantidad del producto" id="fCantidad" required />
                             </div>
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Peso de Producto:</label>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <input type="number" step="0.01" name="Ppeso" class="form-control"
-                                        placeholder="Ingrese el peso del producto" required />
+                                        placeholder="Ingrese el peso del producto" id="fPeso" required />
                                     <span class="h5"> g </span>
                                 </div>
                             </div>
@@ -135,7 +136,7 @@
                             </div> --}}
                         </div>
                         <div class="modal-footer">
-                            <input type="submit" class="btn btn-primary" name="btnsave" id="btnSavei"
+                            <input type="submit" class="btn btn-primary" name="btnsave" id="btnFsave"
                                 value="Guardar">
                             <button type="reset" class="btn btn-warning" id="d">Borrar</button>
                             <button type="button" class="btn btn-success" data-bs-dismiss="modal"
@@ -147,6 +148,23 @@
         </div>
     </div>
 
+    <div class="pt-4 text-center" id="listFact_">
+        <h2 class="fw-normal">Lista de factura</h2>
+    </div>
+    <table class="table ">
+        <thead class="bg-dark">
+            <tr>
+                <td>Codigo</td>
+                <td>Nonbre del cliente</td>
+                <td>Cantidad</td>
+                <td>Precio Total</td>
+                <td>Pdf</td>
+            </tr>
+        </thead>
+        <tbody class="bg-none" id="listFact">
+
+        </tbody>
+    </table>
 @stop
 
 @section('css')
@@ -154,5 +172,7 @@
 @stop
 
 @section('js')
+    {{-- <script src="{{ asset('js/msj.js') }}"></script> --}}
     <script src="{{ asset('js/factLogic.js') }}"></script>
+
 @stop
