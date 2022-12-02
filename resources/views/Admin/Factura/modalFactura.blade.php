@@ -5,8 +5,7 @@
 </style>
 <div class="text-center">
     <button type="button" id="btnFacturaV" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modelFacturav"
-        data-bs-whatever="@fat" data-bs-backdrop="static" data-bs-keyboard="false">Crear
-        factura v3 </button>
+        data-bs-whatever="@fat" data-bs-backdrop="static" data-bs-keyboard="false">Crear factura</button>
 </div>
 
 <div class="modal fade  " id="modelFacturav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -18,9 +17,8 @@
             </div>
             <div class="modal-body">
                 <form method="post" action="" id="formFactAgregar" enctype="multipart/form-data">
-                    {{--  <form method="post" action="" id="formSave" enctype="multipart/form-data" >  --}}
                     @csrf
-                    @method('GET'){{-- // es muy inportante para el envio de date de formularios --}}
+                    @method('GET'){{-- // es muy importante para el envio de los datos del formulario --}}
                     <div class="row row-cols-md-2">
                         <div class="col-md-3 mb-3">
                             <label for="recipient-name" class="col-form-label">Tipo de consulta:</label>
@@ -149,30 +147,6 @@
                         </div>
 
                     </div>
-
-                    {{-- <div class="row row-cols-md-2 row-cols-1">
-                        <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label">Nombre del Producto:</label>
-                            <input type="text" name="Pnombre" id="fNombreProducto" class="form-control"
-                            placeholder="Ingrese el nombre del producto" required />
-                        </div> --}}
-
-                    <!--<input type="hidden" name="dataInpDB" value="">-->
-
-
-                    {{-- <div class="mb-3">
-                                <div class="col">
-                                    <label for="message-text" class="col-form-label">Foto del Producto Principal</label>
-                                </div>
-                                <img class="mb-3" src="" height="150" width="150" id="edPreviewImg"
-                                    alt="Imagen prevista..." />
-                                <div class="mb-3">
-                                    <input type="file" class="form-control" onchange="previewFile()" id="archivo"
-                                        name="imagen" aria-describedby="fileHelp" name="imagen" accept="image/*"
-                                        required />
-                                </div>
-                            </div> --}}
-                    {{-- </div> --}}
                     <div class="modal-footer">
                         <input type="submit" class="btn btn-primary" name="btnsave" id="btnFsave"
                             value="Guardar">

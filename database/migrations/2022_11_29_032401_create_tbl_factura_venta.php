@@ -20,6 +20,7 @@ return new class extends Migration
             // $table->string('nombreProducto');
             $table->double('precio', 50, 2);
             $table->string('pdf');
+            $table->string('fecha');
             // $table->double('newPrecio',50,2);
             // $table->string('peso');
             // $table->string('imagen');
@@ -27,8 +28,8 @@ return new class extends Migration
             // $table->string('img2')->nullable();
             // $table->string('img3')->nullable();
             // $table->string('img4')->nullable();
-            $table->timestamps(0);
-            // $table->timestamps();
+            // $table->timestamps(0);
+            $table->timestamps();
         });
     }
 

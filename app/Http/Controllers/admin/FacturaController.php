@@ -20,6 +20,7 @@ class FacturaController extends Controller
         $facturaV->precio = $request->input("fprecio");
         // $facturaV->cantidad = $request->input("fCantidad");
         $facturaV->pdf = $request->input("fpdf");
+        $facturaV->fecha = $request->input("ffecha");
         $facturaV->save();
         return response()->json(['status' => 'ok', 'code' => '200']);
     }

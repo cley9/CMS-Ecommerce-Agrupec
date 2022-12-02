@@ -1,14 +1,4 @@
 @extends('adminlte::page')
-<link type="text/css" rel="shortcut icon" href="{{ asset('img/icons/logo.jpg') }}" />
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
-<!--nw verson--->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
-{{--  <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">  --}}
-
 @section('title', 'Dashboard')
 
 @section('content_header')
@@ -45,9 +35,8 @@
     {{-- <h2>infocorp</h2> --}}
     <div class="text-center">
         {{--  <button type="button"  class="btn btn-warning" id="modelFactura">Crear factura</button>  --}}
-        <button type="button" id="btnListener__" class="btn btn-warning" data-bs-toggle="modal"
-            data-bs-target="#modelFactura" data-bs-whatever="@fat" data-bs-backdrop="static"
-            data-bs-keyboard="false">Consulta de infocor del usuario</button>
+        <button type="button" id="btnListener__" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modelFactura"
+            data-bs-whatever="@fat" data-bs-backdrop="static" data-bs-keyboard="false">Consulta de infocor del usuario</button>
     </div>
 
 

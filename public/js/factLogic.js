@@ -57,8 +57,11 @@
     localStorage.setItem("listProducto",JSON.stringify(producto));
   }
   arrayPro(formAddP.nombrePF.value,formAddP.cantidadPF.value,formAddP.precioPF.value) 
+  // -------version 2 
   let productoItem=JSON.parse(localStorage.getItem("listProducto"));
   const listProductoV=document.getElementById("listProducto");
+if (productoItem !==null) {
+
   listProductoV.innerHTML=``;
   const proTotal=document.getElementById("precioTVenta");
   proTotal.innerHTML=``;
@@ -81,31 +84,41 @@
   proTotal.innerHTML +=` <h6>Sub Total S/. ${precioT-igv}</h6>
   <h6>I.G.V. 18% S/. ${igv}</h6>
   <h6 >Total S/. <spam id="fpreTotal">${precioT}</spam></h6>`;
+} else {
+  // console.log("gaa");
   
+}
   
-  localStorage.removeItem(productoItem[2])
+  // localStorage.removeItem(productoItem[2])
   // console.log(productoItem[2]);
 
   // console.log(fpreTotal.value);
 });
+// version 3
 let productoItem=JSON.parse(localStorage.getItem("listProducto"));
 const listProductoV=document.getElementById("listProducto");
-listProductoV.innerHTML=``;
-productoItem.forEach(item => {
-  listProductoV.innerHTML +=
-  `<tr>`+
-  `<td>A000${item.id}</td>`+
-  `<td>${item.nombre}</td>`+
-  `<td>${item.cantidad}</td>`+
-  `<td>${item.precio}</td>`+
-  `<td>${item.precio * item.cantidad}</td>`+
-  `<td><a class="btn btn-danger" id="btnDelete${item.id}"><i class="bi bi-trash"></i></a></td>`+
-  `<tr>`;
-  // console.log(item.id);
-  // btnDelete+item.id.addEventListener("click",(e)=>{
-    //   console.log("hi");
-    // });
-  });
+if (productoItem !==null) {
+  console.log("yes");
+  listProductoV.innerHTML=``;
+  productoItem.forEach(item => {
+    listProductoV.innerHTML +=
+    `<tr>`+
+    `<td>A000${item.id}</td>`+
+    `<td>${item.nombre}</td>`+
+    `<td>${item.cantidad}</td>`+
+    `<td>${item.precio}</td>`+
+    `<td>${item.precio * item.cantidad}</td>`+
+    `<td><a class="btn btn-danger" id="btnDelete${item.id}"><i class="bi bi-trash"></i></a></td>`+
+    `<tr>`;
+    // console.log(item.id);
+    // btnDelete+item.id.addEventListener("click",(e)=>{
+      //   console.log("hi");
+      // });
+    });
+  } else {
+    // console.log("gaa");
+    
+  }
   
   // localStorage.clear(); /// para eliminar todo el local storage
           // console.log(producto);
@@ -138,6 +151,8 @@ btnFacturaV.addEventListener("click",()=>{
       //   console.log(item.id);
       // });
     });
+  // console.log(ffecha.value);
+
   })
 
 
@@ -159,7 +174,7 @@ console.log(fCreate);
 console.log("---------");
 console.log(fNombreUser.value+fpreTotal.value);
     fetch("/Admin-facturaVenta/?fNombreUser="+fNombreUser.value+"&fNumero="+
-    fCreate.fNumero.value+"&fprecio=1223&fpdf=A000").then(factura => factura.json()).then(function (factura) {
+    fCreate.fNumero.value+"&fprecio=1223&fpdf=A000&ffecha="+ffecha.value+"").then(factura => factura.json()).then(function (factura) {
 console.log(factura.status);
 if (factura.status=="ok") {
   Swal.fire({
@@ -170,6 +185,7 @@ if (factura.status=="ok") {
     timer: 3000
     });
     viewListFactura();
+    localStorage.clear("listProducto");
 } else {
       Swal.fire({
       icon: 'error',
