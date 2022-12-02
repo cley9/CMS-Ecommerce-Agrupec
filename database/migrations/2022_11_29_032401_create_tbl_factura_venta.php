@@ -17,9 +17,9 @@ return new class extends Migration
             $table->id();
             $table->string('nombreUser');
             $table->string('numRuc');
-            $table->string('nombreProducto');
+            // $table->string('nombreProducto');
             $table->double('precio', 50, 2);
-            $table->integer('cantidad');
+            $table->string('pdf');
             // $table->double('newPrecio',50,2);
             // $table->string('peso');
             // $table->string('imagen');

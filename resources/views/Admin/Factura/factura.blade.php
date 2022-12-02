@@ -43,7 +43,7 @@
                         {{--  <form method="post" action="" id="formSave" enctype="multipart/form-data" >  --}}
                         @csrf
                         @method('GET'){{-- // es muy inportante para el envio de date de formularios --}}
-                        <div class="row row-cols-md-2">
+                        {{-- <div class="row row-cols-md-2">
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Tipo de consulta:</label>
                                 <div class="col-5 col-md-12">
@@ -98,7 +98,6 @@
                         <div class="row row-cols-md-2 row-cols-1">
                             <div class="mb-3">
                                 <label for="recipient-name" class="col-form-label">Nombre del Producto:</label>
-                                <!--<input type="hidden" name="dataInpDB" value="">-->
                                 <input type="text" name="Pnombre" id="fNombreProducto" class="form-control"
                                     placeholder="Ingrese el nombre del producto" required />
                             </div>
@@ -122,22 +121,10 @@
                                     <span class="h5"> g </span>
                                 </div>
                             </div>
-                            {{-- <div class="mb-3">
-                                <div class="col">
-                                    <label for="message-text" class="col-form-label">Foto del Producto Principal</label>
-                                </div>
-                                <img class="mb-3" src="" height="150" width="150" id="edPreviewImg"
-                                    alt="Imagen prevista..." />
-                                <div class="mb-3">
-                                    <input type="file" class="form-control" onchange="previewFile()" id="archivo"
-                                        name="imagen" aria-describedby="fileHelp" name="imagen" accept="image/*"
-                                        required />
-                                </div>
-                            </div> --}}
-                        </div>
+
+                        </div> --}}
                         <div class="modal-footer">
-                            <input type="submit" class="btn btn-primary" name="btnsave" id="btnFsave"
-                                value="Guardar">
+                            <input type="submit" class="btn btn-primary" name="btnsave" id="btnFsave" value="Guardar">
                             <button type="reset" class="btn btn-warning" id="d">Borrar</button>
                             <button type="button" class="btn btn-success" data-bs-dismiss="modal"
                                 aria-label="Close">Salir</button>
@@ -148,6 +135,7 @@
         </div>
     </div>
 
+    @include('Admin.Factura.modalFactura')
     <div class="pt-4 text-center" id="listFact_">
         <h2 class="fw-normal">Lista de factura</h2>
     </div>
@@ -156,8 +144,9 @@
             <tr>
                 <td>Codigo</td>
                 <td>Nonbre del cliente</td>
-                <td>Cantidad</td>
-                <td>Precio Total</td>
+                <td>Numero de Ruc</td>
+                {{-- <td>Precio</td> --}}
+                {{-- <td>Precio Total</td> --}}
                 <td>Pdf</td>
             </tr>
         </thead>
@@ -174,5 +163,6 @@
 @section('js')
     {{-- <script src="{{ asset('js/msj.js') }}"></script> --}}
     <script src="{{ asset('js/factLogic.js') }}"></script>
+
 
 @stop

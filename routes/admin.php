@@ -52,6 +52,7 @@ Route::middleware('VerificationAdmin')->group(function () {
 
   Route::get('/Admin-facturaSearch/{rut}', [FacturaController::class, 'search'])->name('search.admin.factura');
 
+
   //
   Route::get('/Admin-deleteCatalogo/{id}/{img}', [AdminController::class, 'deleteSlayderMain'])->name('delete.admin.catalogo');
   Route::get('/Admin-updateCatalogo', [AdminController::class, 'updateSlayderMain'])->name('update.admin.catalogo');

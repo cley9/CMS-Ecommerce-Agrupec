@@ -16,9 +16,10 @@ class FacturaController extends Controller
         $facturaV = new FacturaVenta();
         $facturaV->nombreUser = $request->input("fNombreUser");
         $facturaV->numRuc = $request->input("fNumero");
-        $facturaV->nombreProducto = $request->input("fNomProducto");
+        // $facturaV->nombreProducto = $request->input("fNomProducto");
         $facturaV->precio = $request->input("fprecio");
-        $facturaV->cantidad = $request->input("fCantidad");
+        // $facturaV->cantidad = $request->input("fCantidad");
+        $facturaV->pdf = $request->input("fpdf");
         $facturaV->save();
         return response()->json(['status' => 'ok', 'code' => '200']);
     }
