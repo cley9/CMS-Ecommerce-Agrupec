@@ -45,7 +45,8 @@ return [
     */
 
     'logo' => '<b>Administrador</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png',
+    // 'logo_img' => 'vendor/adminlte/dist/img/AdminLTELogo.png_',
+    'logo_img' => '/storage/img/icons/unauthorized-person.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -252,23 +253,24 @@ return [
         [
             'text' => 'Productos',
             'url'  => 'Admin-list',
-            'icon' => 'fas fa-fw fa-user',
+            'icon' => 'bi bi-images',
         ],
-        // [
-        //     'text' => 'Agregar productos',
-        //     'url'  => '/Admin-factura',
-        //     'icon' => 'fas fa-fw fa-lock',
-        // ],
+        [
+            'text' => 'Catalogo',
+            'url'  => '/Admin-Catalogo',
+            'icon' => 'bi bi-file-medical-fill',
+        ],
         // --- nav items de generar factura
         [
             'text' => 'Generar factura',
             'url'  => '/Admin-factura',
-            'icon' => 'fas fa-fw fa-lock',
+            // 'icon' => 'fas fa-fw fa-lock',
+            'icon' => 'bi bi-file-earmark-pdf-fill',
         ],
         [
             'text' => 'Infocorp',
             'url'  => '/Admin-infocorp',
-            'icon' => 'fas fa-fw fa-lock',
+            'icon' => 'bi bi-person-rolodex',
         ],
         // --
         // [

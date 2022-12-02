@@ -22,7 +22,7 @@
                             <div class="progress-bar" style="width: 70%"></div>
                         </div>
                         <span class="progress-description">
-                            70% Increase in 30 Days
+                            Agrupec
                         </span>
                     </div>
                 </div>
@@ -41,7 +41,7 @@
                             <div class="progress-bar" style="width: 70%"></div>
                         </div>
                         <span class="progress-description">
-                            70% Increase in 30 Days
+                            Agrupec
                         </span>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                         <div class="progress-bar" style="width: 70%"></div>
                     </div>
                     <span class="progress-description">
-                        70% Increase in 30 Days
+                        Agrupec
                     </span>
                 </div>
 
@@ -73,9 +73,9 @@
 
     {{--    --}}
 
-    <h5 class="mb-2 mt-4">Funciones desactivadas</h5>
+    {{-- <h5 class="mb-2 mt-4">Funciones desactivadas</h5> --}}
     <div class="row">
-        <div class="col-lg-3 col-6">
+        {{-- <div class="col-lg-3 col-6">
 
             <div class="small-box bg-info">
                 <div class="inner">
@@ -183,7 +183,7 @@
                     More info <i class="fas fa-arrow-circle-right"></i>
                 </a>
             </div>
-        </div>
+        </div> --}}
 
     </div>
 

@@ -51,7 +51,7 @@
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-bordered text-center table-hover">
-                    <thead class="table-primary">
+                    <thead class="table-dark">
                         <th>id</th>
                         <th>Producto</th>
                         <th>Precio</th>
@@ -76,7 +76,7 @@
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-bordered text-center table-hover">
-                    <thead class="table-primary">
+                    <thead class="table-dark">
                         <th>id</th>
                         <th>Producto</th>
                         <th>Precio</th>
