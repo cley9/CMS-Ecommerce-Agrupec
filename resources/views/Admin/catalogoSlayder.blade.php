@@ -1,7 +1,6 @@
 @extends('adminlte::page')
 @section('title', 'Dashboard')
 @section('content_header')
-    {{--  <h1>Dashboard</h1>  --}}
     <br>
 @stop
 @section('content')
@@ -84,8 +83,6 @@
             });
         }
     </script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     {{--  my js create for me  --}}
     <script src="{{ asset('js/dataPictur.js') }}"></script>
 

@@ -1,3 +1,5 @@
+let fBtnSearchA=document.getElementById("fBtnSearch");
+ if (fBtnSearchA) {
 // const btnSearch=document.getElementById('#fBtnSearch');
     fBtnSearch.addEventListener('click',()=>{
     const getNumRut=document.querySelector('.fNumRut').value;
@@ -11,10 +13,9 @@
  }
 );
 });
- 
+ }
   function viewListFactura(){
     fetch("/Admin-facturaList").then(dataFact=>dataFact.json()).
-    
     then(function (dataFact){
       console.log(dataFact.listFVenta.length);
       const listVentas=document.getElementById("listFact");
@@ -37,6 +38,7 @@
   viewListFactura();
 
   const formAddP=document.getElementById("formFactAgregar");
+ if (formAddP) {
   btnAddPF.addEventListener("click",(e)=>{
     console.log(formAddP.precioPF.value);
     console.log(formAddP.nombrePF.value);
@@ -94,6 +96,7 @@ if (productoItem !==null) {
 
   // console.log(fpreTotal.value);
 });
+}
 // version 3
 let productoItem=JSON.parse(localStorage.getItem("listProducto"));
 const listProductoV=document.getElementById("listProducto");
@@ -127,8 +130,8 @@ if (productoItem !==null) {
           let day=time.getDate();
           let month=time.getMonth() +1;
           let year=time.getFullYear();
-          const fecha=document.getElementById("ffecha");
-fecha.value=`${day}/${month}/${year}`;
+          const fechaa=document.getElementById("ffecha");
+fechaa.value=`${day}/${month}/${year}`;
 
 btnFacturaV.addEventListener("click",()=>{
   // console.log(`${day}/${month}/${year}`);

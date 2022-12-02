@@ -1,0 +1,15 @@
+.modal-dialog--infocord--head {
+    max-width: 900px;
+    /* background-color: aqua; */
+}
+.modal-dialog--factura--modal {
+    max-width: 900px;
+}
+
+nav svg {
+    height: 20px;
+}
+
+/* .modal-dialog {
+    max-width: 900px;
+} */

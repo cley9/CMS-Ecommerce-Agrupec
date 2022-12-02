@@ -5,7 +5,6 @@
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--userLog">
         <div class="modal-content ">
-            {{-- <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" action="{{route('loginLocalUser.user.index')}}" method="POST" >  --}}
             <form class="shadow form--frm--userLog col-md-12 col-12 p-4 rounded-3" id="formLoginUser" action=""
                 method="POST">
                 @method('GET')

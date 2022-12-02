@@ -7,11 +7,11 @@
 @section('content')
     @include('Admin.modalRegisterProducto')
 
-    <style>
+    {{-- <style>
         nav svg {
             height: 20px;
         }
-    </style>
+    </style> --}}
 
     <div class="d-flex justify-content-end">
         <a href="{{ route('download.admin.pdf') }}" class="btn btn-success btn-sm">Export to PDF</a>
@@ -25,7 +25,7 @@
         {{--  <div class="container- text-center mb-4 h-100  d-flex justify-content-center align-items-center">
          --}}
         <div class="col-10 col-md-12  d-flex justify-content-end ">
-            <form action="" id="formSearchProducto" class="frm--search--home-- col-3">
+            <form action="" id="searchProducto" class="frm--search--home-- col-3">
                 {{--  <form action="{{route('search.home.search')}}" id="formSearchProducto" class="frm--search--home-- col-3">  --}}
                 {{--  <input type="search" name="search" id="id_search" class=" input-icono input--search--home- form-control me-2 rounded-pill- " placeholder="Menu a buscar..." >  --}}
                 <div class="input-group mb-3 ">
@@ -118,11 +118,7 @@
 
 
     @include('Admin.modalUpdateProducto')
-
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
     {{--  my js create for me  --}}
-    <script src="{{ asset('js/productoSearchAdmin.js') }}"></script>
     <script src="{{ asset('js/dataPictur.js') }}"></script>
     <script src="{{ asset('js/msj.js') }}"></script>
 
