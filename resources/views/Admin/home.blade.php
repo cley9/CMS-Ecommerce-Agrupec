@@ -14,7 +14,7 @@
         <div class="col-md-3 col-sm-6 col-12 ">
             <a href="{{ route('list.admin.list') }}">
                 <div class="info-box bg-teal">
-                    <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+                    <span class="info-box-icon"><i class="bi bi-images"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text-">Agregar nuevos productos</span>
                         <span class="info-box-number">41,410</span>
@@ -33,7 +33,7 @@
             <a href="{{ route('list.admin.catalogo') }}">
                 {{--  <a href="{{route('form.admin.catalogo')}}">  --}}
                 <div class="info-box bg-info">
-                    <span class="info-box-icon"><i class="far fa-thumbs-up"></i></span>
+                    <span class="info-box-icon"><i class="bi bi-file-medical-fill"></i></span>
                     <div class="info-box-content">
                         <span class="info-box-text-">Agregar nuevos catalogos</span>
                         <span class="info-box-number">41,410</span>
@@ -49,7 +49,7 @@
         </div>
 
 
-        <div class="col-md-3 col-sm-6 col-12">
+        {{-- <div class="col-md-3 col-sm-6 col-12">
             <div class="info-box bg-warning">
                 <span class="info-box-icon"><i class="far fa-calendar-alt"></i></span>
                 <div class="info-box-content">
@@ -65,7 +65,7 @@
 
             </div>
 
-        </div>
+        </div> --}}
 
 
 
