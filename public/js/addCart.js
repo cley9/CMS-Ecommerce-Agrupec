@@ -69,3 +69,33 @@ cartHoverM.addEventListener('mouseenter',()=>{
 
 });
 }
+
+// ----------------------
+$(function() {
+    $("#news-slider").owlCarousel({
+        items: 4,
+        itemsDesktop: [1199, 3],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        pagination: true,
+        autoPlay: true
+    });
+});
+// Activate Carousel
+//$("#myCarousel").carousel();
+// Enable Carousel Indicators
+$(".item").click(function() {
+    $("#myCarousel").carousel(1);
+});
+// Enable Carousel Controls
+$(".left").click(function() {
+    $("#myCarousel").carousel("prev");
+});
+
+// -------------------
+temaBodyDark.addEventListener("click", () => {
+    document.body.classList.toggle('dark');
+    temaBodyDark.classList.toggle('active');
+});

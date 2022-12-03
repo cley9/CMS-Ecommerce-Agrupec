@@ -342,8 +342,8 @@
             </div>
         </div>
     </footer>
+    <button id="temaBodyDark">cley</button>
     @include('User.modalListProCart')
-
     {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
 <script src="js/loader-main.js"></script>  --}}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
@@ -359,32 +359,6 @@
     <script src="{{ asset('js/viewPassword.js') }}"></script>
     {{-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    <script>
-        $(function() {
-            $("#news-slider").owlCarousel({
-                items: 4,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [980, 2],
-                itemsMobile: [600, 1],
-                navigation: true,
-                navigationText: ["", ""],
-                pagination: true,
-                autoPlay: true
-            });
-        });
-        // Activate Carousel
-        //$("#myCarousel").carousel();
-        // Enable Carousel Indicators
-        $(".item").click(function() {
-            $("#myCarousel").carousel(1);
-        });
-        // Enable Carousel Controls
-        $(".left").click(function() {
-            $("#myCarousel").carousel("prev");
-        });
-    </script>
-    {{-- @include('User.modalListProCart') --}}
-    <script src="{{ asset('js/dato.js') }}"></script>
 </body>
 
 </html>
