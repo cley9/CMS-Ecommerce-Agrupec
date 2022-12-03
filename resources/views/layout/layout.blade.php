@@ -14,14 +14,16 @@
     <!--nw verson--->
     <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
     <link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}" />
-    {{--
-              <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">  --}}
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
-    {{--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">   --}}
     {{--  icons  --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
+    {{-- new cley  --}}
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+    {{--  --}}
     <title>{{ config('constants.nameProyect') }}</title>
 </head>
 
@@ -80,7 +82,8 @@
                         producto</a>
                     <a class="nav-link" href="{{ route('list.admin.list') }}">lista producto</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6002 ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000 ǀ</a>
+                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000
+                        ǀ</a>
                     {{--  <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>  --}}
                     <a class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
@@ -103,6 +106,12 @@
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav ">
+                                <li>
+                                    <button class="switch" id="switch">
+                                        <span><i class="fas fa-sun"></i></span>
+                                        <span><i class="fas fa-moon"></i></span>
+                                    </button>
+                                </li>
                                 <a class="nav-link active icons--style--raya" aria-current="page"
                                     href="{{ route('vista.index') }}">Home</a>
                                 <a href="{{ route('viewProducto.home.list') }}"
@@ -156,11 +165,18 @@
                                             <li>
                                                 <a href="{{ route('logout.user.index') }}">Cerrar Sesion </a>
                                             </li>
+
                                         </ul>
                                     </div>
                                 @elseif (session()->exists('email') && session()->get('rol') === '4')
-                                    <a href="{{ route('logout.user.index') }}" class="btn bg-info"><i
+                                    <a href="{{ route('logout.user.index') }}" class="btn bg-info "><i
                                             class="bi bi-person-fill me-lg-2"></i>Cerrar Sesion </a>
+                                    <li>
+                                        <button class="switch" id="switch">
+                                            <span><i class="fas fa-sun"></i></span>
+                                            <span><i class="fas fa-moon"></i></span>
+                                        </button>
+                                    </li>
                                 @else
                                     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
@@ -342,10 +358,7 @@
             </div>
         </div>
     </footer>
-    <button id="temaBodyDark">cley</button>
     @include('User.modalListProCart')
-    {{--  <script src="js/btn-filters.js" charset="utf-8"></script>
-<script src="js/loader-main.js"></script>  --}}
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -357,8 +370,10 @@
     <script src="{{ asset('js/btn-msg.js') }}"></script>
     <script src="{{ asset('js/btn-up.js') }}"></script>
     <script src="{{ asset('js/viewPassword.js') }}"></script>
-    {{-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    {{-- <script src="js/btn-filters.js" charset="utf-8"></script>
+<script src="js/loader-main.js"></script>  --}}
+    {{-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
 </body>
 
 </html>
