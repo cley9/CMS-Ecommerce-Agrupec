@@ -17,36 +17,23 @@
         <a href="{{ route('download.admin.pdf') }}" class="btn btn-success btn-sm">Export to PDF</a>
 
     </div>
-    <div class=" mb-3">
-        {{--  <button class="btn btn-primary"> pdf  </button>  --}}
-        {{--  <a href="{{route('download.admin.pdf')}}"> pdf</a>  --}}
-        <label for="recipient-name" class="col-form-label">Nombre del Producto:</label>
-        {{--  <input type="text" name="producto_name" class="form-control" id="editP" value="<?php echo $db_id; ?>" required />  --}}
-        {{--  <div class="container- text-center mb-4 h-100  d-flex justify-content-center align-items-center">
-         --}}
-        <div class="col-10 col-md-12  d-flex justify-content-end ">
-            <form action="" id="searchProducto" class="frm--search--home-- col-3">
-                {{--  <form action="{{route('search.home.search')}}" id="formSearchProducto" class="frm--search--home-- col-3">  --}}
-                {{--  <input type="search" name="search" id="id_search" class=" input-icono input--search--home- form-control me-2 rounded-pill- " placeholder="Menu a buscar..." >  --}}
-                <div class="input-group mb-3 ">
-                    <input type="text" class="form-control fNumRut" id="fProductoLista"
-                        placeholder="Ingrese el producto a buscar" aria-label="Recipient's username"
-                        aria-describedby="basic-addon2" required>
-                    {{--  <span type='button' class="input-group-text" id="fBtnSearchLista"><i class="bi bi-search"></i> Buscar</span>  --}}
-                    <button class="input-group-text" id="fBtnSearchLista"><i class="bi bi-search"></i> Buscar</button>
-                    {{--  <input type="submit">   --}}
-                </div>
-            </form>
+    <div class="container ">
+        <div class="row d-flex justify-content-end ">
+            <div class="mb-3 col-4 ">
+                <form action="" id="searchProducto" class="frm--search--home-- ">
+                    <label for="recipient-name" class="col-form-label">Producto a buscar:</label>
+                    <div class="input-group mb-3 ">
+                        <input type="text" class="form-control fNumRut" id="fProductoLista"
+                            placeholder="Ingrese el nombre a buscar" required>
+                        <button class="input-group-text btn btn-outline-secondary" id="fBtnSearchLista"><i
+                                class="bi bi-search"></i> Buscar</button>
+                    </div>
+                </form>
+            </div>
         </div>
-        {{--
-               </div>  --}}
     </div>
-
     <div id="contentProducto">
-        {{--  <h4>prueba</h4>  --}}
-
     </div>
-    {{--  <p id="demo"></p>  --}}
     <div class="container"><br>
         <div class="row">
             <div class="col-md-12">
@@ -56,21 +43,15 @@
                         <th>Producto</th>
                         <th>Precio</th>
                         <th>nuevo pre</th>
-
                         <th>Foto</th>
                         <th>Editar</th>
                     </thead>
                     <tbody id="dataProducto">
-
-                        {{--  <div id="demo">
-</div>  --}}
                     </tbody>
-
                 </table>
             </div>
         </div>
     </div>
-
 
     <div class="container"><br>
         <div class="row">
@@ -101,8 +82,6 @@
                                     <a onclick="msgUpdate({{ $key['id'] }})" class="mb-md-0 mb-2 btn btn-warning"
                                         data-bs-toggle="modal" data-bs-target="#exampleModal"> <i
                                             class="bi bi-pencil"></i></a>
-
-                                    {{--  <a href="{{route('viewEdit.admin.list',$key['idProducto'])}}">edit</a>  --}}
                                     <a onclick="productDelete({{ $key['id'] }},'{{ $key['nombre'] }}','{{ $key['imagen'] }}')"
                                         class="btn btn-danger " id="delete-frm"> <i class="bi bi-trash"></i></a>
                                 </td>
@@ -120,7 +99,7 @@
     @include('Admin.modalUpdateProducto')
     {{--  my js create for me  --}}
     <script src="{{ asset('js/dataPictur.js') }}"></script>
-    <script src="{{ asset('js/msj.js') }}"></script>
+    {{-- <script src="{{ asset('js/msj.js') }}"></script> --}}
 
 
 @endsection

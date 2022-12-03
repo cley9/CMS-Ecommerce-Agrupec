@@ -38,13 +38,12 @@
                                 <label for="message-text" class="col-form-label">Foto del catalogo</label>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <img class="mb-3 card-img-top" src="" height="150" width="250"
+                                <img class="mb-3 card-img-top" src="" height="150" width="320"
                                     id="updateCatalogoImg" alt="Imagen prevista..." />
                             </div>
                             <div class="mb-3">
                                 <input type="file" class="form-control" onchange="previewFile()"
-                                    id="updateCatalogoFile" name="imagen" aria-describedby="fileHelp" name="imagen"
-                                    accept="image/*">
+                                    id="updateCatalogoFile" aria-describedby="fileHelp" name="imagen" accept="image/*">
                             </div>
                         </div>
                     </div>

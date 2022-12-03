@@ -35,7 +35,7 @@
                                 <input type="text" maxlength="8" size="8" minlength='11'
                                     class="form-control vNumInfo" id="vNumInfocorp" placeholder="Ingrese el DNI"
                                     aria-label="Ingrese el DNI" aria-describedby="basic-addon2" required>
-                                <span type='button' class="input-group-text tn btn-outline-secondary" id="vBtnSearch"><i
+                                <span type='button' class="input-group-text btn btn-outline-secondary" id="vBtnSearch"><i
                                         class="bi bi-search"></i>INFOCORP</span>
                             </div>
                         </div>

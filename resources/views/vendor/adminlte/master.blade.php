@@ -111,6 +111,7 @@
     @yield('adminlte_js')
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{{ asset('js/productoSearchAdmin.js') }}"></script>
+    <script src="{{ asset('js/msj.js') }}"></script>
 
     {{-- <script src="{{ asset('js/factLogic.js') }}"></script> --}}
 

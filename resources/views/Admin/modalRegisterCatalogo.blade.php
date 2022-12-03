@@ -4,7 +4,7 @@
     }
 </style>
 <div class="text-center">
-    <button type="button" id="btnListener" class="btn btn-success" data-bs-toggle="modal"
+    <button type="button" id="btnRegistroCatalogo" class="btn btn-success" data-bs-toggle="modal"
         data-bs-target="#modelAgregarCatalogo" data-bs-whatever="@fat" data-bs-backdrop="static"
         data-bs-keyboard="false">Agregar Catalogo</button>
 </div>
@@ -37,13 +37,12 @@
                                 <label for="message-text" class="col-form-label">Portada del catalogo</label>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <img class="mb-3 card-img-top" src="" height="150" width="250"
+                                <img class="mb-3 card-img-top" src="" height="150" width="320"
                                     id="edPreviewImg" alt="Imagen prevista..." />
                             </div>
                             <div class="mb-3">
                                 <input type="file" class="form-control" onchange="previewFile()" id="archivo"
-                                    name="imagen" aria-describedby="fileHelp" name="imagen" accept="image/*"
-                                    required />
+                                    name="imagen" aria-describedby="fileHelp" accept="image/*" required />
                             </div>
                         </div>
                     </div>

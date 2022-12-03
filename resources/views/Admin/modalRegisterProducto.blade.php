@@ -5,7 +5,7 @@
 </style>
 
 <div class="text-center">
-    <button type="button" id="btnListener" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modelAgregar"
+    <button type="button" id="btnRegistroPro" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modelAgregar"
         data-bs-whatever="@fat" data-bs-backdrop="static" data-bs-keyboard="false">Agregar Producto</button>
 </div>
 <div class="modal fade  " id="modelAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -16,7 +16,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form method="post" action="{{ route('save.admin.list') }}" id="formSave"
+                <form method="post" action="{{ route('save.admin.list') }}" id="formRegistroPro"
                     enctype="multipart/form-data">
                     @csrf
                     @method('GET')
@@ -59,7 +59,7 @@
                             <div class="col">
                                 <label for="message-text" class="col-form-label">Foto del Producto Principal</label>
                             </div>
-                            <img class="mb-3" src="" height="150" width="150" id="edPreviewImg"
+                            <img class="mb-3" src="" height="150" width="320" id="edPreviewImg"
                                 alt="Imagen prevista..." />
                             <div class="mb-3">
                                 <input type="file" class="form-control" onchange="previewFile()" id="archivo"
