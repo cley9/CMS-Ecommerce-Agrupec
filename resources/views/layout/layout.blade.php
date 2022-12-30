@@ -20,8 +20,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     {{-- new cley  --}}
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    {{-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> --}}
+    {{-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> --}}
     <link rel="stylesheet" href="css/estilos.css">
     {{--  --}}
     <title>{{ config('constants.nameProyect') }}</title>
@@ -106,12 +106,12 @@
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav ">
-                                <li>
+                                {{-- <li>
                                     <button class="switch" id="switch">
                                         <span><i class="fas fa-sun"></i></span>
                                         <span><i class="fas fa-moon"></i></span>
                                     </button>
-                                </li>
+                                </li> --}}
                                 <a class="nav-link active icons--style--raya" aria-current="page"
                                     href="{{ route('vista.index') }}">Home</a>
                                 <a href="{{ route('viewProducto.home.list') }}"
@@ -171,12 +171,12 @@
                                 @elseif (session()->exists('email') && session()->get('rol') === '4')
                                     <a href="{{ route('logout.user.index') }}" class="btn bg-info "><i
                                             class="bi bi-person-fill me-lg-2"></i>Cerrar Sesion </a>
-                                    <li>
+                                    {{-- <li>
                                         <button class="switch" id="switch">
                                             <span><i class="fas fa-sun"></i></span>
                                             <span><i class="fas fa-moon"></i></span>
                                         </button>
-                                    </li>
+                                    </li> --}}
                                 @else
                                     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
