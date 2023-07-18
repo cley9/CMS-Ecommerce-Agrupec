@@ -112,13 +112,13 @@
                                         <span><i class="fas fa-moon"></i></span>
                                     </button>
                                 </li> --}}
-                                <a class="nav-link active icons--style--raya" aria-current="page"
+                                <a class="nav-link active icons--style--raya textHead" aria-current="page"
                                     href="{{ route('vista.index') }}">Home</a>
                                 <a href="{{ route('viewProducto.home.list') }}"
-                                    class="nav-link active icons--style--raya" aria-current="page">Ver producto</a>
+                                    class="nav-link active icons--style--raya textHead" aria-current="page">Ver producto</a>
                                 <a href="{{ route('nosotros.home.index') }}"
-                                    class="nav-link active icons--style--raya" aria-current="page">Nosotros</a>
-                                <a href="{{ url('Ayuda') }}" class="nav-link active icons--style--raya me-3"
+                                    class="nav-link active icons--style--raya textHead" aria-current="page">Nosotros</a>
+                                <a href="{{ url('Ayuda') }}" class="nav-link active icons--style--raya me-3 textHead"
                                     aria-current="page">Atencion</a>
 
                                 {{--  @if (session()->exists('name') && session()->get('rol') === '0')  --}}

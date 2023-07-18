@@ -1,6 +1,6 @@
 @extends('layout.layout')
 @section('header')
-    {{--    --}}
+    {{-- app --}}
     <nav class="navbar bg-light  d-block d-sm-block d-md-none ">
         <div class="container-fluid  ">
 
@@ -115,10 +115,7 @@
 
     <!-----------------------------------------------------------------------------------  -->
 
-
-
-
-    {{--    --}}
+    {{-- web --}}
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -130,7 +127,7 @@
                                     <img src="{{ asset('storage/img/Productos/' . $producto['imagen'] . '') }}"
                                         class="img-fluid-a" alt="">
                                 </a>
-                                {{--  <a href="" class="over-layer"><i class="fa fa-link"></i></a>  --}}
+                                 {{-- <a href="" class="over-layer"><i class="fa fa-link"></i></a>  --}}
                             </div>
                             <div class="post-content">
                                 <span>
@@ -152,7 +149,7 @@
         <div class="title--producto-group-2 rounded-3 pt-2 d-flex align-items-center justify-content-center"
             style="height:50px;">
             {{--  <small class="h4 ">Lista de <?php echo $nameListaProducto; ?> </small>  --}}
-            <small class="h4 ">Lista de </small>
+            <small class="h4 ">Lista de Producto</small>
         </div>
         <div class="row  row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
             @foreach ($viewProducto as $itemPro)
@@ -164,10 +161,10 @@
                         </a>
                         <div class="card-body justify-content-between align-items-center">
                             <div class="d-flex  align-items-center ">
-                                <h5 class="card-title title--box--pro-view">{{ $itemPro['nombre'] }}</h5>
+                                <h5 class="card-title title--box--pro-view txtBoxTitle">{{ $itemPro['nombre'] }}</h5>
                             </div>
                             <div class="mb-0 d-flex justify-content-between  ">
-                                <span class="box--text--pre"><del>S/
+                                <span class="box--text--pre txtBoxPreBefore"><del>S/
                                         {{ number_format($itemPro['precio'], 2, '.', ',') }}</del></span>
                                 <span class="box--text--pre">S/ {{ number_format($itemPro['precio'], 2, '.', ',') }}</span>
                             </div>

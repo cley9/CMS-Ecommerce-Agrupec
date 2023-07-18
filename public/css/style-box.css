@@ -105,25 +105,39 @@ width: 34px;
 
 
 /* log admin */
-
 .form--frm--adminLog{
 height: 18rem;
 }
 .input--frm--adminLog{
-background: #E7F9EB;
-border-color:#FFFFFF;
+  background: #E7F9EB;
+  border-color: #98EFCC;
 }
-/* log user */
+.input--frm--adminLog:hover{
+box-shadow: 0 0 5px #19C27D;
+}
+.input--frm--adminLog:focus{
+background: #E8F0FE;
+}
 
+/* log user */
 .form--frm--userLog{
     height: 24rem;
 }
 .input--frm--userLog{
     background: #E7F9EB;
-    border-color:#FFFFFF;
+    border-color: #98EFCC;
 }
-.form--frm--userRegistro{
+.input--frm--userLog:hover{
+  box-shadow: 0 0 5px #19C27D;
+}
+.input--frm--userLog:focus{
+  background: #E8F0FE;
+}
+.form-control:focus-visible {
+  box-shadow: 0 0 2px #0D6EFD;
+}
 
+.form--frm--userRegistro{
     height: 29rem;
 }
 .form--frm--userRecuperar{
@@ -346,5 +360,21 @@ align-items: flex-end; */
  border-style:dashed;
  border-width: 4px;
  height: 190px;
-  /* /* background: #84FABdashed */
+}
+
+/* box input search */
+.input--search--home{
+  height: 50px;
+  border-color:none;
+}
+.input--search--home:hover{
+  border-color: #6ABEA5;
+  box-shadow: 0px 1px  12px #6ABEA5;
+}
+.input--search--home:focus{
+  border-color: #6ABEA5;
+  box-shadow: 0px 2px #6ABEA5;
+}
+.input--search--home:focus-visible{
+box-shadow: 0 0 2px #6ABEA5;
 }

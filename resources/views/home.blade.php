@@ -200,11 +200,11 @@
                         <div class="bg-warning- box--btn--addHomeP ">
                             <div class="card-body">
                                 <div class="mb-2 d-flex  align-items-center  box--home--text">
-                                    <h5 class="card-title text-dark h6">{{ $key['nombre'] }}</h5>
+                                    <h5 class="card-title text-dark h6 txtBoxTitle">{{ $key['nombre'] }}</h5>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-between  ">
                                     {{--  <span class="text-dark"><del>s/ {{ $key['precio'] }}</del></span>  --}}
-                                    <span class="text-dark"><del>S/
+                                    <span class="text-dark- txtBoxPreBefore"><del>S/
                                             {{ number_format($key['precio'], 2, '.', ',') }}</del></span>
 
                                     <span class="text-dark">S/ {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>

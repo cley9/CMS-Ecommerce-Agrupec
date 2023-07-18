@@ -51,10 +51,8 @@ color: #FDFDFD;
 .icons-font-login{
   font-size: 120px;
 }
-/*.icons--font--color--login{*/
-  /* background-color: ;:orange; */
-/*}*/
-/* --------- form  */
+
+/*  form search home  */
 .input-icono {
   /* background-image: url('http://127.0.0.1:8000/storage/img/icons/search.svg'); */
   background-image: url('/storage/img/icons/search.svg');
@@ -69,31 +67,7 @@ color: #FDFDFD;
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
-/* .frm--search--home:hover{
-    color: #186A3B;
-} */
-.input--search--home{
-    height: 50px;
-    border-color:none;
-    /* box-shadow: 0px 1px  12px #6ABEA5; */
 
-}
-.input--search--home:hover{
-    border-color: #6ABEA5;
-    box-shadow: 0px 1px  12px #6ABEA5;
-
-}
-/* .input-icono {
-  background-image: url('../img/icons/search.svg');
-  background-repeat: no-repeat;
-  background-position: 26px center;
-  background-size: 20px;
-  display: flex;
-  align-items: center;
-  padding-left: 58px;
-  } */
-
-/* ------------------------------------------------ */
 a {
 text-decoration: none;
 background-image: linear-gradient(currentColor, currentColor);
@@ -124,53 +98,6 @@ transition: background-size .3s;
 background-size: 100% 2px;
 }
 
-
-
-/*
-.box-love {
-  position: relative;
-  width: 100%;
-  max-width: 400px;
-}
-
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .3s ease;
-  background-color: red;
-}
-
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.icon {
-  color: white;
-  font-size: 30px;
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-} */
-
-/* .input-icono {
-  background-image: url('../img/icons/search.svg');
-  background-repeat: no-repeat;
-  background-position: 26px center;
-  background-size: 20px;
-  display: flex;
-  align-items: center;
-  padding-left: 58px;
-  } */
   /* ----------------this are the view pss ----- */
 .input-wrapper {
   position: relative;
