@@ -282,7 +282,7 @@
                                 <a href="https://web.facebook.com/?_rdc=1&_rdr"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-facebook"></i></a>
-                                <a href="https://github.com/kevinPumaille/DeliveryRestaurante"
+                                <a href="https://github.com/cley9"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-github"></i></a>
                                 <a href="https://twitter.com/iniciarsesion?lang=es"
@@ -299,7 +299,7 @@
                                         class="bi bi-messenger"></i> </a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-pinterest"></i> </a>
-                                <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                <a href="https://www.linkedin.com/in/cley-tornero-mondalgo-89b387189/" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-linkedin"></i> </a>
 
 
@@ -353,7 +353,7 @@
         </div>
         <div class=" footer--final mb-3 d-flex justify-content-center align-items-center">
             <div class="text-center ">
-                <small class=" mb-3 text-muted h6"> ©2022 copyright
+                <small class=" mb-3 text-muted h6"> ©2023 copyright
                     {{ config('constants.nameProyect') }}</small>
             </div>
         </div>

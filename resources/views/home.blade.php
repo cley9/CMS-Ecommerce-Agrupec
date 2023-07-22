@@ -67,21 +67,9 @@
 
     <div class="container mb-4 mb-md-2 pt-4">
         <h6 class="display-6">¡No los dejes ir!</h6>
-
-
-        <!--<div class="row d-flex justify-content-center align-items-center bg-info mb-5 p-5">-->
-        <!--<div class="col-12 col-md-10 bg-primary d-flex align-items-center">-->
         <div id="carouselExampleIndicators_" class="carousel slide p-0 " data-bs-ride="carousel">
             <div class="carousel-inner  p-md-4 p-0 ">
                 <div class="carousel-item active">
-                    <!--<div class="row  slider--mins  p-2 " width="500px;">-->
-                    <style media="screen">
-                        .componet--one {
-                            /*height: 400px;*/
-                            /*background: orange;*/
-                        }
-                    </style>
-
                     <div class="row p-md-5 p-3 ">
                     </div>
                 </div>
@@ -89,7 +77,6 @@
                     <div class="row p-md-5 p-3 ">
                     </div>
                 </div>
-
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_"
                 data-bs-slide="prev">
@@ -126,16 +113,20 @@
                                             class="img-fluid-a slay-img-item" height="120px" width="140px" alt="">
                                     </a>
                                 </dir>
-                                <div class="col-5 pt-2 bg-warning-s  ">
-                                    <h6 class="mb-4 fw-normal- text-center">{{ $itemProducto['nombre'] }}</h6>
-                                    <h6 class="text-center">
-                                        @for ($i = 1; $i <= 2; $i++)
+                                <div class="col-5 pt-3 ">
+                                    <div class="col-12" style="height: 70px">
+                                        <h6 class="mb-4 fw-normal- text-center">{{ $itemProducto['nombre'] }}</h6>
+                                    </div>
+                                    <div class="col">
+                                        <h6 class="text-center">
+                                            @for ($i = 1; $i <= 2; $i++)
                                             <i class="bi bi-star-fill icons--star"></i>
-                                        @endfor
-                                    </h6>
-                                    <div class=" d-flex justify-content-center">
-                                        <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
+                                            @endfor
+                                        </h6>
+                                        <div class=" d-flex justify-content-center">
+                                            <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
                                             class="btn btn-sm  btn--view-add btn-slay-producto-">Ver Producto </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

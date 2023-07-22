@@ -121,7 +121,7 @@
             <div class="col-md-12">
                 <div id="news-slider" class="owl-carousel">
                     @foreach ($viewProducto as $producto)
-                        <div class="post-slide">
+                        <div class="post-slide boxSlayderProSec" >
                             <div class="post-img">
                                 <a href="{{ route('View.home.index', $id = $producto['id']) }}">
                                     <img src="{{ asset('storage/img/Productos/' . $producto['imagen'] . '') }}"
@@ -157,7 +157,7 @@
                     <div class="card shadow box--produ--view">
                         <a href="{{ route('View.home.index', $id = $itemPro['id']) }}">
                             <img src="{{ asset('storage/img/Productos/' . $itemPro['imagen'] . '') }}"
-                                class="img-fluid-a- card-img-top" height="120px" width="100px" alt="">
+                                class="img-fluid-a- card-img-top" height="210px" width="100px" alt="">
                         </a>
                         <div class="card-body justify-content-between align-items-center">
                             <div class="d-flex  align-items-center ">
@@ -184,7 +184,7 @@
                                 @else
                                     <a onclick="msjInicieSesion()" class="btn btn--view-add btn-sm ">Agregar </a>
                                 @endif
-                                <a href="" class="btn btn--view-page btn-sm">Ver </a>
+                                <a href="{{ route('View.home.index', $id = $itemPro['id']) }}" class="btn btn--view-page btn-sm">Ver </a>
                                 {{--  <a href="view-page?view=<?php echo $item['db_id']; ?>" class="btn btn--view-page">Ver </a>  --}}
                             </div>
                         </div>
