@@ -370,6 +370,10 @@
     <script src="{{ asset('js/btn-msg.js') }}"></script>
     <script src="{{ asset('js/btn-up.js') }}"></script>
     <script src="{{ asset('js/viewPassword.js') }}"></script>
+        {{-- ads --}}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5125611954987078"
+     crossorigin="anonymous"></script>
+     {{-- ads end --}}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     {{-- <script src="js/btn-filters.js" charset="utf-8"></script>
 <script src="js/loader-main.js"></script>  --}}
