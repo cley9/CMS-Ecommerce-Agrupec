@@ -227,7 +227,7 @@ btnFilterSearch.forEach(btnFilterSearch =>{
     btnFilterSearch.addEventListener("click", (e)=>{
         let nameProduct=e.target.getAttribute("name");
         // console.log("nombre ",nameProduct);
-        const url="http://127.0.0.1:8000/searchListCategory?search="+nameProduct+"";
+        const url="/searchListCategory?search="+nameProduct+"";
         listCate(url);
         
     });
