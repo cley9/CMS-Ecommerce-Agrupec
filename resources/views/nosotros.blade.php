@@ -16,7 +16,7 @@
                     grandes ofertas, nos esmeramos en darle una atención personalizada.</p>
 
                 <div class="d-flex align-itmes-center justify-content-center">
-                    <a href="{{ route('contactenos.home.index') }}" class="col-md-2 col-4 btn btn--view--add btn-primary ">Ver
+                    <a href="{{ route('contactenos.home.index') }}" class="col-md-2 col-4 btn btn--view--add btn-primary btnEfectClick">Ver
                         más </a>
                 </div>
             </div>

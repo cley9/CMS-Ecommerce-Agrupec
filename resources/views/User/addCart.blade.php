@@ -36,8 +36,8 @@ echo file_get_contents("http://agrupec.com/includes/desing.php");
          </div>
      </div>
      <div class="btn--optionCard ">
-         <a href="#" class="modal__close  me-4">Seguir comprando</a>
-       <a href="#" class="modal__viewPro">Ir a mi carrito</a>
+         <a href="#" class="modal__close  me-4 btnEfectClick">Seguir comprando</a>
+       <a href="#" class="modal__viewPro btnEfectClick">Ir a mi carrito</a>
      </div>
    </div>
  </section>

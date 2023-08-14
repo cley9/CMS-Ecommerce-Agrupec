@@ -126,7 +126,10 @@ background-size: 100% 2px;
 font-size: 22px;
 /*background: black;*/
 }
-
+.icons--delete--cart:hover{
+  transform: scale(0.9);
+  transition: 0.6s ease;
+}
 
 /* icon's contact */
 

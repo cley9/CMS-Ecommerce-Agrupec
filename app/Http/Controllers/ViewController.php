@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Producto;
 use App\Models\Cart;
+use App\Models\ListCategory;
 use App\Models\SlayderMain;
 // ----
 // use Illuminate\Support\Facades\DB;
@@ -14,7 +15,8 @@ class ViewController extends Controller
     public function Producto(){
         // ---------- slyder
         $viewProducto=Producto::paginate(24);
-         return view('Producto',compact('viewProducto'));
+        $listCategory=ListCategory::all();
+        return view('Producto',compact('viewProducto', 'listCategory'));
         //  return $viewProducto;
         }
         public function viewProductoId($id){
@@ -66,5 +68,18 @@ class ViewController extends Controller
         return view('search',compact('search','slaySearch','searchExists'));
         // return $request->search;
         // return $search;
+    }
+    function searchListCategory(Request $request){
+        $searchListCatgory=Producto::where('nombre','like','%'.$request->search.'%')->get();
+        return $searchListCatgory;
+    }
+    
+    public function listCategory(){
+        $listCategory=ListCategory::all();
+        // return view("productoFilterCard", compact('listCategorya'));
+        return $listCategory;
+
+        // $viewProducto=Producto::paginate(24);
+        //  return view('Producto',compact('viewProducto'));
     }
 }

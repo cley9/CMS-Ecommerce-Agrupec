@@ -12,7 +12,12 @@
 @import url("style-btn.css");
 /*  */
 @import url("style-text.css");
-
+.navHeadDising{
+  height: 70px;
+}
+.inpFormDising{
+  padding-top: 28px;
+}
 .foda--view{
   color:#828C8A; font-size:60px;
 }
@@ -227,7 +232,7 @@ margin-left: 10px;
   color: #12a44f;
   font-size: 26px;
   margin-top: -6%;
-
+/* height: ; */
   /* margin-top: 1px -10px 0px 0px; */
 }
 .box-cart-validar{
@@ -269,4 +274,13 @@ margin-top: -29px;
 margin-left: 74%;
 /* margin-top: -200px; */
 /* font-size: 10px; */
+/* margin-left:90px ; */
+
+}
+
+/* nav dising app listCategory*/
+.navHeadDisingApp{
+  margin-left:-24px ;
+  width: 408px;
+
 }

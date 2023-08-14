@@ -125,7 +125,7 @@
                                         </h6>
                                         <div class=" d-flex justify-content-center">
                                             <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
-                                            class="btn btn-sm  btn--view-add btn-slay-producto-">Ver Producto </a>
+                                            class="btn btn-sm  btn--view-add btn-slay-producto- btn--addCard--countMaster btnEfectClick">Ver Producto </a>
                                         </div>
                                     </div>
                                 </div>
@@ -209,19 +209,19 @@
                                 @if (session()->exists('name') && session()->get('rol') === '0')
                                     <div class="overlay d-flex align-items-center-- justify-content-center">
                                         <a onclick="addProCart({{ $key['id'] }},1,{{ $key['newPrecio'] }},'{{ $key['nombre'] }}','{{ $key['imagen'] }}')"
-                                            class="icon"><i class="bi bi-heart"></i></a>
+                                            class="icon btnAddCardLove btnEfectClick"><i class="bi bi-heart"></i></a>
                                     </div>
                                     <div class="box--btn--addHome">
                                         <div class=" d-flex justify-content-end align-items-center mb-4 ">
-                                            <a class="btn--addCard--countMaster btn-sm text-dark viewCP"
+                                            <a class="btn--addCard--countMaster bntEfectClick btn-sm text-dark viewCP btnEfectClick"
                                                 id="addProCard{{ $key['id'] }}">Agregar</a>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center ">
                                             <a
-                                                class="des{{ $key['id'] }} btn rounded-circle  btn--addCard--count fw-normal">-</a>
+                                                class="des{{ $key['id'] }} btn rounded-circle  btn--addCard--count btnEfectClick fw-normal">-</a>
                                             <span id="numDate{{ $key['id'] }}">1</span>
                                             <a
-                                                class="start{{ $key['id'] }} btn rounded-circle btn--addCard--count">+</a>
+                                                class="start{{ $key['id'] }} btn rounded-circle btn--addCard--count btnEfectClick">+</a>
                                         </div>
                                     </div>
 
@@ -259,7 +259,7 @@
 
                                     <div class=" d-flex justify-content-center align-items-center">
                                         <a href="{{ route('View.home.index', $id = $key['id']) }}"
-                                            class="btn btn-sm  btn--view-add">Ver Producto </a>
+                                            class="btn btn-sm  btn--view-add btnEfectClick">Ver Producto </a>
                                     </div>
                                 @endif
                             </div>

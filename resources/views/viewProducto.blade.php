@@ -140,10 +140,10 @@
                             <div class="text-center mb-4">
 
                                 @if (session()->exists('name') && session()->get('rol') === '0')
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info "
+                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info btnEfectClick"
                                         data-bs-toggle="modal" data-bs-target="#Mpayment">
                                         Comprar ahora</button>
-                                    <a id="addProductoId" class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary">Agregar
+                                    <a id="addProductoId" class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary btnEfectClick">Agregar
                                         al carrito</a>
                                     <script>
                                         addProductoId.addEventListener("click", (e) => {
@@ -156,7 +156,7 @@
 
                                     {{--  @else  --}}
                                 @else
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info "
+                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info btnEfectClick"
                                         onclick="msjInicieSesion()">Comprar ahora</button>
                                 @endif
                             </div>

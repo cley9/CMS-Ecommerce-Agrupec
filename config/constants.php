@@ -4,7 +4,7 @@ return [
     'numContact' => "927 974 275",
     'gmailContact' => "mensaje@agrupec.com",
     'gmailPersonal' => "cleyutp@gmail.com",
-    'directionContact' => "Av.18 de arica Nro.4 - Ciudad - Lima - Peru",
+    'directionContact' => "Av.Gran Chimu Zarate, San Juan Lurigancho - Lima - Peru",
     'numProvincia' => '01 723 7349',
     'nameProyect' => 'Agrupec'
 

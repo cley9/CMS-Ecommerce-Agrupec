@@ -28,11 +28,12 @@ use Laravel\Socialite\Facades\Socialite;
 */
 // Route::get('/envioGmail', [mailController::class ,'a'] )->name('envio.index');
 
-
+Route::get('/cley', [ViewController::class, 'listCategory'])->name('user.cley.daaa');
 Route::get('/slay', [ViewController::class, 'viewSlayderMain'])->name('slayderMain.index');
 Route::get('/inserSlayderMain', [ViewController::class, 'inserSlayderMain'])->name('slayderMain.index');
 Route::get('/', [ViewController::class, 'view'])->name('vista.index');
 Route::get('/Search', [ViewController::class, 'search'])->name('search.home.search');
+Route::get('/searchListCategory', [ViewController::class, 'searchListCategory'])->name('searchListCategory.home.search');
 Route::get('/Producto-view', [ViewController::class, 'Producto'])->name('viewProducto.home.list');
 Route::get('/Ayuda', [ViewController::class, 'viewHelp'])->name('help.home.index');
 // Route::get('/Admin-login', [CrudController::class ,'loginUser'] )->name('loginUser.admin.main');

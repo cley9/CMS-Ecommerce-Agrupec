@@ -45,7 +45,11 @@ background:#7EEBCA;
 }
 .btn--addCard--count:hover{
  box-shadow: 0px 1px  12px #D0D3D4;
+ cursor: pointer;
 }
+/* .btn--addCard--count:active{ 0.9 =90%
+transform: scale(0.9);
+} */
 .btn--addCard--countMaster{
     /*background:#7ED6EB;*/
     background:#7EEBCA;
@@ -54,9 +58,36 @@ background:#7EEBCA;
 .btn--addCard--countMaster:hover{
      /*background:#A3E4D7;*/
        background: #7ADDBF;
+}
+/* .btn--addCard--countMaster:active{
+  transform: scale(0.9);
+} */
+
+/* btn seguir */
+.btnEfectClick:active{
+transform: scale(0.9);
+cursor: pointer;
+/* background-color: #333F50; */
+box-shadow: 0 0 2px #6ABEA5;
+transition:  0.6s ease; 
+}
+.btnEfectClick:focus-visible{
+box-shadow: 0 0 2px #6ABEA5;
 
 }
-
+/*  */
+/* .btnEfectClick::after{
+  box-shadow: 0 0 2px #6ABEA5;
+  
+  }
+  .btnEfectClick::before{
+    box-shadow: 0 0 2px #6ABEA5;
+    
+    }
+    .btnEfectClick{
+      box-shadow: 0 0 2px #6ABEA5;
+      
+      } */
 /* subcribete */
 .input--frm--sub{
   width: 230px;
@@ -128,10 +159,28 @@ border-color:#1BE0FA;
     background: #7ADDBF;
 
 }
+.btn--listCart--viewCart:focus{
+box-shadow: 0 0 2px #6ABEA5;
+}
 .btn--listCart--close{
     background: #7FCADC;
+    border-color: none;
     /* background-color: #3E6B90; */
     /* background-color:#2C3E50; */
     /* background-color:#5555D5; */
+
+}
+/* btn producto list category */
+.listCategoryCard{
+  background: #87ECC7;
+  /* border-color: none; */
+  /* box-shadow: #000000; */
+}
+.btn--listCart--close:focus{
+  /* background: red; */
+  /* border-color: #638BE6; */
+  /* border-radius: none; */
+box-shadow: 0 0 2px #6ABEA5;
+
 
 }

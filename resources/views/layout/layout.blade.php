@@ -23,6 +23,10 @@
     {{-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> --}}
     {{-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> --}}
     <link rel="stylesheet" href="css/estilos.css">
+    {{-- ads --}}
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5125611954987078"
+    crossorigin="anonymous"></script>
+    {{-- ads end --}}
     {{--  --}}
     <title>{{ config('constants.nameProyect') }}</title>
 </head>
@@ -36,7 +40,7 @@
     @include('Admin.modalLoginAdmin')
     <br><br><br>
     <div class="container text-center mb-4 h-100  d-flex justify-content-center align-items-center">
-        <div class="col-10 col-md-5 ">
+        <div class="col-10 col-md-5 inpFormDising">
             <form action="{{ route('search.home.search') }}" id="form" class="frm--search--home">
                 <input type="search" name="search" id="id_search"
                     class=" input-icono input--search--home form-control me-2 rounded-pill- "
@@ -96,7 +100,7 @@
     <br><br><br>
     {{--  main  --}}
     <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
-        <div class="container-fluid">
+        <div class="container-fluid navHeadDising">
             <div class="container d-none d-sm-none d-md-block">
                 <div class="row link--heder--m  d-flex align-items-center">
                     <div class="col-lg-1 ">

@@ -189,11 +189,63 @@ function msjRegistroUsuarioCliente(){
     
 }
 
-// let btnOpenPopup = document.querySelector('.whatsapp-button');
-// let popup = document.querySelector('.popup-whatsapp');
-// popup.classList.toggle('is-active-whatsapp-popup')
-// popup.style.animation = "fadeIn .6s 0.0s both";
+async function listCate(url){
+    let responselistCategory= await fetch(url); // espera la promesa
+    let listCategory= await responselistCategory.json();
+    // console.log("cate",listCategory);
+    listCatProduct.innerHTML="";
+    listCategory.forEach((element)=>{
+listCatProduct.innerHTML +=
+"<div class='pt-3 mb-4 mb-md-2 listCategoryFilterClickHead'>" +
+                " <div class='card shadow listCategoryFilterClickBody' >" +
+       '<a href="/View-page/'+element.id+'"><img src="/storage/img/Productos/'+element.imagen+'"  class="card-img-top " width="90px" height="160px" /></a>'+
+                " <div class='card-body justify-content-between align-items-center'>" +
+           "<div class='d-flex  align-items-center' >"+
+                   "<h5 class='card-title h6 txtListCategoryView'>" + element.nombre + "</h5>"+
+               "</div>"+
+            " <div class='d-flex justify-content-between'>"+
+             "<span class='box--text--pre txtBoxPreBefore'>"+"<del>"+"S/ "+element.newPrecio+"</del>"+"</span>"+
+             "<span>"+"S/ "+ element.precio+ "</span>"+
+                "</div>"+
+                "<div class=' align-items-center d-flex'>"+
+                "   <span class='h6 mb-0 text-muted fw-normal'>"+
+                "<small>"+ element.cantidad+ " disponibles" +"</small>"+  "</span>"+
+                "</div>"+
+                "<hr>" +
+                " <div class='text-center'>" +
+    '<a href="/View-page/'+element.id+'" class="btn btn--view-page- btn-sm btnListCategoryView btnEfectClick" style="">'+ 'Ver </a>'+
+                " </div>" +
+                " </div>" +
+                " </div>" +
+                " </div>  ";
+    });
+    // console.log(listCategory[].nombre);
+}
+// listCate(url);
+const btnFilterSearch=document.querySelectorAll(".btnFilterSearch");
+btnFilterSearch.forEach(btnFilterSearch =>{
+    btnFilterSearch.addEventListener("click", (e)=>{
+        let nameProduct=e.target.getAttribute("name");
+        // console.log("nombre ",nameProduct);
+        const url="http://127.0.0.1:8000/searchListCategory?search="+nameProduct+"";
+        listCate(url);
+        
+    });
+});
 
-// var popover = new bootstrap.Popover(document.querySelector('.popover-dismiss'), {
-//     trigger: 'focus'
-// })
+// function consListCategory(){
+//     return new Promise((resolve, reject)=>{
+//         setTimeout((resolve) => {
+//             // http://127.0.0.1:8000/cley
+//             console.log(" new promise");
+            
+//         }, 3000);
+//     });
+//     // console.log("data new");
+// }
+// async function dataCategory(){
+//     let dat= await consListCategory();
+//     console.log(dat);
+// }
+// dataCategory();
+

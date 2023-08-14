@@ -378,3 +378,29 @@ align-items: flex-end; */
 .input--search--home:focus-visible{
 box-shadow: 0 0 2px #6ABEA5;
 }
+
+
+/* listCategoryFilter */
+.listCategoryFilterClickHead{
+ height:400px;
+ /* background: #05bbff; */
+ /* margin-right: 90px; */
+
+}
+.listCategoryFilterClickBodyMain{
+  /* background: #19C27D; */
+  /* margin-right: 390px; */
+}
+.listCategoryFilterClickBody{
+  height: 360px;
+}
+.btnListCategoryView{
+  margin-top: -6px;
+  width:90px;
+  /* background-color: #63E6BE; */
+  background-color: #638BE6;
+
+}
+.txtListCategoryView{
+  height: 56px;
+}

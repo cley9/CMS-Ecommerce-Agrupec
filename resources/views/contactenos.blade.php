@@ -28,16 +28,16 @@
 
                 <div class=" text-center">
 
-                    <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn btn-info  form--icons"
+                    <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn btn-info  form--icons btnEfectClick "
                         target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn btn-info form--icons"
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn btn-info form--icons btnEfectClick"
                         target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://github.com/cley9?tab=repositories" class="rounded-circle btn btn-info form--icons"
+                    <a href="https://github.com/cley9?tab=repositories" class="rounded-circle btn btn-info form--icons btnEfectClick"
                         target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn btn-info form--icons"
+                    <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn btn-info form--icons btnEfectClick"
                         target="_blank"><i class="bi bi-twitter"></i> </a>
                     <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
-                        class="rounded-circle btn btn-info form--icons" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i class="bi bi-whatsapp"></i></a>
 
                 </div>
 
@@ -70,7 +70,7 @@
                             privacidad.</label>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <input class="btn btn-info btn-md form--sumit-color"id="#id_del_input" onclick="enviar_nex()"
+                        <input class="btn btn-info btn-md form--sumit-color btnEfectClick" id="#id_del_input" onclick="enviar_nex()"
                             type="submit" name="thisEnvio" value="Enviar">
                     </div>
                 </form>

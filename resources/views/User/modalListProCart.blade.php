@@ -12,9 +12,9 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn  btn-sm btn--listCart--viewCart"
+                <button type="button" class="btn  btn-sm btn--listCart--viewCart btnEfectClick"
                     data-bs-dismiss="modal">Salir</button>
-                <a href="/Cart" class="btn btn-sm btn--listCart--close">Ver Carrito</a>
+                <a href="/Cart" class="btn btn-sm btn--listCart--close btnEfectClick">Ver Carrito</a>
             </div>
         </div>
     </div>

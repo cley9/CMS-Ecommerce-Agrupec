@@ -23,9 +23,9 @@
       </div>
       <div class="btn--optionCard ">
           {{--  <a  class="modal__close  me-none me-lg-4-">Seguir comprando</a>  --}}
-          <a  class="modal__close ">Seguir comprando</a>
+          <a  class="modal__close btnEfectClick">Seguir comprando ds</a>
         {{--  <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>  --}}
-        <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>
+        <a href="{{route('cart.user.main')}}" class="modal__viewPro btnEfectClick">Ir a mi carrito</a>
         {{--  <a href="{{route('cart.user.main')}}" class="modal__viewPro">Ir a mi carrito</a>  --}}
       </div>
     </div>

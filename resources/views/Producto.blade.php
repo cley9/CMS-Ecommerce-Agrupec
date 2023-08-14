@@ -2,120 +2,60 @@
 @section('header')
     {{-- app --}}
     <nav class="navbar bg-light  d-block d-sm-block d-md-none ">
-        <div class="container-fluid  ">
-
+        <div class="container-fluid  navHeadDisingApp" >
             <small class="  h6"> Seleccione Producto : </small>
-
             <form class=" overflow-auto " id="multi-filters" method="post">
-
-                <div class="row row-cols-2 row-cols-md-4 x-menu ">
-                    <div class="col  ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck1" name="db_nombre[]"
-                            value="Perfil de Aluminio">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck1">Perfil de Aluminio</label>
-                    </div>
-
+                <div class="row row-cols-2 row-cols-md-4 x-menu  ">
+                    @foreach ($listCategory as $listCate)
                     <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck2"
-                            name="db_nombre[]" value="Fragua">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck2"> Fragua </label>
+                        <input type="checkbox" class="form-check-input p-2 bd-highlight btnFilterSearch" id="btn{{ $listCate['id'] }}" name="{{ $listCate['nombre'] }}"
+                        value="Perfil de Aluminio">
+                        <label class="form-check-label p-1 bd-highlight" for="btn{{ $listCate['id'] }}">{{ $listCate['nombre'] }}</label>
                     </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck3" id="type_3"
-                            name="db_nombre[]" value="Pegamento">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck3">Pegamento </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck4" id="type_3"
-                            name="db_nombre[]" value="Cantoneras">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck4">Cantoneras </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck5" id="type_3"
-                            name="db_nombre[]" value="Tubo de Agua">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck5">Tubo de Agua </label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck6" id="type_3"
-                            name="db_nombre[]" value="Tubo de Luz">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck6">Tubo de Luz </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck7" id="type_3"
-                            name="db_nombre[]" value="Perfil de Plastico">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck7">Perfil de Plastico </label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck8"
-                            name="db_nombre[]" value="Nivelador">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck8">Niveladores</label>
-                    </div>
-
-                    <div class="col">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck9"
-                            name="db_nombre[]" value="Tubo de Desague (Nicol)">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck9">Tubo de Desague
-                        </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck10"
-                            name="db_nombre[]" value="Caños de Cosina">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck10">Caños de Cosina
-                        </label>
-                    </div>
-                    <div class="col  d-flex  align-items-center  justify-content-center">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck11"
-                            name="db_nombre[]" value="Caño Lavatorio Nacional">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck11"> Caño Lavatorio Nacional
-                        </label>
-                    </div>
-                    <div class="col d-flex  align-items-center  justify-content-center">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck12"
-                            name="db_nombre[]" value="Caño Lavatorio ">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck12">Caño Lavatorio Importado
-                        </label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck13"
-                            name="db_nombre[]" value="Caño de Jardin">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck13">Caño de Jardin
-                        </label>
-                    </div>
-                    <div class="col">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck14"
-                            name="db_nombre[]" value="Ocre Bayer ">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck14">Ocre Bayer
-                        </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck15"
-                            name="db_nombre[]" value="Tapas de Desague PVC">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck15">Tapas de Desague
-                        </label>
-                    </div>
-                    <div class="col ">
-                        <input type="checkbox" class="form-check-input p-2 bd-highlight" id="exampleCheck16"
-                            name="db_nombre[]" value="One Piece">
-                        <label class="form-check-label p-1 bd-highlight" for="exampleCheck16">One Piece
-                        </label>
-                    </div>
-
-
+                    @endforeach
                 </div>
-
-
-
-
         </div>
         </form>
-
         </div>
     </nav>
-
-
-    <!-----------------------------------------------------------------------------------  -->
-
-    {{-- web --}}
+    {{-- <!-----------------------------------------------------------------------------------  -->start de la categoria  --}}
+      <div class="container-fluid p-4 ">
+        <div class="row  ">
+         <div class="col-1 col-md-4 col-lg-3  d-none d-sm-none d-md-block ">
+             <form class="" id="multi-filters"  method="post">
+             <div class="container accordion  " id="accordionPanelsStayOpenExample" style="width: 315px; ">
+               <div class="accordion-item">
+                 <h2 class="accordion-header mb-3" id="panelsStayOpen-headingOne">
+                   <button class="accordion-button listCategoryCard" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                       Producto
+                   </button>
+                 </h2>
+                 <div id="panelsStayOpen-collapseOne" class=" " aria-labelledby="panelsStayOpen-headingOne">
+                       <div class="vertical-menu bg-info">
+                         @foreach ($listCategory as $listCate )
+                        <div class="  list-group-item  align-items-center  d-flex bd-highlight "> <input type="checkbox" class="form-check-input p-2 bd-highlight btnFilterSearch" id="btnW{{ $listCate['id'] }}"  name="{{ $listCate['nombre'] }}" value="Ocre Bayer">
+                          <label class="form-check-label p-1 bd-highlight"  for="btnW{{ $listCate['id'] }}">{{ $listCate['nombre'] }}</label>
+                          <label class="badge ms-auto p-2 bd-highlight btn-numbers" for="btnW{{ $listCate['id'] }}" >{{ $listCate['id'] }}</label>
+                        </div>
+                        @endforeach 
+                       </div>
+                 </div>
+               </div>
+             </div>
+           </form>
+         </div>
+      
+         <div class="col-md-9">
+           <div class="text-center ">  <small class="h4  ">Lista de Producto </small></div>
+           {{-- <div class="row  row-cols-2  row-cols-md-5 " id="filters-result" class="bg-white"> --}}
+            <div class="row  row-cols-2  row-cols-md-6 row-cols-ms-4- listCategoryFilterClickBodyMain" id="listCatProduct" class="bg-white">
+            </div>
+         </div>
+        </div>
+      </div>
+      
+    {{-- <!-----------------------------------------------------------------------------------  -->end de la categoria  --}}
+    
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
@@ -135,7 +75,7 @@
                                         <i class="bi bi-star-fill icons--star"></i>
                                     @endfor
                                 </span>
-                                <a href="{{ route('View.home.index', $id = $producto['id']) }}" class="read-more">Ver
+                                <a href="{{ route('View.home.index', $id = $producto['id']) }}" class="read-more btnEfectClick">Ver
                                     Producto</a>
                             </div>
                         </div>
@@ -177,14 +117,14 @@
 
                                 {{--  <a onclick="confirmar('<?php echo $item['db_id']; ?>','<?php echo $_SESSION['sesionUser']; ?>','1','1','<?php echo $item['db_nombre']; ?>','<?php echo $item['db_imagen']; ?>','<?php echo $item['db_newPrecio']; ?>');" class="btn btn--view-add " >Agregar </a>  --}}
                                 @if (session()->exists('name') && session()->get('rol') === '0')
-                                    <a class="btn--addCard--countMaster btn-sm text-dark viewCP"
+                                    <a class="btn--addCard--countMaster btn-sm text-dark viewCP btnEfectClick"
                                         id="addProCard{{ $itemPro['id'] }}"
                                         onclick=" addProCart({{ $itemPro['id'] }}, 1, {{ $itemPro['newPrecio'] }},
         '{{ $itemPro['nombre'] }}', '{{ $itemPro['imagen'] }}')">Agregar</a>
                                 @else
-                                    <a onclick="msjInicieSesion()" class="btn btn--view-add btn-sm ">Agregar </a>
+                                    <a onclick="msjInicieSesion()" class="btn btn--view-add btn-sm btnEfectClick">Agregar </a>
                                 @endif
-                                <a href="{{ route('View.home.index', $id = $itemPro['id']) }}" class="btn btn--view-page btn-sm">Ver </a>
+                                <a href="{{ route('View.home.index', $id = $itemPro['id']) }}" class="btn btn--view-page btn-sm btnEfectClick">Ver </a>
                                 {{--  <a href="view-page?view=<?php echo $item['db_id']; ?>" class="btn btn--view-page">Ver </a>  --}}
                             </div>
                         </div>
