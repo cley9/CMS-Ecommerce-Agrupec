@@ -7,3 +7,4 @@
 ## PENDIENTE
 -- migrar la version de laravel 9 a 10 
 -- migrar las dependencias
+

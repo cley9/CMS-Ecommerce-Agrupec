@@ -1,7 +1,8 @@
-.fa{
+@import url("mystyle.css");
+@import url('estilos.css');
+@import url('slider.css');
 
-    /* background: red; */
+/* {{-- <link rel="stylesheet" href="{{ asset('css/slider.css') }}"> --}} */
+/* {{-- <link rel="stylesheet" href="css/estilos.css"> --}} */
 
-
-}
-
+/* {{-- <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet"> --}} */

@@ -1,7 +1,6 @@
 @extends('layout.layout')
 
 @section('header')
-
     <body class="bg-light">
         <div class="container mb-4 pt-4">
             <div class="row ">

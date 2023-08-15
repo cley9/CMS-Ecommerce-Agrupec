@@ -12,22 +12,21 @@
     </script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" />
     <!--nw verson--->
-    <link href="{{ asset('css/mystyle.css') }}" rel="stylesheet">
     <link type="text/css" rel="shortcut icon" href="{{ asset('storage/img/icons/logo_ferreteria.svg') }}" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     {{--  icons  --}}
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ asset('css/slider.css') }}">
     {{-- new cley  --}}
     {{-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet"> --}}
     {{-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> --}}
-    <link rel="stylesheet" href="css/estilos.css">
     {{-- ads --}}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5125611954987078"
     crossorigin="anonymous"></script>
     {{-- ads end --}}
     {{--  --}}
+    {{-- @vite(['resources/css/app.css', 'resources/js/app.js', 'public/css/mystyle.css']) --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <title>{{ config('constants.nameProyect') }}</title>
 </head>
 
@@ -366,15 +365,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
-
-    <script src="{{ asset('js/msj.js') }}"></script>
-    <script src="{{ asset('js/dataPictur.js') }}"></script>
-    <script src="{{ asset('js/addCart.js') }}"></script>
-    <script src="{{ asset('js/btn-msg.js') }}"></script>
-    <script src="{{ asset('js/btn-up.js') }}"></script>
-    <script src="{{ asset('js/viewPassword.js') }}"></script>
-       
+    <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     {{-- <script src="js/btn-filters.js" charset="utf-8"></script>
 <script src="js/loader-main.js"></script>  --}}

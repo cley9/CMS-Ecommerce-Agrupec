@@ -232,20 +232,3 @@ btnFilterSearch.forEach(btnFilterSearch =>{
         
     });
 });
-
-// function consListCategory(){
-//     return new Promise((resolve, reject)=>{
-//         setTimeout((resolve) => {
-//             // http://127.0.0.1:8000/cley
-//             console.log(" new promise");
-            
-//         }, 3000);
-//     });
-//     // console.log("data new");
-// }
-// async function dataCategory(){
-//     let dat= await consListCategory();
-//     console.log(dat);
-// }
-// dataCategory();
-
