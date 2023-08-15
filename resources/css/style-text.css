@@ -28,7 +28,7 @@
   text-transform: uppercase;
     /* font-family: 'Roboto', sans-serif;
     font-size: 15px;     */
-}
+} 
 .txtBoxPreAfter{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;    
@@ -36,4 +36,12 @@
 .txtBoxDisponible{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;        
+}
+
+/* view product */
+.txtViewProduct{
+  /* color: red; */
+  font-weight: 700;
+  /* font-size: 12px; */
+  /* min-width: 120px; */
 }

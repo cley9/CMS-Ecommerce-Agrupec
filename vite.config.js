@@ -8,6 +8,8 @@ export default defineConfig({
         laravel([
             'resources/css/app.css',
             'resources/js/app.js',
+            // 'resources/js/msj.js',
+            // '/public/js/msj.js',
         ]),
         // react(),
         // vue({

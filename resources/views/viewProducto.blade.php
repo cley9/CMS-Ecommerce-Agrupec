@@ -94,12 +94,13 @@
                                 <h6 class="h5 ">{{ $idProducto['nombre'] }}</h6>
                                 @if (session()->exists('name') && session()->get('rol') === '0')
                                 @else
-                                    <a class=" " onclick="msjInicieSesion()" style="font-size:25px;"><i
+                                    <a class=" " onclick=" msjInicieSesion()" style="font-size:25px;"><i
                                             class=" bi bi-heart"></i></a>
+                                       
                                 @endif
                             </div>
                             <div class="mb-2">
-                                <small class="text-lef mb-3 text-muted fw-normal"><del><b>s/.
+                                <small class="text-lef mb-3 text-muted fw-normal"><del><b>S/.
                                             {{ number_format($idProducto['precio'], 2, ',', '.') }}</b></del></small>
                             </div>
                             <div class="d-flex align-items-center ">
@@ -164,7 +165,7 @@
                                     que esperabas o te devolvemos tu dinero.</small>
                             </div>
                             <div class="">
-                                <small> <i class="bi bi-award "></i> 12 meses de garantía de fábrica.</small>
+                        <small   class="txtViewProduct  fw-normal"> <i class="bi bi-award "></i> 12 meses de garantía de fábrica.</small>
 
                             </div>
                         </div>

@@ -6,8 +6,8 @@
 -- modificar el punto .env en los mix por vite
 # MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 # MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
- VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
- VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+-- VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+-- VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 
 -- para compilar y levantar el js y css en producción es necesario poner un npm run build, para conpilar los archivos de css y js
 
