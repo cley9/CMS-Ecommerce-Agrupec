@@ -8,7 +8,7 @@
 # MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
 -- VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 -- VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
-
+## uso de vite en laravel 9
 -- para compilar y levantar el js y css en producción es necesario poner un npm run build, para conpilar los archivos de css y js
 
 ## PENDIENTE
