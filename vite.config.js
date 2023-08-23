@@ -4,6 +4,7 @@ import laravel from 'laravel-vite-plugin';
 // import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
+    base: '/public/',
     plugins: [
         laravel([
             'resources/css/app.css',
