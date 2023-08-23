@@ -1,5 +1,6 @@
 // require('./bootstrap');
 import './bootstrap';
+
 // my scripts
 // function msjInicieSesion() {
 //     // console.log("home");
@@ -21,7 +22,7 @@ import './bootstrap';
 // import msj from './msj';
 // msj.msjInicieSesion();
 
-
+// af
 // import './msj';
 // import './dataPictur';
 // import './addCart';

@@ -123,7 +123,7 @@
                                     gratis a todo el país</small>
                             </div>
                             <div class=" col-md-8	 offset-md-1 col-6 offset-6 mb-4">
-                                <smal class="col">Lima, Lima</small>
+                                <smal class="col textPlace" style="font-weight: 100">Lima, Lima</small>
                                     <div class="col">
                                         <a href="#" class="" data-bs-toggle="modal"
                                             data-bs-target="#district">Ver costos de envío</a>
@@ -140,7 +140,7 @@
                             <div class="text-center mb-4">
 
                                 @if (session()->exists('name') && session()->get('rol') === '0')
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info btnEfectClick"
+                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn--paymet--ver btnEfectClick"
                                         data-bs-toggle="modal" data-bs-target="#Mpayment">
                                         Comprar ahora</button>
                                     <a id="addProductoId" class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary btnEfectClick">Agregar
@@ -153,10 +153,8 @@
 
                                         });
                                     </script>
-
-                                    {{--  @else  --}}
                                 @else
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn-info btnEfectClick"
+                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn--paymet--ver  btnEfectClick"
                                         onclick="msjInicieSesion()">Comprar ahora</button>
                                 @endif
                             </div>

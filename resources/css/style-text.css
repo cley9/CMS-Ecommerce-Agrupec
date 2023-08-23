@@ -45,3 +45,9 @@
   /* font-size: 12px; */
   /* min-width: 120px; */
 }
+.textPlace{
+  /* background: olivedrab; */
+  /* font-size: 100 !important; */
+  font-weight: lighter;
+  font-stretch: condensed;
+}
