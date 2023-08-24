@@ -1,10 +1,6 @@
 {
-  "public/storage/img/icons/search.svg": {
-    "file": "assets/search-89e56c9d.svg",
-    "src": "public/storage/img/icons/search.svg"
-  },
   "resources/css/app.css": {
-    "file": "assets/app-c79dad4b.css",
+    "file": "assets/app-85d710b6.css",
     "isEntry": true,
     "src": "resources/css/app.css"
   },
