@@ -201,11 +201,11 @@ listCatProduct.innerHTML +=
        '<a href="/View-page/'+element.id+'"><img src="/storage/img/Productos/'+element.imagen+'"  class="card-img-top " width="90px" height="160px" /></a>'+
                 " <div class='card-body justify-content-between align-items-center'>" +
            "<div class='d-flex  align-items-center' >"+
-                   "<h5 class='card-title h6 txtListCategoryView'>" + element.nombre + "</h5>"+
+                   "<h5 class='card-title h6 txtListCategoryView textTitleProSearch'>" + element.nombre + "</h5>"+
                "</div>"+
             " <div class='d-flex justify-content-between'>"+
-             "<span class='box--text--pre txtBoxPreBefore'>"+"<del>"+"S/ "+element.newPrecio+"</del>"+"</span>"+
-             "<span>"+"S/ "+ element.precio+ "</span>"+
+             "<span class='box--text--pre txtBoxPreBefore textPrecioProBefore'>"+"<del>"+"S/ "+element.precio+"</del>"+"</span>"+
+             "<span class='textPrecioProAfter'>"+"S/ "+ element.newPrecio+ "</span>"+
                 "</div>"+
                 "<div class=' align-items-center d-flex'>"+
                 "   <span class='h6 mb-0 text-muted fw-normal'>"+
@@ -213,7 +213,7 @@ listCatProduct.innerHTML +=
                 "</div>"+
                 "<hr>" +
                 " <div class='text-center'>" +
-    '<a href="/View-page/'+element.id+'" class="btn btn--view-page- btn-sm btnListCategoryView btnEfectClick" style="">'+ 'Ver </a>'+
+    '<a href="/View-page/'+element.id+'" class="btn btn-sm btnListCategoryView btnEfectClick btnViewPageClick" style="">'+ 'Ver </a>'+
                 " </div>" +
                 " </div>" +
                 " </div>" +

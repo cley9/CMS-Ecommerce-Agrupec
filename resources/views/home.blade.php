@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="col">
                                         <h6 class="text-center iconStartSlay">
-                                            @for ($i = 1; $i <= 4; $i++)
+                                            @for ($i = 1; $i <= rand(3,5); $i++)
                                             <i class="bi bi-star-fill icons--star"></i>
                                             @endfor
                                         </h6>

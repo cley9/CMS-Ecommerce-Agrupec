@@ -47,7 +47,6 @@
       
          <div class="col-md-9">
            <div class="text-center ">  <small class="h4  ">Lista de Producto </small></div>
-           {{-- <div class="row  row-cols-2  row-cols-md-5 " id="filters-result" class="bg-white"> --}}
             <div class="row  row-cols-2  row-cols-md-6 row-cols-ms-4- listCategoryFilterClickBodyMain" id="listCatProduct" class="bg-white">
             </div>
          </div>
@@ -56,26 +55,35 @@
       
     {{-- <!-----------------------------------------------------------------------------------  -->end de la categoria  --}}
     
-    <div class="container-fluid">
+    <div class="container-fluid mb-4">
         <div class="row">
             <div class="col-md-12">
-                <div id="news-slider" class="owl-carousel">
+                <div id="news-slider" class="owl-carousel slayProViewMore">
                     @foreach ($viewProducto as $producto)
-                        <div class="post-slide boxSlayderProSec" >
+                        <div class="post-slide p-4" >
                             <div class="post-img">
                                 <a href="{{ route('View.home.index', $id = $producto['id']) }}">
                                     <img src="{{ asset('storage/img/Productos/' . $producto['imagen'] . '') }}"
                                         class="img-fluid-a" alt="">
                                 </a>
-                                 {{-- <a href="" class="over-layer"><i class="fa fa-link"></i></a>  --}}
                             </div>
                             <div class="post-content">
+                                <h5 class="card-title title--box--pro-view txtBoxTitle textHeadTitleViewMore">{{ $producto['nombre'] }}</h5>
+                                <div class="mb-0 d-flex justify-content-between boxSlayProViewMore ">
+                                    <span class="box--text--pre txtBoxPreBefore textPrecioProBefore"><del>S/
+                                            {{ number_format($producto['precio'], 2, '.', ',') }}</del></span>
+                                    <span class="box--text--pre textPrecioProAfter">S/ {{ number_format($producto['precio'], 2, '.', ',') }}</span>
+                                </div>
+                                <div class=" align-items-center d-flex boxSlayProViewMoreDispo">
+                                    <span class="h6 mb-0 text-muted fw-normal">
+                                        <small class="box--text--pre">{{ $producto['cantidad'] }}: disponibles </small> </span>
+                                </div>
                                 <span>
-                                    @for ($i = 1; $i <= 2; $i++)
+                                    @for ($i = 1; $i <= rand(3,5); $i++)
                                         <i class="bi bi-star-fill icons--star"></i>
                                     @endfor
                                 </span>
-                                <a href="{{ route('View.home.index', $id = $producto['id']) }}" class="read-more btnEfectClick">Ver
+                                <a href="{{ route('View.home.index', $id = $producto['id']) }}" class="read-more btnEfectClick btnProViewMore">Ver
                                     Producto</a>
                             </div>
                         </div>
@@ -88,7 +96,6 @@
     <div class="container pt-4 mb-3 ">
         <div class="title--producto-group-2 rounded-3 pt-2 d-flex align-items-center justify-content-center"
             style="height:50px;">
-            {{--  <small class="h4 ">Lista de <?php echo $nameListaProducto; ?> </small>  --}}
             <small class="h4 ">Lista de Producto</small>
         </div>
         <div class="row  row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5">
@@ -112,20 +119,17 @@
                                 <span class="h6 mb-0 text-muted fw-normal">
                                     <small class="box--text--pre">{{ $itemPro['cantidad'] }}: disponibles </small> </span>
                             </div>
-                            <hr>
+                            <hr class="hrProduView hrProductSearch">
                             <div class="text-center">
-
-                                {{--  <a onclick="confirmar('<?php echo $item['db_id']; ?>','<?php echo $_SESSION['sesionUser']; ?>','1','1','<?php echo $item['db_nombre']; ?>','<?php echo $item['db_imagen']; ?>','<?php echo $item['db_newPrecio']; ?>');" class="btn btn--view-add " >Agregar </a>  --}}
                                 @if (session()->exists('name') && session()->get('rol') === '0')
                                     <a class="btn--addCard--countMaster btn-sm text-dark viewCP btnEfectClick"
                                         id="addProCard{{ $itemPro['id'] }}"
                                         onclick=" addProCart({{ $itemPro['id'] }}, 1, {{ $itemPro['newPrecio'] }},
-        '{{ $itemPro['nombre'] }}', '{{ $itemPro['imagen'] }}')">Agregar</a>
+                                        '{{ $itemPro['nombre'] }}', '{{ $itemPro['imagen'] }}')">Agregar</a>
                                 @else
                                     <a onclick="msjInicieSesion()" class="btn btn--view-add btn-sm btnEfectClick">Agregar </a>
                                 @endif
-                                <a href="{{ route('View.home.index', $id = $itemPro['id']) }}" class="btn btn--view-page btn-sm btnEfectClick">Ver </a>
-                                {{--  <a href="view-page?view=<?php echo $item['db_id']; ?>" class="btn btn--view-page">Ver </a>  --}}
+                                <a href="{{ route('View.home.index', $id = $itemPro['id']) }}" class="btn btn--view-page btn-sm btnEfectClick btnViewPro">Ver </a>
                             </div>
                         </div>
                     </div>
@@ -133,6 +137,5 @@
             @endforeach
         </div>
     </div>
-    {{--    --}}
     @include('User.modelAddProCart')
 @endsection

@@ -109,6 +109,56 @@ height: 150px; margin-top:-30px; overflow: hidden;
   .arrow--box{
     
   }
+  /* boton de producto view */
+  .btnViewPro{
+    margin-top: -14px;
+  }
+  .txtBoxTitle{
+    /* background:red; */
+    height: 40px;
+    overflow: hidden;
+  }
+  .hrProduView{
+
+  }
+  /* slayder view more */
+  .btnProViewMore{
+    /* background-color: red !important; */
+    /* padding-top: 20px !important; */
+    width: 140px;
+    margin-right: -18px;
+    margin-top: 20px;
+    margin-bottom: -80px;
+  }
+  /* botones de product  view and add*/
+  .btn--view-page{
+    /* background: #7EA0EB; */
+    /* background: #09ED69; */
+    background: #2196F3;
+    color: #ffffff;
+  
+    padding: 7px 12px;
+    float: right;
+    font-size: 12px;
+    box-shadow: 0px 10px 20px -10px #1376c5;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  .btn--view-page:hover{
+    /* background: #96B3F1; */
+    background: #429DE6;
+  }
+  .btn--view-add{
+  background:#7EEBCA;
+  padding: 7px 8px;
+  float: left;
+  font-size: 12px;
+  box-shadow: 0px 10px 20px -10px #7DCEA0;
+  border-radius: 5px;
+  text-transform: uppercase;
+   /*background:#7ED6EB; */
+   /* color: #ffffff; */
+  }
 }
 @media (min-width:768px) {
   .footer--body{

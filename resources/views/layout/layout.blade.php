@@ -53,12 +53,12 @@
         <div class="container  nav--link  ">
             <div class="row  ">
                 <div class="navbar-nav col  ">
-                    <div class=" container navbar-navd  d-sm-none d-none d-lg-block d-block ">
+                    <div class=" container navbar-navd  d-sm-none d-none d-lg-block d-block">
                         <div class="row">
                             <a class="nav-link col-lg-3" href="">Ventas por mayor</a>
                             <a class="nav-link col-lg-2" href="">Locales</a>
-                            <a class="nav-link col-lg-2" href="">Contactos</a>
-                            <a class="nav-link col-lg-2" href="">Locales</a>
+                            <a href="{{ url('Contactenos') }}" class="nav-link col-lg-2" href="">Contactos</a>
+                            <a href="{{ url('Producto-view') }}" class="nav-link col-lg-2" href="">Productos</a>
                             <a class="nav-link col-lg-2" href="">Descuentos</a>
                         </div>
                     </div>
@@ -84,8 +84,8 @@
                     <a class="nav-link " aria-current="page" href="{{ route('viewProducto.home.list') }}">Ver
                         producto</a>
                     <a class="nav-link" href="{{ route('list.admin.list') }}">lista producto</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6002 ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000 ǀ</a>
+                    <a class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6102 ǀ</a>
+                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2203 ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Tiendas</a> 
                     <a class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
