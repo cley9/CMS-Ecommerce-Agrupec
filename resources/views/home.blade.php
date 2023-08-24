@@ -118,8 +118,8 @@
                                         <h6 class="mb-4 fw-normal- text-center">{{ $itemProducto['nombre'] }}</h6>
                                     </div>
                                     <div class="col">
-                                        <h6 class="text-center">
-                                            @for ($i = 1; $i <= 2; $i++)
+                                        <h6 class="text-center iconStartSlay">
+                                            @for ($i = 1; $i <= 4; $i++)
                                             <i class="bi bi-star-fill icons--star"></i>
                                             @endfor
                                         </h6>
@@ -185,24 +185,24 @@
                 <div class="col  mb-5 mb-lg-6 ">
                     <div class="card box-love box-efect">
                         <a href="{{ route('View.home.index', $id = $key['id']) }}" class="pt-3">
-                            <img src="{{ asset('storage/img/Productos/' . $key['imagen'] . '') }}" class=" card-img-top"
+                            <img src="{{ asset('/storage/img/Productos/' . $key['imagen'] . '') }}" class=" card-img-top"
                                 width="200px" height="120px" alt="">
                         </a>
                         <div class="bg-warning- box--btn--addHomeP ">
                             <div class="card-body">
                                 <div class="mb-2 d-flex  align-items-center  box--home--text">
-                                    <h5 class="card-title text-dark h6 txtBoxTitle">{{ $key['nombre'] }}</h5>
+                                    <h5 class="card-title text-dark h6 txtBoxTitle textBoxHeadTitle">{{ $key['nombre'] }}</h5>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-between  ">
                                     {{--  <span class="text-dark"><del>s/ {{ $key['precio'] }}</del></span>  --}}
-                                    <span class="text-dark- txtBoxPreBefore"><del>S/
+                                    <span class="text-dark- txtBoxPreBefore textPrecioProBefore "><del>S/
                                             {{ number_format($key['precio'], 2, '.', ',') }}</del></span>
-
-                                    <span class="text-dark">S/ {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>
+                                    <span class="text-dark textPrecioProAfter">S/ {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>
                                 </div>
                                 <div class=" align-items-center d-flex mb-2 ">
-                                    <span class="h6 mb-0 text-muted fw-normal">
-                                        <small>{{ $key['cantidad'] }} disponibles </small> </span>
+                                    <span class="h6 mb-0 text-muted fw-normal textCountProDis">
+                                        <small class="">{{ $key['cantidad'] }}  disponibles</small>
+                                    </span>
                                 </div>
                                 <hr class="arrow--box">
 

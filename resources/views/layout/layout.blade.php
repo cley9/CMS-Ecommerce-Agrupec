@@ -79,15 +79,14 @@
                 </div>
             </div>
             <hr class="my-1">
-            <div class="container-fluid  navbar navbar-expand-lg navbar-light bg-light nav--home">
-                <div class="collapse navbar-collapse navbar-nav d-flex justify-content-end" id="navbarNavAltMarkup">
+            <div class="container-fluid  navbar navbar-expand-lg navbar-light bg-light nav--home ">
+                <div class="collapse navbar-collapse navbar-nav d-flex justify-content-center" id="navbarNavAltMarkup">
                     <a class="nav-link " aria-current="page" href="{{ route('viewProducto.home.list') }}">Ver
                         producto</a>
                     <a class="nav-link" href="{{ route('list.admin.list') }}">lista producto</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Telefónica (01) 615 6002 ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000
-                        ǀ</a>
-                    {{--  <a href="informacion" class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>  --}}
+                    <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2000 ǀ</a>
+                    <a class="nav-link  icons--style--raya" aria-current="page">Tiendas</a> 
                     <a class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
@@ -156,11 +155,10 @@
                                                 </div>
                                                 {{-- <h6 class="mb-2 text-center">{{ session()->get('name') }}</h6>
                                                 <h6 class="mb-2 text-center">{{ session()->get('rol') }}</h6> --}}
-                                                <h6 class="mb-3 text-center">{{ session()->get('email') }}</h6>
+                                                <h6 class="mb-3 text-center textTitleGmailUser">{{ session()->get('email') }}</h6>
                                             </div>
                                             <li>
-                                                <a href="{{ route('perfil.user.main') }}" class="">Mi
-                                                    Perfil</a>
+                                                <a href="{{ route('perfil.user.main') }}" class="">Mi Perfil</a>
                                             </li>
                                             <li>
                                                 {{-- <a class="" href="#exampleModalToggle">Ajuste</a> --}}

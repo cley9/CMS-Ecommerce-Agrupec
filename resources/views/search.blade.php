@@ -41,7 +41,7 @@
                             </div>
                             <div class="card-body">
                                 <div class="d-flex  align-items-center ">
-                                    <h5 class="card-title h6 title--box--pro">{{ $itemSearch->nombre }}</h5>
+                                    <h5 class="card-title h6 title--box--pro textTitleProSearch">{{ $itemSearch->nombre }}</h5>
                                 </div>
                                 <div class="mb-1 mb-md-0 d-flex justify-content-between  ">
                                     <span class="box--text--pre"><del>S/
@@ -55,7 +55,7 @@
                                         <small class="box--text--pre">{{ $itemSearch->cantidad }} disponibles </small>
                                     </span>
                                 </div>
-                                <hr>
+                                <hr class="hrProductSearch">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="col-12 btn-group d-flex justify-content-center">
                                         {{--  <a href="view-page.php?id_view=<?php echo $item['db_id']; ?>" class="btn btn-sm btn-outline-secondary">Ver</a>  --}}

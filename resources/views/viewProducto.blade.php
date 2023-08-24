@@ -105,9 +105,9 @@
                             </div>
                             <div class="d-flex align-items-center ">
 
-                                <h6 class="h3 fw-normal ">S/ {{ number_format($idProducto['newPrecio'], 2, ',', '.') }}
+                                <h6 class="h3 fw-normal textPrecioProViewAfter me-4">S/ {{ number_format($idProducto['newPrecio'], 2, ',', '.') }}
                                 </h6>
-                                <small class=" h5 fw-normal " style="color:#3BBD51;"> OFF</small>
+                                <small class=" h5 fw-normal textPrecioProViewOff"> OFF</small>
                             </div>
 
                             <div class="mb-2">

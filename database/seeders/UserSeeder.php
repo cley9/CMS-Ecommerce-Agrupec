@@ -15,7 +15,7 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-
+// nota los roles de 4 son admin
         $userAdmin = new User();
         $userAdmin->name = 'cley';
         $userAdmin->email = 'cley@gmail.com';
