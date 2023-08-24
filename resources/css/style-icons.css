@@ -54,8 +54,9 @@ color: #FDFDFD;
 
 /*  form search home  */
 .input-icono {
-  background-image: url('http://127.0.0.1:8000/storage/img/icons/search.svg');
+  /* background-image: url('http://127.0.0.1:8000/storage/img/icons/search.svg'); */
   /* background-image: url('/storage/img/icons/search.svg'); */
+  background-image: url('../../public/storage/img/icons/search.svg');
   background-repeat: no-repeat;
   background-position: 26px center;
   background-size: 20px;

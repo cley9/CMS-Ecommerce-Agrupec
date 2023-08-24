@@ -3,6 +3,8 @@
 -- .env
 -- composer install
 -- elimina la ruta storage, para que no presente error 
+
+#
 -- modificar el punto .env en los mix por vite
 # MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
 # MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
