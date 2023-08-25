@@ -104,8 +104,8 @@
             <div class="col-md-12">
                 <div id="news-slider" class="owl-carousel-">
                     @foreach ($slayderProducto as $itemProducto)
-                        <div class="col-11 card- post-slide- border bg-info- slay-box-item">
-                            <div class="row d-flex- justify-content-between-">
+                        <div class="col-11 border slay-box-item shadow-">
+                            <div class="row">
                                 <dir class="col-6 bg-primary- me-2 ">
                                     <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
                                         class="p-2 carrusel-min-pro">

@@ -139,8 +139,8 @@
   }
   .slay-box-item {
       border-radius: 14px;
+      box-shadow: 2px 2px 9px 2px #F1F3F3;
   }
-
 
   /* -------- slayder producto click boton web*/
   .boxSlayderScrollWeb{
