@@ -197,6 +197,7 @@ box-shadow: 0 0 2px #6ABEA5;
 /* btn producto list category */
 .listCategoryCard{
   background: #87ECC7;
+  box-shadow:0 0 2px #979696;
   /* border-color: none; */
   /* box-shadow: #000000; */
 }

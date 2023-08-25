@@ -1,9 +1,10 @@
-  .slayProViewMore{
-    /* background: #1376c5; */
-    /* padding: 50px; */
+  .slayProViewMore {
+      /* background: #1376c5; */
+      /* padding: 50px; */
   }
-  .post-slide{
-    /* background: red; */
+
+  .post-slide {
+      /* background: red; */
       background: #fff;
       display: flex;
       align-items: center;
@@ -11,128 +12,185 @@
       margin: 20px 15px 20px;
       border-radius: 15px;
       height: 260px;
-      /* margin-bottom: 50px; */
-      /* padding-top: 10px; */
+      /* margin-bottom: 50px;
+      padding-top: 10px; */
       box-shadow: 0px 14px 22px -9px #bbcbd8;
   }
-  .post-slide .post-img img{
+
+  .post-slide .post-img img {
       width: 90%;
       height: 220px;
       display: flex;
       align-items: center;
       justify-content: center;
-      transition:transform 0.2s linear;
+      transition: transform 0.2s linear;
       position: relative;
       overflow: hidden;
       border-radius: 10px;
       margin: -12px 15px 8px 15px;
       margin-left: -10px;
   }
-  .post-slide:hover .post-img img{
-      transform: scale(1.1,1.1);
-    }
-  .post-slide:hover .over-layer{
-      opacity:1;
-      text-decoration:none;
+
+  .post-slide:hover .post-img img {
+      transform: scale(1.1, 1.1);
   }
-  .post-slide .over-layer i{
+
+  .post-slide:hover .over-layer {
+      opacity: 1;
+      text-decoration: none;
+  }
+
+  .post-slide .over-layer i {
       position: relative;
-      top:45%;
-      text-align:center;
+      top: 45%;
+      text-align: center;
       display: block;
-      color:#fff;
-      font-size:25px;
+      color: #fff;
+      font-size: 25px;
   }
-  .post-slide .post-content{
-      background:#fff;
+  .post-slide .post-content {
+      background: #fff;
       /* background: rebeccapurple; */
       padding: 4px 20px 40px;
       margin-bottom: 15px;
       border-radius: 15px;
   }
-  .textHeadTitleViewMore{
-    /* background-color: #92b4d0; */
+  .boxSlayProViewMore {
+      /* background-color: #1376c5; */
+      margin-bottom: 8px !important;
   }
-  .boxSlayProViewMore{
-    /* background-color: #1376c5; */
-    margin-bottom: 8px !important;
+
+  .boxSlayProViewMoreDispo {
+      /* background-color: aquamarine; */
+      padding-top: 20px;
+      margin-bottom: 20px;
   }
-  .boxSlayProViewMoreDispo{
-    /* background-color: aquamarine; */
-    padding-top: 20px;
-    margin-bottom: 20px;
+
+  .btnProViewMore {
+      /* background-color: red !important; */
+      /* padding-top: 20px !important; */
+      margin-top: 20px;
+      margin-bottom: -80px;
   }
-  .btnProViewMore{
-    /* background-color: red !important; */
-    /* padding-top: 20px !important; */
-    margin-top: 20px;
-    margin-bottom: -80px;
+
+  .post-slide .read-more {
+      padding: 7px 20px;
+      float: right;
+      font-size: 12px;
+      background: #2196F3;
+      color: #ffffff;
+      box-shadow: 0px 10px 20px -10px #1376c5;
+      border-radius: 25px;
+      text-transform: uppercase;
   }
-    .post-slide .read-more{
-        padding: 7px 20px;
-        float: right;
-        font-size: 12px;
-        background: #2196F3;
-        color: #ffffff;
-        box-shadow: 0px 10px 20px -10px #1376c5;
-        border-radius: 25px;
-        text-transform: uppercase;
-    }
-    .post-slide .read-more:hover{
-        background: #3498db;
-        text-decoration:none;
-        color:#fff;
-    } */
+
+  .post-slide .read-more:hover {
+      background: #3498db;
+      text-decoration: none;
+      color: #fff;
+  }
   /* ----- btn next preview */
-  .owl-controls .owl-buttons{
-      text-align:center;
-      margin-top:20px;
+  .owl-controls .owl-buttons {
+      text-align: center;
+      margin-top: 20px;
   }
-  .owl-controls .owl-buttons .owl-prev{
+  .owl-controls .owl-buttons .owl-prev {
       background: #fff;
       position: absolute;
-      top:40%;
-      left:15px;
+      top: 40%;
+      left: 15px;
       padding: 0 18px 0 15px;
       border-radius: 50px;
       box-shadow: 3px 14px 25px -10px #92b4d0;
       transition: background 0.5s ease 0s;
   }
-  .owl-controls .owl-buttons .owl-next{
+
+  .owl-controls .owl-buttons .owl-next {
       background: #fff;
       position: absolute;
-      top:40%;
+      top: 40%;
       right: 15px;
       padding: 0 15px 0 18px;
       border-radius: 50px;
       box-shadow: -3px 14px 25px -10px #92b4d0;
       transition: background 0.5s ease 0s;
   }
+
   .owl-controls .owl-buttons .owl-prev:after,
-  .owl-controls .owl-buttons .owl-next:after{
-      /* icons dising */
-      content:"\f104";
-      /* background-color: #1376c5; */
+  .owl-controls .owl-buttons .owl-next:after {
+      content: "\f104";
       font-family: FontAwesome;
       color: #333;
-      font-size:30px;
+      font-size: 30px;
   }
-  .owl-controls .owl-buttons .owl-next:after{
-      content:"\f105";
+
+  .owl-controls .owl-buttons .owl-next:after {
+      content: "\f105";
   }
+
   @media only screen and (max-width:1280px) {
-      .post-slide .post-content{
+      .post-slide .post-content {
           padding: 0px 15px 25px 15px;
       }
   }
-
-
   /* -----slay item img */
-
-  .slay-img-item{
+  .slay-img-item {
       height: 160px;
   }
-  /* .box-slyder-item */
-  .slay-box-item{
+  .slay-box-item {
       border-radius: 14px;
   }
+
+
+  /* -------- slayder producto click boton web*/
+  .boxSlayderScrollWeb{
+    border-radius: 8px;
+    /* background-color: #08c708; */
+  }
+  .boxSlayderWep {
+      height: 19rem;
+  }
+  .accordion {
+      width: 315px;
+  }
+  .vertical-menu {
+      width: 265px;
+      height: 250px;
+      overflow-y: auto;
+  }
+  .btn-numbers {
+      background: #EE7358;
+  }
+  .min-layer {
+      margin: 4px, 4px;
+      padding: 4px;
+      background-color: #08c708;
+      width: 100%;
+      overflow: auto;
+      white-space: nowrap;
+  }
+  .horizontal-scroll-contenedor {
+      width: 100%;
+      height: 150px;
+      overflow-y: hidden;
+      white-space: nowrap;
+  }
+  /* .horizontal-scroll-contenedor>div {
+      display: inline-block;
+  } */
+
+  .x-menu {
+      /* background: black; */
+      width: 100%;
+      height: 120px;
+      overflow-y: auto;
+      overflow-x: auto;
+  }
+/* modificar la barra del scroll de y vertical */
+::-webkit-scrollbar {
+    width: 6px; /* Ajusta el ancho según tus preferencias */
+}
+::-webkit-scrollbar-thumb {
+    background-color: #888; /* Cambia el color del scroll thumb según tus preferencias */
+}
+
