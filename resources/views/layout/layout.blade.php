@@ -365,19 +365,11 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    {{-- <script src="js/btn-filters.js" charset="utf-8"></script>
-<script src="js/loader-main.js"></script>  --}}
-    {{-- <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>  --}}
-    {{-- @vite(['resources/js/app.js']) --}}
-    {{-- <script src="{{ asset("js/msj.js") }}"></script> --}}
-
     
 <script src="{{ asset('js/msj.js') }}"></script>
 <script src="{{ asset('js/dataPictur.js') }}"></script>
 <script src="{{ asset('js/addCart.js') }}"></script>
 <script src="{{ asset('js/btn-msg.js') }}"></script>
 <script src="{{ asset('js/btn-up.js') }}"></script>
-<script src="{{ asset('js/viewPassword.js') }}"></script> 
 </body>
-
 </html>

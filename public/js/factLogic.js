@@ -28,9 +28,7 @@ let fBtnSearchA=document.getElementById("fBtnSearch");
         `<td>${item.numRuc}</td>`+
         // `<td>${item.precio}</td>`+
         // `<td>${item.precio*item.cantidad}</td>`+
-        
         `<td><a href="" class="btn btn-danger"><i class="bi bi-file-earmark-pdf-fill"></i></a></td>`+
-        
         `<tr>`;
       });
     })
@@ -87,10 +85,8 @@ if (productoItem !==null) {
   <h6>I.G.V. 18% S/. ${igv}</h6>
   <h6 >Total S/. <spam id="fpreTotal">${precioT}</spam></h6>`;
 } else {
-  // console.log("gaa");
   
 }
-  
   // localStorage.removeItem(productoItem[2])
   // console.log(productoItem[2]);
 
@@ -113,13 +109,8 @@ if (productoItem !==null) {
     `<td>${item.precio * item.cantidad}</td>`+
     `<td><a class="btn btn-danger" id="btnDelete${item.id}"><i class="bi bi-trash"></i></a></td>`+
     `<tr>`;
-    // console.log(item.id);
-    // btnDelete+item.id.addEventListener("click",(e)=>{
-      //   console.log("hi");
-      // });
     });
   } else {
-    // console.log("gaa");
     
   }
   
@@ -174,7 +165,6 @@ console.log(fCreate);
 // fCreate.fNumero.value+"&fprecio="+fCreate.fpreTotal.value+"&fpdf=A0001ewse"; 
 // console.log(fas);
 //  fetch("/Admin-facturaVenta/?fNombreUser=1&fNumero=2&fprecio=3&fpdf=A0001ewse"). 
-console.log("---------");
 console.log(fNombreUser.value+fpreTotal.value);
     fetch("/Admin-facturaVenta/?fNombreUser="+fNombreUser.value+"&fNumero="+
     fCreate.fNumero.value+"&fprecio=1223&fpdf=A000&ffecha="+ffecha.value+"").then(factura => factura.json()).then(function (factura) {

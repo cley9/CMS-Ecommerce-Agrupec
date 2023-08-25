@@ -15,10 +15,10 @@
                         placeholder="Correo electronico " required />
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control input--frm--userLog" id="passwordLoginUserA"
+                    <input type="password" class="form-control input--frm--userLog" id="passwordLoginUserU"
                         name="pass" placeholder="Clave" required />
-                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img"
-                        id="imgPassLoginUserA" onclick="mostrarA()" alt="">
+                    <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img passwordLoginUserViewU"
+                        id="imgPassLoginUserU" alt="">
                 </div>
                 <div class="mb-3 d-flex justify-content-center">
                     <button type="submit" class="btn col-12 btn-primary">Iniciar sesion</button>

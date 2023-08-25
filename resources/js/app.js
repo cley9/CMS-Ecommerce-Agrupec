@@ -28,7 +28,8 @@ import './bootstrap';
 // import './addCart';
 // import './btn-msg';
 // import './btn-up';
-// import './viewPassword';
+import './viewPassword';
+// import './productoSearchAdmin';
 // console.log("home");
 
 {/* <script src="{{ asset('js/msj.js') }}"></script>

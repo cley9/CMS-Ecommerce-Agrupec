@@ -1,5 +1,4 @@
 @import url("style-whatsap.css");
-/* @import url("icono.css"); */
 @import url("style-loader.css");
 @import url("style-icons.css");
 @import url("style-items.css");
@@ -10,8 +9,8 @@
 /* @import url("whats-1.css"); */
 @import url("style-modal.css");
 @import url("style-btn.css");
-/*  */
 @import url("style-text.css");
+@import url('style-start.css');
 
 .navHeadDising{
   height: 70px;
