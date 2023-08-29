@@ -211,7 +211,7 @@
                                     </div>
                                     <div class="box--btn--addHome">
                                         <div class=" d-flex justify-content-end align-items-center mb-4 ">
-                                            <a class="btn--addCard--countMaster bntEfectClick btn-sm text-dark viewCP btnEfectClick"
+                                            <a class="btn--addCard--countMaster- bntEfectClick btn-sm text-dark viewCP  btn--view-add btn-sm btnEfectClick"
                                                 id="addProCard{{ $key['id'] }}">Agregar</a>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center ">
