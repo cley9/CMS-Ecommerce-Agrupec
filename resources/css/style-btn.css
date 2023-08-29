@@ -46,7 +46,8 @@ text-transform: uppercase;
   /* color: #20c997; */
 }
 .btn--paymet--ir{
-    background-color: #74C0FC;
+    background: #638BE6;
+    /* background-color: #74C0FC; */
 }
 .btn--paymet--ver{
     background-color: #63E6BE;

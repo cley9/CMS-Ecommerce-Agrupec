@@ -24,14 +24,14 @@
                             <span class="text-danger"><i class="bi bi-heart text-danger" style="font-size:18px;"></i>
                                 <?php echo rand(8, 234); ?> </span>
                         </a><br><br>
-                        <a href="" class="btn btn--paymet--ir col-12 ">Edit Perfil</a>
+                        <a href="" class="btn btn--paymet--ir btnEfectClick col-12 ">Edit Perfil</a>
                     </div>
                 </div>
-            </div> 
+            </div>
 
             <div class="col p-4">
-                <form class="border p-3 row g-5- shadow rounded-3 d-flex justify-content-center" action="{{ route('editPerfil.user.main') }}" method="post"
-                    enctype="multipart/form-data">
+                <form class="border p-3 row g-5- shadow rounded-3 d-flex justify-content-center formPerfil"
+                    action="{{ route('editPerfil.user.main') }}" method="post" enctype="multipart/form-data">
                     @method('GET')
                     @csrf
                     <div class="row row-cols-md-1">
@@ -54,21 +54,21 @@
                             </div>
                         </div>
                         <div class="mb-3 col-md-5 col-lg-6 d-flex justify-content-center">
-                           <div>
-                               <h6 class="text-center">imagen del perfil</h6>
-                               <div class="c- box--perfil--home mb-3">
-                                   <img src="" alt="">
+                            <div>
+                                <h6 class="text-center">imagen del perfil</h6>
+                                <div class="c- box--perfil--home mb-3">
+                                    <img src="" alt="">
                                 </div>
                                 <div class="mb-3">
                                     <input class="form-control" type="file" id="formFileMultiple" name="imagenUser"
-                                    accept="image/*">
+                                        accept="image/*">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="d-flex justify-content-center">
 
-                        <button type="submit" class="btn btn--paymet--ver col-md-4 col-10">Guardar cambios</button>
+                        <button type="submit" class="btn btn--paymet--ver btnEfectClick col-md-4 col-10">Guardar cambios</button>
                     </div>
                 </form>
             </div>

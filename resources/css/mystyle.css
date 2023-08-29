@@ -177,6 +177,11 @@ height: 150px; margin-top:-30px; overflow: hidden;
   width: 2px; /* Ajusta el ancho según tus preferencias */
 }
 
+/* formulario de perfil */
+.formPerfil{
+  height: 590px;
+}
+
 }
 @media (min-width:768px) {
   .footer--body{

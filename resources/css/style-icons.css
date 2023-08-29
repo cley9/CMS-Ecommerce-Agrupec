@@ -1,14 +1,14 @@
-      .logoSesion{
-                width: 26px;
-              }
-              .googleBody:hover{
-                background: #CEEAD6;
-                color: #186A3B;
-              }
-              .facebookBody:hover{
-                background: #D2E3FC;
+.logoSesion{
+  width: 26px;
+}
+.googleBody:hover{
+  background: #CEEAD6;
+  color: #186A3B;
+}
+.facebookBody:hover{
+  background: #D2E3FC;
 
-              }
+}
 
 .icons-font-colo{
  height:600px;

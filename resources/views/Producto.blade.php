@@ -130,7 +130,7 @@
                             <hr class="hrProduView hrProductSearch">
                             <div class="text-center">
                                 @if (session()->exists('name') && session()->get('rol') === '0')
-                                    <a class="btn--addCard--countMaster btn-sm text-dark viewCP btnEfectClick"
+                                    <a class="btn--addCard--countMaster- btn--view-add  btn-sm text-dark viewCP btnEfectClick"
                                         id="addProCard{{ $itemPro['id'] }}"
                                         onclick=" addProCart({{ $itemPro['id'] }}, 1, {{ $itemPro['newPrecio'] }},
                                         '{{ $itemPro['nombre'] }}', '{{ $itemPro['imagen'] }}')">Agregar</a>
