@@ -50,7 +50,7 @@
 
             <div class="col-md-9">
                 <div class="text-center "> <small class="h4  ">Lista de Producto </small></div>
-                <div class="row  row-cols-2  row-cols-md-6 row-cols-ms-4- listCategoryFilterClickBodyMain"
+                <div class="row  row-cols-2  row-cols-md-4 row-cols-lg-6 row-cols-ms-4 listCategoryFilterClickBodyMain"
                     id="listCatProduct" class="bg-white">
                 </div>
             </div>
