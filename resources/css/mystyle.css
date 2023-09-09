@@ -182,12 +182,61 @@ height: 150px; margin-top:-30px; overflow: hidden;
   height: 590px;
 }
 
+/* botones de pagination */
+.btn--pagination{
+  /* border: 8px solid #1BE0FA ; */
+  border-radius: 4px;
+  margin-bottom: 50px;
+  padding: 6px 14px;
+  margin-left: 8px;
+  color: #000000;
+  background: #FAFAFA;
+  border-color:#FAFAFA;
+}
+.btn--pagination:hover{
+  height: 200px;
+color: #FFFFFF;
+/* border-color:#1BE0FA; */
+border-color: #63E6BE;
+background:#63E6BE;
+/* box-shadow: 0px 10px 20px -10px #7DCEA0; */
+}
 }
 @media (min-width:768px) {
   .footer--body{
     background-color: #050E14;
     height:40rem;
   }
+
+  /* -----------------------btn pagination */
+  .bodyBtnPagination{
+    margin-bottom: 30px;
+  }
+  .btn--pagination{
+  border: 8px solid #1BE0FA ;
+  /* border: 8px solid #FFFFFF ; */
+  border-radius: 4px;
+  padding: 2px 14px;
+  margin-left: 8px;
+  /* box-shadow: none; */
+  /* display: flex; */
+  /* align-items: center;
+  justify-content: center; */
+  color: #000000;
+  /* background: #7ADDBF; */
+  background: #FAFAFA;
+  border-color:#FAFAFA;
+  /* margin-right */
+  /* background-color: #20c997; */
+}
+.btn--pagination:hover{
+color: #FFFFFF;
+/* border-color:#1BE0FA; */
+border-color: #63E6BE;
+background:#63E6BE;
+box-shadow: 0px 10px 20px -10px #7DCEA0;
+}
+
 }
 
 .style--body-content{

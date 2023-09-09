@@ -144,31 +144,7 @@ border-color: none;
   border-color: #FFFFFF;
   /* margin-right */
 }
-/* -----------------------btn pagination */
-.btn--pagination{
-  border: 8px solid #FFFFFF ;
-  border-radius: 4px;
-  margin-left: 8px;
-  /* box-shadow: none; */
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
-  color: #000000;
-  /* background: #7ADDBF; */
-  background: #FAFAFA;
 
-  border-color:#FAFAFA;
-  /* margin-right */
-  /* background-color: #20c997; */
-}
-.btn--pagination:hover{
-/* background:#7EA0EB;
-border-color:#7EA0EB; */
-background: #1BE0FA;
-color: #FFFFFF;
-border-color:#1BE0FA;
-
-}
 
 .btn-slay-producto{
   /* display: flex; */
