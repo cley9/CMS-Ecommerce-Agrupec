@@ -94,7 +94,8 @@ body {
   .modal__viewPro{
   }
   .modal__container{
-    max-height: 34%;
+    /* max-height: 32%; */
+    height: 236px;
 
   }
   
