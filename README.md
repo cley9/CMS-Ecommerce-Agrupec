@@ -17,3 +17,19 @@
 -- migrar la version de laravel 9 a 10 
 -- migrar las dependencias
 
+## Configuración para gmail en laravel forma 2
+
+1 paso configurar el .env los mail
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=clyutp@gmail.com
+MAIL_PASSWORD=umbghixdjauavciw
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS="cleyutp@gmail.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+
+2 paso  crear el archivo email
+php artisan make:mail EnvioInformacionNewProducto

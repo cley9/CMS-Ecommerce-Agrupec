@@ -192,8 +192,7 @@
                                     <h5 class="card-title text-dark h6 txtBoxTitle textBoxHeadTitle">{{ $key['nombre'] }}</h5>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-between  ">
-                                    {{--  <span class="text-dark"><del>s/ {{ $key['precio'] }}</del></span>  --}}
-                                    <span class="text-dark- txtBoxPreBefore textPrecioProBefore "><del>S/
+                                    <span class="text-dark- txtBoxPreBefore textPrecioProBefore"><del>S/
                                             {{ number_format($key['precio'], 2, '.', ',') }}</del></span>
                                     <span class="text-dark textPrecioProAfter">S/ {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>
                                 </div>

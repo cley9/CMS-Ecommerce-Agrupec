@@ -63,6 +63,12 @@
   right: 20px;
   width: 44px;
   height: 38px;
+  cursor: pointer;
+}
+.ir-arriba:hover{
+  /* background: #11FFBD; */
+
+  box-shadow: 0px 10px 20px -10px #212F3C;;
 }
 
 .box--view--favorite {

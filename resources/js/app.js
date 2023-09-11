@@ -27,8 +27,11 @@ import './bootstrap';
 // import './dataPictur';
 // import './addCart';
 // import './btn-msg';
-// import './btn-up';
 import './viewPassword';
+import './btn-up';
+import './addCartProduct';
+// {{-- <script src="{{ asset('js/btn-up.js') }}"></script> --}}
+
 // import './productoSearchAdmin';
 // console.log("home");
 

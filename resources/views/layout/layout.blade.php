@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="rounded-2 ir-arriba ">
+    <div class="rounded-2 ir-arriba card">
         <i class="bi bi-chevron-up"></i>
     </div>
 
@@ -370,6 +370,5 @@
 <script src="{{ asset('js/dataPictur.js') }}"></script>
 <script src="{{ asset('js/addCart.js') }}"></script>
 <script src="{{ asset('js/btn-msg.js') }}"></script>
-<script src="{{ asset('js/btn-up.js') }}"></script>
 </body>
 </html>
