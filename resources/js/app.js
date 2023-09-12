@@ -41,3 +41,9 @@ import './addCartProduct';
 <script src="{{ asset('js/btn-msg.js') }}"></script>
 <script src="{{ asset('js/btn-up.js') }}"></script>
 <script src="{{ asset('js/viewPassword.js') }}"></script> */}
+
+// this va en layout 
+{/* <script src="{{ asset('js/msj.js') }}"></script>
+<script src="{{ asset('js/dataPictur.js') }}"></script>
+<script src="{{ asset('js/addCart.js') }}"></script>
+<script src="{{ asset('js/btn-msg.js') }}"></script>  */}

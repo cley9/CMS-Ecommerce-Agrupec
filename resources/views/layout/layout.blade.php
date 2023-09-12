@@ -366,9 +366,7 @@
     <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>       
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     
-<script src="{{ asset('js/msj.js') }}"></script>
-<script src="{{ asset('js/dataPictur.js') }}"></script>
-<script src="{{ asset('js/addCart.js') }}"></script>
-<script src="{{ asset('js/btn-msg.js') }}"></script>
+<script src="{{ asset('js/agru.js') }}"></script>
+
 </body>
 </html>
