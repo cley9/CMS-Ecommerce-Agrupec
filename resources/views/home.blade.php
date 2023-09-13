@@ -9,7 +9,7 @@
 
 
     {{-- <!-- --------------------------------------------------------------------------------------slayder_img---> --}}
-    <section class="">
+    <section class="boxCaruselMainHome">
         <div id="carouselExampleIndicators" class="carousel slide bg-primary" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 @php
@@ -65,10 +65,10 @@
 
     {{-- @include('Producto') --}}
 
-    <div class="container mb-4 mb-md-2 pt-4">
-        <h6 class="display-6">¡No los dejes ir!</h6>
+    <div class="container mb-4 mb-md-2 pt-4 boxSimbolSlayProHome">
+        <h6 class="display-6 textTitleSlayProHome" >¡No los dejes ir!</h6>
         <div id="carouselExampleIndicators_" class="carousel slide p-0 " data-bs-ride="carousel">
-            <div class="carousel-inner  p-md-4 p-0 ">
+            {{-- <div class="carousel-inner  p-md-4 p-0 ">
                 <div class="carousel-item active">
                     <div class="row p-md-5 p-3 ">
                     </div>
@@ -77,7 +77,7 @@
                     <div class="row p-md-5 p-3 ">
                     </div>
                 </div>
-            </div>
+            </div> --}}
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -99,7 +99,7 @@
     {{-- @if (Session::has('message'))
 <p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
 @endif --}}
-    <div class="container-fluid mb-4">
+    <div class="container-fluid mb-4 boxSlayProHomeView">
         <div class="row  ">
             <div class="col-md-12">
                 <div id="news-slider" class="owl-carousel-">
@@ -137,15 +137,63 @@
             </div>
         </div>
     </div>
-    <br><br><br>
 
+    <div class="container p-4 boxPresenProHome  ">
+        <div class="">
 
+            <div class="d-flex justify-content-center mb-3">
+                <h2 class="textTitleVenHome">¡Conoce los beneficios <small style="color:black">que ofrecemos
+                        para que tu compra sea un exito!</small></h2>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-2 boxInformationHome ">
+                    <div class="d-flex justify-content-center boxItemImgHome">
+                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
+                            src="{{ asset('storage/img/icons/app-store-app.png') }}" alt="">
+                    </div>
+                    <div class="text-center">
+                    <h6 class="h3 mb-3">Compra</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y deja que nos encarguemos del envió.</p>
+                        </div>
+                </div>
+                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
+                    <div class="d-flex justify-content-center boxItemImgHome">
+                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
+                            src="{{ asset('storage/img/icons/store.png') }}" alt="">
+                    </div>
+                    <div class="text-center">
+                    <h6 class="h3 mb-3">Locales</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Nos encontramos actualmente en lima en el distrito de San Juan de Lurigancho.</p>
+                        </div>
+                </div>
+                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
+                    <div class="d-flex justify-content-center boxItemImgHome">
+                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
+                            src="{{ asset('storage/img/icons/delivery-truck.png') }}" alt="">
+                    </div>
+                    <div class="text-center">
+                    <h6 class="h3 mb-3">Envios Perú</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Enviamos productos a todos los departamentos del Perú de manera segura y puntual.</p>
+                        </div>
+                </div>
+                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
+                    <div class="d-flex justify-content-center boxItemImgHome">
+                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
+                            src="{{ asset('storage/img/icons/customer-service.png') }}" alt="">
+                    </div>
+                    <div class="text-center">
+                    <h6 class="h3 mb-3">Atención 24/7</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Estamos para ayudarte en tus consultas o brindarte información de nuevos productos.</p>
+                        </div>
+                </div>
 
+            </div>
+        </div>
 
-
+    </div>
 
     {{-- <h2>{{ $viewProducto  }}</h2> --}}
-    <div class="container">
+    {{-- <div class="container">
         <div class="row">
             <div class="col card">
 
@@ -168,8 +216,8 @@
 
             </div>
         </div>
-    </div>
-    <br><br><br>
+    </div> --}}
+    {{-- <br><br><br> --}}
 
     <div class=" pt-3 mb-4  d-flex justify-content-center align-items-center">
         <div

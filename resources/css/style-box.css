@@ -411,3 +411,59 @@ box-shadow: 0 0 2px #6ABEA5;
 .formPerfil{
   height: 400px;
 }
+/* box home vistas img */
+.boxPresenProHome{
+  /* background: #0D6EFD; */
+  background: #F4F5F6;
+  margin-bottom: 80px;
+  /* padding: 100px; */
+  border-radius: 8px;
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxInformationHome {
+  background: #FFFFFF;
+  box-shadow: 5px 10px 12px #d5dbdb;
+  border-radius: 4px;
+  height: 350px;
+  width: 16rem;
+  margin-right: 10px;
+}
+.boxInformationHome:hover {
+
+  border-radius: 6px;
+  /* box-shadow: 5px 10px 12px #aab7b8; */
+  box-shadow: 5px 10px 12px #cbd1d1;
+  transition: 0.3s ease;
+}
+.iconIntemHome{
+width: 34%;
+padding-top: 20px;
+/* align-items: ; */
+/* margin-bottom: 120px; */
+}
+.boxItemImgHome{
+  padding: 30px;
+}
+.textTitleVenHome{
+  color:#3bcc6b;
+  /* background:#43EA7C; */
+}
+/* slay producto home */
+.boxSlayProHomeView{
+margin-bottom: 5rem !important;
+/* background: #05bbff; */
+}
+.boxSimbolSlayProHome{
+
+}
+.textTitleSlayProHome{
+  margin-bottom: 54px;
+}
+/* carusel  */
+.boxCaruselMainHome{
+  margin-bottom: 102px;
+}

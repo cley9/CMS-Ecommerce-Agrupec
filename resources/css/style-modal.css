@@ -78,10 +78,8 @@ border-radius: 2% 2% 0rem 0rem;
     .modal-medioPago{
         /* background-color: #46464bbd; */
   background-color: #54545abd;
-
         opacity: 3;
   backdrop-filter: blur(0.3rem);
-
         /* #959596bd */
         /* position: fixed;
         top: 0;
@@ -93,8 +91,8 @@ border-radius: 2% 2% 0rem 0rem;
         pointer-events: none; */
       }
       .modal-destino{
-        background-color: #46464bbd;
-        opacity: 3;
+        background-color: #54545abd;
+        backdrop-filter: blur(0.4rem);
       }
       .modal-general{
         background-color: #46464bbd;
