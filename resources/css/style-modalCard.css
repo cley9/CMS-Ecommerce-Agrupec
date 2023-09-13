@@ -15,7 +15,15 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #111111bd;
+  /* background-color: #bdb8b8bd; */
+  background-color: #54545abd;
+  /* background-color: #46464bbd; */
+  /* opacity: 3; */
+  /* 111111bd */
+  /* background-color: #747479; */
+  /* efecto bluer borroso */
+  /* backdrop-filter: blur(8px); */
+  backdrop-filter: blur(0.4rem);
    /*background-color: #7a7a7a; */
   display: flex;
   opacity: 0;
