@@ -104,6 +104,22 @@ table.table-hover tbody tr:hover {
 
 }
 @media (max-width:768px) {
+  /* google maps background */
+.fromGoogleMapsbackground{
+  height: 260px;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+  /* google maps  */
+.fromGoogleMapsBox{
+  height: 95%;
+  width: 100%;
+  padding: 6px;
+}
+.hrGoogleMaps{
+  width: 46%;
+
+  /* box-shadow:8px 5px #11FFBD; */
+}
   .footer--body {
     background-color: #050E14;
     height: 50rem;
@@ -265,6 +281,20 @@ table.table-hover tbody tr:hover {
 
 
 @media (min-width:768px) {
+ /* google maps background */
+.fromGoogleMapsbackground{
+  height: 460px;
+  background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
+}
+  /* google maps  */
+.fromGoogleMapsBox{
+  height: 96%;
+  width: 99%;
+  padding: 6px;
+}
+.hrGoogleMaps{
+  width: 18%;
+}
   .footer--body {
     background-color: #050E14;
     height: 40rem;

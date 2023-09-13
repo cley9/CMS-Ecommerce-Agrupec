@@ -29,6 +29,7 @@ use Laravel\Socialite\Facades\Socialite;
 // Route::get('/envioGmail', [mailController::class ,'a'] )->name('envio.index');
 
 Route::get('/cley', [ViewController::class, 'listCategory'])->name('user.cley.daaa');
+Route::get('/local', [ViewController::class, 'local'])->name('tienda.home.local');
 Route::get('/slay', [ViewController::class, 'viewSlayderMain'])->name('slayderMain.index');
 Route::get('/inserSlayderMain', [ViewController::class, 'inserSlayderMain'])->name('slayderMain.index');
 Route::get('/', [ViewController::class, 'view'])->name('vista.index');

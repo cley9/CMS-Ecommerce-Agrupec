@@ -121,7 +121,7 @@
                     <p class="h9  mb-0">Ser la empresa ferretera preferida por nuestros clientes, brindándoles soluciones y
                         servicios de calidad.</p>
                     <div class=" text-center  ">
-                        <a class="foda--view"href="#"><i class="bi bi-award "></i></a>
+                        <a class="foda--view loudingLinkEfectClick"href="#"><i class="bi bi-award "></i></a>
                     </div>
                 </div>
             </div>
@@ -135,7 +135,7 @@
                         Correo: {{ config('constants.gmailContact') }}
                     </p>
                     <div class=" text-center  ">
-                        <a class="foda--view"href="{{ url('Contactenos') }}"><i class="bi bi-telephone-plus "></i></a>
+                        <a class="foda--view loudingLinkEfectClick"href="{{ url('Contactenos') }}"><i class="bi bi-telephone-plus "></i></a>
                     </div>
                 </div>
             </div>
@@ -146,7 +146,7 @@
                     <p class="h9 mb-0">Comprometidos con la honestidad y responsabilidad para la búsqueda de la excelencia.
                     </p>
                     <div class=" text-center  ">
-                        <a class="foda--view" href="#"><i class="bi bi-bookmark-heart "></i></a>
+                        <a class="foda--view loudingLinkEfectClick" href="#"><i class="bi bi-bookmark-heart "></i></a>
                     </div>
                 </div>
             </div>

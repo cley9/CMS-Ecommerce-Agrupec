@@ -111,10 +111,8 @@
                             </div>
 
                             <div class="mb-2">
-
                                 <!-- <div class="fb-share-button" data-href="http://agrupec.com/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fagrupec.com/%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore btn btn-danger">Compartir</a></div> -->
-
-                                <small class="mb-5"><a href="#" data-bs-toggle="modal"
+                                <small class="mb-5"><a href="#" class="loudingLinkEfectClick" data-bs-toggle="modal"
                                         data-bs-target="#Mpayment">Ver los medios de pago</a> </small>
 
                             </div>
@@ -125,7 +123,7 @@
                             <div class=" col-md-8	 offset-md-1 col-6 offset-6 mb-4">
                                 <smal class="col textPlace" style="font-weight: 100">Lima, Lima</small>
                                     <div class="col">
-                                        <a href="#" class="" data-bs-toggle="modal"
+                                        <a href="#" class="loudingLinkEfectClick" data-bs-toggle="modal"
                                             data-bs-target="#district">Ver costos de envío</a>
 
                                     </div>
@@ -236,7 +234,7 @@
                                             width="70px;"></a>
 
                                 </div>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#Mpayment">Conoce otros medios
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Mpayment" class="loudingLinkEfectClick">Conoce otros medios
                                     de pago</a>
 
                                 <hr>

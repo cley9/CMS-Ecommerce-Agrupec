@@ -82,4 +82,7 @@ class ViewController extends Controller
         // $viewProducto=Producto::paginate(24);
         //  return view('Producto',compact('viewProducto'));
     }
+    function local(){
+        return view('local');
+    }
 }

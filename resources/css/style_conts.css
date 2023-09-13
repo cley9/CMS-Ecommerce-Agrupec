@@ -27,6 +27,16 @@ font-size: 20px;
 /* background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);   */
 background-image: linear-gradient(to top, #37ecba 0%, #72afd3 100%);
 }
+/* la parte derecha de contacto*/
+.formBackgroudLight{
+  height: 515px;
+  /* align-items: center;
+  justify-content: center; */
+}
+/* .fromRigthContacto{
+background: #34495E;
+height: 300px;
+} */
 .form--img-backgroud{
     width:190px;
 }

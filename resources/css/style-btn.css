@@ -85,6 +85,20 @@ transform: scale(0.9);
      /*background:#A3E4D7;*/
        background: #7ADDBF;
 }
+/* btn enviar correo al contacto  */
+.btnEnviarCorreo{
+  background:#7EEBCA;
+  /* background:#7EEBCA; */
+padding: 10px 18px;
+float: left;
+font-size: 14px;
+box-shadow: 0px 10px 20px -10px #7DCEA0;
+border-radius: 5px;
+text-transform: uppercase;
+}
+.btnEnviarCorreo:hover{
+  background:#7ADDBF;
+}
 /* .btn--addCard--countMaster:active{
   transform: scale(0.9);
 } */
@@ -100,6 +114,51 @@ transition:  0.6s ease;
 .btnEfectClick:focus-visible{
 box-shadow: 0 0 2px #6ABEA5;
 }
+
+/* Quitar el borde de color azul en los botones de Bootstrap */
+.btn:focus, .btn:active {
+  outline: none;
+  box-shadow: none;
+  /* También puedes establecer el borde o sombra según tus preferencias */
+}
+
+input:focus, input:active {
+  /* outline: none !important; */
+  /* También puedes establecer el borde o sombra según tus preferencias */
+}
+/* Quitar el borde de color azul en los enlaces <a> de Bootstrap */
+a:focus, a:active {
+  /* También puedes establecer el borde o sombra según tus preferencias */
+  /* outline: none !important; */
+}
+/* efecto de linea de louding o carga  */
+/* a {
+text-decoration: none;
+background-image: linear-gradient(currentColor, currentColor);
+background-position: 0% 100%;
+background-repeat: no-repeat;
+background-size: 0% 2px;
+transition: background-size .3s;
+} */
+.loudingLinkEfectClick{
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;  
+}
+/* efecto  */
+/* a{
+  outline: none;
+} */
+/* a.btnEfectClick{
+  text-decoration: none !important;
+}
+a.sin-subrayado {
+  text-decoration: none;
+} */
+
 /*  */
 /* .btnEfectClick::after{
   box-shadow: 0 0 2px #6ABEA5;

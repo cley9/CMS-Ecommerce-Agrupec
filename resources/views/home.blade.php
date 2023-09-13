@@ -119,13 +119,14 @@
                                     </div>
                                     <div class="col">
                                         <h6 class="text-center iconStartSlay">
-                                            @for ($i = 1; $i <= rand(3,5); $i++)
-                                            <i class="bi bi-star-fill icons--star"></i>
+                                            @for ($i = 1; $i <= rand(3, 5); $i++)
+                                                <i class="bi bi-star-fill icons--star"></i>
                                             @endfor
                                         </h6>
                                         <div class=" d-flex justify-content-center">
                                             <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
-                                            class="btn btn-sm  btn--view-add btn-slay-producto- btn--addCard--countMaster btnEfectClick">Ver Producto </a>
+                                                class="btn btn-sm  btn--view-add btn-slay-producto-  btnEfectClick">Ver
+                                                Producto </a>
                                         </div>
                                     </div>
                                 </div>
@@ -189,16 +190,18 @@
                         <div class="bg-warning- box--btn--addHomeP ">
                             <div class="card-body">
                                 <div class="mb-2 d-flex  align-items-center  box--home--text">
-                                    <h5 class="card-title text-dark h6 txtBoxTitle textBoxHeadTitle">{{ $key['nombre'] }}</h5>
+                                    <h5 class="card-title text-dark h6 txtBoxTitle textBoxHeadTitle">{{ $key['nombre'] }}
+                                    </h5>
                                 </div>
                                 <div class="mb-2 d-flex justify-content-between  ">
                                     <span class="text-dark- txtBoxPreBefore textPrecioProBefore"><del>S/
                                             {{ number_format($key['precio'], 2, '.', ',') }}</del></span>
-                                    <span class="text-dark textPrecioProAfter">S/ {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>
+                                    <span class="text-dark textPrecioProAfter">S/
+                                        {{ number_format($key['newPrecio'], 2, '.', ',') }}</span>
                                 </div>
                                 <div class=" align-items-center d-flex mb-2 ">
                                     <span class="h6 mb-0 text-muted fw-normal textCountProDis">
-                                        <small class="">{{ $key['cantidad'] }}  disponibles</small>
+                                        <small class="">{{ $key['cantidad'] }} disponibles</small>
                                     </span>
                                 </div>
                                 <hr class="arrow--box">
@@ -210,10 +213,10 @@
                                     </div>
                                     <div class="box--btn--addHome">
                                         <div class=" d-flex justify-content-end align-items-center mb-4 ">
-                                            <a class="btn--addCard--countMaster- bntEfectClick btn-sm text-dark viewCP  btn--view-add btn-sm btnEfectClick"
+                                            <a class="btn-sm text-dark btn--view-add btn-sm btnEfectClick"
                                                 id="addProCard{{ $key['id'] }}">Agregar</a>
                                         </div>
-                                        <div class="d-flex justify-content-between align-items-center ">
+                                        <div class="d-flex justify-content-between align-items-center">
                                             <a
                                                 class="des{{ $key['id'] }} btn rounded-circle  btn--addCard--count btnEfectClick fw-normal">-</a>
                                             <span id="numDate{{ $key['id'] }}">1</span>

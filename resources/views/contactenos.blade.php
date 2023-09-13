@@ -1,54 +1,52 @@
 @extends('layout.layout')
 @section('header')
     <div class="container p-4  mb-5">
-
-
         <div class="row row-cols-md-2 row-cols-1">
             <div class="col mb-4 mb-md-0 rounded-3 bg-light p-5 form--backgroud">
                 <div class="mb-2">
                     <small><small class="form--color-icons"><i class="bi bi-envelope-fill"
                                 class="form--color-icons"></i></small> {{ config('constants.gmailPersonal') }} </small>
                 </div>
-
-
                 <div class="mb-2">
                     <small><small class="form--color-icons"><i class="bi bi-geo-alt-fill"
                                 class="form--color-icons"></i></small> {{ config('constants.directionContact') }} </small>
                 </div>
-
                 <div class="mb-3">
                     <small><small class="form--color-icons"><i class="bi bi-telephone-fill"
                                 class="form--color-icons"></i></small> {{ config('constants.numContact') }}</small>
                 </div>
-
                 <div class="mb-4 text-center ">
                     <img src="{{ asset('storage/img/icons/programin1.svg') }}" class="img-fluid form--img-backgroud"
                         alt="">
                 </div>
-
                 <div class=" text-center">
 
-                    <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn btn-info  form--icons btnEfectClick "
-                        target="_blank"><i class="bi bi-instagram"></i></a>
-                    <a href="https://web.facebook.com/?_rdc=1&_rdr" class="rounded-circle btn btn-info form--icons btnEfectClick"
-                        target="_blank"><i class="bi bi-facebook"></i></a>
-                    <a href="https://github.com/cley9?tab=repositories" class="rounded-circle btn btn-info form--icons btnEfectClick"
-                        target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://twitter.com/iniciarsesion?lang=es" class="rounded-circle btn btn-info form--icons btnEfectClick"
-                        target="_blank"><i class="bi bi-twitter"></i> </a>
+                    <a href="https://www.instagram.com/?hl=es"
+                        class="rounded-circle btn btn-info  form--icons btnEfectClick " target="_blank"><i
+                            class="bi bi-instagram"></i></a>
+                    <a href="https://web.facebook.com/?_rdc=1&_rdr"
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
+                            class="bi bi-facebook"></i></a>
+                    <a href="https://github.com/cley9?tab=repositories"
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
+                            class="bi bi-github"></i></a>
+                    <a href="https://twitter.com/iniciarsesion?lang=es"
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
+                            class="bi bi-twitter"></i> </a>
                     <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
-                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i class="bi bi-whatsapp"></i></a>
-
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
+                            class="bi bi-whatsapp"></i></a>
                 </div>
-
             </div>
-
-            <div class="col bg-light rounded-3 p-4 d-flex justify-content-center">
-                <form class=" col-md-10 col-12" action="Envio_email.php" method="post" onsubmit="return validar();">
+            <div
+                class="col mb-4 mb-md-0 rounded-3 bg-light p-4 formBackgroudLight d-flex justify-content-center align-items-center-">
+                {{-- <form class=" col-md-10 col-12 fromRigthContacto" action="Envio_email.php" method="post" onsubmit="return validar();"> --}}
+                <form class=" col-md-10 col-12 fromRigthContacto" action="" method="POST">
+                    @csrf
+                    @method('Get')
                     <div class=" d-flex justify-content-center mb-4 ">
                         <h4 class="form--text-color">Contacto</h4>
                     </div>
-
                     <div class="mb-3  ">
                         <input type="text" class="form-control" id="name" placeholder="Nombre" name="thisName"
                             required />
@@ -57,7 +55,6 @@
                         <input type="email" class="form-control" name="thisEmail" placeholder="Correo electronico"
                             required />
                     </div>
-
                     <div class="mb-3">
                         <input type="text" class="form-control" name="thisAsunto" placeholder="Asunto" required />
                     </div>
@@ -70,13 +67,11 @@
                             privacidad.</label>
                     </div>
                     <div class="d-flex justify-content-end">
-                        <input class="btn btn-info btn-md form--sumit-color btnEfectClick" id="#id_del_input" onclick="enviar_nex()"
-                            type="submit" name="thisEnvio" value="Enviar">
+                        <button class="col-4 col-sm-9 col-md-6 col-lg-4 mb-3 btn btn-lg- btnEnviarCorreo  btnEfectClick"
+                            id="#id_del_input" onclick="enviar_nex()" name="thisEnvio">Enviar</button>
                     </div>
                 </form>
             </div>
-
         </div>
-
     </div>
 @endsection
