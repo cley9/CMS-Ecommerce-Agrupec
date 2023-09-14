@@ -28,7 +28,7 @@ class ViewController extends Controller
         }
 
     function view(){
-        $producto=Producto::paginate(12);
+        $producto=Producto::paginate(18);
         // ---------- slyder
         $slayderProducto=Producto::paginate(24);
         $CanFilaUser=Cart::where('userId',3)->count();

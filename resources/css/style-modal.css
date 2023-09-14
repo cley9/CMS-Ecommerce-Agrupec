@@ -99,3 +99,81 @@ border-radius: 2% 2% 0rem 0rem;
         opacity: 3;
       }
 
+      /* box prododucto stock */
+.boxTextTitleStock{
+  margin-bottom: 40px;
+  padding-top: 30px;
+
+}
+
+/* box de main pricipal  */
+.boxMainImgItems{
+/* background: red; */
+display: flex;
+align-items: center;
+justify-content: center;
+margin-bottom: 12px;
+
+}
+.boxImgMainLink{
+  border-radius: 80%;
+  /* border-width: 100%;
+  border-color: orange; */
+  box-shadow: -1px 1px 6px -2px #ddd6d6;
+  /* border-color: red; */
+  /* background: rebeccapurple; */
+  /* width: 52%; */
+}
+.boxBackMainImgItems{
+  /* background: red; */
+}
+
+
+@media (max-width: 700px){
+  .boxItemIconsHome{
+    width: 88px;
+    }
+    /* productos en tendencia */
+.boxInfoTendProHome{
+  /* background: orange; */
+  /* background: #F4F5F6; */
+  /* margin-bottom: 1px; */
+  border-radius: 8px;
+  height: 34rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* imagen de icons  */
+.boxPrecioMainIcons{
+  /* background: rebeccapurple; */
+  margin-bottom: 20px;
+  
+}
+}
+@media (min-width:800px) {
+  /* body{
+    background: blueviolet;
+  } */
+  .boxItemIconsHome{
+  width: 12%;
+  }
+  /* productos en tendencia */
+.boxInfoTendProHome{
+  background: #F4F5F6;
+  margin-bottom: 50px;
+  border-radius: 8px;
+  height: 24rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* imagen de icons  */
+.boxPrecioMainIcons{
+  /* background: rebeccapurple; */
+  margin-bottom: 70px;
+  
+}
+}

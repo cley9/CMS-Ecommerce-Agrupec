@@ -62,11 +62,84 @@
             </button>
         </div>
     </section>
+    <div class="container boxPrecioMainIcons">
+        <div class="text-center mb-4">
+            <h2>¡Precios locaz😵s! </h2>
+            <small>en miles de productos </small>
+        </div>
+        <div class="row row-cols-4 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 row-cols-xl-6 d-flex justify-content-center" >
+            <div class="col-4 boxItemIconsHome">
+                <a href="http://">
+                    <div class="col boxMainImgItems boxBackMainImgItems">
+                        <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/968823.webp') }}"
+                        alt="">
+                    </div>
+                    <div class="col iconIntemHome- text-center boxMainImgItems">
+                        <a href="" class="font-monospace-">Herramientas</a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 boxItemIconsHome">
+                <a href="http://">
+                    <div class="col boxMainImgItems">
+                        <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/681273.jpeg') }}"
+                        alt="">
+                    </div>
+                    <div class="col iconIntemHome- text-center boxMainImgItems">
+                        <a href="" class="font-monospace-">Válvula </a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 boxItemIconsHome">
+                <a href="http://">
+                    <div class="col boxMainImgItems">
+                        <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/281393.jpg') }}"
+                        alt="">
+                    </div>
+                    <div class="col iconIntemHome- text-center boxMainImgItems">
+                        <a href="" class="font-monospace-">Tubos</a>
+                    </div>
+                </a>
+            </div>
+            <div class="col-4 boxItemIconsHome">
+                <a href="http://">
+                    <div class="col boxMainImgItems">
+                        <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/712572.jpg') }}"
+                        alt="">
+                    </div>
+                    <div class="col iconIntemHome- text-center boxMainImgItems">
+                        <a href="" class="font-monospace-">caños</a>
+                    </div>
+                </a>
+            </div>
 
-    {{-- @include('Producto') --}}
+        </div>
+
+    </div>
+    <div class="container p-2 p-lg-4  p-md-4 boxInfoTendProHome  ">
+        <div class="row d-flex align-items-center">
+            <div class="col-lg-8  d-flex justify-content-center mb-3">
+                <h2 class="textTitleVenHome text-center">¡Conoce los Productos <small style="color:black">que están en tendencia para la remodelación de la casa!</small></h2>
+            </div>
+            <div class="col d-flex justify-content-center">
+                <div class="col-2 boxInformationHome ">
+                    <div class="d-flex justify-content-center boxItemImgHome">
+                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
+                            src="{{ asset('storage/img/icons/app-store-app.png') }}" alt="">
+                    </div>
+                    <div class="text-center">
+                        <h6 class="h3 mb-3">Compra</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y
+                            deja
+                            que nos encarguemos del envió.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container mb-4 mb-md-2 pt-4 boxSimbolSlayProHome">
-        <h6 class="display-6 textTitleSlayProHome" >¡No los dejes ir!</h6>
+        <h6 class="display-6 textTitleSlayProHome">¡No los dejes ir!</h6>
         <div id="carouselExampleIndicators_" class="carousel slide p-0 " data-bs-ride="carousel">
             {{-- <div class="carousel-inner  p-md-4 p-0 ">
                 <div class="carousel-item active">
@@ -142,7 +215,7 @@
         <div class="">
 
             <div class="d-flex justify-content-center mb-3">
-                <h2 class="textTitleVenHome">¡Conoce los beneficios <small style="color:black">que ofrecemos
+                <h2 class="textTitleVenHome text-center">¡Conoce los beneficios <small style="color:black">que ofrecemos
                         para que tu compra sea un exito!</small></h2>
             </div>
             <div class="row d-flex justify-content-center">
@@ -152,9 +225,10 @@
                             src="{{ asset('storage/img/icons/app-store-app.png') }}" alt="">
                     </div>
                     <div class="text-center">
-                    <h6 class="h3 mb-3">Compra</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y deja que nos encarguemos del envió.</p>
-                        </div>
+                        <h6 class="h3 mb-3">Compra</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y
+                            deja que nos encarguemos del envió.</p>
+                    </div>
                 </div>
                 <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
                     <div class="d-flex justify-content-center boxItemImgHome">
@@ -162,9 +236,10 @@
                             src="{{ asset('storage/img/icons/store.png') }}" alt="">
                     </div>
                     <div class="text-center">
-                    <h6 class="h3 mb-3">Locales</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Nos encontramos actualmente en lima en el distrito de San Juan de Lurigancho.</p>
-                        </div>
+                        <h6 class="h3 mb-3">Locales</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Nos encontramos actualmente en lima en el
+                            distrito de San Juan de Lurigancho.</p>
+                    </div>
                 </div>
                 <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
                     <div class="d-flex justify-content-center boxItemImgHome">
@@ -172,9 +247,10 @@
                             src="{{ asset('storage/img/icons/delivery-truck.png') }}" alt="">
                     </div>
                     <div class="text-center">
-                    <h6 class="h3 mb-3">Envios Perú</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Enviamos productos a todos los departamentos del Perú de manera segura y puntual.</p>
-                        </div>
+                        <h6 class="h3 mb-3">Envios Perú</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Enviamos productos a todos los departamentos del
+                            Perú de manera segura y puntual.</p>
+                    </div>
                 </div>
                 <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
                     <div class="d-flex justify-content-center boxItemImgHome">
@@ -182,9 +258,10 @@
                             src="{{ asset('storage/img/icons/customer-service.png') }}" alt="">
                     </div>
                     <div class="text-center">
-                    <h6 class="h3 mb-3">Atención 24/7</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Estamos para ayudarte en tus consultas o brindarte información de nuevos productos.</p>
-                        </div>
+                        <h6 class="h3 mb-3">Atención 24/7</h6>
+                        <p class="h9 text-muted- font-monospace lh-base-">Estamos para ayudarte en tus consultas o
+                            brindarte información de nuevos productos.</p>
+                    </div>
                 </div>
 
             </div>
@@ -219,7 +296,7 @@
     </div> --}}
     {{-- <br><br><br> --}}
 
-    <div class=" pt-3 mb-4  d-flex justify-content-center align-items-center">
+    <div class="d-flex justify-content-center align-items-center boxTextTitleStock">
         <div
             class=" col-md-10 col-10 d-flex justify-content-center align-items-center  pt-2 rounded-3 title--producto-group">
             <small class="h3 ">Productos en Stock </small>
@@ -227,7 +304,7 @@
     </div>
     <div class="container pt-4">
         <div
-            class="row row row-cols-2 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 row-cols-xl-6 d-flex justify-content-center ">
+            class="row row-cols-2 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 row-cols-xl-6 d-flex justify-content-center ">
             @foreach ($producto as $key)
                 <div class="col  mb-5 mb-lg-6 ">
                     <div class="card box-love box-efect">
