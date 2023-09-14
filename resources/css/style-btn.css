@@ -1,3 +1,14 @@
+.btnLoginHomeMain{
+  background:#FFC107;
+  padding: 12px 20px;
+  float: left;
+  font-size: 12px;
+  box-shadow: 0px 10px 20px -10px #FFC107;
+  border-radius: 5px;
+  text-transform: uppercase;
+   /*background:#7ED6EB; */
+   /* color: #ffffff; */
+  }
 .btn--view-page{
   /* background: #7EA0EB; */
   /* background: #09ED69; */
@@ -15,6 +26,7 @@
   /* background: #96B3F1; */
   background: #429DE6;
 }
+
 .btn--view-add{
 background:#7EEBCA;
 padding: 7px 20px;

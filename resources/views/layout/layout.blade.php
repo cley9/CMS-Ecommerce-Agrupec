@@ -182,7 +182,7 @@
                                     {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
 
                                     <div class="dropdown  ">
-                                        <a href="" class="btn bg-warning " href="#" role="button"
+                                        <a href="" class="btn bg-warning btnEfectClick btnLoginHomeMain" href="#" role="button"
                                             id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i
                                                 class="bi bi-person-fill me-lg-2"></i>Iniciar sesión</a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
