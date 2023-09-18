@@ -9,9 +9,9 @@
 
 
     {{-- <!-- --------------------------------------------------------------------------------------slayder_img---> --}}
-    <section class="boxCaruselMainHome">
-        <div id="carouselExampleIndicators" class="carousel slide bg-primary" data-bs-ride="carousel">
-            <div class="carousel-indicators">
+    <section class="boxCaruselMainHome" >
+        <div id="carouselExampleIndicators" class="carousel slide boxCaruselMainHome" data-bs-ride="carousel">
+            <div class="carousel-indicators btnItemCaruselMainHome">
                 @php
                     $slayActivi = 0;
                     $slayBtn = 0;
@@ -21,12 +21,13 @@
                         $slayBtn++;
                     @endphp
                     @if ($slayBtn === 1)
-                        <button type="button" data-bs-target="#items" data-bs-slide-to="0" class="active" aria-current="true"
-                            aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#items" data-bs-slide-to="0" class="active btnCaruselMainHome" aria-current="true"
+                            aria-label="Slide 1" ></button>
+                            {{-- <button type="button" class="active btnItemPrueba" data-bs-target="#items"  
+                             ></button> --}}
                     @else
-                        <button type="button" data-bs-target="#items" data-bs-slide-to="{{ $slayBtn - 1 }}"
+                        <button type="button" class="btnCaruselMainHome" data-bs-target="#items" data-bs-slide-to="{{ $slayBtn - 1 }}"
                             aria-label="Slide {{ $slayBtn }}"></button>
-                        {{-- <button type="button" data-bs-target="#items" data-bs-slide-to="1" aria-label="Slide {{$slayBtn}}"></button> --}}
                     @endif
                 @endforeach
 
@@ -37,14 +38,14 @@
                         $slayActivi += 1;
                     @endphp
                     @if ($slayActivi === 1)
-                        <div class="carousel-item active">
+                        <div class="carousel-item active ">
                             <img src="{{ asset('storage/img/SlayderMain/' . $itemSlay->imagen . '') }}"
-                                class="d-block w-100" alt="..." height="410px">
+                                class="d-block w-100 imgCaruselMainHome" alt="..." >
                         </div>
                     @else
                         <div class="carousel-item ">
                             <img src="{{ asset('storage/img/SlayderMain/' . $itemSlay->imagen . '') }}"
-                                class="d-block w-100" alt="..." height="410px">
+                                class="d-block w-100 imgCaruselMainHome" alt="..." >
                         </div>
                     @endif
                 @endforeach
@@ -69,46 +70,46 @@
         </div>
         <div class="row row-cols-4 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 row-cols-xl-6 d-flex justify-content-center" >
             <div class="col-4 boxItemIconsHome">
-                <a href="http://">
+                <a href="/Search?search=clavo">
                     <div class="col boxMainImgItems boxBackMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/968823.webp') }}"
                         alt="">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
-                        <a href="" class="font-monospace-">Herramientas</a>
+                        <a href="/Search?search=clavo" class="font-monospace-">Herramientas</a>
                     </div>
                 </a>
             </div>
             <div class="col-4 boxItemIconsHome">
-                <a href="http://">
+                <a href="/Search?search=Válvula">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/681273.jpeg') }}"
                         alt="">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
-                        <a href="" class="font-monospace-">Válvula </a>
+                        <a href="/Search?search=Válvula" class="font-monospace-">Válvula </a>
                     </div>
                 </a>
             </div>
             <div class="col-4 boxItemIconsHome">
-                <a href="http://">
+                <a href="/Search?search=tubo">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/281393.jpg') }}"
                         alt="">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
-                        <a href="" class="font-monospace-">Tubos</a>
+                        <a href="/Search?search=tubo" class="font-monospace-">Tubos</a>
                     </div>
                 </a>
             </div>
             <div class="col-4 boxItemIconsHome">
-                <a href="http://">
+                <a href="/Search?search=caño">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/712572.jpg') }}"
                         alt="">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
-                        <a href="" class="font-monospace-">caños</a>
+                        <a href="/Search?search=caño" class="font-monospace-">caños</a>
                     </div>
                 </a>
             </div>
@@ -140,57 +141,37 @@
 
     <div class="container mb-4 mb-md-2 pt-4 boxSimbolSlayProHome">
         <h6 class="display-6 textTitleSlayProHome">¡No los dejes ir!</h6>
-        <div id="carouselExampleIndicators_" class="carousel slide p-0 " data-bs-ride="carousel">
-            {{-- <div class="carousel-inner  p-md-4 p-0 ">
-                <div class="carousel-item active">
-                    <div class="row p-md-5 p-3 ">
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row p-md-5 p-3 ">
-                    </div>
-                </div>
-            </div> --}}
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators_"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
     </div>
-    {{-- <h1>hi</h1> --}}
-    {{-- <div class="alert {{ Session::get('flash_type') }}">
-    <h3>{{ Session::get('flash_message') }}</h3>
 
-</div> --}}
-    {{-- flash msg --}}
-    {{-- @if (Session::has('message'))
-<p class="alert {{ Session::get('alert-class', 'alert-info') }}">{{ Session::get('message') }}</p>
-@endif --}}
-    <div class="container-fluid mb-4 boxSlayProHomeView">
-        <div class="row  ">
-            <div class="col-md-12">
-                <div id="news-slider" class="owl-carousel-">
+    <div class="container-fluid boxSlayProHomeView">
+        <div class="row" id="news-slider">
                     @foreach ($slayderProducto as $itemProducto)
-                        <div class="col-11 border slay-box-item shadow-">
+                        <div class="d-flex justify-content-center border  boxBodySlayMin">
                             <div class="row">
-                                <dir class="col-6 bg-primary- me-2 ">
+                                <div class="col-6 boxImgSlayMin me-2- d-flex  align-items-center justify-content-center ">
                                     <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
                                         class="p-2 carrusel-min-pro">
                                         <img src="{{ asset('storage/img/Productos/' . $itemProducto['imagen'] . '') }}"
-                                            class="img-fluid-a slay-img-item" height="120px" width="140px" alt="">
+                                            class="img-fluid-a imgItemSlayMin" alt="">
                                     </a>
-                                </dir>
-                                <div class="col-5 pt-3 ">
-                                    <div class="col-12" style="height: 70px">
-                                        <h6 class="mb-4 fw-normal- text-center">{{ $itemProducto['nombre'] }}</h6>
+                                </div>
+                                <div class="col-6 cuen">
+                                    <div class="mb-2 boxTitleSlayMin">
+                                        <h5 class="text-dark h6 txtBoxTitle- textBoxHeadTitle-">{{ $itemProducto['nombre'] }}
+                                        </h5>
                                     </div>
-                                    <div class="col">
+                                    <div class="mb-2 d-flex justify-content-between  ">
+                                        <span class="text-dark- txtBoxPreBefore textPrecioProBefore"><del>S/
+                                                {{ number_format($itemProducto['precio'], 2, '.', ',') }}</del></span>
+                                        <span class="text-dark textPrecioProAfter">S/
+                                            {{ number_format($itemProducto['newPrecio'], 2, '.', ',') }}</span>
+                                    </div>
+                                    <div class=" align-items-center d-flex mb-2 ">
+                                        <span class="h6 mb-0 text-muted fw-normal textCountProDis">
+                                            <small class="">{{ $itemProducto['cantidad'] }} disponibles</small>
+                                        </span>
+                                    </div>
+                                    <div class="col mb-3">
                                         <h6 class="text-center iconStartSlay">
                                             @for ($i = 1; $i <= rand(3, 5); $i++)
                                                 <i class="bi bi-star-fill icons--star"></i>
@@ -206,12 +187,10 @@
                             </div>
                         </div>
                     @endforeach
-                </div>
-            </div>
         </div>
     </div>
 
-    <div class="container p-4 boxPresenProHome  ">
+    <div class="container boxPresenProHome  ">
         <div class="">
 
             <div class="d-flex justify-content-center mb-3">

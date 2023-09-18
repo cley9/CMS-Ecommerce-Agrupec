@@ -106,7 +106,7 @@ width: 34px;
 
 /* log admin */
 .form--frm--adminLog{
-height: 18rem;
+height: 19rem;
 }
 .input--frm--adminLog{
   background: #E7F9EB;
@@ -121,7 +121,22 @@ background: #E8F0FE;
 
 /* log user */
 .form--frm--userLog{
-    height: 24rem;
+    height: 26rem;
+}
+.boxBodyInputLoginUser{
+  margin-bottom: 30px ;
+}
+.btnBodyLoginUser{
+  margin-bottom:26px !important;
+}
+.btnIniciarSesion{
+  padding: 10px;
+  /* width: 190px; */
+}
+/*  title de login user */
+.titleFormLoginUser{
+  /* color: #00f2fe; */
+  margin-bottom: 36px;
 }
 .input--frm--userLog{
     background: #E7F9EB;
@@ -273,8 +288,6 @@ height: 70px;
 }
 
 
-
-
 /* box producto  home*/
 /* .box--btn--addHomeP{
     background-color: #57CAA7;
@@ -423,6 +436,16 @@ box-shadow: 0 0 2px #6ABEA5;
   justify-content: center;
   align-items: center;
 }
+@media(width >= 700px){
+.boxPresenProHome{
+ /* padding-top: 90px; */
+  /* margin-bottom: 180px !important; */
+}
+}
+
+@media(width<700px){
+
+}
 
 .boxInformationHome {
   background: #FFFFFF;
@@ -453,10 +476,7 @@ padding-top: 20px;
   /* background:#43EA7C; */
 }
 /* slay producto home */
-.boxSlayProHomeView{
-margin-bottom: 5rem !important;
-/* background: #05bbff; */
-}
+
 .boxSimbolSlayProHome{
 
 }
@@ -466,4 +486,5 @@ margin-bottom: 5rem !important;
 /* carusel  */
 .boxCaruselMainHome{
   margin-bottom: 102px;
+  z-index: 9;
 }

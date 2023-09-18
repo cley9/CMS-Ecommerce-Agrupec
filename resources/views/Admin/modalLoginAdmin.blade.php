@@ -6,7 +6,7 @@
                 method="POST">
                 @method('GET')
                 @csrf
-                <h2 class="fw-normal text-center mb-4">Iniciar Sesion</h2>
+                <h2 class="fw-normal text-center titleFormLoginUser">Iniciar Sesion</h2>
                 <div class="mb-3">
                     <input type="email" class="form-control input--frm--adminLog" id="emailLoginAdmin" name="email"
                         placeholder="Tu correo electronico " required />
@@ -18,7 +18,7 @@
                         id="imgPassLoginAdmin" alt="">
                 </div>
                 <div class="mb-3 d-flex justify-content-center pt-3">
-                    <button type="submit" class="btn col-12 btn-primary">Registrar</button>
+                    <button type="submit" class="btn col-12 btn-primary btnIniciarSesion">Registrar</button>
                 </div>
             </form>
         </div>

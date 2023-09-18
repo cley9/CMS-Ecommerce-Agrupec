@@ -9,19 +9,19 @@
                 method="POST">
                 @method('GET')
                 @csrf
-                <h2 class="fw-normal text-center mb-4">Iniciar sesion</h2>
+                <h2 class="fw-normal text-center titleFormLoginUser">Iniciar sesion</h2>
                 <div class="mb-3">
                     <input type="email" class="form-control input--frm--userLog" id="emailLoginUser" name="email"
                         placeholder="Correo electronico " required />
                 </div>
-                <div class="mb-3">
+                <div class="boxBodyInputLoginUser">
                     <input type="password" class="form-control input--frm--userLog" id="passwordLoginUserU"
                         name="pass" placeholder="Clave" required />
                     <img src="{{ asset('storage/img/icons/eye-slash-fill.svg') }}" class="frm--loginUser--img passwordLoginUserViewU"
                         id="imgPassLoginUserU" alt="">
                 </div>
-                <div class="mb-3 d-flex justify-content-center">
-                    <button type="submit" class="btn col-12 btn-primary">Iniciar sesion</button>
+                <div class="d-flex justify-content-center  btnBodyLoginUser">
+                    <button type="submit" class="btn col-12 btn-primary btnIniciarSesion">Iniciar sesion</button>
                 </div>
                 <div class="mb-3 text-center">
                     <a href="{{ route('login.user.index') }}" class="form-control- mb-3 googleBody- "><img

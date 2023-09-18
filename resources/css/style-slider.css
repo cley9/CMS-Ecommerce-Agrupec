@@ -48,6 +48,7 @@
       color: #fff;
       font-size: 25px;
   }
+
   .post-slide .post-content {
       background: #fff;
       /* background: rebeccapurple; */
@@ -55,6 +56,7 @@
       margin-bottom: 15px;
       border-radius: 15px;
   }
+
   .boxSlayProViewMore {
       /* background-color: #1376c5; */
       margin-bottom: 8px !important;
@@ -89,11 +91,13 @@
       text-decoration: none;
       color: #fff;
   }
+
   /* ----- btn next preview */
   .owl-controls .owl-buttons {
       text-align: center;
       margin-top: 20px;
   }
+
   .owl-controls .owl-buttons .owl-prev {
       background: #fff;
       position: absolute;
@@ -133,34 +137,145 @@
           padding: 0px 15px 25px 15px;
       }
   }
-  /* -----slay item img */
-  .slay-img-item {
-      height: 160px;
+@media(width <700px){
+    /* slayder de no le dejes ir  */
+    .boxSlayProHomeView {
+        margin-bottom: 0px !important;
+        /* background: #05bbff; */
+        display: flex;
+        justify-content: center;
+        /* width: 90%; */
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    .boxBodySlayMin {
+        /* background: orange !important; */
+        width: 362px !important;
+        border-radius: 12px;
+        box-shadow: 2px 2px 9px 2px #F1F3F3;
+        border: #08c708 !important;
+        margin-left: -10px;
+        margin-bottom: 90px;
+        /* z-index: 999; */
+        /* margin-inline-end: -30px !important; */
+        /* margin-right: 590px !important; */
+        /* margin-right: 290px !important; */
+    }
+    .cuen {
+        /* background: blueviolet !important; */
+        width: 198px;
+    }
+    .boxImgSlayMin{
+        width: 156px !important;
+        /* background: #08c708; */
+    }
+    .imgItemSlayMin {
+        height: 148px !important;
+        /* width: 80px; */
+    }
+
+    .boxTitleSlayMin {
+        /* background: #0D6EFD !important; */
+        height: 56px;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center;
+        padding-top: 10px;
+        /* background: #08c708; */
+        /* width: 120px; */
+
+    }
+    /* .slay-box-item {
+        border-radius: 14px;
+        box-shadow: 2px 2px 9px 2px #F1F3F3;
+    } */
+    
+}
+  @media (width >=700px) {
+
+      /* slayder de no le dejes ir  */
+      .boxSlayProHomeView {
+          margin-bottom: 6rem !important;
+          /* background: #05bbff; */
+          /* width: 90%; */
+          /* display: flex; */
+          /* justify-content: center; */
+      }
+
+      .boxTitleSlayMin {
+          /* background: #0D6EFD !important; */
+          height: 56px;
+          display: flex !important;
+          align-items: center !important;
+          justify-content: center;
+          padding-top: 10px;
+          /* background: #08c708; */
+          /* width: 120px; */
+
+      }
+
+      .imgItemSlayMin {
+          height: 180px;
+      }
+
+      .slay-box-item {
+          border-radius: 14px;
+          box-shadow: 2px 2px 9px 2px #F1F3F3;
+      }
+
+      .boxBodySlayMin {
+          /* background: orange !important; */
+          width: 450px;
+          border-radius: 12px;
+          box-shadow: 2px 2px 9px 2px #F1F3F3;
+          /* border: #08c708 !important; */
+      }
+
+      .boxBodySlayMin:hover {
+          box-shadow: 5px 5px 10px 0px #dce2e4;
+          transition: 0.3s ease;
+      }
+
+      .containerSlayMinHome {}
+
+      .cuen {
+          /* background: blueviolet !important; */
+          width: 198px;
+      }
   }
-  .slay-box-item {
-      border-radius: 14px;
-      box-shadow: 2px 2px 9px 2px #F1F3F3;
+
+  .res {
+      /* background: #333; */
+  }
+
+  .da {
+      /* background: #888; */
   }
 
   /* -------- slayder producto click boton web*/
-  .boxSlayderScrollWeb{
-    border-radius: 8px;
-    /* background-color: #08c708; */
+  .boxSlayderScrollWeb {
+      border-radius: 8px;
+      /* background-color: #08c708; */
   }
+
   .boxSlayderWep {
       height: 19rem;
   }
+
   .accordion {
       width: 315px;
   }
+
   .vertical-menu {
       width: 265px;
       height: 250px;
       overflow-y: auto;
   }
+
   .btn-numbers {
       background: #EE7358;
   }
+
   .min-layer {
       margin: 4px, 4px;
       padding: 4px;
@@ -169,12 +284,14 @@
       overflow: auto;
       white-space: nowrap;
   }
+
   .horizontal-scroll-contenedor {
       width: 100%;
       height: 150px;
       overflow-y: hidden;
       white-space: nowrap;
   }
+
   /* .horizontal-scroll-contenedor>div {
       display: inline-block;
   } */
@@ -186,11 +303,14 @@
       overflow-y: auto;
       overflow-x: auto;
   }
-/* modificar la barra del scroll de y vertical */
-::-webkit-scrollbar {
-    width: 6px; /* Ajusta el ancho según tus preferencias */
-}
-::-webkit-scrollbar-thumb {
-    background-color: #888; /* Cambia el color del scroll thumb según tus preferencias */
-}
 
+  /* modificar la barra del scroll de y vertical */
+  ::-webkit-scrollbar {
+      width: 6px;
+      /* Ajusta el ancho según tus preferencias */
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background-color: #888;
+      /* Cambia el color del scroll thumb según tus preferencias */
+  }
