@@ -52,20 +52,59 @@ text-transform: uppercase;
 
   background: #7ADDBF;
 }
+/* btn view producto */
+.btnPaymetView{
+  background-color: #0D6EFD;
+  color: white;
+  padding: 10px 1rem;
+  float: left;
+  box-shadow: 0px 10px 20px -10px #0D6EFD;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+.btnAddProView{
+  background-color: #63E6BE;
+  padding: 10px 1rem;
+  float: left;
+  box-shadow: 0px 10px 20px -10px #63E6BE;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
 /* s */
 .btn--paymet--vaciar{
     background-color: #FF795D;
   /* color: #20c997; */
+  padding: 10px 1rem;
+  float: left;
+  box-shadow: 0px 10px 20px -10px #FF795D;
+  border-radius: 8px;
+  text-transform: uppercase;
+
 }
 .btn--paymet--ir{
     background: #638BE6;
     /* background-color: #74C0FC; */
-}
+    padding: 10px 1rem;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #638BE6;
+    border-radius: 8px;
+    text-transform: uppercase;
+  }
 .btn--paymet--ver{
     background-color: #63E6BE;
+    padding: 10px 1rem;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #63E6BE;
+    border-radius: 8px;
+    text-transform: uppercase;
 }
-.btn--paymet-generar{
+.btnPaymetGenerar{
     background-color: #FFCA5D;
+    padding: 10px 1rem;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #FFCA5D;
+    border-radius: 8px;
+    /* text-transform: uppercase; */
 }
 .btn--paymet--pago{
     background-color: #638BE6;
@@ -228,15 +267,25 @@ border-color: none;
 
 /* style -- listCart */
 .btn--listCart--viewCart{
-    background: #7ADDBF;
-
+    background: #7EEBCA;
+    padding: 8px 1rem;
+    width: 110px;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #7ADDBF;
+    border-radius: 4px;
+    text-transform: uppercase;
 }
 .btn--listCart--viewCart:focus{
 box-shadow: 0 0 2px #6ABEA5;
 }
 .btn--listCart--close{
-    background: #7FCADC;
-    border-color: none;
+    background: #7ED6EB;
+    /* border-color: none; */
+    padding: 8px 1rem;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #62bcd3;
+    border-radius: 4px;
+    text-transform: uppercase;
     /* background-color: #3E6B90; */
     /* background-color:#2C3E50; */
     /* background-color:#5555D5; */
@@ -256,4 +305,14 @@ box-shadow: 0 0 2px #6ABEA5;
 box-shadow: 0 0 2px #6ABEA5;
 
 
+}
+
+
+.btnViewAddNosotro{
+  background:#0D6EFD;
+  padding: 12px 1rem;
+  float: left;
+  box-shadow: 0px 10px 20px -10px #638BE6;
+  border-radius: 8px;
+  text-transform: uppercase;
 }

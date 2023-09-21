@@ -45,7 +45,7 @@
                     @csrf
                     @method('Get')
                     <div class=" d-flex justify-content-center mb-4 ">
-                        <h4 class="form--text-color">Contacto</h4>
+                        <h2 class="form--text-color">Contacto</h2>
                     </div>
                     <div class="mb-3  ">
                         <input type="text" class="form-control" id="name" placeholder="Nombre" name="thisName"

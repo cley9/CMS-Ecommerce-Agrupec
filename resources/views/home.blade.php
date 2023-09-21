@@ -23,8 +23,6 @@
                     @if ($slayBtn === 1)
                         <button type="button" data-bs-target="#items" data-bs-slide-to="0" class="active btnCaruselMainHome" aria-current="true"
                             aria-label="Slide 1" ></button>
-                            {{-- <button type="button" class="active btnItemPrueba" data-bs-target="#items"  
-                             ></button> --}}
                     @else
                         <button type="button" class="btnCaruselMainHome" data-bs-target="#items" data-bs-slide-to="{{ $slayBtn - 1 }}"
                             aria-label="Slide {{ $slayBtn }}"></button>
@@ -317,7 +315,7 @@
                                     </div>
                                     <div class="box--btn--addHome">
                                         <div class=" d-flex justify-content-end align-items-center mb-4 ">
-                                            <a class="btn-sm text-dark btn--view-add btn-sm btnEfectClick"
+                                            <a class="btn-sm text-dark btn--view-add btn-sm btnEfectClick btnBodyAddProHome"
                                                 id="addProCard{{ $key['id'] }}">Agregar</a>
                                         </div>
                                         <div class="d-flex justify-content-between align-items-center">

@@ -1,6 +1,6 @@
 @extends('layout.layout')
 @section('header')
-    <div class="container-fluid mb-4 we--view">
+    <div class="container-fluid boxWeBody">
         <div class="row  d-flex justify-content-center ">
 
 
@@ -16,7 +16,7 @@
                     grandes ofertas, nos esmeramos en darle una atención personalizada.</p>
 
                 <div class="d-flex align-itmes-center justify-content-center">
-                    <a href="{{ route('contactenos.home.index') }}" class="col-md-2 col-4 btn btn--view--add btn-primary btnEfectClick">Ver
+                    <a href="{{ route('contactenos.home.index') }}" class="col-md-2 col-6 btn btnViewAddNosotro btn-primary btnEfectClick">Ver
                         más </a>
                 </div>
             </div>
@@ -27,7 +27,7 @@
     </div>
 
 
-    <div class="container p-md-5 ">
+    <div class="container  boxItemInfoNosotros ">
         <div class="row row-cols-1 row-cols-md-3  g-4  p-4 d-flex align-itmes-center">
             <div class="col ">
                 <div class="col card  text-center  rounded-3  p-3">

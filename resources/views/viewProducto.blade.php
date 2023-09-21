@@ -1,6 +1,7 @@
 @extends('layout.layout')
 
 @section('header')
+
     <body class="bg-light">
         <div class="container mb-4 pt-4">
             <div class="row ">
@@ -96,7 +97,6 @@
                                 @else
                                     <a class=" " onclick=" msjInicieSesion()" style="font-size:25px;"><i
                                             class=" bi bi-heart"></i></a>
-                                       
                                 @endif
                             </div>
                             <div class="mb-2">
@@ -105,7 +105,8 @@
                             </div>
                             <div class="d-flex align-items-center ">
 
-                                <h6 class="h3 fw-normal textPrecioProViewAfter me-4">S/ {{ number_format($idProducto['newPrecio'], 2, ',', '.') }}
+                                <h6 class="h3 fw-normal textPrecioProViewAfter me-4">S/
+                                    {{ number_format($idProducto['newPrecio'], 2, ',', '.') }}
                                 </h6>
                                 <small class=" h5 fw-normal textPrecioProViewOff"> OFF</small>
                             </div>
@@ -136,32 +137,38 @@
                                     </small> </span>
                             </div>
                             <div class="text-center mb-4">
+                                <div class="row d-flex justify-content-center">
+                                    @if (session()->exists('name') && session()->get('rol') === '0')
+                                        <button type="button"
+                                            class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btnEfectClick btnPaymetView "
+                                            data-bs-toggle="modal" data-bs-target="#Mpayment">
+                                            Comprar ahora</button>
+                                        <a id="addProductoId"
+                                            class="col-9 col-sm-9 col-md-12 col-lg-9 btnEfectClick btnAddProView">Agregar
+                                            al carrito</a>
+                                        <script>
+                                            addProductoId.addEventListener("click", (e) => {
+                                                // console.log({{ $idProducto['id'] }});
+                                                addProCart({{ $idProducto['id'] }}, 1, {{ $idProducto['newPrecio'] }},
+                                                    '{{ $idProducto['nombre'] }}', '{{ $idProducto['imagen'] }}');
 
-                                @if (session()->exists('name') && session()->get('rol') === '0')
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn--paymet--ver btnEfectClick"
-                                        data-bs-toggle="modal" data-bs-target="#Mpayment">
-                                        Comprar ahora</button>
-                                    <a id="addProductoId" class="col-9 col-sm-9 col-md-12 col-lg-9 btn btn-primary btnEfectClick">Agregar
-                                        al carrito</a>
-                                    <script>
-                                        addProductoId.addEventListener("click", (e) => {
-                                            // console.log({{ $idProducto['id'] }});
-                                            addProCart({{ $idProducto['id'] }}, 1, {{ $idProducto['newPrecio'] }},
-                                                '{{ $idProducto['nombre'] }}', '{{ $idProducto['imagen'] }}');
-
-                                        });
-                                    </script>
-                                @else
-                                    <button type="button" class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn--paymet--ver  btnEfectClick"
-                                        onclick="msjInicieSesion()">Comprar ahora</button>
-                                @endif
+                                            });
+                                        </script>
+                                    @else
+                                        <button type="button"
+                                            class="col-9 col-sm-9 col-md-12 col-lg-9 mb-3 btn btn--paymet--ver  btnEfectClick"
+                                            onclick="msjInicieSesion()">Comprar ahora</button>
+                                    @endif
+                                </div>
                             </div>
+
                             <div class="col mb-3">
                                 <small><i class="bi bi-shield-check"></i> Se abrirá en una nueva ventana recibe el producto
                                     que esperabas o te devolvemos tu dinero.</small>
                             </div>
                             <div class="">
-                        <small   class="txtViewProduct  fw-normal"> <i class="bi bi-award "></i> 12 meses de garantía de fábrica.</small>
+                                <small class="txtViewProduct  fw-normal"> <i class="bi bi-award "></i> 12 meses de
+                                    garantía de fábrica.</small>
 
                             </div>
                         </div>
@@ -207,15 +214,10 @@
 
                                 </div>
                                 <div class="mb-1">
-
                                     <p class=""> <small class="text-center">Tarjetas de crédito y débito</small></p>
-
                                     <p class="mb-3 text-muted"> <small>¡Cuotas sin interés con bancos
                                             seleccionados!</small> </p>
                                 </div>
-
-
-
                                 <div class="col  text-center mb-3">
                                     <a href="https://www.bbva.pe/personas/servicios-digitales/banca-por-internet.html"
                                         target="_blank"> <img src="{{ asset('storage/img\medio de pago\bbva.png') }}"
@@ -232,21 +234,17 @@
                                         target="_blank"> <img
                                             src="{{ asset('storage/img\medio de pago\scotiabank.png') }}" alt=""
                                             width="70px;"></a>
-
                                 </div>
-                                <a href="#" data-bs-toggle="modal" data-bs-target="#Mpayment" class="loudingLinkEfectClick">Conoce otros medios
+                                <a href="#" data-bs-toggle="modal" data-bs-target="#Mpayment"
+                                    class="loudingLinkEfectClick">Conoce otros medios
                                     de pago</a>
-
                                 <hr>
-
-
                             </div>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="mb-5">
                 @endforeach
             </div>
-
         </div>
 
         @include('User.modalPaymentCart')

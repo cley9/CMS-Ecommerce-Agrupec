@@ -286,20 +286,20 @@
                                 <a href="https://github.com/cley9"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-github"></i></a>
-                                <a href="https://twitter.com/iniciarsesion?lang=es"
+                                {{-- <a href="https://twitter.com/iniciarsesion?lang=es"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-twitter"></i> </a>
+                                        class="bi bi-twitter"></i> </a> --}}
                                 <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-whatsapp"></i></a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-youtube"></i> </a>
-                                <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                {{-- <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-twitch"></i> </a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-messenger"></i> </a>
-                                <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-pinterest"></i> </a>
+                                        class="bi bi-messenger"></i> </a> --}}
+                                {{-- <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                        class="bi bi-pinterest"></i> </a> --}}
                                 <a href="https://www.linkedin.com/in/cley-tornero-mondalgo-89b387189/" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-linkedin"></i> </a>
 

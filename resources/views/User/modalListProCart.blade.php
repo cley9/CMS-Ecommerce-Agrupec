@@ -11,7 +11,7 @@
 
                 </div>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer d-flex justify-content-between">
                 <button type="button" class="btn  btn-sm btn--listCart--viewCart btnEfectClick"
                     data-bs-dismiss="modal">Salir</button>
                 <a href="/Cart" class="btn btn-sm btn--listCart--close btnEfectClick">Ver Carrito</a>

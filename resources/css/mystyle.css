@@ -24,8 +24,11 @@
   font-size: 60px;
 }
 
-.we--view {
+.boxWeBody{
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+  display: flex;
+  align-items: center;
+  
 }
 
 .title--producto-group-2 {
@@ -109,6 +112,9 @@ table.table-hover tbody tr:hover {
 
 }
 @media (max-width:768px) {
+  .boxWeBody{
+  height: 40rem;
+  }
   /* style en carusel */
 .boxCaruselMainHome{
   height: 330px !important;
@@ -298,6 +304,9 @@ table.table-hover tbody tr:hover {
 
 
 @media (min-width:768px) {
+  .boxWeBody{
+    height: 20rem;
+    }
   /* style en carusel */
 .boxCaruselMainHome{
   height: 530px !important;

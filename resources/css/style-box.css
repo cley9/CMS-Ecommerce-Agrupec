@@ -50,14 +50,13 @@ width: 34px;
   opacity: 1;
 }
 .box-efect {
-    box-shadow: 5px 10px 12px #d5dbdb;
+    box-shadow: 5px 10px 12px #e7eeee;
     border-radius: 6px;
     height: 384;
 }
 .box-efect:hover {
-
     border-radius: 6px;
-    box-shadow: 5px 10px 12px #aab7b8;
+    box-shadow: 5px 10px 12px #e0e7e7;
     transition: 0.3s ease;
 }
 /* ------------------ page -------------------------- */
@@ -487,4 +486,83 @@ padding-top: 20px;
 .boxCaruselMainHome{
   margin-bottom: 102px;
   z-index: 9;
+  /* background: #19C27D !important; */
+}
+
+/* box cart compras */
+.boxBodyCart{
+  /* background: rgb(25, 202, 113); */
+  /* width: 58rem; */
+}
+/* .boxBodyCartInfo{
+  background: #0D6EFD;
+  width: 22rem;
+} */
+.boxBodyCartInfoCompra{
+  margin-bottom: 50px !important;
+}
+/* .btnPaymetGenerar{
+  padding: 10px 1rem;
+} */
+@media(width < 700px){
+  .boxBodyCartInfoMain{
+    padding-top: 4rem;
+    margin-bottom: 4rem;
+    padding: 44px;
+    /* display: flex;
+    justify-content: center; */
+    /* background: #19C27D; */
+  }
+  .boxBodyCartInfo{
+    /* padding-top: 40px !important; */
+    /* padding-top: 40; */
+    /* background: #0D6EFD !important; */
+    /* width: 4rem !important; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* width: 926px !important; */
+    
+  } 
+  /* .btnPaymetGenerar{
+    padding: 10px 1rem;
+  } */
+}
+@media (width > 700px) {
+  .boxBodyCartInfo{
+    /* background: #0D6EFD; */
+    width: 20rem;
+    /* width: 315px; */
+  }
+}
+
+/* box de nosotros card informativo  */
+.boxItemInfoNosotros{
+  margin-bottom: 90px;
+  padding-top: 90px !important;
+  padding: 40px;
+}
+
+/* box-efect" */
+
+/* box producto search */
+.boxProductSearch{
+  /* background: #19C27D; */
+  border-color: #0D6EFD;
+  border-radius: 8px;
+}
+
+.btnBodyAddPro{
+  /* width: 90px !important; */
+  padding: 10px 2rem !important;
+}
+.btnBodyAddProHome{
+  padding: 9px 24px !important;
+}
+/* contenedor de cart  */
+.boxContainerCart{
+  margin-bottom:10rem;
+}
+/* contenedor de search */
+.boxContainerSearchProduct{
+  margin-bottom: 10rem;
 }
