@@ -38,7 +38,7 @@
                     <a href="https://bancaporinternet.interbank.pe/" class="me-4" target="_blank "> <img
                             src="{{ asset('storage/img/medio de pago/interbank.png') }}" alt=""
                             width="130px;"></a>
-                    <a href="https://www.scotiabank.com.pe/Personas/Canales-digitales/canales/banca-por-internet"
+                    <a href="https://www.paypal.com/pe/home"
                         class="me-4 " style="text-decoration:none" target="_blank"> <img
                             src="{{ asset('storage/img/medio de pago/paypal.png') }}" alt="" width="130px;"></a>
                 </div>

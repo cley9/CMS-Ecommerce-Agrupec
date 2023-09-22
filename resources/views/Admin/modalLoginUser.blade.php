@@ -1,7 +1,6 @@
 @include('User.modalRegistro')
 @include('User.moldalRecuperarCuenta')
-{{--    --}}
-<div class="modal fade modal-destino" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+<div class="modal fade modal-destino boxContainerModalUser" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--userLog">
         <div class="modal-content ">

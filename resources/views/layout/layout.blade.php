@@ -22,7 +22,7 @@
     {{-- <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script> --}}
     {{-- ads --}}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5125611954987078"
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     {{-- ads end --}}
     {{--  --}}
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js', 'public/css/mystyle.css']) --}}
@@ -49,7 +49,7 @@
         </div>
     </div>
     {{--  response -- web barra  --}}
-    <nav class=" navbar-light ">
+    <nav class=" navbar-light boxContainerSlayMainLag">
         <div class="container  nav--link  ">
             <div class="row  ">
                 <div class="navbar-nav col  ">
@@ -57,8 +57,10 @@
                         <div class="row">
                             <a class="nav-link col-lg-3 loudingLinkEfectClick" href="">Ventas por mayor</a>
                             <a class="nav-link col-lg-2 loudingLinkEfectClick" href="{{ url('local') }}">Locales</a>
-                            <a href="{{ url('Contactenos') }}" class="nav-link col-lg-2 loudingLinkEfectClick" href="">Contactos</a>
-                            <a href="{{ url('Producto-view') }}" class="nav-link col-lg-2 loudingLinkEfectClick" href="">Productos</a>
+                            <a href="{{ url('Contactenos') }}" class="nav-link col-lg-2 loudingLinkEfectClick"
+                                href="">Contactos</a>
+                            <a href="{{ url('Producto-view') }}" class="nav-link col-lg-2 loudingLinkEfectClick"
+                                href="">Productos</a>
                             <a class="nav-link col-lg-2 loudingLinkEfectClick" href="">Descuentos</a>
                         </div>
                     </div>
@@ -81,21 +83,20 @@
             <hr class="my-1">
             <div class="container-fluid  navbar navbar-expand-lg navbar-light bg-light nav--home ">
                 <div class="collapse navbar-collapse navbar-nav d-flex justify-content-center" id="navbarNavAltMarkup">
-                    <a class="nav-link loudingLinkEfectClick" aria-current="page" href="{{ route('viewProducto.home.list') }}">Ver
+                    <a class="nav-link loudingLinkEfectClick" aria-current="page"
+                        href="{{ route('viewProducto.home.list') }}">Ver
                         producto</a>
                     <a class="nav-link loudingLinkEfectClick" href="{{ route('list.admin.list') }}">lista producto</a>
                     <a class="nav-link  icons--style--raya " aria-current="page">Venta Telefónica (01) 615 6102 ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2203 ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Tiendas</a> 
+                    <a class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
                 </div>
             </div>
         </div>
-
     </nav>
-    <br><br><br>
     {{--  main  --}}
     <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
         <div class="container-fluid navHeadDising">
@@ -108,82 +109,68 @@
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
                             <div class="navbar-nav ">
-                                {{-- <li>
-                                    <button class="switch" id="switch">
-                                        <span><i class="fas fa-sun"></i></span>
-                                        <span><i class="fas fa-moon"></i></span>
-                                    </button>
-                                </li> --}}
                                 <a class="nav-link active icons--style--raya textHead" aria-current="page"
                                     href="{{ route('vista.index') }}">Home</a>
                                 <a href="{{ route('viewProducto.home.list') }}"
-                                    class="nav-link active icons--style--raya textHead" aria-current="page">Ver producto</a>
+                                    class="nav-link active icons--style--raya textHead" aria-current="page">Ver
+                                    producto</a>
                                 <a href="{{ route('nosotros.home.index') }}"
-                                    class="nav-link active icons--style--raya textHead" aria-current="page">Nosotros</a>
-                                <a href="{{ url('Ayuda') }}" class="nav-link active icons--style--raya me-3 textHead"
+                                    class="nav-link active icons--style--raya textHead"
+                                    aria-current="page">Nosotros</a>
+                                <a href="{{ url('Ayuda') }}"
+                                    class="nav-link active icons--style--raya me-3 textHead"
                                     aria-current="page">Atencion</a>
-
-                                {{--  @if (session()->exists('name') && session()->get('rol') === '0')  --}}
                                 @if (session()->get('rol') === '0')
-                                    <div class="cart-menu align-items-center d-flex">
-                                        <div class="sidebar-social">
-                                            <ul>
-                                                <a href="{{ route('cart.user.main') }}" class="cart"
-                                                    id="cartHover" title="Facebook" rel="nofollow"><i
-                                                        class="fas fa-shopping-cart"></i>
-                                                    <span id="cart_menu_num" data-action="cart-can"
-                                                        class="badge rounded-circle">{{ session()->get('countCart') }}</span>
-                                                </a>
-                                                </li>
-                                            </ul>
+                                    <div class="cart-menu d-flex align-items-center boxCartIcomHead">
+                                        <div class="sidebar-social boxCartIcomBody">
+                                            <a href="{{ route('cart.user.main') }}" class="cart" id="cartHover"
+                                                title="Facebook" rel="nofollow"><i
+                                                    class="fas fa-shopping-cart icomCartBody"></i>
+                                                <span class="badge numCartPro"
+                                                    id="cartMenu">{{ session()->get('countCart') }}</span>
+                                            </a>
                                         </div>
                                     </div>
-
-                                    <div class="dropdown  ">
-                                        <a role="button" id="userView" data-bs-toggle="dropdown"
-                                            aria-expanded="false"><img src="{{ asset(session()->get('avatar')) }}"
-                                                class=" icons--login--user  rounded-circle_ " alt=""></a>
-                                        <ul class="dropdown-menu perfil--header--link shadow p-2-"
-                                            aria-labelledby="userView">
+                                    <div class="dropdown boxIcomPerfinMain">
+                                        <a class="boxIcomPerfinMain-" role="button" id="userView"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img
+                                                src="{{ asset(session()->get('avatar')) }}"
+                                                class=" icons--login--user" alt=""></a>
+                                        <ul class="dropdown-menu boxPerfilHead shadow" aria-labelledby="userView">
                                             <div class=" perfil--header--title">
                                             </div>
-                                            <div class="perfil--header--body">
-                                                <h6 class="text-center perfil--header--text"> Usuario</h6>
+                                            <div class="mb-3 boxPerfilBodyHead">
+                                                <h5 class="text-center perfil--header--text"> Usuario</h5>
                                                 <div class="d-flex justify-content-center">
                                                     <img src="{{ asset(session()->get('avatar')) }}" alt=""
                                                         class="mb-2 perfil--body--img">
                                                 </div>
                                                 {{-- <h6 class="mb-2 text-center">{{ session()->get('name') }}</h6>
                                                 <h6 class="mb-2 text-center">{{ session()->get('rol') }}</h6> --}}
-                                                <h6 class="mb-3 text-center textTitleGmailUser">{{ session()->get('email') }}</h6>
+                                                <div class="boxPerfilUserName">
+                                                    <h6 class="mb-3 text-center textTitleGmailUser">
+                                                        {{ session()->get('email') }}</h6>
+                                                </div>
                                             </div>
-                                            <li>
-                                                <a href="{{ route('perfil.user.main') }}" class="">Mi Perfil</a>
+                                            <li class="mb-3">
+                                                <a class="mb-4" href="{{ route('perfil.user.main') }}"
+                                                    class="">Mi Perfil</a>
                                             </li>
-                                            <li>
-                                                {{-- <a class="" href="#exampleModalToggle">Ajuste</a> --}}
+                                            <li class="mb-3">
+                                                <a class="mb-4" href="{{ route('logout.user.index') }}">Cerrar
+                                                    Sesion </a>
                                             </li>
-                                            <li>
-                                                <a href="{{ route('logout.user.index') }}">Cerrar Sesion </a>
-                                            </li>
-
                                         </ul>
                                     </div>
                                 @elseif (session()->exists('email') && session()->get('rol') === '4')
                                     <a href="{{ route('logout.user.index') }}" class="btn bg-info "><i
                                             class="bi bi-person-fill me-lg-2"></i>Cerrar Sesion </a>
-                                    {{-- <li>
-                                        <button class="switch" id="switch">
-                                            <span><i class="fas fa-sun"></i></span>
-                                            <span><i class="fas fa-moon"></i></span>
-                                        </button>
-                                    </li> --}}
                                 @else
-                                    {{--  <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
-
+                                    {{-- <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
                                     <div class="dropdown  ">
-                                        <a href="" class="btn bg-warning btnEfectClick btnLoginHomeMain" href="#" role="button"
-                                            id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"><i
+                                        <a href="" class="btn bg-warning btnEfectClick btnLoginHomeMain"
+                                            href="#" role="button" id="dropdownMenuLink"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><i
                                                 class="bi bi-person-fill me-lg-2"></i>Iniciar sesión</a>
                                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                             <li>
@@ -200,7 +187,6 @@
                     </div>
                 </div>
             </div>
-
             {{--  ----------------------------- response app --}}
             <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
@@ -209,21 +195,12 @@
             <a class="navbar-brand d-md-none d-sm-block d-block" href="#">{{ config('constants.nameProyect') }}
             </a>
             <div class="d-md-none d-sm-block d-block ">
-
                 @if (session()->exists('name') && session()->get('rol') === '0')
-                    <div class="cart-menu align-items-center d-flex d-none- d-md-none- d-block-">
-                        <a href="{{ route('perfil.user.main') }}"><img src="{{ asset(session()->get('avatar')) }}"
-                                class=" icons--login--user " alt=""></a>
-                        <div class="sidebar-social">
-                            <ul>
-                                <a href="{{ route('cart.user.main') }}" class="cart" id="cartHover"
-                                    title="Facebook" rel="nofollow"><i class="fas fa-shopping-cart"></i>
-                                    <span id="cart_menu_num" data-action="cart-can"
-                                        class="badge rounded-circle">{{ session()->get('contProducto') }}</span>
-                                </a>
-                                </li>
-                            </ul>
-                        </div>
+                    <div class="sidebar-social boxCartIcomBody">
+                        <a href="{{ route('cart.user.main') }}" class="cart" id="cartHover" title="Facebook"
+                            rel="nofollow"><i class="fas fa-shopping-cart icomCartBody"></i>
+                            <span class="badge numCartPro" id="cartMenu">{{ session()->get('countCart') }}</span>
+                        </a>
                     </div>
                 @elseif (session()->exists('email') && session()->get('rol') === '4')
                 @else
@@ -283,9 +260,8 @@
                                 <a href="https://web.facebook.com/?_rdc=1&_rdr"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-facebook"></i></a>
-                                <a href="https://github.com/cley9"
-                                    class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-github"></i></a>
+                                <a href="https://github.com/cley9" class="rounded-circle btn  icons--Contact"
+                                    target="_blank"><i class="bi bi-github"></i></a>
                                 {{-- <a href="https://twitter.com/iniciarsesion?lang=es"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-twitter"></i> </a> --}}
@@ -300,7 +276,8 @@
                                         class="bi bi-messenger"></i> </a> --}}
                                 {{-- <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-pinterest"></i> </a> --}}
-                                <a href="https://www.linkedin.com/in/cley-tornero-mondalgo-89b387189/" class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                <a href="https://www.linkedin.com/in/cley-tornero-mondalgo-89b387189/"
+                                    class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-linkedin"></i> </a>
 
 
@@ -363,10 +340,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>       
+    <script src="https://unpkg.com/sweetalert2@10.15.0/dist/sweetalert2.all.js" charset="utf-8"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
-    
-<script src="{{ asset('js/agru.js') }}"></script>
+
+    <script src="{{ asset('js/agru.js') }}"></script>
 
 </body>
+
 </html>

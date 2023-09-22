@@ -20,7 +20,7 @@
         </div>
     </nav>
     {{-- <!------------------------------------------------------>start de la categoria  --}}
-    <div class="container-fluid p-4 ">
+    <div class="container-fluid p-4  boxContainerProductoCheck">
         <div class="row">
             <div class="col-1 col-md-4 col-lg-3  d-none d-sm-none d-md-block ">
                 <form class="boxSlayderWep" id="multi-filters" method="post">
@@ -101,8 +101,8 @@
         </div>
     </div>
     {{--    --}}
-    <div class="container pt-4 mb-3 ">
-        <div class="title--producto-group-2 rounded-3 pt-2 d-flex align-items-center justify-content-center"
+    <div class="container boxContainerProductoList">
+        <div class="title--producto-group-2 rounded-3 pt-2 d-flex align-items-center justify-content-center mb-4"
             style="height:50px;">
             <small class="h4 ">Lista de Producto</small>
         </div>

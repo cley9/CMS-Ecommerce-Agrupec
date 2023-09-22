@@ -290,9 +290,17 @@ table.table-hover tbody tr:hover {
 }
 
 /* modal login user */
+.boxContainerModalUser{
+/* background: orange; */
+/* display: flex !important;
+justify-content: center !important; */
+/* height: 30rem; */
+/* top: 15rem; */
+}
 .modal--frm--userLog {
-  margin-left: 30px;
+  margin-left: 38px;
   max-width: 340px;
+  /* background: red; */
 }
 
 /* modal login admin */

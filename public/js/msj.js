@@ -8,26 +8,26 @@ function msjOk(){
     timer: 3000
     })
     }
-    function msjOkUser(){
-      Swal.fire({
-      // position:'center',
-      icon: 'success',
-      title: 'Bien venido ',
-      text: 'Gracias por usar nuestro servicio',
-      showConfirmButton: false,
-      timer: 3000
-      })
-      }
+    // function msjOkUser(){
+    //   Swal.fire({
+    //   // position:'center',
+    //   icon: 'success',
+    //   title: 'Bien venido ',
+    //   text: 'Gracias por usar nuestro servicio',
+    //   showConfirmButton: false,
+    //   timer: 3000
+    //   })
+    //   }
 
-    function msjError() {
-      Swal.fire({
-        title: ' Error de inicio de sesion',
-        text: ' Vuelve a intentarlo ',
-        icon: 'error',
-        showConfirmButton:false,
-        timer: 3000
-        })
-    }
+    // function msjError() {
+    //   Swal.fire({
+    //     title: ' Error de inicio de sesion',
+    //     text: ' Vuelve a intentarlo ',
+    //     icon: 'error',
+    //     showConfirmButton:false,
+    //     timer: 3000
+    //     })
+    // }
     // admin catalogo
     function catalogoDelete(id, nomProducto, img) {
       swal.fire({

@@ -30,6 +30,9 @@ import './bootstrap';
 import './viewPassword';
 import './btn-up';
 import './addCartProduct';
+import './msj';
+import './logicAgrupec';
+// import './todo';
 // {{-- <script src="{{ asset('js/btn-up.js') }}"></script> --}}
 
 // import './productoSearchAdmin';

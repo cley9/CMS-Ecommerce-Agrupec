@@ -13,7 +13,6 @@
                                 <div class="card card-body mb-2">
                                     <img src="{{ asset('storage/img/Productos/' . $idProducto['imagen'] . '') }}"
                                         class="card-img-top" />
-
                                 </div>
                                 <div class="card card-body mb-2">
                                     <img src="{{ asset('storage/img/Productos/' . $idProducto['imagen'] . '') }}"
@@ -80,14 +79,12 @@
                         </div>
                         <div class="col mb-5">
                             <small class="h4 fw-normal">Más productos en nuestra tienda virtual </small>
-
                             <div class="">
-                                Hay mas productos en variedad en estock , consultanos en linea con los productos a llevar
+                                Hay más productos en variedad en stock, consultanos en linea con los productos a llevar
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
-
                         <div class=" mb-4 p-4 rounded-3 box--view--favorite shadow-sm ">
                             <small class="text-muted">Nuevo</small>
 
