@@ -637,17 +637,37 @@ align-items: flex-end; */
  /*  btn de whatsapp contacto */
  .boxContainerWhatapp{
   background: #25D366 !important;
-  position: fixed;
+
+  /* z-index: 99;
+  position: fixed !important;
+  padding: 20px;
+  background: #212F3C;
+  color: #fff;
+  font-size: 20px;
+  bottom: 110px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  right: 20px;
+  width: 44px;
+  height: 38px;
+  cursor: pointer; */
+
+
+
+  position: fixed !important;
   /* padding: 1px 3px 1px; */
-  right: 14px;
-  top: 42rem;
+  /* padding: 20px; */
+  right: 22px;
+  /* top: 42rem; */
   height: 62px;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 99;
   font-size: 20px;
-  bottom: 110px;
+  bottom: 120px;
   cursor: pointer;
   border-radius: 50%; /* Utiliza 50% en lugar de 80% para un círculo perfecto */
   /* box-shadow: 0px 0px 8px 4px #e7eeee; */
@@ -665,9 +685,54 @@ align-items: flex-end; */
   font-size: 38px;
   color: white;
 }
+/*  */
+.ir-arriba {
+  /* position: absolute; */
+  z-index: 99;
+  position: fixed !important;
+  padding: 20px;
+  background: #212F3C;
+  color: #fff;
+  font-size: 20px;
+  bottom: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 9px;
+  right: 20px;
+  width: 44px;
+  height: 38px;
+  cursor: pointer;
+  /* position: relative; Asegura que el botón esté posicionado de manera relativa */
+  /* z-index: 2; Asegura que el botón tenga un índice z más alto que el div */
+
+}
 }
 
 @media (width >= 700px) {
+  /* btn ir arriba */
+  .ir-arriba {
+    /* position: absolute; */
+    z-index: 99;
+    position: fixed !important;
+    padding: 20px;
+    background: #212F3C;
+    color: #fff;
+    font-size: 20px;
+    bottom: 110px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-radius: 9px;
+    right: 20px;
+    width: 44px;
+    height: 38px;
+    cursor: pointer;
+    /* position: relative; Asegura que el botón esté posicionado de manera relativa */
+    /* z-index: 2; Asegura que el botón tenga un índice z más alto que el div */
+  
+  }
+
   .box--search--yes {
     height: 25rem;
   }
@@ -850,7 +915,7 @@ align-items: flex-end; */
   justify-content: center;
   align-items: center;
   /* background: #19C27D; */
-  margin-top: 22rem;
+  margin-top: 18rem;
 
   
 }
