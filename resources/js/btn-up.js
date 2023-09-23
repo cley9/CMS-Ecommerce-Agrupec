@@ -1,19 +1,17 @@
 $(document).ready(function(){
-
-  $('.ir-arriba').click(function(){
+  $('.boxEfectBtnHome').click(function(){
     $('body, html').animate({
       scrollTop: '0px'
     },300 );
   });
 
   $(window).scroll(function(){
-    if ($(this).scrollTop() > 0){
-      $('.ir-arriba').slideDown(300);
+    if ($(this).scrollTop() > 240){
+      $('.boxEfectBtnHome').slideDown(300);
     } else {
-      $('.ir-arriba').slideUp(300);
+      $('.boxEfectBtnHome').slideUp(300);
     }
   });
-
 });
 
 function validar(){

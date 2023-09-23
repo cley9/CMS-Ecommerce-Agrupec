@@ -1,4 +1,4 @@
-<div class="modal fade modal-destino" id="loginAdmin" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+<div class="modal fade modal-destino modalEfectGlass" id="loginAdmin" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--adminLog ">
         <div class="modal-content ">

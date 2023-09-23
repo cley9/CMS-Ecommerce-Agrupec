@@ -1,6 +1,6 @@
 @include('User.modalRegistro')
 @include('User.moldalRecuperarCuenta')
-<div class="modal fade modal-destino boxContainerModalUser" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+<div class="modal fade modal-destino boxContainerModalUser modalEfectGlass" id="loginUserInicio" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
     tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal--frm--userLog">
         <div class="modal-content ">
@@ -32,9 +32,9 @@
                 </div>
                 <hr>
                 <div class="mb-4 text-center">
-                    <a class="text-primary" data-bs-target="#registrarse" data-bs-toggle="modal"
+                    <a class="text-primary textRegistration" data-bs-target="#registrarse" data-bs-toggle="modal"
                         data-bs-dismiss="modal">¿Eres nuevo?,Registrate Aqui.</a>
-                    <a class="text-primary" data-bs-target="#recuperarCuenta" data-bs-toggle="modal"
+                    <a class="text-primary textRegistration" data-bs-target="#recuperarCuenta" data-bs-toggle="modal"
                         data-bs-dismiss="modal">¿Olvidaste tu contraseña?</a>
                 </div>
             </form>

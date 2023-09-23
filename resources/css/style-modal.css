@@ -93,15 +93,18 @@
         pointer-events: none; */
 }
 
-.modal-destino {
+/* .modal-destino {
   background-color: #54545abd;
   backdrop-filter: blur(0.4rem);
+} */
+.modalEfectGlass{
+  /* background-color: #7f7f86bd; */
+  background-color: #a7a7b1bd;
+  backdrop-filter: blur(0.4rem);
+  /* background-color: #46464bbd;
+  opacity: 3; */
 }
 
-.modal-general {
-  background-color: #46464bbd;
-  opacity: 3;
-}
 
 /* box prododucto stock */
 .boxTextTitleStock {

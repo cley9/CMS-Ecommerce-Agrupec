@@ -135,7 +135,8 @@ a.ver-mas-a .ver-mas-a:hover {
 
 /* log user */
 .form--frm--userLog {
-  height: 26rem;
+  height: 426px;
+  /* height:26rem; */
 }
 
 .boxBodyInputLoginUser {
@@ -175,11 +176,11 @@ a.ver-mas-a .ver-mas-a:hover {
 }
 
 .form--frm--userRegistro {
-  height: 29rem;
+  height: 30rem;
 }
 
 .form--frm--userRecuperar {
-  height: 19rem;
+  height: 21rem;
 
 }
 
@@ -633,10 +634,40 @@ align-items: flex-end; */
     /* font-size: 10px !important;
     margin-bottom:20px !important ; */
   }
-
+ /*  btn de whatsapp contacto */
+ .boxContainerWhatapp{
+  background: #25D366 !important;
+  position: fixed;
+  /* padding: 1px 3px 1px; */
+  right: 14px;
+  top: 42rem;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  font-size: 20px;
+  bottom: 110px;
+  cursor: pointer;
+  border-radius: 50%; /* Utiliza 50% en lugar de 80% para un círculo perfecto */
+  /* box-shadow: 0px 0px 8px 4px #e7eeee; */
+  box-shadow: 0px 0px 4px 2px #1ed12d;
+  /* e7eeee */
+  /* border: 0px solid #19C27D; Agrega un ancho y tipo de borde */
+}
+.boxContainerWhatapp:hover{
+  background: #1ccc86 !important;
+  box-shadow: 0px 0px 4px 2px #1ccc86;
+  /* 19C27D */
+}
+/* icoms whatapp*/
+.iconWhatp{
+  font-size: 38px;
+  color: white;
+}
 }
 
-@media (width > 700px) {
+@media (width >= 700px) {
   .box--search--yes {
     height: 25rem;
   }
@@ -746,7 +777,35 @@ align-items: flex-end; */
   .boxContainerSlayMainLag {
     margin-bottom: 70px;
   }
-
+ /*  btn de whatsapp contacto */
+ .boxContainerWhatapp{
+  background: #25D366 !important;
+  position: fixed;
+  /* padding: 1px 3px 1px; */
+  right: 80px;
+  top: 42rem;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  font-size: 20px;
+  bottom: 110px;
+  cursor: pointer;
+  border-radius: 50%; /* Utiliza 50% en lugar de 80% para un círculo perfecto */
+  box-shadow: 0px 0px 4px 2px #1ed12d;
+  /* border: 0px solid #19C27D; Agrega un ancho y tipo de borde */
+}
+.boxContainerWhatapp:hover{
+  background: #1ccc86 !important;
+  box-shadow: 0px 0px 4px 2px #1ccc86;
+  /* 19C27D */
+}
+/* icoms whatapp*/
+.iconWhatp{
+  font-size: 38px;
+  color: white;
+}
 }
 
 /* box de nosotros card informativo  */
@@ -782,4 +841,26 @@ align-items: flex-end; */
 /* contenedor de search */
 .boxContainerSearchProduct {
   margin-bottom: 10rem;
+}
+
+/*  */
+.boxBtnCerrarSession{
+  /* top: 90rem !important; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: #19C27D; */
+  margin-top: 22rem;
+
+  
+}
+.btnCerrarSesion{
+  background-color: #19C27D;
+  color: white;
+  padding: 16px 4rem !important;
+  /* width: 30rem; */
+  float: left;
+  box-shadow: 0px 10px 20px -10px #19C27D;
+  border-radius: 8px;
+  text-transform: uppercase;
 }

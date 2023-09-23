@@ -98,3 +98,13 @@
   text-overflow: ellipsis;
   /* background-color: #c0392b; */
 }
+/* modal de user texto */
+.textRegistration{
+/* background: #3BBD51; */
+cursor: pointer;
+/* margin-bottom: 120px !important; */
+}
+
+.textRecuperation{
+  margin-bottom: 36px;
+}

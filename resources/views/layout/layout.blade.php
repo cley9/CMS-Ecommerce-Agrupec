@@ -31,7 +31,7 @@
 </head>
 
 <body>
-    <div class="rounded-2 ir-arriba card">
+    <div class="rounded-2 ir-arriba card boxEfectBtnHome">
         <i class="bi bi-chevron-up"></i>
     </div>
 
@@ -103,8 +103,9 @@
             <div class="container d-none d-sm-none d-md-block">
                 <div class="row link--heder--m  d-flex align-items-center">
                     <div class="col-lg-1 ">
-                        <b><a class="navbar-brand text-success  h-3 text--nav--home"
-                                href="{{ route('vista.index') }}">{{ config('constants.nameProyect') }}</a></b>
+                        <b><a class="navbar-brand text-success  h-3 text--nav--home" href="{{ route('vista.index') }}">
+                                <h4>{{ config('constants.nameProyect') }}</h4>
+                            </a></b>
                     </div>
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
@@ -228,6 +229,14 @@
                                     href="{{ url('Ayuda') }}">Atencion</a></li>
                             <li class="nav-item"> <a class="nav-link active icons--style--raya" aria-current="page"
                                     href="">lista producto</a></li>
+                            @if (session()->get('rol') === '0')
+                                <li class="nav-item"> <a href="{{ url('User-Perfil') }}"
+                                        class="nav-link active icons--style--raya" aria-current="page"
+                                        href="">Mi perfil</a></li>
+                                <li class="nav-item boxBtnCerrarSession"> <a href="{{ route('logout.user.index') }}"
+                                        class="nav-link active icons--style--raya btnEfectClick btnPaymetView- btnCerrarSesion " aria-current="page"
+                                        href="">Cerrar Sesion</a></li>
+                            @endif
                         </ul>
                     </div>
 
@@ -240,6 +249,11 @@
 
     @yield('header')
 
+    <div class="boxContainerWhatapp boxEfectBtnHome">
+        {{-- <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto" target="_blank">Enviar mensaje de WhatsApp</a> --}}
+        <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto"
+            class="rounded-circle btn  iconWhatp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
     <footer class="pt-4   footer--body">
         <div class="container text-muted mb-4">
             <div class="row ">
