@@ -30,9 +30,15 @@
                     <a href="https://github.com/cley9?tab=repositories"
                         class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
                             class="bi bi-github"></i></a>
-                    <a href="https://twitter.com/iniciarsesion?lang=es"
+                    {{-- <a href="https://twitter.com/iniciarsesion?lang=es"
                         class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
-                            class="bi bi-twitter"></i> </a>
+                            class="bi bi-twitter"></i> </a> --}}
+                            <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin"
+                        class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
+                            class="bi bi-linkedin"></i> </a>
+                                {{-- <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin"
+                            class="  icons--Contact--he" target="_blank"><i class="bi bi-linkedin"></i> </a> --}}
+                    
                     <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
                         class="rounded-circle btn btn-info form--icons btnEfectClick" target="_blank"><i
                             class="bi bi-whatsapp"></i></a>

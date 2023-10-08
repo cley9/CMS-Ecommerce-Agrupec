@@ -38,12 +38,12 @@
                     @if ($slayActivi === 1)
                         <div class="carousel-item active ">
                             <img src="{{ asset('storage/img/SlayderMain/' . $itemSlay->imagen . '') }}"
-                                class="d-block w-100 imgCaruselMainHome" alt="..." >
+                                class="d-block w-100 imgCaruselMainHome" alt="..." draggable="false">
                         </div>
                     @else
                         <div class="carousel-item ">
                             <img src="{{ asset('storage/img/SlayderMain/' . $itemSlay->imagen . '') }}"
-                                class="d-block w-100 imgCaruselMainHome" alt="..." >
+                                class="d-block w-100 imgCaruselMainHome" alt="..." draggable="false">
                         </div>
                     @endif
                 @endforeach
@@ -71,7 +71,7 @@
                 <a href="/Search?search=clavo">
                     <div class="col boxMainImgItems boxBackMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/968823.webp') }}"
-                        alt="">
+                        alt="" draggable="false">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
                         <a href="/Search?search=clavo" class="font-monospace-">Herramientas</a>
@@ -82,7 +82,7 @@
                 <a href="/Search?search=Válvula">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/681273.jpeg') }}"
-                        alt="">
+                        alt="" draggable="false">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
                         <a href="/Search?search=Válvula" class="font-monospace-">Válvula </a>
@@ -93,7 +93,7 @@
                 <a href="/Search?search=tubo">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/281393.jpg') }}"
-                        alt="">
+                        alt="" draggable="false">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
                         <a href="/Search?search=tubo" class="font-monospace-">Tubos</a>
@@ -104,7 +104,7 @@
                 <a href="/Search?search=caño">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/712572.jpg') }}"
-                        alt="">
+                        alt="" draggable="false">
                     </div>
                     <div class="col iconIntemHome- text-center boxMainImgItems">
                         <a href="/Search?search=caño" class="font-monospace-">caños</a>
@@ -150,7 +150,7 @@
                                     <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
                                         class="p-2 carrusel-min-pro">
                                         <img src="{{ asset('storage/img/Productos/' . $itemProducto['imagen'] . '') }}"
-                                            class="img-fluid-a imgItemSlayMin" alt="">
+                                            class="img-fluid-a imgItemSlayMin" alt="" draggable="false">
                                     </a>
                                 </div>
                                 <div class="col-6 cuen">
@@ -272,7 +272,9 @@
         </div>
     </div> --}}
     {{-- <br><br><br> --}}
-
+    {{-- <head>323</head> --}}
+     <div id="promocion"></div>
+     <div class="" id="promoListProducto"></div>
     <div class="d-flex justify-content-center align-items-center boxTextTitleStock">
         <div
             class=" col-md-10 col-10 d-flex justify-content-center align-items-center  pt-2 rounded-3 title--producto-group">
@@ -287,7 +289,7 @@
                     <div class="card box-love box-efect">
                         <a href="{{ route('View.home.index', $id = $key['id']) }}" class="pt-3">
                             <img src="{{ asset('/storage/img/Productos/' . $key['imagen'] . '') }}" class=" card-img-top"
-                                width="200px" height="120px" alt="">
+                                width="200px" height="120px" alt="" draggable="false">
                         </a>
                         <div class="bg-warning- box--btn--addHomeP ">
                             <div class="card-body">

@@ -27,11 +27,19 @@ import './bootstrap';
 // import './dataPictur';
 // import './addCart';
 // import './btn-msg';
+
+import  { createApp } from "vue";
+
+import promocion from '../components/promocion.vue'; 
+import promoListProduct from '../components/promocionListProducto.vue';
+createApp(promocion).mount("#promocion");
+createApp(promoListProduct).mount("#promoListProducto");
 import './viewPassword';
 import './btn-up';
 import './addCartProduct';
 import './msj';
 import './logicAgrupec';
+
 // import './todo';
 // {{-- <script src="{{ asset('js/btn-up.js') }}"></script> --}}
 

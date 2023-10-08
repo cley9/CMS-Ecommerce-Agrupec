@@ -868,8 +868,10 @@ align-items: flex-end; */
 }
 /* icoms whatapp*/
 .iconWhatp{
+  margin-top: 4px;
   font-size: 38px;
   color: white;
+  /* color: black; */
 }
 }
 
@@ -929,3 +931,4 @@ align-items: flex-end; */
   border-radius: 8px;
   text-transform: uppercase;
 }
+

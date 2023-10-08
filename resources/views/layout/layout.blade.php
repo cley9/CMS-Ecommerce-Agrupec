@@ -73,10 +73,10 @@
                         </a>
                         <a href="https://www.messenger.com/login.php" class=" icons--Contact--he" target="_blank"><i
                                 class="bi bi-messenger"></i> </a>
-                        <a href="https://www.pinterest.es/login/" class="  icons--Contact--he" target="_blank"><i
-                                class="bi bi-pinterest"></i> </a>
-                        <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin"
-                            class="  icons--Contact--he" target="_blank"><i class="bi bi-linkedin"></i> </a>
+                        {{-- <a href="https://www.pinterest.es/login/" class="  icons--Contact--he" target="_blank"><i
+                                class="bi bi-pinterest"></i> </a> --}}
+                        {{-- <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin"
+                            class="  icons--Contact--he" target="_blank"><i class="bi bi-linkedin"></i> </a> --}}
                     </div>
                 </div>
             </div>
