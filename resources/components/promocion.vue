@@ -1,6 +1,6 @@
 <template>
   <div class="container boxPromoMain">
-
+<!-- <h3 >{{ promotio }} </h3> -->
     <div class="row row-cols-1 row-cols-lg-1  mb-2 d-flex justify-content-center ">
       <!-- <div class="col  text-center">
                 <img src="BT-DKP-LIQUI-DEPORTE-28SEP-HR.webp" class="card-img-top" alt="">
@@ -14,31 +14,47 @@
         <swiper-slide>
           <div class="col  text-center">
             <!-- <img src="BT-DKP-LIQUI-DEPORTE-28SEP-HR.webp" class="card-img-top" alt=""> -->
-            <img src="/storage/img/SlayderPromocion/1.png" class="card-img-top" alt="">
+            <!-- <v-img></v-img> -->
+            <!-- <img src="../src/1.png" class="card-img-top" alt=""> -->
+            <!-- <img src="../src/1.png" class="card-img-top" alt=""> -->
+            <!-- <img :src="cley" class="card-img-top" alt=""> -->
+            <img :src="'/storage/img/SlayderPromocion/2.png'" class="card-img-top" alt="">
+            <!-- <img src="1.png" class="card-img-top" alt=""> -->
+            <!-- <img :src="'https://laravelacademy.org/wp-content/uploads/2016/08/00-featured-vuejs-logo-simple-256x128.jpg'" class="card-img-top" alt=""> -->
+            <!-- <img :src="../../public/1.png" class="card-img-top" alt=""> -->
+            <!-- <img :src="'../../public/1.png'" class="card-img-top" alt=""> -->
+            <!-- <img :src="require('@/1.png')" class="card-img-top" alt=""> -->
+            <!-- <img src="require('@promo/1.png')" class="card-img-top" alt=""> -->
+            <!-- <img src="@promo/1.png" class="card-img-top" alt=""> -->
+            <!-- <img :src="require('@/assets/1.png')" class="card-img-top" alt=""> -->
+            <!-- <img :src="require('@/storage/img/SlayderPromocion/1.png')" class="card-img-top" alt=""> -->
+            <!-- <img :src="require('@promo/1.png')" class="card-img-top" alt=""> -->
+            <!-- <img :src="promotio" class="card-img-top" alt=""> -->
+
 
           </div>
         </swiper-slide>
 
         <swiper-slide>
           <div class="col  text-center">
-            <img src="/storage/img/SlayderPromocion/2.png" class="card-img-top" alt="">
+                        <img :src="'/storage/img/SlayderPromocion/2.png'" class="card-img-top" alt="">
           </div>
         </swiper-slide>
         <swiper-slide>
           <div class="col  text-center">
-            <img src="/storage/img/SlayderPromocion/3.png" class="card-img-top" alt="">
-          </div>
-        </swiper-slide>
-
-        <swiper-slide>
-          <div class="col  text-center">
-            <img src="/storage/img/SlayderPromocion/4.png" class="card-img-top" alt="">
+                        <img :src="'/storage/img/SlayderPromocion/3.png'" class="card-img-top" alt="">
           </div>
         </swiper-slide>
 
         <swiper-slide>
           <div class="col  text-center">
-            <img src="/storage/img/SlayderPromocion/5.png" class="card-img-top" alt="">
+                        <img :src="'/storage/img/SlayderPromocion/4.png'" class="card-img-top" alt="">
+          </div>
+        </swiper-slide>
+
+        <swiper-slide>
+          <div class="col  text-center">
+                        <img :src="'/storage/img/SlayderPromocion/5.png'" class="card-img-top" alt="">
           </div>
         </swiper-slide>
         <!-- <swiper-slide>
@@ -56,12 +72,12 @@
     <div class="row row-cols-1 row-cols-lg-2  mb-2 d-flex justify-content-center  das">
       <div class="col  text-center mb-2">
         <!-- <img src="banner one.png" class="card-img-top" alt=""> -->
-        <img src="/storage/img/SlayderPromocion/6.png" class="card-img-top" alt="" draggable="false">
+                <img :src="'/storage/img/SlayderPromocion/6.png'" class="card-img-top" alt="" draggable="false">
         <!-- <img src="BT-DKP-LIQUI-DEPORTE-28SEP-HR.webp" class="card-img-top" alt=""> -->
       </div>
       <div class="col   text-center">
         <!-- <img src="BT-DKP-LIQUI-DEPORTE-28SEP-HR.webp" class="card-img-top" alt=""> -->
-        <img src="/storage/img/SlayderPromocion/7.png" class="card-img-top" alt="" draggable="false">
+                <img :src="'/storage/img/SlayderPromocion/7.png'" class="card-img-top" alt="" draggable="false">
       </div>
     </div>
     <div class="boxPromocionHead">
@@ -138,6 +154,10 @@ export default {
 
   data() {
     return {
+      // mark:"../../public/1.png",
+      mark:"./public/1.png",
+      cley:"https://laravelacademy.org/wp-content/uploads/2016/08/00-featured-vuejs-logo-simple-256x128.jpg",
+      promotio: "@promo/1.png",
       counter: "74:30:00",
       hours: "",
       minutes: "",

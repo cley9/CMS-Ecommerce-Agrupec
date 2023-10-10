@@ -11,17 +11,17 @@
       class="mySwiper "
       >
       <swiper-slide> <a href="/Search?search=tanque+de+agua" class="boxListPromo">
-            <img src="/storage/img/ProductoPromocion/2.png" class="card-img-top boxListPromo" alt="" draggable="false">
+            <img :src="'/storage/img/ProductoPromocion/2.png'" class="card-img-top boxListPromo" alt="" draggable="false">
           </a></swiper-slide>
           <swiper-slide>    <a href="/Search?search=pegamento pvc" class="boxListPromo">
-            <img src="/storage/img/ProductoPromocion/3.png" class="card-img-top" alt="" draggable="false">
+            <img :src="'/storage/img/ProductoPromocion/3.png'" class="card-img-top" alt="" draggable="false">
           </a></swiper-slide>
           <swiper-slide><a href="/Search?search=codo c" class="boxListPromo">
-            <img src="/storage/img/ProductoPromocion/4.png" class="card-img-top" alt="" draggable="false">
+            <img :src="'/storage/img/ProductoPromocion/4.png'" class="card-img-top" alt="" draggable="false">
           </a></swiper-slide>
       <swiper-slide class="boxSwiper">
         <a href="/Search?search=codo desague" class="boxListPromo">
-<img src="/storage/img/ProductoPromocion/5.png" class="card-img-top" alt="" draggable="false">
+<img :src="'/storage/img/ProductoPromocion/5.png'" class="card-img-top" alt="" draggable="false">
 </a>
       </swiper-slide>
     </swiper>
@@ -62,6 +62,8 @@
         };
       },
     };
+
+    
   </script>
 
 <style scoped>

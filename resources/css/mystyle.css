@@ -561,3 +561,39 @@ display:inline-block; */
   /* margin-left:90px ; */
 
 }
+/* @media (width >=992px){
+  .navBarHome{
+  background: orange !important;
+  }
+
+} */
+@media (width <992px){
+  .navBarHome{
+  /* background: orange !important; */
+  }
+  .textNameHome{
+    /* background: #12a44f !important; */
+    width: 40px;
+  }
+
+}
+@media (width >=700px){
+  .navBarHome{
+    /* background: red !important; */
+  }
+  .textNameHome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (width <700px){
+  .navBarHome{
+    /* background: rebeccapurple !important; */
+  }
+
+}
+
+.texa{
+  /* background: #11FFBD !important; */
+}

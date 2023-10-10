@@ -98,14 +98,14 @@
         </div>
     </nav>
     {{--  main  --}}
-    <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top">
+    <nav class="navbar navbar-light navbar-expand-sm bg-light fixed-top navBarHome">
         <div class="container-fluid navHeadDising">
             <div class="container d-none d-sm-none d-md-block">
                 <div class="row link--heder--m  d-flex align-items-center">
-                    <div class="col-lg-1 ">
-                        <b><a class="navbar-brand text-success  h-3 text--nav--home" href="{{ route('vista.index') }}">
-                                <h4>{{ config('constants.nameProyect') }}</h4>
-                            </a></b>
+                    <div class="col-lg-1 navbar-brand textNameHome">
+                        <a class=" text-success  h-3 text--nav--home texa" href="{{ route('vista.index') }}">
+                            <h4 class="">{{ config('constants.nameProyect') }}</h4>
+                        </a>
                     </div>
                     <div class="col ">
                         <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
