@@ -34,7 +34,7 @@
     <div class="rounded-2 ir-arriba card boxEfectBtnHome">
         <i class="bi bi-chevron-up"></i>
     </div>
-    <div class="boxContainerWhatapp boxEfectBtnHome">
+    <div class="boxContainerWhatapp btn-whatsapp- boxEfectBtnHome iconWhatpDod">
         {{-- <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto" target="_blank">Enviar mensaje de WhatsApp</a> --}}
         <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto"
             class="rounded-circle btn  iconWhatp" target="_blank"><i class="bi bi-whatsapp"></i></a>
