@@ -1,14 +1,5 @@
 @extends('layout.layout')
 @section('header')
-    <style>
-        nav svg {
-            height: 20px;
-        }
-    </style>
-
-
-
-    {{-- <!-- --------------------------------------------------------------------------------------slayder_img---> --}}
     <section class="boxCaruselMainHome" >
         <div id="carouselExampleIndicators" class="carousel slide boxCaruselMainHome" data-bs-ride="carousel">
             <div class="carousel-indicators btnItemCaruselMainHome">

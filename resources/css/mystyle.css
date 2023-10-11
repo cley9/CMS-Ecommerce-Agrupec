@@ -11,6 +11,11 @@
 @import url("style-text.css");
 @import url('style-start.css');
 
+/* icons de la fleca de los items inferior svg */
+nav svg {
+  height: 20px;
+}
+
 .navHeadDising {
   height: 70px;
 }

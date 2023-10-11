@@ -10,7 +10,7 @@
 </div>
 <div class="modal fade  " id="modelAgregar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog  ">
-        <div class="modal-content ">
+        <div class="modal-content containerModalAddProduct">
             <div class="modal-header text-center d-flex justify-content-center">
                 <h5 class="modal-title " id="exampleModalLabel">Agregar Producto a la Tienda </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

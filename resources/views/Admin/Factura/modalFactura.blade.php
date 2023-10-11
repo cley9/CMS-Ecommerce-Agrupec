@@ -10,7 +10,7 @@
 
 <div class="modal fade  " id="modelFacturav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog--factura--modal  ">
-        <div class="modal-content ">
+        <div class="modal-content containerModalFactura">
             <div class="modal-header text-center d-flex justify-content-center">
                 <h5 class="modal-title " id="exampleModalLabel">Generar una Factura </h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>

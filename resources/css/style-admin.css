@@ -6,10 +6,22 @@
     max-width: 900px;
 }
 
-nav svg {
+/* nav svg {
     height: 20px;
-}
+} */
 
 /* .modal-dialog {
     max-width: 900px;
 } */
+.containerModalAddProduct{
+    height: 704px;
+}
+.containerModalAddCatalogo{
+    height: 520px;
+}
+.containerModalUpdateCatalogo{
+    height: 520px;
+}
+.containerModalFactura{
+    height: 690px;
+}
