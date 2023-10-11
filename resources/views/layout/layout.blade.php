@@ -71,8 +71,8 @@
                             class="  icons--Contact--he" target="_blank"><i
                                 class="bi bi-whatsapp me-lg-2"></i>{{ config('constants.numContact') }}
                         </a>
-                        <a href="https://www.messenger.com/login.php" class=" icons--Contact--he" target="_blank"><i
-                                class="bi bi-messenger"></i> </a>
+                        {{-- <a href="https://www.messenger.com/login.php" class=" icons--Contact--he" target="_blank"><i
+                                class="bi bi-messenger"></i> </a> --}}
                         {{-- <a href="https://www.pinterest.es/login/" class="  icons--Contact--he" target="_blank"><i
                                 class="bi bi-pinterest"></i> </a> --}}
                         {{-- <a href="https://www.linkedin.com/checkpoint/lg/login?trk=hb_signin"
@@ -164,8 +164,8 @@
                                         </ul>
                                     </div>
                                 @elseif (session()->exists('email') && session()->get('rol') === '4')
-                                    <a href="{{ route('logout.user.index') }}" class="btn bg-info "><i
-                                            class="bi bi-person-fill me-lg-2"></i>Cerrar Sesion </a>
+                                    <a href="{{ route('logout.user.index') }}" class="btn  btnEfectClick btnCloseSesion text-white"><i
+                                            class="bi bi-person-fill me-lg-2 text-white"></i>Cerrar Sesion </a>
                                 @else
                                     {{-- <a data-bs-toggle="modal" href="#loginUserInicio"><img src="{{asset('storage/img/icons/userLogin.png')}}" class="icon--loginMin" alt=""></a>  --}}
                                     <div class="dropdown  ">
@@ -269,11 +269,11 @@
                         <div class="col-lg-6 col-12 d-flex justify-content-lg-end">
                             <div class=" text-center">
 
-                                <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn   icons--Contact"
-                                    target="_blank"><i class="bi bi-instagram"></i></a>
-                                <a href="https://web.facebook.com/?_rdc=1&_rdr"
+                                {{-- <a href="https://www.instagram.com/?hl=es" class="rounded-circle btn   icons--Contact"
+                                    target="_blank"><i class="bi bi-instagram"></i></a> --}}
+                                {{-- <a href="https://web.facebook.com/?_rdc=1&_rdr"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-facebook"></i></a>
+                                        class="bi bi-facebook"></i></a> --}}
                                 <a href="https://github.com/cley9" class="rounded-circle btn  icons--Contact"
                                     target="_blank"><i class="bi bi-github"></i></a>
                                 {{-- <a href="https://twitter.com/iniciarsesion?lang=es"
@@ -282,8 +282,8 @@
                                 <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}"
                                     class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-whatsapp"></i></a>
-                                <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
-                                        class="bi bi-youtube"></i> </a>
+                                {{-- <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
+                                        class="bi bi-youtube"></i> </a> --}}
                                 {{-- <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i
                                         class="bi bi-twitch"></i> </a>
                                 <a href="" class="rounded-circle btn  icons--Contact" target="_blank"><i

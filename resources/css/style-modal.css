@@ -162,9 +162,8 @@
 
   }
 }
-
-@media (min-width:800px) {
-
+/* @media (min-width:1800px) { */
+@media (width >991px){
   /* body{
     background: blueviolet;
   } */
@@ -175,6 +174,7 @@
   /* productos en tendencia */
   .boxInfoTendProHome {
     background: #F4F5F6;
+    /* background: red; */
     margin-bottom: 50px;
     border-radius: 8px;
     height: 24rem;
@@ -188,5 +188,32 @@
     /* background: rebeccapurple; */
     margin-bottom: 70px;
 
+  }
+}
+
+@media(width <=991px){
+  /* productos en tendencia */
+  .boxInfoTendProHome {
+    background: #F4F5F6;
+    /* background: orange; */
+    margin-bottom: 50px;
+    border-radius: 8px;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media(width <=500px){
+  /* productos en tendencia */
+  .boxInfoTendProHome {
+    background:white;
+    /* background: orange; */
+    margin-bottom: 50px;
+    border-radius: 8px;
+    height: 32rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

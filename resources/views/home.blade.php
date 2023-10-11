@@ -66,8 +66,8 @@
             <h2>¡Precios locaz😵s! </h2>
             <small>en miles de productos </small>
         </div>
-        <div class="row row-cols-4 row-cols-sm-3  row-cols-md-4 row-cols-lg-5 row-cols-xl-6 d-flex justify-content-center" >
-            <div class="col-4 boxItemIconsHome">
+        <div class="row row-cols-sm-3 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 d-flex justify-content-center" >
+            <div class="col-sm-2 col-md-3 col-lg-4 col-xl-5 boxItemIconsHome">
                 <a href="/Search?search=clavo">
                     <div class="col boxMainImgItems boxBackMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/968823.webp') }}"
@@ -78,7 +78,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4 boxItemIconsHome">
+            <div class="col-sm-2 col-md-3 col-lg-4 col-xl-5 boxItemIconsHome">
                 <a href="/Search?search=Válvula">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/681273.jpeg') }}"
@@ -89,7 +89,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4 boxItemIconsHome">
+            <div class="col-sm-2 col-md-3 col-lg-4 col-xl-5 boxItemIconsHome">
                 <a href="/Search?search=tubo">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/281393.jpg') }}"
@@ -100,7 +100,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col-4 boxItemIconsHome">
+            <div class="col-sm-2 col-md-3 col-lg-4 col-xl-5 boxItemIconsHome">
                 <a href="/Search?search=caño">
                     <div class="col boxMainImgItems">
                         <img class="boxImgMainLink img-fluid" src="{{ asset('storage/img/Productos/712572.jpg') }}"
@@ -188,63 +188,7 @@
         </div>
     </div>
 
-    <div class="container boxPresenProHome  ">
-        <div class="">
-
-            <div class="d-flex justify-content-center mb-3">
-                <h2 class="textTitleVenHome text-center">¡Conoce los beneficios <small style="color:black">que ofrecemos
-                        para que tu compra sea un exito!</small></h2>
-            </div>
-            <div class="row d-flex justify-content-center">
-                <div class="col-2 boxInformationHome ">
-                    <div class="d-flex justify-content-center boxItemImgHome">
-                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
-                            src="{{ asset('storage/img/icons/app-store-app.png') }}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h6 class="h3 mb-3">Compra</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y
-                            deja que nos encarguemos del envió.</p>
-                    </div>
-                </div>
-                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
-                    <div class="d-flex justify-content-center boxItemImgHome">
-                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
-                            src="{{ asset('storage/img/icons/store.png') }}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h6 class="h3 mb-3">Locales</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Nos encontramos actualmente en lima en el
-                            distrito de San Juan de Lurigancho.</p>
-                    </div>
-                </div>
-                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
-                    <div class="d-flex justify-content-center boxItemImgHome">
-                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
-                            src="{{ asset('storage/img/icons/delivery-truck.png') }}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h6 class="h3 mb-3">Envios Perú</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Enviamos productos a todos los departamentos del
-                            Perú de manera segura y puntual.</p>
-                    </div>
-                </div>
-                <div class="col-2 boxInformationHome d-sm-none d-none d-lg-block d-block">
-                    <div class="d-flex justify-content-center boxItemImgHome">
-                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
-                            src="{{ asset('storage/img/icons/customer-service.png') }}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h6 class="h3 mb-3">Atención 24/7</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Estamos para ayudarte en tus consultas o
-                            brindarte información de nuevos productos.</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
+<div class="" id="beneficio"></div>
 
     {{-- <h2>{{ $viewProducto  }}</h2> --}}
     {{-- <div class="container">

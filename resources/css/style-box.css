@@ -301,15 +301,6 @@ a.ver-mas-a .ver-mas-a:hover {
     color: #e50030;
   } */
 
-/* -------slayder de search */
-.slay--carusel {
-  background: white;
-}
-
-.box-slay-search {
-  /* border-color: red; */
-}
-
 
 /* ----------------- search validar --------------- */
 
@@ -933,3 +924,23 @@ align-items: flex-end; */
 }
 
 
+/* -------slayder de search main */
+.slyderSearchProductMain {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box-slay-search {
+  /* border-color: red; */
+}
+@media(width >=700px){
+  .boxSearchImgHead{
+    /* background: rebeccapurple !important; */
+    /* width: 10px !important; */
+    max-width: 20rem;
+  }
+}
+@media(width <700px){
+
+}

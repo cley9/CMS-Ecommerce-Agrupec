@@ -1,3 +1,12 @@
+.btnCloseSesion{
+  background:#5271FF;
+  padding: 12px 20px;
+  float: left;
+  font-size: 12px;
+  box-shadow: 0px 10px 20px -10px #5271FF;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
 .btnLoginHomeMain{
   background:#FFC107;
   padding: 12px 20px;

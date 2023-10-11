@@ -32,8 +32,10 @@ import  { createApp } from "vue";
 
 import promocion from '../components/promocion.vue'; 
 import promoListProduct from '../components/promocionListProducto.vue';
+import beneficio from '../components/beneficio.vue';
 createApp(promocion).mount("#promocion");
 createApp(promoListProduct).mount("#promoListProducto");
+createApp(beneficio).mount('#beneficio');
 import './viewPassword';
 import './btn-up';
 import './addCartProduct';
