@@ -34,6 +34,11 @@
     <div class="rounded-2 ir-arriba card boxEfectBtnHome">
         <i class="bi bi-chevron-up"></i>
     </div>
+    <div class="boxContainerWhatapp boxEfectBtnHome">
+        {{-- <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto" target="_blank">Enviar mensaje de WhatsApp</a> --}}
+        <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto"
+            class="rounded-circle btn  iconWhatp" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
 
     @include('Admin.modalLoginUser')
     @include('Admin.modalLoginAdmin')
@@ -249,11 +254,7 @@
 
     @yield('header')
 
-    <div class="boxContainerWhatapp boxEfectBtnHome">
-        {{-- <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto" target="_blank">Enviar mensaje de WhatsApp</a> --}}
-        <a href="https://api.whatsapp.com/send?phone={{ config('constants.numContactWhats') }}&text=Buenas tardes, quisiera informe sobre los producto"
-            class="rounded-circle btn  iconWhatp" target="_blank"><i class="bi bi-whatsapp"></i></a>
-    </div>
+    
     <footer class="pt-4   footer--body">
         <div class="container text-muted mb-4">
             <div class="row ">
