@@ -191,6 +191,32 @@
     } */
     
 }
+@media (min-width: 800px) {
+    .boxBodySlayMin {
+        background: blue;
+        border-radius: 12px;
+        margin-left: 30rem;
+        margin-right: -90rem !important;
+        box-shadow: 2px 2px 9px 2px #F1F3F3;
+    }
+}
+@media (width > 800px){
+    .boxBodySlayMin {
+        /* background: orange !important; */
+        /* width: 450px; */
+        /* min-width: 40rem; */
+        /* border-radius: 12px;
+        margin-left: 30rem !important;
+        margin-right: 30rem !important;
+        box-shadow: 2px 2px 9px 2px #F1F3F3; */
+        /* border: #08c708 !important; */
+    }
+
+    .boxBodySlayMin:hover {
+        box-shadow: 5px 5px 10px 0px #dce2e4;
+        transition: 0.3s ease;
+    }
+}
   @media (width >=700px) {
 
       /* slayder de no le dejes ir  */

@@ -135,7 +135,8 @@
     <div class="container-fluid boxSlayProHomeView">
         <div class="row" id="news-slider">
                     @foreach ($slayderProducto as $itemProducto)
-                        <div class="d-flex justify-content-center border  boxBodySlayMin">
+                        {{-- <div class="d-flex justify-content-center border  boxBodySlayMin"> --}}
+                            <div class=" border-  boxBodySlayMin-">
                             <div class="row">
                                 <div class="col-6 boxImgSlayMin me-2- d-flex  align-items-center justify-content-center ">
                                     <a href="{{ route('View.home.index', $id = $itemProducto['id']) }}"
