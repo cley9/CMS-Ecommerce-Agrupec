@@ -26,6 +26,7 @@ class DatabaseSeeder extends Seeder
         slayderSeeder::class,
         productoSeeder::class,
         listCategorySeeder::class,
+        oferta::class,
       ]);
     }
 }

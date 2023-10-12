@@ -27,7 +27,7 @@ use Laravel\Socialite\Facades\Socialite;
 |
 */
 // Route::get('/envioGmail', [mailController::class ,'a'] )->name('envio.index');
-
+Route::get('/api/promocionCoutDow', [ViewController::class, 'CountDown'])->name('home.promocion.local');
 Route::get('/cley', [ViewController::class, 'listCategory'])->name('user.cley.daaa');
 Route::get('/local', [ViewController::class, 'local'])->name('tienda.home.local');
 Route::get('/slay', [ViewController::class, 'viewSlayderMain'])->name('slayderMain.index');

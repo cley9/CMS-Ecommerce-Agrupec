@@ -93,6 +93,9 @@
       </div>
     </div> -->
   </div>
+  <div>
+      <!-- <p>Countdown: {{ hours }}:{{ minutes }}:{{ seconds }}</p> -->
+    </div>
 </template>
   
 <script>
@@ -127,47 +130,167 @@ export default {
   data() {
     return {
       // mark:"../../public/1.png",
-      mark:"./public/1.png",
-      cley:"https://laravelacademy.org/wp-content/uploads/2016/08/00-featured-vuejs-logo-simple-256x128.jpg",
-      promotio: "@promo/1.png",
-      counter: "74:30:00",
-      hours: "",
-      minutes: "",
-      seconds: "",
+      // mark:"./public/1.png",
+      // cley:"https://laravelacademy.org/wp-content/uploads/2016/08/00-featured-vuejs-logo-simple-256x128.jpg",
+      // promotio: "@promo/1.png",
+      // counter: "74:30:00",
+      // hours: "",
+      // minutes: "",
+      // seconds: "",
+      // hours: 0,
+      //   minutes: 0,
+      //   seconds: 0,
+    };
+  },
+
+//   data() {
+//   return {
+//     days: 0,
+//     hours: 0,
+//     minutes: 0,
+//     seconds: 0,
+//   };
+// },
+// mounted() {
+//   this.fetchPromotionCountdown();
+// },
+// methods: {
+//   async fetchPromotionCountdown() {
+//     try {
+//       const response = await fetch("/api/promocionCoutDow");
+//       if (response.ok) {
+//         const data = await response.json();
+//         this.days = data.days;
+//         this.hours = data.hours;
+//         this.minutes = data.minutes;
+//         this.seconds = data.seconds;
+//         this.convertDaysToHours(); // Convierte los días en horas
+//         this.startCountdown();
+//       } else {
+//         console.error("Error al obtener datos de la API");
+//       }
+//     } catch (error) {
+//       console.error("Error al obtener datos de la API:", error);
+//     }
+//   },
+//   convertDaysToHours() {
+//     // Convierte los días a horas y suma al total de horas
+//     this.hours += this.days * 24;
+//   },
+//   startCountdown() {
+//     setInterval(() => {
+//       if (this.seconds > 0) {
+//         this.seconds--;
+//       } else if (this.minutes > 0) {
+//         this.minutes--;
+//         this.seconds = 59;
+//       } else if (this.hours > 0) {
+//         this.hours--;
+//         this.minutes = 59;
+//         this.seconds = 59;
+//       } else {
+//         // El tiempo ha terminado, puedes manejarlo como desees
+//         clearInterval(this.startCountdown);
+//       }
+//       // Almacena los valores actualizados en el almacenamiento local
+//       this.storeCountdownValues();
+//     }, 1000);
+//   },
+//   storeCountdownValues() {
+//     // Almacena los valores en el almacenamiento local del navegador
+//     localStorage.setItem('countdownValues', JSON.stringify({
+//       days: this.days,
+//       hours: this.hours,
+//       minutes: this.minutes,
+//       seconds: this.seconds
+//     }));
+//   },
+// },
+
+
+
+  data() {
+    return {
+      days:0,
+      hours: 0,
+      minutes: 0,
+      seconds: 0,
     };
   },
   mounted() {
-    let hours = 74;
-    let minutes = 30;
-    let seconds = 0;
-
-    const interval = setInterval(() => {
-      if (hours === 0 && minutes === 0 && seconds === 0) {
-        clearInterval(interval);
-      } else {
-        if (minutes === 0 && seconds === 0) {
-          hours--;
-          minutes = 59;
-          seconds = 59;
-        } else if (seconds === 0) {
-          minutes--;
-          seconds = 59;
-        } else {
-          seconds--;
-        }
-
-        this.counter = `${hours.toString().padStart(2, "0")}:${minutes
-          .toString()
-          .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
-
-        const [h, m, s] = this.counter.split(":");
-        this.hours = h;
-        this.minutes = m;
-        this.seconds = s;
-      }
-    }, 1000);
+    this.fetchPromotionCountdown();
   },
+  methods: {
+    async fetchPromotionCountdown() {
+      try {
+        const response = await fetch("/api/promocionCoutDow");
+        if (response.ok) {
+          const data = await response.json();
+          this.hours = data.hours;
+          this.minutes = data.minus;
+          this.seconds = data.secong;
+          this.startCountdown();
+        } else {
+          console.error("Error al obtener datos de la API");
+        }
+      } catch (error) {
+        console.error("Error al obtener datos de la API:", error);
+      }
+    },
+    startCountdown() {
+      setInterval(() => {
+        if (this.seconds > 0) {
+          this.seconds--;
+        } else if (this.minutes > 0) {
+          this.minutes--;
+          this.seconds = 59;
+        } else if (this.hours > 0) {
+          this.hours--;
+          this.minutes = 59;
+          this.seconds = 59;
+        } else {
+          // El tiempo ha terminado, puedes manejarlo como desees
+          clearInterval(this.startCountdown);
+        }
+      }, 1000);
+    },
+  },
+
+
+  // mounted() {
+  //     this.updateCountdown();
+  //     setInterval(this.updateCountdown, 1000);
+  //   },
+  //   methods: {
+  //     updateCountdown() {
+  //       console.log("hola");
+  //       // Llama a la API para obtener la hora objetivo (timestamp)
+  //       axios.get('/api/promocionCoutDow')
+  //         .then((response) => {
+  //           const targetTime = response.data.target_time * 1000; // Multiplica por 1000 para convertir a milisegundos
+  //           const currentTime = Date.now();
+  //           const timeDiff = targetTime - currentTime;
+  
+  //           if (timeDiff > 0) {
+  //             this.hours = Math.floor(timeDiff / 3600000);
+  //             this.minutes = Math.floor((timeDiff % 3600000) / 60000);
+  //             this.seconds = Math.floor((timeDiff % 60000) / 1000);
+  //             console.log(this.seconds);
+  //           } else {
+  //             this.hours = 0;
+  //             this.minutes = 0;
+  //             this.seconds = 0;
+  //             console.log("else ",this.seconds);
+
+  //           }
+  //         })
+  //         .catch((error) => {
+  //           console.error(error);
+  //         });
+  //     },
+  //   },
 };
+
 </script>
   
 <style>
@@ -226,7 +349,17 @@ export default {
     background: white;
     padding: 12px 12px 12px 12px;
     border-radius: 4px;
+    /* background: orange; */
+    /* width: 30rem !important; */
+    /* min-width: 290px !important; */
   }
+  /* .textSecond{
+    background: red;
+    width: 230px !important;
+  } */
+  /* .boxPromocionHead .textSecond {
+  width: 230px !important;
+} */
 
 }
 

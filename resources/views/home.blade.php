@@ -181,34 +181,7 @@
     </div>
 
 <div class="" id="beneficio"></div>
-
-    {{-- <h2>{{ $viewProducto  }}</h2> --}}
-    {{-- <div class="container">
-        <div class="row">
-            <div class="col card">
-
-                <img class="icons--items--home" src="{{ asset('storage/img/icons/itemCar.png') }}" alt="">
-            </div>
-            <div class="col card">
-                <img class="icons--items--home" src="{{ asset('storage/img/icons/itemHelp.webp') }}" alt="">
-
-            </div>
-            <div class="col card">
-                <img class="icons--items--home" src="{{ asset('storage/img/icons/itemHome.webp') }}" alt="">
-
-            </div>
-            <div class="col card">
-                <img class="icons--items--home" src="{{ asset('storage/img/icons/itemVen.webp') }}" alt="">
-
-            </div>
-            <div class="col card">
-                <img class="icons--items--home" src="{{ asset('storage/img/icons/itemMom.png') }}" alt="">
-
-            </div>
-        </div>
-    </div> --}}
-    {{-- <br><br><br> --}}
-    {{-- <head>323</head> --}}
+<div class="" id="count"></div>
      <div id="promocion"></div>
      <div class="" id="promoListProducto"></div>
     <div class="d-flex justify-content-center align-items-center boxTextTitleStock">
