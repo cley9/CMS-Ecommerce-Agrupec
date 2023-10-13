@@ -9,7 +9,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class EnvioInformacionNewProducto extends Mailable
+class EnvioNewProuctoMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -31,7 +31,7 @@ class EnvioInformacionNewProducto extends Mailable
     public function envelope()
     {
         return new Envelope(
-            subject: 'Envio Informacion New Producto',
+            subject: 'Envio New Proucto Mail',
         );
     }
 
@@ -43,9 +43,7 @@ class EnvioInformacionNewProducto extends Mailable
     public function content()
     {
         return new Content(
-            view: 'Admin.Mail.envioInformacionCliente',
-            // view('Admin.Mail.envioInformacionCliente')
-            // view: 'home',
+            view: 'view.name',
         );
     }
 

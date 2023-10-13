@@ -23,6 +23,8 @@
     {{-- ads --}}
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5125611954987078"
         crossorigin="anonymous"></script>
+        {{-- tailwind --}}
+        {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
     {{-- ads end --}}
     {{--  --}}
     {{-- @vite(['resources/css/app.css', 'resources/js/app.js', 'public/css/mystyle.css']) --}}

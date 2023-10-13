@@ -16,6 +16,6 @@ class oferta extends Model
         'fecha_fin'
     ];
 // para que no permita esos campos
-    public $timestamps=false;
+    // public $timestamps=false;
 
 }

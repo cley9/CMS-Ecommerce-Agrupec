@@ -184,6 +184,8 @@
 <div class="" id="count"></div>
      <div id="promocion"></div>
      <div class="" id="promoListProducto"></div>
+    {{-- <h3 class="text-center text-red-400">this is cley</h3> --}}
+
     <div class="d-flex justify-content-center align-items-center boxTextTitleStock">
         <div
             class=" col-md-10 col-10 d-flex justify-content-center align-items-center  pt-2 rounded-3 title--producto-group">

@@ -1045,6 +1045,25 @@ align-items: flex-end; */
   /* border-color: red; */
 }
 @media(width >=700px){
+  .boxMsgCorreo{
+    max-width: 214px;
+    position: absolute;
+    top: 380px;
+    right: 44px;
+    border-radius: 4px;
+    padding: 16px;
+      background: #43DFBF;
+    float: left;
+    box-shadow: 0px 10px 20px -10px #67b689;
+    border-radius: 5px;
+    transition: background-color 1s, opacity 1s;
+  }
+  .boxEfectCorreo{
+    /* efecto de desapareser del mensaje correo */
+    background-color: #39EBBB;
+    opacity: 0;
+  }
+
   .boxSearchImgHead{
     /* background: rebeccapurple !important; */
     /* width: 10px !important; */

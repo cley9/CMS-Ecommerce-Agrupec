@@ -12,6 +12,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\mailController;
 use App\Http\Controllers\user\PdfTickedController;
+use App\Mail\ContactoEmail;
+use App\Mail\ContactoMail;
+use Illuminate\Support\Facades\Mail;
 // use App\Http\Controllers\datos\mailController;
 // use App\Http\Controllers\UserController;
 
@@ -87,3 +90,10 @@ Route::get('/test', function () {
   // return
 
 });
+
+// Route::get('/api/contactoAgrupec', function ($Response response){
+//   Mail::to('cleyutp@gmail.com')->send(new ContactoMail);
+//   return "mensaje enviado";
+// })->name('user');
+Route::get('/api/contactoAgrupec', [MailController::class, 'contactoAgrupec'])->name('api.mail.contactoAgrupec');
+

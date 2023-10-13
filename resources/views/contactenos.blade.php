@@ -1,6 +1,17 @@
 @extends('layout.layout')
 @section('header')
-    <div class="container p-4  mb-5">
+<div class="container p-4  mb-5">
+        @if(session('success'))
+        <div class=" boxMsgCorreo" id="boxMsgCorreo">
+                <spam class="text-center">{{ session('success') }}</spam>
+            </div>
+        {{-- @else
+        <div class=" boxMsgCorreo" id="boxMsgCorreo">
+            <spam class="text-center">{{ session('error') }}</spam>
+        </div> --}}
+        @endif
+          
+       
         <div class="row row-cols-md-2 row-cols-1">
             <div class="col mb-4 mb-md-0 rounded-3 bg-light p-5 form--backgroud">
                 <div class="mb-2">
@@ -47,7 +58,7 @@
             <div
                 class="col mb-4 mb-md-0 rounded-3 bg-light p-4 formBackgroudLight d-flex justify-content-center align-items-center-">
                 {{-- <form class=" col-md-10 col-12 fromRigthContacto" action="Envio_email.php" method="post" onsubmit="return validar();"> --}}
-                <form class=" col-md-10 col-12 fromRigthContacto" action="" method="POST">
+                <form class=" col-md-10 col-12 fromRigthContacto" action="{{ route('api.mail.contactoAgrupec') }}" method="POST">
                     @csrf
                     @method('Get')
                     <div class=" d-flex justify-content-center mb-4 ">
@@ -80,4 +91,6 @@
             </div>
         </div>
     </div>
+    
+
 @endsection

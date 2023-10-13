@@ -7,3 +7,6 @@
 //       timer: 3000
 //       })
 //   }
+setTimeout(() => {
+    document.querySelector(`#boxMsgCorreo`).classList.add('boxEfectCorreo');
+}, 1500);

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactoMail;
 use App\Mail\recuperacionMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
@@ -10,8 +11,25 @@ use App\Mail\TestMail;
 use App\Models\User;
 use Illuminate\Contracts\Mail\Mailable;
 //  Found 'App\Mail\TestMail'.
-class mailController extends Controller
+class MailController extends Controller
 {
+    function contactoAgrupec(Request $request){
+
+//   "thisName": "cley",
+//   "thisEmail": "cleyutp@gmail.com",
+//   "thisAsunto": "fa",
+//   "thisMensaje": "faa",
+        $remitenteName=$request->input('thisName');
+        $remitenteMail=$request->input('thisEmail');
+        $remitenteAsunto=$request->input('thisAsunto');
+        $remitenteMensaje=$request->input('thisMensaje');
+  Mail::to('cleyutp@gmail.com')->send(new ContactoMail($remitenteName,$remitenteMail,$remitenteAsunto,$remitenteMensaje));
+//   Mail::to('contacto@agrupec.com')->send(new ContactoMail($asunto, $msg));
+        //   return "mensaje enviado";
+          return redirect()->back()->with('success', 'Correo enviado con éxito');
+
+        // return $msg;
+    }
     function recuperarPassword(Request $request){
     // $userToken=new User();
     // $userToken->

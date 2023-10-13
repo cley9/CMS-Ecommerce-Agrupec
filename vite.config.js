@@ -4,6 +4,8 @@ import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
 // para importar las imagenes
 import { fileURLToPath, URL } from "url";
+// tailwind css
+import tailwindcss from 'tailwindcss'
 
 
 export default defineConfig({
@@ -23,6 +25,9 @@ export default defineConfig({
         ),
         // react(),
         vue(),
+        tailwindcss(),
+        // autoprefixer(),
+        // WindiCSS(),
         // vue({
         //     template: {
         //         transformAssetUrls: {
@@ -37,7 +42,7 @@ export default defineConfig({
         alias: {
           "@promo":fileURLToPath(new URL("../../public/", import.meta.url)),
         //   "@promo":fileURLToPath(new URL("/storage/img/SlayderPromocion/", import.meta.url)),
-          "@": fileURLToPath(new URL("../src/", import.meta.url)),
+        //   "@": fileURLToPath(new URL("../src/", import.meta.url)),
           "@assets": fileURLToPath(new URL("./src/assets", import.meta.url)),
           // puedes agregar otros alias aquí
         },

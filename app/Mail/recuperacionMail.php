@@ -40,7 +40,8 @@ class recuperacionMail extends Mailable
     //     );
     // });
     // return $this;
-    return $this->from('Agrupec@agrupec.com', 'AgrupecVentas')
+    return $this->from('cleysaturno23@gmail.com', 'AgrupecVentas')
+    // return $this->from('Agrupec@agrupec.com', 'AgrupecVentas')
     // return $this->from('cleyutp@gmail.com', 'AgrupecVentas')
                 ->view('mail.recupacionMail');
 
