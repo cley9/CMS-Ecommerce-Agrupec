@@ -48,14 +48,18 @@ class User extends Authenticatable
      */
     protected $casts = [
         'email_verified_at' => 'datetime',
-    ];
+    ];   
     public function usermenu_desc(){
         return "Administrador";
     }
 
-    // this is join db 
+    // this is join db  en el model 
     public function productos()
     {
+        return $this->belongsToMany(Producto::class, 'tbl_cart','userId','productoId')->withPivot('cantidad');
+    }
+    
+    function listPedidoUser(){
         return $this->belongsToMany(Producto::class, 'tbl_cart','userId','productoId')->withPivot('cantidad');
     }
 

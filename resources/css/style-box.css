@@ -119,6 +119,12 @@ a.ver-mas-a .ver-mas-a:hover {
 .form--frm--adminLog {
   height: 19rem;
 }
+/* modal de lista de pedido de los usuarios */
+.boxListPedidoUser{
+  /* width: 90rem !important; */
+  max-width: 900px !important;
+  /* background: #05bbff; */
+}
 
 .input--frm--adminLog {
   background: #E7F9EB;

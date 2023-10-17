@@ -6,6 +6,7 @@ use App\Http\Controllers\LoginController;
 
 // ------
 use App\Http\Controllers\admin\AdminController;
+use App\Http\Controllers\admin\ApiController;
 use App\Http\Controllers\admin\PdfProductoController;
 use App\Http\Controllers\admin\FacturaController;
 use App\Http\Controllers\admin\InfocorpController;
@@ -37,8 +38,10 @@ Route::middleware('VerificationAdmin')->group(function () {
   // this is infocorp
   Route::get('/Admin-infocorp', [InfocorpController::class, 'main'])->name('main.admin.infocorp');
   Route::get('/Admin-infocorpSearch/{num}', [InfocorpController::class, 'searchDni'])->name('search.admin.infocorp');
-
-
+// 
+Route::get('/Admin-Ventas', [AdminController::class, 'ventas'])->name('venta.admin.index');
+// api consumo list user 
+Route::get('/api/admin/listPedio/{id}', [ApiController::class, 'listPedido'])->name('listPedido.api.venta');
   // --pdf
 
 

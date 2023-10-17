@@ -260,6 +260,11 @@ return [
             'url'  => '/Admin-Catalogo',
             'icon' => 'bi bi-file-medical-fill',
         ],
+        [
+            'text' => 'Ventas',
+            'url'  => '/Admin-Ventas',
+            'icon' => 'bi bi-file-medical-fill',
+        ],
         // --- nav items de generar factura
         [
             'text' => 'Generar factura',

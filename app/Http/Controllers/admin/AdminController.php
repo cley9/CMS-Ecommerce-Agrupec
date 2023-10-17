@@ -7,6 +7,7 @@ use App\Models\Producto;
 use Illuminate\Http\Request;
 // -----
 use App\Models\SlayderMain;
+use App\Models\User;
 // -----fecha
 use Carbon\Carbon;
 
@@ -87,5 +88,11 @@ class AdminController extends Controller
         $searchProducto=Producto::where('nombre','like','%'.$searchProducto.'%')->get();
         // return response()->json($searchProducto);
         return $searchProducto;
+    }
+    function ventas(){
+        $listUser=User::where('rol', '=','0')->get();
+        // return $listUser;
+        // return ;
+        return view('Admin.ventas',compact( 'listUser'));
     }
 }

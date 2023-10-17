@@ -78,7 +78,7 @@ php artisan make:mail EnvioInformacionNewProducto
 
 
 // ------------ instalación de talwind css en laravel 10 + vite + vue.js ---------------
-// [nota: en laravel 10 ya viene preinstalado el tailwind]
+// [nota: en laravel 10 ya viene preinstalado el tailwind, pero en versiones anteriores no]
 // 1 pasa
 // npm install -D tailwindcss postcss autoprefixer
 // 2 paso [Genera los archivos de configuración tailwind.config.js y postcss.config.js:] , para ello ejecuta el comando npx tailwindcss init -p
