@@ -62,13 +62,13 @@
                 <div class="navbar-nav col  ">
                     <div class=" container navbar-navd  d-sm-none d-none d-lg-block d-block">
                         <div class="row">
-                            <a class="nav-link col-lg-3 loudingLinkEfectClick" href="">Ventas por mayor</a>
+                            {{-- <a class="nav-link col-lg-3 loudingLinkEfectClick" href="">Ventas por mayor</a> --}}
+                            <a href="{{ url('Producto-view') }}" class="nav-link col-lg-2 loudingLinkEfectClick"
+                                href="">Productos</a>
                             <a class="nav-link col-lg-2 loudingLinkEfectClick" href="{{ url('local') }}">Locales</a>
                             <a href="{{ url('Contactenos') }}" class="nav-link col-lg-2 loudingLinkEfectClick"
                                 href="">Contactos</a>
-                            <a href="{{ url('Producto-view') }}" class="nav-link col-lg-2 loudingLinkEfectClick"
-                                href="">Productos</a>
-                            <a class="nav-link col-lg-2 loudingLinkEfectClick" href="">Descuentos</a>
+                            {{-- <a class="nav-link col-lg-2 loudingLinkEfectClick" href="">Descuentos</a> --}}
                         </div>
                     </div>
                 </div>
@@ -98,8 +98,8 @@
                     <a class="nav-link  icons--style--raya" aria-current="page">Servicio al Cliente (01) 419 2203 ǀ</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Tiendas</a>
                     <a class="nav-link  icons--style--raya" aria-current="page">Seguimiento de tu compra ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a>
-                    <a class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a>
+                    {{-- <a class="nav-link  icons--style--raya" aria-current="page">Venta Empresa ǀ</a> --}}
+                    {{-- <a class="nav-link  icons--style--raya" aria-current="page">SEGUROS ǀ</a> --}}
                 </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
                                     aria-current="page">Nosotros</a>
                                 <a href="{{ url('Ayuda') }}"
                                     class="nav-link active icons--style--raya me-3 textHead"
-                                    aria-current="page">Atencion</a>
+                                    aria-current="page">Atención</a>
                                 @if (session()->get('rol') === '0')
                                     <div class="cart-menu d-flex align-items-center boxCartIcomHead">
                                         <div class="sidebar-social boxCartIcomBody">

@@ -74,7 +74,7 @@ if (infocord) {
 // });
 
 function listPedidoUser(iduser){
-fetch(`http://127.0.0.1:8000/api/admin/listPedio/${iduser}`).then(response=>response.json()).then((response)=>{
+fetch(`/api/admin/listPedio/${iduser}`).then(response=>response.json()).then((response)=>{
 // console.log(response);
 let body='';
 if (response.msg == "Con pedidos") {
