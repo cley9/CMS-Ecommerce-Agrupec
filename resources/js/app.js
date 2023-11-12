@@ -30,14 +30,31 @@ import './bootstrap';
 
 import  { createApp } from "vue";
 
-import promocion from '../components/promocion.vue'; 
-import promoListProduct from '../components/promocionListProducto.vue';
+import promocion from '../components/productoBaner.vue'; 
 import beneficio from '../components/beneficio.vue';
-// import countC from '../components/count.vue';
-createApp(promocion).mount("#promocion");
-createApp(promoListProduct).mount("#promoListProducto");
+// import promoListProduct from '../components/promocionListProducto.vue';
+// import loginUser from '../components/loginUserModal.vue';
+// import loginAdmin from '../components/loginAdminModal.vue';
+// import producto from '../components/productoView.vue';
+// import productoList from '../components/productoList.vue';
+// import productoSlayderHome from '../components/productoSlayderHome.vue';
+// import gridPru from '../components/pruebaGrid.vue';
+import minute from '../components/hora.vue';
+import productoCategoria from '../components/productoCategoria.vue';
+// import cley from '../components/addCart.vue';
+// createApp(cley).mount('#cal');
+// createApp(gridPru).mount('#grid');
+// createApp(productoSlayderHome).mount('#productoSlayderHome');
+// createApp(productoList).mount('#productoList');
+// createApp(producto).mount('#producto');
+// createApp(loginUser).mount('#loginUser');
+// createApp(loginAdmin).mount('#loginAdmin');
+// createApp(promoListProduct).mount("#promoListProducto");
+createApp(productoCategoria).mount('#productoCategoria');
+createApp(minute).mount('#hora');
+createApp(promocion).mount("#productoBaner");
 createApp(beneficio).mount('#beneficio');
-// createApp(countC).mount('#count');
+
 import './viewPassword';
 import './btn-up';
 import './addCartProduct';

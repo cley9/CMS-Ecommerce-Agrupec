@@ -180,10 +180,14 @@
         </div>
     </div>
 
-<div class="" id="beneficio"></div>
+    <div id="beneficio"></div>
+    <div id="productoBaner"></div>
+    <div id="hora"></div>
+    <div id="productoCategoria"></div>
+{{-- <div class="" id="beneficio"></div>
 <div class="" id="count"></div>
      <div id="promocion"></div>
-     <div class="" id="promoListProducto"></div>
+     <div class="" id="promoListProducto"></div> --}}
     {{-- <h3 class="text-center text-red-400">this is cley</h3> --}}
 
     <div class="d-flex justify-content-center align-items-center boxTextTitleStock">
