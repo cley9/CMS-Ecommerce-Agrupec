@@ -475,8 +475,15 @@ align-items: flex-end; */
 }
 
 /* slay producto home */
+@media(width <500px){
 
-.boxSimbolSlayProHome {}
+  .boxSimbolSlayProHome {
+    /* background: saddlebrown; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* margin-bottom: 0px !important; */
+  }
+}
 
 .textTitleSlayProHome {
   margin-bottom: 54px;

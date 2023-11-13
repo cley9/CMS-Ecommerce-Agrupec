@@ -106,28 +106,7 @@
         </div>
 
     </div>
-    <div class="container p-2 p-lg-4  p-md-4 boxInfoTendProHome  ">
-        <div class="row d-flex align-items-center">
-            <div class="col-lg-8  d-flex justify-content-center mb-3">
-                <h2 class="textTitleVenHome text-center">¡Conoce los Productos <small style="color:black">que están en tendencia para la remodelación de la casa!</small></h2>
-            </div>
-            <div class="col d-flex justify-content-center">
-                <div class="col-2 boxInformationHome ">
-                    <div class="d-flex justify-content-center boxItemImgHome">
-                        <img class="icons--items--home- iconIntemHome img-fluid -card-img-top "
-                            src="{{ asset('storage/img/icons/app-store-app.png') }}" alt="">
-                    </div>
-                    <div class="text-center">
-                        <h6 class="h3 mb-3">Compra</h6>
-                        <p class="h9 text-muted- font-monospace lh-base-">Ahora también compra productos desde tu celular y
-                            deja
-                            que nos encarguemos del envió.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+<div id="productoTendencia"></div>
     <div class="container mb-4 mb-md-2 pt-4 boxSimbolSlayProHome">
         <h6 class="display-6 textTitleSlayProHome">¡No los dejes ir!</h6>
     </div>

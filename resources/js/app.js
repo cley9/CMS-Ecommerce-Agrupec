@@ -50,6 +50,8 @@ import productoCategoria from '../components/productoCategoria.vue';
 // createApp(loginUser).mount('#loginUser');
 // createApp(loginAdmin).mount('#loginAdmin');
 // createApp(promoListProduct).mount("#promoListProducto");
+import productoTendencia from '../components/productoTendencia.vue';
+createApp(productoTendencia).mount('#productoTendencia');
 createApp(productoCategoria).mount('#productoCategoria');
 createApp(minute).mount('#hora');
 createApp(promocion).mount("#productoBaner");

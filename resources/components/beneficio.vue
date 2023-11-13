@@ -151,6 +151,10 @@ export default {
 }
 
 @media(width <618px) {
+    .containerSlayHome{
+        /* background: salmon; */
+        margin-bottom: 60px !important;
+    }
     .swiper {
         /* background: olivedrab !important; */
     }

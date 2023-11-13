@@ -97,6 +97,7 @@ table.table-hover tbody tr:hover {
 .boxCaruselMainHome{
   height: 330px !important;
   /* background: #19C27D; */
+  margin-bottom: 10px;
 }
   
 .imgCaruselMainHome{
@@ -297,6 +298,7 @@ justify-content: center !important; */
 .boxCaruselMainHome{
   height: 530px !important;
   /* background: #19C27D; */
+  margin-bottom: 58px;
 }
   
 .imgCaruselMainHome{
