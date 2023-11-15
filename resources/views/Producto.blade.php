@@ -101,6 +101,7 @@
         </div>
     </div>
     {{--    --}}
+    <div id="productoPage"></div>
     <div class="container boxContainerProductoList">
         <div class="title--producto-group-2 rounded-3 pt-2 d-flex align-items-center justify-content-center mb-4"
             style="height:50px;">
